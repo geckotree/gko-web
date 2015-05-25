@@ -1,0 +1,14 @@
+{
+    "browser": true,
+    "jquery": false,
+    "undef": true,
+    "unused": false,
+    "devel": true,
+    "newcap": false,
+    "globals": {
+        "module": false,
+        "Modernizr": true,
+        "define": false,
+        "require": false
+    }
+}

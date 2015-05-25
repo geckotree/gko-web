@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+	var homePage = CurrentPage.Site();
+	var pageType = "doc--" + CurrentPage.DocumentTypeAlias.ToLower().Replace(" ","-");
+	
+	var siteUrl = "http://" +  Request.Url.Host.ToString();
+	var pageUrl = siteUrl + CurrentPage.Url;	
+}
+<!doctype html>
+<html lang="en" class="no-js @pageType">
+<head>
+	<meta charset="utf-8">
+
+	<title>@meta.Title</title>
+	<meta name="description" content="@meta.Description">
+	<meta name="keywords" content="@meta.Keywords" />
+	<meta name="robots" content="index, follow" />
+
+	@* VIEWPORT *@
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+</head>
+<body class="page">
+	<main id="main" class="page__content" role="main">
+		@RenderBody()
+	</main>
+</body>
+</html>

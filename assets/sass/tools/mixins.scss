@@ -1,0 +1,63 @@
+/* ===========================================================
+
+	# MIXINS
+
+=========================================================== */
+
+@mixin heading-font-size( $font-size ) {
+	font-size: $font-size;
+	padding-bottom: $font-size / 2;
+}
+
+@mixin old-ie() {
+	@if $old-ie {
+		@content;
+	}
+}
+
+@mixin respond-min( $width ) {
+	@media only screen and ( min-width: $width ) {
+		@content;
+	}
+}
+
+@mixin respond-max( $width ) {
+	@media only screen and ( max-width: $width - 1px) {
+		@content;
+	}
+}
+
+@mixin respond-min-max( $min, $max ) {
+	@media only screen and ( min-width: $min ) and ( max-width: $max - 1px ) {
+		@content;
+	}
+}
+
+@mixin hi-res() {
+	@media ( -webkit-min-device-pixel-ratio: 1.5 ), ( min-resolution: 144dppx ) {
+		@content;
+	}
+}
+
+@mixin clearfix() {
+	&:before,
+	&:after {
+	    content:"";
+	    display:table;
+	}
+
+	&:after {
+	    clear:both;
+	}
+}
+
+@mixin hide-text {
+    border: 0;
+    clip: rect( 0 0 0 0 );
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

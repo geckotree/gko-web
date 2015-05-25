@@ -1,0 +1,206 @@
+/* ===========================================================
+
+	# HEADINGS
+
+=========================================================== */
+
+$zeta--small: 		$font-size--small;
+$epsilon--small: 	$zeta--small		*	$type-scale--small;
+$delta--small: 		$epsilon--small		*	$type-scale--small;
+$gamma--small: 		$delta--small		*	$type-scale--small;
+$beta--small: 		$gamma--small		*	$type-scale--small;
+$alpha--small: 		$beta--small		*	$type-scale--small;
+$mega--small:		$alpha--small		*	$type-scale--small;
+$giga--small:		$mega--small		*	$type-scale--small;
+$tera--small: 		$giga--small		*	$type-scale--small;
+$intro--small: 		$delta--small;
+
+$zeta--medium: 		$font-size--large;
+$epsilon--medium: 	$zeta--medium		*	$type-scale--medium;
+$delta--medium: 	$epsilon--medium	*	$type-scale--medium;
+$gamma--medium: 	$delta--medium		*	$type-scale--medium;
+$beta--medium: 		$gamma--medium		*	$type-scale--medium;
+$alpha--medium: 	$beta--medium		*	$type-scale--medium;
+$mega--medium:		$alpha--medium		*	$type-scale--medium;
+$giga--medium:		$mega--medium		*	$type-scale--medium;
+$tera--medium: 		$giga--medium		*	$type-scale--medium;
+$intro--medium: 	$delta--medium;
+
+$zeta--large: 		$font-size--large;
+$epsilon--large: 	$zeta--large		*	$type-scale--large;
+$delta--large: 		$epsilon--large		*	$type-scale--large;
+$gamma--large: 		$delta--large		*	$type-scale--large;
+$beta--large: 		$gamma--large		*	$type-scale--large;
+$alpha--large: 		$beta--large		*	$type-scale--large;
+$mega--large:		$alpha--large		*	$type-scale--large;
+$giga--large:		$mega--large		*	$type-scale--large;
+$tera--large: 		$giga--large		*	$type-scale--large;
+$intro--large: 		$delta--large;
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tera,
+.giga,
+.mega,
+.alpha,
+.beta,
+.gamma,
+.delta,
+.epsilon,
+.zeta {
+	font-weight: bold;
+	line-height: 1;
+}
+
+.tera {
+	@include heading-font-size( $tera--small );
+}
+
+.giga {
+	@include heading-font-size( $giga--small );
+}
+
+.mega {
+	@include heading-font-size( $mega--small );
+}
+
+h1,
+.alpha {
+	@include heading-font-size( $alpha--small );
+}
+
+h2,
+.beta {
+	@include heading-font-size( $beta--small );
+}
+
+h3,
+.gamma {
+	@include heading-font-size( $gamma--small );
+}
+
+h4,
+.delta {
+	@include heading-font-size( $delta--small );
+}
+
+h5,
+.epsilon {
+	@include heading-font-size( $epsilon--small );
+}
+
+h6,
+.zeta {
+	@include heading-font-size( $zeta--small );
+}
+
+.intro {
+	font-size: $intro--small;
+	line-height: 1.3;
+}
+
+@include respond-min( $mq-small ) {
+
+	.tera {
+		@include heading-font-size( $tera--medium );
+	}
+
+	.giga {
+		@include heading-font-size( $giga--medium );
+	}
+
+	.mega {
+		@include heading-font-size( $mega--medium );
+	}
+
+	h1,
+	.alpha {
+		@include heading-font-size( $alpha--medium );
+	}
+
+	h2,
+	.beta {
+		@include heading-font-size( $beta--medium );
+	}
+
+	h3,
+	.gamma {
+		@include heading-font-size( $gamma--medium );
+	}
+
+	h4,
+	.delta {
+		@include heading-font-size( $delta--medium );
+	}
+
+	h5,
+	.epsilon {
+		@include heading-font-size( $epsilon--medium );
+	}
+
+	h6,
+	.zeta {
+		@include heading-font-size( $zeta--medium );
+	}
+
+	.intro {
+		font-size: $intro--medium;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.tera {
+		@include heading-font-size( $tera--large );
+	}
+
+	.giga {
+		@include heading-font-size( $giga--large );
+	}
+
+	.mega {
+		@include heading-font-size( $mega--large );
+	}
+
+	h1,
+	.alpha {
+		@include heading-font-size( $alpha--large );
+	}
+
+	h2,
+	.beta {
+		@include heading-font-size( $beta--large );
+	}
+
+	h3,
+	.gamma {
+		@include heading-font-size( $gamma--large );
+	}
+
+	h4,
+	.delta {
+		@include heading-font-size( $delta--large );
+	}
+
+	h5,
+	.epsilon {
+		@include heading-font-size( $epsilon--large );
+	}
+
+	h6,
+	.zeta {
+		@include heading-font-size( $zeta--large );
+	}
+
+	.intro {
+		font-size: $intro--large;
+	}
+
+}

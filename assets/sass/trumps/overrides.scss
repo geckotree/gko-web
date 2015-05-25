@@ -1,0 +1,17 @@
+/* ===========================================================
+
+  # OVERRIDES
+
+=========================================================== */
+
+.no-mustard * {
+	transition: none!important;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.hide-text {
+	@include hide-text;
+}

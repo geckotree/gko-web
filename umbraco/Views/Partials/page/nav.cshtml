@@ -1,0 +1,39 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var homePage = CurrentPage.Site();
+	var menuItems = homePage.Children.Where("UmbracoNaviHide == false");
+}
+
+<nav id="mainNav" class="nav nav--main" role="navigation">
+	<ul class="nav__list clearfix">
+		@*
+		<li class="nav__item nav__item--parent">
+			<a href="@homePage.Url" class="nav__link @homePage.IsEqual(CurrentPage, "active", "")">@homePage.Name</a>
+		</li>
+		*@
+		@foreach (var item in menuItems){
+			<li class="nav__item nav__item--parent">
+				<a href="@item.Url" class="nav__link  @(item.IsAncestorOrSelf(CurrentPage) ? "active" : null)">
+					@item.Name
+				</a>
+			</li>
+		}
+	</ul>
+</nav>
+
+@* Helper method to travers through all descendants *@
+@helper Traverse(dynamic node) {
+    var maxLevelForNav = 4;
+    var items = node.Children.Where("Visible").Where("Level <= " + maxLevelForNav);
+    if (items.Any()) {
+	        <ul class="nav__list--sub">
+    	        @foreach (var item in items) {
+					<li class="nav__item nav__item--child">
+						<a href="@item.Url" class="nav__link @(CurrentPage.Id == item.Id ? "active" : null)">@item.Name</a>
+						@Traverse(item)
+	                </li>
+    	        }
+        	</ul>
+    }
+}
+

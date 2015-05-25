@@ -1,0 +1,40 @@
+.sass-cache
+.ftppass
+
+assets/_components
+assets/_build
+node_modules
+sitespeed-result
+
+# Umbraco
+/umbraco/connectionStrings.config
+/umbraco/App_Data/ClientDependency/
+/umbraco/App_Data/ExamineIndexes/
+/umbraco/App_Data/Logs/
+/umbraco/App_Data/[Pp]review/
+/umbraco/App_Data/TEMP/
+/umbraco/Cached/
+
+# Ignore Umbraco content cache file
+/umbraco/App_Data/umbraco.config
+
+# Don't ignore Umbraco packages
+/umbraco/!**/App_Data/[Pp]ackages/
+/umbraco/!**/[Uu]mbraco/[Dd]eveloper/[Pp]ackages
+
+# SQL Server files
+/umbraco/App_Data/*.mdf
+/umbraco/App_Data/*.ldf
+
+# Mac
+**/*.DS_Store
+
+# Windows
+**/*Thumbs.db
+**/*ehthumbs.db
+
+# Folder config file
+**/*Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

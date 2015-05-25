@@ -1,0 +1,18 @@
+/* ===========================================================
+
+	# TABLE
+
+=========================================================== */
+
+table {
+	border: $border-width solid $border-colour;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border-bottom: $border-width solid $border-colour;
+	padding: 1rem 2rem;
+	text-align: left;
+}

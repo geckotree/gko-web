@@ -1,0 +1,1 @@
+Add component specific js

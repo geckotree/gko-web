@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+/* ===========================================================
+*
+*                      ,--.            ,--.
+*   ,---.  ,---.  ,---.|  |,-. ,---. ,-'  '-.,--.--. ,---.  ,---.
+*  | .-. || .-. :| .--'|     /| .-. |'-.  .-'|  .--'| .-. :| .-. :
+*  ' '-' '\   --.\ `--.|  \  \' '-' '  |  |  |  |   \   --.\   --.
+*  .`-  /  `----' `---'`--'`--'`---'   `--'  `--'    `----' `----'
+*  `---'
+*
+* Version: 	1.0.0
+* Authors: 	Rob Simpson & Kev Simpson
+*
+=========================================================== */
+
+@import 'settings/global.scss';
+
+@import 'tools/mixins.scss';
+
+@import 'generic/reset.scss',
+		'generic/js-breakpoints.scss';
+
+@import 'base/text.scss',
+		'base/headings.scss',
+		'base/anchor.scss',
+		'base/button.scss',
+		'base/lists.scss',
+		'base/table.scss',
+		'base/forms.scss';
+
+@import 'objects/page.scss',
+		'objects/wrap.scss',
+		'objects/section.scss',
+		'objects/buttons.scss',
+		'objects/table.scss',
+		'objects/forms.scss',
+		'objects/media.scss';
+
+@import 'trumps/overrides.scss';

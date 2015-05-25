@@ -1,0 +1,37 @@
+/* ===========================================================
+
+  # OVERRIDES
+
+=========================================================== */
+
+.no-mustard * {
+	transition: none!important;
+}
+
+.u-clearfix {
+	@include clearfix;
+}
+
+.u-hide-text {
+	@include hide-text;
+}
+
+.u-center-content {
+	text-align: center!important;
+}
+
+.u-highlight-text {
+	color: $pri;
+	transition: color $speed ease;
+}
+
+@include respond-min( $mq-large ) {
+
+	.flexbox {
+		.u-vertical-align-center--large {
+			align-items: center;
+			display: flex;
+		}
+	}
+
+}

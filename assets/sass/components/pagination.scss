@@ -1,0 +1,147 @@
+/* ===========================================================
+
+	# PAGINATION
+
+=========================================================== */
+
+.c-pagination {
+	padding-top: $padding--small;
+}
+
+.c-pagination__list {
+	list-style: none;
+}
+
+.c-pagination__item {
+	display: inline-block;
+	margin: 0 0 0 -.25em;
+	width: 50%;
+}
+
+.c-pagination__link {
+	border: $border-width * 1.5 solid $pri;
+	border-radius: 4rem;
+	display: block;
+	font-weight: 500;
+	padding: 1.4rem 2rem .8rem 1.9rem;
+	transition: transform $speed ease;
+
+	.icon {
+		fill: $pri;
+		transition: fill $speed ease;
+	}
+
+	&:hover {
+		color: $pri;
+	}
+
+	&:focus {
+		color: $sec;
+		border-color: $sec;
+
+		.icon {
+			fill: $sec;
+		}
+	}
+
+	&:active {
+		transform: scale( .9 );
+	}
+}
+
+.c-pagination__link--prev {
+	float: right;
+	margin-right: 1.5rem;
+}
+
+.c-pagination__link--next {
+	float: left;
+	margin-left: 1.5rem;
+}
+
+.c-pagination__link--disabled {
+	border-color: $border-colour;
+	color: $border-colour;
+	cursor: not-allowed;
+
+	.icon {
+		fill: $border-colour;
+	}
+
+	&:hover,
+	&:focus {
+		color: $border-colour;
+		border-color: $border-colour;
+
+		.icon {
+			fill: $border-colour;
+		}
+	}
+
+	&:active {
+		transform: scale( 1 );
+	}
+}
+
+.c-pagination__link--prev__text {
+	float: right;
+}
+
+.c-pagination__link--next__text {
+	float: left;
+}
+
+@include respond-max( $mq-medium ) {
+	.c-pagination__link {
+		.icon svg {
+			transform: scale( .8 );
+		}
+	}
+
+	.c-pagination__link--prev__text {
+		margin-left: .5rem;
+	}
+
+	.c-pagination__link--next__text {
+		margin-right: .5rem;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-pagination__link--prev {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-left: .5rem;
+				width: 6.4rem;
+			}
+		}
+	}
+
+	.c-pagination__link--next {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-right: .5rem;
+				width: 5.7rem;
+			}
+		}
+	}
+
+	.c-pagination__link--disabled {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin: 0;
+				width: 0;
+			}
+		}
+	}
+
+	.c-pagination__link__text {
+		overflow: hidden;
+		transition: width $speed ease;
+		width: 0;
+	}
+}
+

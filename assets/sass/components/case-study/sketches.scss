@@ -1,0 +1,47 @@
+/* ===========================================================
+
+	# CASE STUDY - SKETCHES
+
+=========================================================== */
+
+.case-study__background-cover {
+	@include clearfix;
+}
+
+.c-case-study__background-cover__image {
+	background-size: cover;
+	border-radius: $border-radius * 3;
+	width: 100%;
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__background-cover__image--small {
+		display: none;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__background-cover__image--large,
+	.c-case-study__background-cover__image--small {
+		height: 40rem;
+	}
+
+	.c-case-study__background-cover__image--large {
+		float: left;
+		width: 75%;
+		width: calc( 75% - 2rem );
+	}
+
+	.c-case-study__background-cover__image--small {
+		float: right;
+		width: 25%;
+		width: calc( 25% - 2rem );
+	}
+}
+
+@include respond-min( $mq-x-large ) {
+	.c-case-study__background-cover__image--large,
+	.c-case-study__background-cover__image--small {
+		height: 60rem;
+	}
+}

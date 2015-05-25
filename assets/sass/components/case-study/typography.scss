@@ -1,0 +1,52 @@
+/* ===========================================================
+
+	# CASE STUDY - TYPOGRAPHY
+
+=========================================================== */
+
+.c-case-study__typography__list {
+	list-style: none;
+	margin-top: 0;
+}
+
+.c-case-study__typography__item {
+	display: inline-block;
+	margin: 0;
+}
+
+.c-case-study__typography__button {
+	border-radius: $border-radius;
+	margin: 0 2rem;
+	padding: .5rem .5rem 0;
+
+	.no-js &,
+	.no-mustard & {
+		pointer-events: none;
+	}
+
+	.js.mustard & {
+		transition: background $speed ease,
+					transform $speed ease;
+
+		&:hover,
+		&:focus {
+			background: lighten( $grey-1, 5 );
+		}
+
+		&:active {
+			transform: scale( .9 );
+		}
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__typography__list {
+		padding-top: $padding--small;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__typography__list {
+		padding-top: $padding--large;
+	}
+}

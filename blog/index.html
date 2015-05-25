@@ -1,0 +1,65 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="o-section">
+	{% for post in paginator.posts %}
+		<article class="o-wrap o-listing" itemscope itemtype="http://schema.org/NewsArticle">
+			<a href="{{ post.url | prepend: site.baseurl }}" class="o-listing__link" itemprop="url">
+				<h2 class="o-listing__heading " itemprop="name">{{ post.blogTitle }}</h2>
+				
+				<ul class="o-listing__list-meta">
+					<li class="o-listing__item-meta">
+						<time datetime="{{ post.date | date: '%Y-%m-%d%T' }}" pubdate="pubdate">
+							{% assign d = post.date | date: "%-d" %} 
+							{% case d %}
+								{% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+								{% when '2' or '22' %}{{ d }}<sup>nd</sup>
+								{% when '3' or '23' %}{{ d }}<sup>rd</sup>
+								{% else %}{{ d }}th
+							{% endcase %}
+							{{ post.date | date: "%b %Y" }}
+						</time>
+						<meta itemprop="dateCreated" content="{{ post.date | date: '%Y-%m-%d' }}">
+					</li>
+					<li class="o-listing__item-meta" itemprop="author">
+						Rob Simpson
+					</li>
+				</ul>
+				
+				<div class="o-listing__description">
+					<p>{{ post.exerpt }}</p>
+				</div>
+			</a>
+		</article>
+	{% endfor %}
+</div>
+
+<nav class="c-pagination u-center-content">
+	<ul class="c-pagination__list">
+		<li class="c-pagination__item">
+			{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path }}" class="c-pagination__link c-pagination__link--prev">
+					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span> <i class="icon icon--arrow-left-small" data-grunticon-embed></i>
+				</a>
+			{% else %}
+				<span class="c-pagination__link c-pagination__link--prev c-pagination__link--disabled">
+					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span> <i class="icon icon--arrow-left-small" data-grunticon-embed></i>
+				</span>
+			{% endif %}
+		</li>
+
+		<li class="c-pagination__item">
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="c-pagination__link c-pagination__link--next">
+					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span> <i class="icon icon--arrow-right-small" data-grunticon-embed></i>
+				</a>
+			{% else %}
+				<span class="c-pagination__link c-pagination__link--next c-pagination__link--disabled">
+					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span> <i class="icon icon--arrow-right-small" data-grunticon-embed></i>
+				</span>
+			{% endif %}
+		</li>
+	</ul>
+</nav>

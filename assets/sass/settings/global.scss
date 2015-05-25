@@ -1,0 +1,100 @@
+/* ===========================================================
+
+	# VARIABLES
+
+=========================================================== */
+
+$old-ie: false!default;
+
+
+
+/* ===========================================================
+
+	# COLOURS
+
+=========================================================== */
+
+$white: #FFFFFF;
+$black: #000000;
+
+$dark-1: #272727;
+$light-1: #F7F7F7;
+$green-1: #57B275;
+$green-2: #4CA769;
+$pink-1: #F05D71;
+$yellow-1: #F2D044;
+$red-1: #EC4E50;
+$grey-1: #E2E2E2;
+$grey-2: #BCBEC0;
+$grey-3: #787F8C;
+
+$pri: $green-1;
+$sec: $pink-1;
+$ter: $yellow-1;
+
+$twitter: #55ACEE;
+$dribbble: #EA4C89;
+$instagram: #3F729B;
+
+
+
+/* ===========================================================
+
+	# BASE VALUES
+
+=========================================================== */
+
+$font-family:			'Gotham Rounded', Arial, Helvetica, Geneva, sans-serif;
+$font-size--small:		1.6rem;
+$font-size--large:		2rem;
+$line-height:			1.4em;
+$type-scale--small:		1.100;
+$type-scale--medium:	1.150;
+$type-scale--large:		1.200;
+
+$text-colour:			$dark-1;
+$background-colour:		$light-1;
+$border-colour:			$grey-2;
+$link-colour:			$pri;
+$link-colour-hover:		$sec;
+$placeholder-colour:	$grey-1;
+$highlight-colour:		lighten( $pri, 35 );
+
+$padding--small:		4rem;
+$padding--medium:		6rem;
+$padding--large:		8rem;
+
+$border-width: 			.2rem;
+$border-radius: 		.4rem;
+$speed: 				.3s;
+
+$wrap--medium:			75rem;
+$wrap--large:			92rem;
+$wrap--x-large:			140rem;
+
+
+
+/* ===========================================================
+
+	# MEDIA QUERIES
+
+=========================================================== */
+
+$mq-small: 				600px;
+$mq-medium: 			800px;
+$mq-large: 				1000px;
+$mq-x-large: 			1280px;
+$mq-xx-large: 			1500px;
+
+
+
+/* ===========================================================
+
+	# GRID SETTINGS
+
+=========================================================== */
+
+$jeet-gutter:           3      			!default;
+$jeet-parent-first:     false  			!default;
+$jeet-layout-direction: "LTR"  			!default;
+$jeet-max-width:        1410px 			!default;

@@ -1,0 +1,180 @@
+/* ===========================================================
+
+	# LISTING
+
+=========================================================== */
+
+.o-listing__link {
+	display: block;
+	padding: 3rem 2rem;
+	transition: background $speed ease,
+				transform $speed ease;
+
+	&:hover {
+		background: rgba( $pri, .1 );
+	}
+
+	&:focus {
+		background-color: rgba( $sec, .1 );
+
+		.u-highlight-text {
+			color: $sec;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		.o-listing__item-meta {
+			color: $grey-3;
+		}
+	}
+
+	&:active {
+		transform: scale( .98 );
+	}
+}
+
+.o-listing__heading {
+	color: $text-colour;
+}
+
+.o-listing__list-meta {
+	list-style: none;
+	line-height: 1;
+}
+
+.o-listing__item-meta {
+	color: $grey-2;
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	margin-bottom: $line-height;
+	transition: color $speed ease;
+
+	+ .o-listing__item-meta {
+		margin-left: 1.5rem;
+	}
+}
+
+.o-listing__description {
+	color: $text-colour;
+}
+
+@include respond-max( $mq-small ) {
+	.o-listing__link {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+}
+
+@include respond-max( $mq-medium ) {
+	.touch {
+		.o-listing__item-meta {
+			color: $grey-3;
+		}
+	}
+
+	.flexbox {
+		.o-listing--prev-next-row {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.o-listing--prev-next {
+			width: 100%;
+		}
+
+		.o-listing--next {
+			order: 1;
+		}
+
+		.o-listing--prev {
+			order: 2;
+		}
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.o-listing__link {
+		margin-left: -4rem;
+		margin-right: -4rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.o-listing {
+		max-width: $wrap--large + 12rem;
+	}
+
+	.o-listing__link {
+		border-radius: $border-radius * 3;
+		padding: 4rem 6rem;
+	}
+
+
+	.o-listing--prev-next-row {
+		@include clearfix;
+		max-width: $wrap--large + 12rem;
+	}
+
+	.o-listing--prev-next {
+		width: 50%;
+	}
+
+	.o-listing--prev {
+		float: left;
+		margin-left: 0; // This is to align the listing to the *left* with flexbox
+	}
+
+	.o-listing--prev__link {
+		margin-right: 2rem;
+
+		&:hover {
+			transform: translateX( -.5rem );
+		}
+	}
+
+	.o-listing--next {
+		float: right;
+		margin-right: 0; // This is to align the listing to the *right* with flexbox
+	}
+
+	.o-listing--next__link {
+		margin-left: 2rem;
+
+		&:hover {
+			transform: translateX( .5rem );
+		}
+	}
+
+	.o-listing--prev-next__link {
+		background: rgba( $grey-1, .1 );
+		padding: 4rem;
+
+		&:active {
+			transform: scale( .98 );
+		}
+	}
+
+	.flexbox {
+		.o-listing--prev-next-row {
+			align-items: stretch;
+			display: flex;
+		}
+
+		.o-listing--prev-next {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.o-listing--prev-next__link {
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+		}
+	}
+}

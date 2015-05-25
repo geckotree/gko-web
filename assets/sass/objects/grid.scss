@@ -1,0 +1,25 @@
+/* ===========================================================
+
+	# GRID
+
+=========================================================== */
+
+@include respond-min( $mq-large ) {
+
+	.o-grid-row {
+		@include clearfix;
+	}
+
+	.o-grid-col--4 {
+		@include column( 4/12 );
+	}
+
+	.o-grid-col--5 {
+		@include column( 5/12 );
+	}
+
+	.o-grid-col--7 {
+		@include column( 7/12 );
+	}
+
+}

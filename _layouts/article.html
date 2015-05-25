@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+{% assign author = site.data.authors[page.author] %}
+
+<article class="c-article" itemscope itemtype="http://schema.org/Article">
+	<div class="o-section o-wrap o-wrap--x-large">
+		<header class="c-article__header">
+			<h1 class="c-article__heading tera" itemprop="name">{{ page.blogTitle }}</h1>
+
+			<ul class="c-article__list-meta">
+				<li class="c-article__item-meta">
+					<time datetime="{{ page.date | date: '%Y-%m-%d%T' }}" pubdate="pubdate">
+						{% assign d = page.date | date: "%-d" %} 
+						{% case d %}
+							{% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+							{% when '2' or '22' %}{{ d }}<sup>nd</sup>
+							{% when '3' or '23' %}{{ d }}<sup>rd</sup>
+							{% else %}{{ d }}th
+						{% endcase %}
+						{{ page.date | date: "%b %Y" }}
+					</time>
+					<meta itemprop="dateCreated" content="{{ page.date | date: '%Y-%m-%d' }}">
+				</li>
+				<li class="c-article__item-meta" itemprop="author">
+					{{ author.name }}
+				</li>
+			</ul>
+		</header>
+
+		<div class="o-wrap o-wrap--medium s-free-content" itemprop="articleBody">
+			<p class="intro">{{ page.exerpt }}</p>
+
+			<div class="">
+				<h2 class="gamma">TL;DR</h2>
+				{{ page.tldr }}
+			</div>
+
+			{{ content }}
+		</div>
+	</div>
+	
+	<div class="o-wrap o-wrap--large o-listing--prev-next-row">
+		{% if page.next %}
+			<article class="o-wrap o-listing o-listing--prev-next o-listing--prev" itemscope itemtype="http://schema.org/NewsArticle">
+				<a href="{{ page.next.url | prepend: site.baseurl }}" class="o-listing__link o-listing--prev-next__link o-listing--prev__link" itemprop="url">
+					<h1 class="o-listing__heading o-listing--prev-next__heading gamma" itemprop="name">{{ page.next.blogTitle }}</h1>
+
+					<ul class="o-listing__list-meta o-listing--prev-next__list-meta">
+						<li class="o-listing__item-meta o-listing--prev-next__item-meta">
+							Prev Post
+						</li>
+					</ul>
+				</a>
+			</article>
+		{% endif %}
+
+		{% if page.previous %}
+			<article class="o-wrap o-listing o-listing--prev-next o-listing--next" itemscope itemtype="http://schema.org/NewsArticle">
+				<a href="{{ page.previous.url | prepend: site.baseurl }}" class="o-listing__link o-listing--prev-next__link o-listing--next__link" itemprop="url">
+					<h1 class="o-listing__heading o-listing--prev-next__heading gamma" itemprop="name">{{ page.previous.blogTitle }}</h1>
+
+					<ul class="o-listing__list-meta o-listing--prev-next__list-meta">
+						<li class="o-listing__item-meta o-listing--prev-next__item-meta">
+							Next Post
+						</li>
+					</ul>
+				</a>
+			</article>
+		{% endif %}
+	</div>
+
+	<!-- <footer class="c-article__footer" itemscope itemtype="http://schema.org/Person">
+		<div class="o-wrap o-wrap--medium">
+			<figure class="c-article__footer__figure">
+				<picture>
+					<img src="http://placehold.it/250x250" srcset="http://placehold.it/375x375 2x" alt="A view of the pulpit rock in Norway" itemprop="image">
+				</picture>
+			</figure>
+
+			<div class="c-article__footer__details">
+				<h2 class="c-article__footer__heading" itemprop="name">{{ author.name }}</h2>
+				<h3 class="c-article__footer__sub-heading delta" itemprop="jobTitle">{{ author.title }} <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></h3>
+				<p class="c-article__footer__description" itemprop="description">{{ author.description }}</p>
+			</div>
+		</div>
+	</footer> -->
+</article>

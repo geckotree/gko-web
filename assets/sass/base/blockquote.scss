@@ -1,0 +1,57 @@
+/* ===========================================================
+
+	# BLOCKQUOTE
+
+=========================================================== */
+
+blockquote {
+	margin-bottom: $line-height * 1.5;
+	margin-top: $line-height * 1.5;
+	padding-left: 4rem;
+	position: relative;
+
+	&:before {
+		content: '“';
+		color: $pri;
+		font-size: 6rem;
+		font-weight: bold;
+		left: 0;
+		opacity: .4;
+		position: absolute;
+		top: 1rem;
+	}
+
+	p {
+		font-size: $intro--small;
+		font-weight: bold;
+		line-height: $line-height;
+	}
+
+	footer {
+		padding-top: 1rem;
+	}
+}
+
+@include respond-min( $mq-small ) {
+	blockquote {
+		padding: 0 4rem;
+
+		&:before {
+			font-size: 10rem;
+			left: -3rem;
+			top: 3rem;
+		}
+
+		p {
+			font-size: $intro--medium;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	blockquote {
+		p {
+			font-size: $intro--large;
+		}
+	}
+}

@@ -1,0 +1,112 @@
+/* ===========================================================
+
+	# CASE STUDY - ONLINE AD SPY
+
+=========================================================== */
+
+$adspy-pri: #229EE0;
+$adspy-sec: #6DBD4C;
+$adspy-ter: #F5C022;
+$adspy-pri-alt: #2095D4;
+$adspy-sec-alt: #6AAE48;
+$adspy-ter-alt: #F8AC13;
+
+
+
+.s-case-study--online-adspy {
+
+	.c-case-study__highlight-text {
+		color: $adspy-pri;
+	}
+
+	/* = LOGO ============================================= */
+
+	.c-case-study__logo__mark {
+		&.is-active-colour-pri {
+			.path {
+				fill: $adspy-pri;
+			}
+		}
+
+		&.is-active-colour-sec {
+			.path {
+				fill: $adspy-sec;
+			}
+		}
+
+		&.is-active-colour-ter {
+			.path {
+				fill: $adspy-ter;
+			}
+		}
+	}
+
+	.c-case-study__logo__button--pri {
+		background: $adspy-pri;
+
+		&:hover {
+			background: darken( $adspy-pri-alt, 2.5 );
+		}
+	}
+
+	.c-case-study__logo__button--sec {
+		background: $adspy-sec;
+
+		&:hover {
+			background: darken( $adspy-sec-alt, 2.5 );
+		}
+	}
+
+	.c-case-study__logo__button--ter {
+		background: $adspy-ter;
+
+		&:hover {
+			background: darken( $adspy-ter-alt, 2.5 );
+		}
+	}
+
+	/* = COLOURS ========================================== */
+
+	.c-case-study__colours__item--pri {
+		background: linear-gradient( to right, $adspy-pri 50%, $adspy-pri-alt 50% );
+	}
+
+	.c-case-study__colours__item--sec {
+		background: linear-gradient( to right, $adspy-sec 50%, $adspy-sec-alt 50% );
+	}
+
+	.c-case-study__colours__item--ter {
+		background: linear-gradient( to right, $adspy-ter 50%, $adspy-ter-alt 50% );
+	}
+
+	/* = ILLUSTRATION SKETCHES ============================ */
+
+	// TODO ADD SMALLER & RETINA IMAGES
+	.c-case-study__background-cover__image--robot-machine-sketch {
+		background-image: url( '../img/bitmap/robot-machine-sketch.jpg' );
+		background-position: center;
+	}
+
+	@include respond-max( $mq-large ) {
+		.c-case-study__background-cover__image--robot-machine-sketch {
+			padding-top: 49.180327868%;
+		}
+	}
+
+	@include respond-min( $mq-large ) {
+		.c-case-study__background-cover__image--robot-sketch {
+			background-image: url( '../img/bitmap/robot-sketch.jpg' );
+			background-position: center;
+		}
+	}
+
+	/* = WEB PHOTO ======================================== */
+
+	.c-case-study__background-cover__image--web-photo {
+		background-image: url( 'http://cdn-s.hellomonday.com/assets/images/projects/desktop/issuu/image-2.jpg' );
+		padding-top: 55.625%;
+	}
+
+}
+
+

@@ -1,0 +1,24 @@
+/* ===========================================================
+
+	# CASE STUDY - COLOURS
+
+=========================================================== */
+
+.c-case-study__colours__list {
+	list-style: none;
+	text-align: center;
+}
+
+.c-case-study__colours__item {
+	border-radius: 50%;
+	display: inline-block;
+	height: 10rem;
+	margin: 0 2.5rem;
+	width: 10rem;
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__colours__item {
+		margin: 0 5rem;
+	}
+}

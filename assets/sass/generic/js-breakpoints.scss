@@ -1,0 +1,36 @@
+/* ===========================================================
+
+  # JS access to breakpoints:
+  https://github.com/JoshBarr/js-media-queries
+
+=========================================================== */
+
+@include respond-min( $mq-small ) {
+	html {
+		font-family: 'small';
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	html {
+		font-family: 'medium';
+	}
+}
+
+@include respond-min( $mq-large ) {
+	html {
+		font-family: 'large';
+	}
+}
+
+@include respond-min( $mq-x-large ) {
+	html {
+		font-family: 'x-large';
+	}
+}
+
+@include respond-min( $mq-xx-large ) {
+	html {
+		font-family: 'xx-large';
+	}
+}

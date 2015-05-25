@@ -1,0 +1,83 @@
+/* ===========================================================
+
+	# FOOTER
+
+=========================================================== */
+
+.o-page__footer {
+	padding: 6rem 0;
+	text-align: center;
+}
+
+.c-page__footer__list {
+	list-style: none;
+	min-height: 7.6rem; // Stop text below jumping up and down
+}
+
+.c-page__footer__item {
+	display: inline-block;
+	margin: 1rem 2rem;
+}
+
+.c-page__footer__link {
+	border-bottom: $border-width solid transparent;
+	border-radius: 0;
+	display: block;
+	padding: 1rem 0 1.2rem;
+	transition: border $speed ease,
+				padding $speed ease;
+
+	&:hover,
+	&:focus {
+		background: transparent;
+		border-color: $pri;
+		padding-bottom: 1rem;
+	}
+
+	.icon {
+		display: block;
+		margin-bottom: -.8rem; // Remove weird svg space
+	}
+
+	.icon path {
+		fill: $grey-2;
+		transition: fill $speed ease;
+	}
+}
+
+.c-page__footer__link--twitter {
+	&:hover,
+	&:focus {
+		.icon path {
+			fill: $twitter;
+		}
+	}
+}
+
+.c-page__footer__link--dribbble {
+	&:hover,
+	&:focus {
+		.icon path {
+			fill: $dribbble;
+		}
+	}
+}
+
+.c-page__footer__link--instagram {
+	&:hover,
+	&:focus {
+		.icon path {
+			fill: $instagram;
+		}
+	}
+}
+
+.c-page__footer__label {
+	color: $grey-2;
+	font-weight: 500;
+	padding-right: 1rem;
+
+	.icon--heart path {
+		fill: $red-1;
+	}
+}

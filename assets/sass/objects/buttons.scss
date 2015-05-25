@@ -1,0 +1,55 @@
+/* ===========================================================
+
+	# BUTTONS
+
+=========================================================== */
+
+.button {
+	border-radius: $border-radius;
+	display: inline-block;
+	line-height: 1;
+	padding: 1.5rem 2rem;
+	transition: background $speed ease,
+				box-shadow $speed ease,
+				color $speed ease,
+				transform $speed ease;
+
+	&:hover,
+	&:focus {
+		color: $white;
+	}
+
+	&:focus {
+		box-shadow: 0 .3rem 0 0 rgba( $black, .1 );
+	}
+
+	&:active {
+		transform: scale( .9 );
+	}
+}
+
+.button--primary {
+	background: $pri;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background: $sec;
+	}
+}
+
+.button--secondary {
+	background: $sec;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background: $ter;
+	}
+}
+
+.button--disabled {
+	background: $border-colour;
+	color: $white;
+	cursor: not-allowed;
+}

@@ -1,0 +1,65 @@
+/* ===========================================================
+
+	# CASE STUDY - SECTION
+
+=========================================================== */
+
+.c-case-study__section-header__prefix {
+	color: $grey-1;
+	font-size: .6em;
+}
+
+.c-case-study__section-content {
+	padding-top: $padding--medium;
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__section-header {
+		text-align: center;
+
+		h1 {
+			margin-left: -3rem;
+		}
+	}
+}
+
+@include respond-min( $mq-large) {
+	.c-case-study__section-header {
+		p {
+			padding-left: 7rem;
+		}
+	}
+
+	.c-case-study__section-header--center {
+		max-width: $wrap--large;
+
+		h1 {
+			margin-left: -7rem;
+		}
+
+		p {
+			padding-left: 0;
+		}
+	}
+
+	.c-case-study__section-header--right {
+		.no-js &,
+		.no-mustard &,
+		.no-flexbox & {
+			float: right;
+		}
+
+		.flexbox & {
+			order: 2;
+		}
+	}
+
+	.c-case-study__section-content {
+		padding-top: $padding--large;
+	}
+
+	.c-case-study__section-header--left + .c-case-study__section-content,
+	.c-case-study__section-header--right + .c-case-study__section-content {
+		padding-top: 0;
+	}
+}

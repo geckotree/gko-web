@@ -1,0 +1,24 @@
+/* ===========================================================
+
+	# SECTION
+
+=========================================================== */
+
+.o-section {
+	padding-bottom: $padding--small;
+	padding-top: $padding--small;
+}
+
+@include respond-min( $mq-small ) {
+	.o-section {
+		padding-bottom: $padding--medium;
+		padding-top: $padding--medium;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.o-section {
+		padding-bottom: $padding--large;
+		padding-top: $padding--large;
+	}
+}

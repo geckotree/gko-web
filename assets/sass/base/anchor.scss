@@ -1,0 +1,15 @@
+/* ===========================================================
+
+	# ANCHOR
+
+=========================================================== */
+
+a {
+	color: $link-colour;
+	transition: color $speed ease;
+
+	&:hover,
+	&:focus {
+		color: $link-colour-hover;
+	}
+}

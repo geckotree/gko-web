@@ -41,15 +41,21 @@ layout: default
 		</div>
 	</div>
 	
-	<div class="o-wrap o-wrap--large o-listing--prev-next-row">
+	<div class="o-wrap o-wrap--large c-listings--side-by-side">
 		{% if page.next %}
-			<article class="o-wrap o-listing o-listing--prev-next o-listing--prev" itemscope itemtype="http://schema.org/NewsArticle">
-				<a href="{{ page.next.url | prepend: site.baseurl }}" class="o-listing__link o-listing--prev-next__link o-listing--prev__link" itemprop="url">
-					<h1 class="o-listing__heading o-listing--prev-next__heading gamma" itemprop="name">{{ page.next.blogTitle }}</h1>
+			<article class="o-wrap c-listing c-listing--side-by-side c-listing--prev" itemscope itemtype="http://schema.org/NewsArticle">
+				<a href="{{ page.next.url | prepend: site.baseurl }}" class="c-listing__link c-listing--side-by-side__link o-listing--prev__link js-visited-link" itemprop="url" title="{{ page.next.title }}">
+					<h1 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">{{ page.next.blogTitle }}</h1>
 
-					<ul class="o-listing__list-meta o-listing--prev-next__list-meta">
-						<li class="o-listing__item-meta o-listing--prev-next__item-meta">
+					<ul class="c-listing__list-meta c-listing--side-by-side__list-meta">
+						<li class="c-listing__item-meta c-listing--side-by-side__item-meta">
 							Prev Post
+						</li>
+						<li class="c-listing__item-meta c-listing__item-meta--visited c-listing--side-by-side__item-meta">
+							<span class="c-listing__visited-text c-listing--side-by-side__visited-text">Seen</span>
+							<span class="c-listing__visited-badge c-listing--side-by-side__visited-badge">
+								<i class="icon icon--check" data-grunticon-embed></i>
+							</span>
 						</li>
 					</ul>
 				</a>
@@ -57,13 +63,19 @@ layout: default
 		{% endif %}
 
 		{% if page.previous %}
-			<article class="o-wrap o-listing o-listing--prev-next o-listing--next" itemscope itemtype="http://schema.org/NewsArticle">
-				<a href="{{ page.previous.url | prepend: site.baseurl }}" class="o-listing__link o-listing--prev-next__link o-listing--next__link" itemprop="url">
-					<h1 class="o-listing__heading o-listing--prev-next__heading gamma" itemprop="name">{{ page.previous.blogTitle }}</h1>
+			<article class="o-wrap c-listing c-listing--side-by-side c-listing--next" itemscope itemtype="http://schema.org/NewsArticle">
+				<a href="{{ page.previous.url | prepend: site.baseurl }}" class="c-listing__link c-listing--side-by-side__link o-listing--next__link js-visited-link" itemprop="url" title="{{ page.previous.title }}">
+					<h1 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">{{ page.previous.blogTitle }}</h1>
 
-					<ul class="o-listing__list-meta o-listing--prev-next__list-meta">
-						<li class="o-listing__item-meta o-listing--prev-next__item-meta">
+					<ul class="c-listing__list-meta c-listing--side-by-side__list-meta">
+						<li class="c-listing__item-meta c-listing--side-by-side__item-meta">
 							Next Post
+						</li>
+						<li class="c-listing__item-meta c-listing__item-meta--visited c-listing--side-by-side__item-meta">
+							<span class="c-listing__visited-text c-listing--side-by-side__visited-text">Seen</span>
+							<span class="c-listing__visited-badge c-listing--side-by-side__visited-badge">
+								<i class="icon icon--check" data-grunticon-embed></i>
+							</span>
 						</li>
 					</ul>
 				</a>

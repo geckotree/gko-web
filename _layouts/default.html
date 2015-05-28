@@ -14,6 +14,20 @@
 
 		{% include footer.html %}
 
+		<script>
+			localStorage.setItem( 'visited-' + window.location.pathname, true );
+
+			var links = document.getElementsByClassName( 'js-visited-link' );
+
+			for( i=0; i < links.length; i++ ) {
+				var link = links[ i ];
+
+				if( link.host == window.location.host && localStorage.getItem( 'visited-' + link.pathname ) ) {
+					link.classList.add( 'is-visited' );
+				}
+			}
+		</script>
+
 		<script data-main="{{ "/assets/js/main" | prepend: site.baseurl }}" src="{{ "/assets/components/requirejs/require.js" | prepend: site.baseurl }}"></script>
 	</body>
 </html>

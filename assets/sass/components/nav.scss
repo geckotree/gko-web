@@ -65,12 +65,17 @@
 
 .c-nav__link {
 	color: $text-colour;
+	transition: transform $speed ease;
 
 	&:hover,
 	&:focus {
 		.icon path {
 			fill: $sec;
 		}
+	}
+
+	&:active {
+		transform: scale( .96 );
 	}
 
 	.no-touch & {
@@ -85,7 +90,8 @@
 	&.button--primary {
 		border-radius: 0;
 		color: #fff;
-		transition: background $speed ease;
+		transition: background $speed ease,
+					transform $speed ease;
 
 		&:hover,
 		&:focus {
@@ -93,8 +99,12 @@
 			color: #fff;
 		}
 
-		&:focus {
-			box-shadow: 0 .3rem 0 0 rgba( 0, 0, 0, .1 );
+		// &:focus {
+		// 	box-shadow: 0 .3rem 0 0 rgba( 0, 0, 0, .1 );
+		// }
+
+		&:active {
+			transform: scale( .9 );
 		}
 
 		.icon path {

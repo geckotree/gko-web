@@ -38,14 +38,14 @@
 		'objects/wrap.scss',
 		'objects/section.scss',
 		'objects/grid.scss',
-		'objects/buttons.scss',
 		'objects/table.scss',
 		'objects/forms.scss',
-		'objects/media.scss',
-		'objects/listing.scss';
+		'objects/media.scss';
 
-@import 'components/nav.scss',
+@import 'components/button.scss',
+		'components/nav.scss',
 		'components/footer.scss',
+		'components/listing.scss',
 		'components/pagination.scss';
 
 @import	'components/case-study/section.scss',

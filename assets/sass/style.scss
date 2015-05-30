@@ -22,9 +22,13 @@
 @import 'generic/reset.scss',
 		'generic/js-breakpoints.scss';
 
-@import 'animations/nav-toggle.scss';
+@import 'animations/base.scss',
+		'animations/menu-icon.scss',
+		'animations/nav-toggle.scss';
 
-@import 'base/text.scss',
+@import 'fonts.woff.scss';
+@import 'base/fonts.eot.scss',
+		'base/text.scss',
 		'base/headings.scss',
 		'base/anchor.scss',
 		'base/button.scss',
@@ -42,7 +46,8 @@
 		'objects/forms.scss',
 		'objects/media.scss';
 
-@import 'components/button.scss',
+@import 'components/icons.scss',
+		'components/button.scss',
 		'components/nav.scss',
 		'components/footer.scss',
 		'components/listing.scss',

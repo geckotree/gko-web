@@ -1,0 +1,89 @@
+/* ===========================================================
+
+	# MENU ICON ANIMTIONS
+
+=========================================================== */
+
+@keyframes menuPathIn1 {
+	0% {
+		transform: translateY( 0 );
+	}
+
+	50% {
+		transform: translateY( .6rem );
+		transform-origin: 50% 50%;
+	}
+
+	100% {
+		transform: translateY( .6rem ) rotate3d( 0, 0, 1, 45deg );
+		transform-origin: 50% 50%;
+	}
+}
+
+@keyframes menuPathIn2 {
+	0% {
+		opacity: 1;
+	}
+
+	50%, 100% {
+		opacity: 0;
+	}
+}
+
+@keyframes menuPathIn3 {
+	0% {
+		transform: translateY( 0 );
+	}
+
+	50% {
+		transform: translateY( -.6rem );
+		transform-origin: 50% 50%;
+	}
+
+	100% {
+		transform: translateY( -.6rem ) rotate3d( 0, 0, 1, -45deg );
+		transform-origin: 50% 50%;
+	}
+}
+
+@keyframes menuPathOut1 {
+	0% {
+		transform: translateY( .6rem ) rotate3d( 0, 0, 1, -45deg );
+		transform-origin: 50% 50%;
+	}
+
+	50% {
+		transform: translateY( .6rem );
+		transform-origin: 50% 50%;
+	}
+
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
+@keyframes menuPathOut2 {
+	0% {
+		opacity: 0;
+	}
+
+	50%, 100% {
+		opacity: 1;
+	}
+}
+
+@keyframes menuPathOut3 {
+	0% {
+		transform: translateY( -.6rem ) rotate3d( 0, 0, 1, 45deg );
+		transform-origin: 50% 50%;
+	}
+
+	50% {
+		transform: translateY( -.6rem );
+		transform-origin: 50% 50%;
+	}
+
+	100% {
+		transform: translateY( 0 );
+	}
+}

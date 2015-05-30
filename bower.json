@@ -17,8 +17,6 @@
   "devDependencies": {
     "fastclick": "~1.0.3",
     "html5shiv": "~3.7.2",
-    "lazysizes": "https://github.com/aFarkas/lazysizes.git#~0.9.0",
     "requirejs": "~2.1.15",
-    "owl.carousel": "https://github.com/smashingboxes/OwlCarousel2.git"
   }
 }

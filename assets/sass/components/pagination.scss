@@ -23,12 +23,8 @@
 	border-radius: 4rem;
 	display: block;
 	font-weight: 500;
-	padding: 1.4rem 2rem .8rem 1.9rem;
+	padding: 1.2rem 1.7rem 1rem;
 	transition: transform $speed ease;
-
-	.icon {
-		fill: $pri;
-	}
 
 	&:hover {
 		color: $pri;
@@ -37,10 +33,6 @@
 	&:focus {
 		color: $sec;
 		border-color: $sec;
-
-		.icon {
-			fill: $sec;
-		}
 	}
 
 	&:active {
@@ -63,18 +55,10 @@
 	color: $border-colour;
 	cursor: not-allowed;
 
-	.icon {
-		fill: $border-colour;
-	}
-
 	&:hover,
 	&:focus {
 		color: $border-colour;
 		border-color: $border-colour;
-
-		.icon {
-			fill: $border-colour;
-		}
 	}
 
 	&:active {
@@ -92,8 +76,16 @@
 
 @include respond-max( $mq-medium ) {
 	.c-pagination__link {
-		.icon svg {
-			transform: scale( .8 );
+		.icon {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-pagination__link {
+		.icon {
+			font-size: 1.6rem;
 		}
 	}
 }
@@ -109,69 +101,40 @@
 }
 
 @include respond-min( $mq-large ) {
-	.no-js {
-		.c-pagination__link {
-			transition: background $speed ease,
-						border-color $speed ease,
-						color $speed ease,
-						transform $speed ease;
-
-			&:hover {
-				background: $pri;
-				color: $white;
-			}
-
-			&:focus {
-				background: $sec;
-				color: $white;
-			}
-		}
-
-		.c-pagination__link--disabled {
-			&:hover,
-			&:focus {
-				background: transparent;
-				color: $border-colour;
+	.c-pagination__link--prev {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-left: .5rem;
+				width: 6.4rem;
 			}
 		}
 	}
 
-	.js {
-		.c-pagination__link--prev {
-			&:hover,
-			&:focus {
-				.c-pagination__link__text {
-					margin-left: .5rem;
-					width: 6.4rem;
-				}
+	.c-pagination__link--next {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-right: .5rem;
+				width: 5.7rem;
 			}
 		}
+	}
 
-		.c-pagination__link--next {
-			&:hover,
-			&:focus {
-				.c-pagination__link__text {
-					margin-right: .5rem;
-					width: 5.7rem;
-				}
+	.c-pagination__link--disabled {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin: 0;
+				width: 0;
 			}
 		}
+	}
 
-		.c-pagination__link--disabled {
-			&:hover,
-			&:focus {
-				.c-pagination__link__text {
-					margin: 0;
-					width: 0;
-				}
-			}
-		}
-
-		.c-pagination__link__text {
-			overflow: hidden;
-			transition: width $speed ease;
-			width: 0;
-		}
+	.c-pagination__link__text {
+		overflow: hidden;
+		transition: width $speed ease;
+		width: 0;
 	}
 }
 

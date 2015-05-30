@@ -11,7 +11,7 @@
 
 .c-page__footer__list {
 	list-style: none;
-	min-height: 7.6rem; // Stop text below jumping up and down
+	min-height: 8.2rem; // Stop text below jumping up and down
 }
 
 .c-page__footer__item {
@@ -35,21 +35,17 @@
 	}
 
 	.icon {
-		display: block;
-		margin-bottom: -.8rem; // Remove weird svg space
-	}
-
-	.icon path {
-		fill: $grey-2;
-		transition: fill $speed ease;
+		color: $grey-2;
+		font-size: 3.2rem;
+		transition: color $speed ease;
 	}
 }
 
 .c-page__footer__link--twitter {
 	&:hover,
 	&:focus {
-		.icon path {
-			fill: $twitter;
+		.icon {
+			color: $twitter;
 		}
 	}
 }
@@ -57,8 +53,8 @@
 .c-page__footer__link--dribbble {
 	&:hover,
 	&:focus {
-		.icon path {
-			fill: $dribbble;
+		.icon {
+			color: $dribbble;
 		}
 	}
 }
@@ -66,8 +62,8 @@
 .c-page__footer__link--instagram {
 	&:hover,
 	&:focus {
-		.icon path {
-			fill: $instagram;
+		.icon {
+			color: $instagram;
 		}
 	}
 }
@@ -77,7 +73,8 @@
 	font-weight: 500;
 	padding-right: 1rem;
 
-	.icon--heart path {
-		fill: $red-1;
+	.icon {
+		color: $red-1;
+		font-size: 1.6rem;
 	}
 }

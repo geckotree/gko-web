@@ -20,21 +20,16 @@
 	transition: transform $speed ease;
 
 	.icon {
-		display: block;
-		margin-bottom: -.8rem; // Remove weird svg space
-	}
-
-	.icon path {
-		fill: $pri;
-		transition: fill $speed ease;
+		color: $pri;
+		transition: color $speed ease;
 	}
 
 	&:hover,
 	&:focus {
 		background: transparent;
 
-		.icon path {
-			fill: $green-2;
+		.icon {
+			color: $green-2;
 		}
 	}
 }
@@ -47,8 +42,9 @@
 	font-weight: 500;
 	margin: 0;
 
-	.icon path {
-		fill: $grey-2;
+	.icon {
+		color: $grey-2;
+		font-size: 1.6rem;
 	}
 
 	&.is-active,
@@ -57,8 +53,8 @@
 			color: $text-colour;
 		}
 
-		.icon path {
-			fill: $pri;
+		.icon {
+			color: $pri;
 		}
 	}
 }
@@ -69,8 +65,8 @@
 
 	&:hover,
 	&:focus {
-		.icon path {
-			fill: $sec;
+		.icon {
+			color: $sec;
 		}
 	}
 
@@ -82,9 +78,8 @@
 		color: rgba( $text-colour, .6 );
 	}
 
-	.icon path {
-		transition: color $speed ease,
-					fill $speed ease;
+	.icon {
+		transition: color $speed ease;
 	}
 
 	&.button--primary {
@@ -107,21 +102,21 @@
 			transform: scale( .9 );
 		}
 
-		.icon path {
-			fill: $background-colour;
+		.icon {
+			color: $background-colour;
 		}
 	}
 }
 
 .c-nav__nav-toggle {
-	.icon path {
-		fill: $grey-2;
+	.icon {
+		color: $grey-2;
 	}
 }
 
 .c-nav__search-toggle {
-	.icon path {
-		fill: $grey-2;
+	.icon {
+		color: $grey-2;
 	}
 }
 

@@ -108,6 +108,7 @@
 	.c-listing__link {
 		&.is-visited {
 			.c-listing__visited-badge {
+				animation: scaleIn $speed / 2 $speed / 2 both;
 				display: inline-block;
 			}
 		}

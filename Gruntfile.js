@@ -154,9 +154,9 @@ module.exports = function ( grunt ) {
 			head: {
 				src: [
 					'<%= pkg.assetsFolder %>/_components/lazysizes/lazysizes.js',
-					'<%= pkg.assetsFolder %>/js/lib/modernizr.js',
-					'<%= pkg.buildFolder %>/img/icons/grunticon.js',
-					'<%= pkg.assetsFolder %>/js/lib/grunticon.js'
+					'<%= pkg.assetsFolder %>/js/lib/modernizr.js'
+					// '<%= pkg.buildFolder %>/img/icons/grunticon.js',
+					// '<%= pkg.assetsFolder %>/js/lib/grunticon.js'
 				],
 				dest: '<%= pkg.buildFolder %>/js/head.js'
 			}
@@ -300,6 +300,12 @@ module.exports = function ( grunt ) {
 				]
 			}
 		},
+		inline: {
+			dist: {
+				src: '_includes/head-src.html',
+				dest: '_includes/head.html'
+			}
+		},
 		browserSync: {
 			dev: {
 				bsFiles: {
@@ -338,6 +344,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-humans-txt' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
+	grunt.loadNpmTasks( 'grunt-inline' );
 	grunt.loadNpmTasks( 'grunt-browser-sync' );
 
 
@@ -369,7 +376,8 @@ module.exports = function ( grunt ) {
 	grunt.registerTask( 'js:dev', [
 		'requirejs',
 		'jshint',
-		'concat'
+		'concat',
+		'inline'
 	]);
 
 	grunt.registerTask( 'css:build', [

@@ -1,12 +1,12 @@
 require.config({
 	paths: {
-		FastClick: '../components/fastclick/lib/fastclick'
+		// FastClick: '../components/fastclick/lib/fastclick'
 	},
 	modules: [
 		{
 			name: 'main',
 			include: [
-				'FastClick'
+				// 'FastClick'
 			]
 		}
 	]
@@ -19,8 +19,8 @@ define( function( require ) {
 		'localStorage' in window &&
 		'addEventListener' in window ) {
 
-		var Toggle = require( 'plugins/toggle' );
-		var Carousel = require( 'plugins/carousel' );
+		// var Toggle = require( 'plugins/toggle' );
+		// var Carousel = require( 'plugins/carousel' );
 
 		var i;
 		var $html = document.querySelector( 'html' );
@@ -30,21 +30,21 @@ define( function( require ) {
 		$html.classList.remove( 'no-mustard' );
 		$html.classList.add( 'mustard' );
 
-		if( $toggle.length ) {
-			for( i in $toggle ) {
-				if( $toggle[ i ].nodeType == 1 ) {
-					new Toggle( $toggle[ i ] );
-				}
-			}
-		}
+		// if( $toggle.length ) {
+		// 	for( i in $toggle ) {
+		// 		if( $toggle[ i ].nodeType == 1 ) {
+		// 			new Toggle( $toggle[ i ] );
+		// 		}
+		// 	}
+		// }
 
-		if( $carousel.length ) {
-			for( i in $carousel ) {
-				if( $carousel[ i ].nodeType == 1 ) {
-					new Carousel( $carousel[ i ] );
-				}
-			}
-		}
+		// if( $carousel.length ) {
+		// 	for( i in $carousel ) {
+		// 		if( $carousel[ i ].nodeType == 1 ) {
+		// 			new Carousel( $carousel[ i ] );
+		// 		}
+		// 	}
+		// }
 
 	}
 });

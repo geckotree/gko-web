@@ -39,3 +39,14 @@
 		transform: translateY( -100% );
 	}
 }
+
+@keyframes scaleIn {
+	0% {
+		opacity: 0;
+		transform: scale3d( .3, .3, .3 );
+	}
+
+	50%, 100% {
+		opacity: 1;
+	}
+}

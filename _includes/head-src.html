@@ -1,0 +1,53 @@
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  	<title>{{ page.title }} :: {{ site.title }}</title>
+  	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="author" href="" />
+
+	<!--[if lt IE 9]>
+		<script src="{{ "/assets/components/html5shiv/dist/html5shiv.min.js" | prepend: site.baseurl }}"></script>
+		<link rel="stylesheet" href="{{ "/assets/build/css/ie.css" | prepend: site.baseurl }}">
+	<![endif]-->
+
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="{{ "/assets/build/css/style.css" | prepend: site.baseurl }}">
+	<!--<![endif]-->
+	
+	<script src="../assets/build/js/head.js?__inline=true"></script>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/brand-icons/favicon-32.png" | prepend: site.baseurl }}">
+
+	<!-- APPLE ICONS -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/assets/img/brand-icons/apple-152.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/assets/img/brand-icons/apple-144.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ "/assets/img/brand-icons/apple-120.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ "/assets/img/brand-icons/apple-114.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ "/assets/img/brand-icons/apple-76.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "/assets/img/brand-icons/apple-72.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ "/assets/img/brand-icons/apple-60.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ "/assets/img/brand-icons/apple-57.png" | prepend: site.baseurl }}">
+
+	<!-- MS-TILE ICON -->
+	<meta name="msapplication-TileColor" content="#57B275" />
+	<meta name="msapplication-TileImage" content="{{ "/assets/img/brand-icons/mstile-144.png" | prepend: site.baseurl }}" />
+
+	<!-- OPEN GRAPH - http://ogp.me -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="{{ "/assets/img/brand-icons-brand-icons/apple-152.png" | prepend: site.baseurl }}" />
+	<meta property="og:type" content="website" />
+
+	<!-- TWITTER CARD - https://dev.twitter.com/docs/cards/markup-reference -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:image" content="{{ "/assets/img/brand-icons-brand-icons/apple-152.png" | prepend: site.baseurl }}" />
+	<meta name="twitter:site" content="@{% if site.twitter_username %}{{ site.twitter_username }}{% endif %}" />
+	<meta name="twitter:creator" content="@{% if site.twitter_username %}{{ site.twitter_username }}{% endif %}" />
+</head>

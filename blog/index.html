@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<div class="o-sections o-listings">
+<div class="o-listings">
 	{% for post in paginator.posts %}
 		{% assign author = site.data.authors[post.author] %}
 		<article class="o-wrap c-listing" itemscope itemtype="http://schema.org/NewsArticle">
@@ -48,11 +48,13 @@ title: Blog
 		<li class="c-pagination__item">
 			{% if paginator.previous_page %}
 				<a href="{{ paginator.previous_page_path }}" class="c-pagination__link c-pagination__link--prev">
-					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span> <i class="icon icon--arrow-left-small" data-grunticon-embed></i>
+					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span>
+					<i class="icon icon--arrow-left-small" data-grunticon-embed></i>
 				</a>
 			{% else %}
 				<span class="c-pagination__link c-pagination__link--prev c-pagination__link--disabled">
-					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span> <i class="icon icon--arrow-left-small" data-grunticon-embed></i>
+					<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span>
+					<i class="icon icon--arrow-left-small" data-grunticon-embed></i>
 				</span>
 			{% endif %}
 		</li>
@@ -60,11 +62,13 @@ title: Blog
 		<li class="c-pagination__item">
 			{% if paginator.next_page %}
 				<a href="{{ paginator.next_page_path }}" class="c-pagination__link c-pagination__link--next">
-					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span> <i class="icon icon--arrow-right-small" data-grunticon-embed></i>
+					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span>
+					<i class="icon icon--arrow-right-small" data-grunticon-embed></i>
 				</a>
 			{% else %}
 				<span class="c-pagination__link c-pagination__link--next c-pagination__link--disabled">
-					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span> <i class="icon icon--arrow-right-small" data-grunticon-embed></i>
+					<span class="c-pagination__link__text c-pagination__link--next__text">Older</span>
+					<i class="icon icon--arrow-right-small" data-grunticon-embed></i>
 				</span>
 			{% endif %}
 		</li>

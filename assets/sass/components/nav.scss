@@ -12,26 +12,7 @@
 
 .c-nav {
 	@include clearfix;
-	padding: 1.5rem;
-}
-
-.c-nav__logo {
-	padding: 0;
-	transition: transform $speed ease;
-
-	.icon {
-		color: $pri;
-		transition: color $speed ease;
-	}
-
-	&:hover,
-	&:focus {
-		background: transparent;
-
-		.icon {
-			color: $green-2;
-		}
-	}
+	padding: 2rem 0;
 }
 
 .c-nav__list {
@@ -42,13 +23,8 @@
 	font-weight: 500;
 	margin: 0;
 
-	.icon {
-		color: $grey-2;
-		font-size: 1.6rem;
-	}
-
-	&.is-active,
-	&.is-active a:hover {
+	// TODO refactor
+	&.is-active {
 		.c-nav__link {
 			color: $text-colour;
 		}
@@ -60,51 +36,48 @@
 }
 
 .c-nav__link {
-	color: $text-colour;
-	transition: transform $speed ease;
+	color: $grey-3;
+	transition: color $speed ease,
+				transform $speed ease;
+
+	.icon {
+		color: $grey-2;
+		font-size: 1.6rem;
+		transition: color $speed ease;
+	}
 
 	&:hover,
 	&:focus {
+		color: $text-colour;
+
 		.icon {
 			color: $sec;
 		}
 	}
+}
 
-	&:active {
-		transform: scale( .96 );
-	}
-
-	.no-touch & {
-		color: rgba( $text-colour, .6 );
-	}
+.c-nav__link--button {
+	border-radius: 10rem;
+	color: $white;
+	transition: background $speed ease,
+				transform $speed ease;
 
 	.icon {
-		transition: color $speed ease;
+		color: $white;
 	}
 
-	&.button--primary {
-		border-radius: 0;
-		color: #fff;
-		transition: background $speed ease,
-					transform $speed ease;
-
-		&:hover,
-		&:focus {
-			background: $sec;
-			color: #fff;
-		}
-
-		// &:focus {
-		// 	box-shadow: 0 .3rem 0 0 rgba( 0, 0, 0, .1 );
-		// }
-
-		&:active {
-			transform: scale( .9 );
-		}
+	&:hover,
+	&:focus {
+		background: $sec;
+		color: $white;
 
 		.icon {
-			color: $background-colour;
+			color: $white;
 		}
+	}
+
+	&:active {
+		transform: $active-scale-small;
 	}
 }
 
@@ -114,44 +87,22 @@
 	}
 }
 
-.c-nav__search-toggle {
-	.icon {
-		color: $grey-2;
-	}
-}
-
-.c-nav__search {
-	.no-mustard & {
-		transform: translateY( -40em ); // move offscreen by default, stops content appearing on page
-	}
-
-	.no-js & {
-		transform: translateY( 0 ); // move back on screen if no-js
-	}
-}
-
 .js.mustard {
-	&.c-nav-detached .c-page__header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
+	// &.c-nav-detached .c-page__header {
+	// 		position: fixed;
+	// 		top: 0;
+	// 		width: 100%;
+	// 	}
 
-	&.c-nav-hidden .c-page__header {
-		transform: translateY( -10.8rem );
-	}
+	// 	&.c-nav-hidden .c-page__header {
+	// 		transform: translateY( -10.8rem );
+	// 	}
 }
 
 @include respond-max( $mq-medium ) {
-	.c-nav__item {
+	.c-nav__link {
 		.icon {
 			margin: .3rem 0;
-		}
-	}
-
-	.c-nav__search {
-		.input {
-			padding: 1.2rem 2.4rem 1.2rem 0;
 		}
 	}
 }
@@ -162,12 +113,6 @@
 			margin: .6rem 0;
 		}
 	}
-
-	.c-nav__search {
-		.input {
-			padding: 1rem 2.4rem 1rem 0;
-		}
-	}
 }
 
 @include respond-max( $mq-large ) {
@@ -175,26 +120,6 @@
 		background: $background-colour;
 		position: relative;
 		text-align: center;
-		transition: background $speed ease;
-	}
-
-	.c-nav__mobile {
-		background: $background-colour;
-		padding-top: 2rem;
-		width: 100%;
-		z-index: -1;
-
-		.no-mustard & {
-			transform: translateY( -40em ); // move offscreen by default, stops content appearing on page
-		}
-
-		.no-js & {
-			transform: translateY( 0 ); // move back on screen if no-js
-		}
-	}
-
-	.c-nav__desktop {
-		display: none;
 	}
 
 	.c-nav__logo {
@@ -202,91 +127,19 @@
 		width: 60%;
 	}
 
-	.c-nav__item {
-		.icon {
-			float: right;
-		}
-	}
-
-	.c-nav__link {
-		display: block;
-		padding: 1rem 2rem;
-		text-align: left;
-	}
-
-	.c-nav__button {
-		height: 100%;
+	.c-nav__toggle-menu-button {
+		fill: $grey-2;
+		height: 8.8rem;
+		left: 0;
 		padding: 1.5rem 2rem;
 		position: absolute;
+		text-align: left;
 		top: 0;
 		width: 20%;
 		z-index: 10;
-	}
 
-	.c-nav__nav-toggle {
-		left: 0;
-		text-align: left;
-	}
-
-	.c-nav__search-toggle {
-		right: 0;
-		text-align: right;
-	}
-
-	.no-js,
-	.js.no-mustard {
-		.c-nav__link.button--primary {
-			border-radius: 10rem;
-		}
-
-		.c-nav__button {
-			display: none;
-		}
-
-		.c-nav__search {
-			margin-top: $line-height / 2;
-		}
-	}
-
-	.js.mustard {
-		&.c-nav__mobile--open {
-			.c-nav__mobile {
-				animation-name: navBounceInDown;
-			}
-		}
-
-		&.c-nav__mobile--closed {
-			.c-nav__mobile {
-				animation-name: navBounceOutUp;
-			}
-		}
-
-		&.c-nav__search--open {
-			.c-nav {
-				background: #fff;
-			}
-
-			.c-nav__logo,
-			.c-nav__nav-toggle {
-				transform: translateY( 7.8rem );
-			}
-
-			.c-nav__search {
-				transform: translateY( 0 );
-			}
-		}
-
-		.c-nav__mobile {
-			animation-duration: $speed * 1.5;
-			animation-fill-mode: both;
-			left: 0;
-			position: absolute;
-			top: 0;
-			transform: translateY( -100% );
-			transition: transform $speed ease;
-		}
-
-		.c-nav__nav-toggle {
+		.js.mustard & {
+			// TODO refactor
 			transition: transform $speed ease;
 
 			&.is-active {
@@ -324,28 +177,60 @@
 				animation-fill-mode: both;
 			}
 		}
+	}
 
-		.c-nav__search {
+	.c-nav__menu {
+		background: $background-colour;
+		padding: 2rem 2rem 0;
+		width: 100%;
+		z-index: -1;
+	}
+
+	.c-nav__link {
+		display: block;
+		padding: 1rem 2rem;
+		text-align: left;
+
+		.icon {
+			float: right;
+		}
+	}
+
+	.no-js,
+	.js.no-mustard {
+		.c-nav__toggle-menu-button {
+			display: none;
+		}
+	}
+
+	.js {
+		.c-nav__menu {
+			display: none;
+		}
+	}
+
+	.js.mustard {
+		.c-nav__menu {
+			animation-duration: $speed * 1.5;
+			animation-fill-mode: both;
+			display: block;
 			left: 0;
-			padding: 1.5rem 2rem;
+			padding-bottom: 2rem;
 			position: absolute;
 			top: 0;
 			transform: translateY( -100% );
 			transition: transform $speed ease;
-			width: 100%;
 
-			.c-input {
-				border: none;
+			&.is-visible {
+				animation-name: navBounceInDown;
+			}
+
+			&.is-hidden {
+				animation-name: navBounceOutUp;
 			}
 		}
 	}
 }
-
-
-
-
-
-
 
 @include respond-min( $mq-large ) {
 	.c-nav {
@@ -353,142 +238,35 @@
 	}
 
 	.c-nav__logo,
-	.c-nav__mobile,
 	.c-nav__item {
 		float: left;
 	}
 
-	.c-nav__desktop,
-	.c-nav__search-toggle,
-	.c-nav__search {
-		float: right;
+	.c-nav__toggle-menu-button {
+		display: none;
 	}
 
-	.c-nav__item--mobile,
-	.c-nav__nav-toggle {
-		display: none;
+	.c-nav__menu {
+		padding-left: 4.8rem;
+		width: 100%;
 	}
 
 	.c-nav__list {
 		@include clearfix;
 	}
 
+	.c-nav__item--align-right {
+		float: right;
+	}
+
 	.c-nav__link {
 		display: block;
 		padding: 1rem 2rem;
-
-		&:hover,
-		&:focus {
-			background: transparent;
-			color: $text-colour;
-		}
-
-		&.button--primary {
-			border-radius: 10rem;
-		}
-	}
-
-	.c-nav__search-toggle {
-		padding: 1rem 1.6rem;
-
-		.icon path {
-			transition: fill $speed ease;
-		}
-
-		&:hover {
-			.icon path {
-				fill: $sec;
-			}
-		}
-	}
-
-	.c-nav__search {
-		.input {
-			border-color: transparent;
-			padding: .8rem 2rem;
-		}
-	}
-
-	.js.mustard {
-		&.c-nav__search--open .nav__search {
-			.c-input {
-				border-color: $border-colour;
-			}
-		}
-
-		&.c-nav__search--closed .nav__search {
-			.c-input {
-				transition: border-color $speed ease;
-			}
-		}
-
-		.c-nav__search {
-			.c-input {
-				transition: border-color $speed ease $speed / 2;
-			}
-		}
 	}
 }
 
-@include respond-min-max( $mq-large, $mq-x-large ) {
-	.c-nav {
-		background: $background-colour;
-	}
-
-	.c-nav__search {
-		padding-top: 2rem;
-		width: 100%;
-	}
-
-	.no-js,
-	.js.no-mustard {
-		.c-nav__search-toggle {
-			display: none;
-		}
-	}
-
-	.js.mustard {
-		&.nav-detached .c-nav__search {
-			transition: transform $speed ease;
-		}
-
-		&.nav__search--open .c-nav__search {
-			transform: translateY( 6.8rem );
-		}
-
-		.c-nav__search {
-			background: $background-colour;
-			left: 2rem;
-			position: absolute;
-			top: 0;
-			transition: transform $speed ease;
-			width: 100%;
-			width: calc( 100% - 4rem );
-			z-index: -1;
-		}
-	}
-}
-
-@include respond-min( $mq-x-large ) {
-	.c-nav {
-		padding: 3rem;
-	}
-
-	.c-nav__search {
-		.input {
-			max-width: 28rem;
-		}
-	}
-
-	.js.mustard {
-		&.nav__search--open .c-nav__search {
-			width: 28rem;
-		}
-
-		.c-nav__search {
-			overflow: hidden;
-			transition: width $speed ease;
-			width: 0;
-		}
-	}
-}
+// @include respond-min( $mq-x-large ) {
+// 	.c-nav {
+// 		padding: 3rem;
+// 	}
+// }

@@ -26,7 +26,11 @@ Before understanding how to optimise [web sites](https://www.google.com "Google'
 This post is only really focussing on the aspects related to achieving smooth animations without visual delay. I won’t focus on the parts about downloading and parsing assets.
 
 <figure class="o-media o-media--large">
-    <img src="http://assets.designbycosmic.com/uploads/5D3_0444.jpg" alt="">
+    <img srcset="../../assets/build/img/bitmap/robot-machine-sketchx2.jpg 2440w,
+            ../../assets/build/img/bitmap/robot-machine-sketch.jpg 1220w" 
+        sizes="100vw"
+        src="../../assets/build/img/bitmap/robot-machine-sketch.jpg" 
+        alt="">
 </figure>
 
 This post is only really focussing on the aspects related to achieving smooth animations without visual delay. I won’t focus on the parts about downloading and parsing assets.

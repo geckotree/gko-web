@@ -18,10 +18,6 @@
 		&:focus {
 			background: rgba( $sec, .1 );
 		}
-
-		&:active {
-			transform: $active-scale-medium;
-		}
 	}
 
 	code {

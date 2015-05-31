@@ -1,0 +1,21 @@
+# The humans responsible & colophon
+# humanstxt.org
+
+# TEAM
+	Web Designer & Developer: Rob Simpson
+	Site: http://geckotree.co.uk
+	Twitter: @robcsimps
+	Dribbble: https://dribbble.com/robsimpson
+	Location: Oxfordshire, UK
+
+	Web Designer & Developer: Kev Simpson
+	Site: http://geckotree.co.uk
+	Twitter: @kevsimps
+	Dribbble: https://dribbble.com/kevsimpson
+	Location: Portsmouth, UK
+
+# SITE
+	Version: 1.0.0
+	Site Url: http://geckotree.co.uk
+	Language: English
+	Technology: Bower, Grunt, JavaScript, SASS

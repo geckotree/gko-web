@@ -12,4 +12,8 @@ a {
 	&:focus {
 		color: $link-colour-hover;
 	}
+
+	&:active {
+		transform: $active-scale-medium;
+	}
 }

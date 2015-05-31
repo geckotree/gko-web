@@ -16,8 +16,7 @@ module.exports = function ( grunt ) {
 					'autoprefixer',
 					'css_mqpacker',
 					'stripmq',
-					'pixrem',
-					'cssmin'
+					'pixrem'
 				]
 			},
 			js: {
@@ -25,19 +24,9 @@ module.exports = function ( grunt ) {
 					'<%= pkg.assetsFolder %>/js/**/*.js'
 				],
 				tasks: [
-					'requirejs',
+					'webpack',
 					'jshint',
-					'concat',
-					'uglify'
-				]
-			},
-			icons: {
-				files: [
-					'<%= pkg.assetsFolder %>/img/icons/*.svg'
-				],
-				tasks: [
-					'svgmin:icons',
-					'grunticon'
+					'concat'
 				]
 			}
 		},
@@ -54,6 +43,7 @@ module.exports = function ( grunt ) {
 				},
 				files: {
 					'<%= pkg.buildFolder %>/css/style.css': '<%= pkg.assetsFolder %>/sass/style.scss',
+					'<%= pkg.buildFolder %>/css/print.css': '<%= pkg.assetsFolder %>/sass/print.scss',
 					'<%= pkg.buildFolder %>/css/ie.css': '<%= pkg.assetsFolder %>/sass/ie.scss'
 				}
 			}
@@ -122,15 +112,13 @@ module.exports = function ( grunt ) {
 		/*
 		 * JS
 		 */
-		requirejs: {
-			compile: {
-				options: {
-					mainConfigFile: '<%= pkg.assetsFolder %>/js/main.js',
-					baseUrl: '<%= pkg.assetsFolder %>/js',
-					dir: '<%= pkg.buildFolder %>/js',
-					preserveLicenseComments: false,
-					removeCombined: true,
-					optimize: 'uglify2'
+		webpack: {
+			config: {
+				context: '<%= pkg.assetsFolder %>/js',
+				entry: './index.js',
+				output: {
+					path: '<%= pkg.buildFolder %>/js',
+					filename: 'script.js'
 				}
 			}
 		},
@@ -153,10 +141,7 @@ module.exports = function ( grunt ) {
 		concat: {
 			head: {
 				src: [
-					'<%= pkg.assetsFolder %>/_components/lazysizes/lazysizes.js',
 					'<%= pkg.assetsFolder %>/js/lib/modernizr.js'
-					// '<%= pkg.buildFolder %>/img/icons/grunticon.js',
-					// '<%= pkg.assetsFolder %>/js/lib/grunticon.js'
 				],
 				dest: '<%= pkg.buildFolder %>/js/head.js'
 			}
@@ -165,7 +150,7 @@ module.exports = function ( grunt ) {
 			head: {
 				files: {
 					'<%= pkg.buildFolder %>/js/head.js': '<%= pkg.buildFolder %>/js/head.js',
-					'<%= pkg.buildFolder %>/js/require.js': '<%= pkg.assetsFolder %>/_components/requirejs/require.js'
+					'<%= pkg.buildFolder %>/js/script.js': '<%= pkg.buildFolder %>/js/script.js'
 				}
 			}
 		},
@@ -190,15 +175,6 @@ module.exports = function ( grunt ) {
 					dest: '<%= pkg.buildFolder %>/img/svg',
 					ext: '.svg'
 				}]
-			},
-			icons: {
-				files: [{
-					expand: true,
-					cwd: '<%= pkg.assetsFolder %>/img/icons',
-					src: '*.svg',
-					dest: '<%= pkg.buildFolder %>/img/icons/svg',
-					ext: '.svg'
-				}]
 			}
 		},
 		svg2png: {
@@ -220,28 +196,8 @@ module.exports = function ( grunt ) {
 				src: [
 					'<%= pkg.buildFolder %>/img/brand-icons/*.{png,gif,jpg}',
 					'<%= pkg.buildFolder %>/img/bitmap/*.{png,gif,jpg}',
-					'<%= pkg.buildFolder %>/img/svg/*.png',
-					'<%= pkg.buildFolder %>/img/icons/png/*.png'
+					'<%= pkg.buildFolder %>/img/svg/*.png'
 				]
-			}
-		},
-		grunticon: {
-			icons: {
-				files: [{
-					expand: true,
-					cwd: '<%= pkg.buildFolder %>/img/icons/svg',
-					src: [ '*.svg' ],
-					dest: '<%= pkg.buildFolder %>/img/icons'
-				}],
-				options: {
-					cssprefix: '.icon--',
-					datasvgcss: 'icons-svg.css',
-					datapngcss: 'icons-png.css',
-					urlpngcss: 'icons-fallback.css',
-					loadersnippet: 'grunticon.js',
-					enhanceSVG: true,
-					compressPNG: true
-				}
 			}
 		},
 
@@ -305,20 +261,6 @@ module.exports = function ( grunt ) {
 				src: '_includes/head-src.html',
 				dest: '_includes/head.html'
 			}
-		},
-		browserSync: {
-			dev: {
-				bsFiles: {
-					src: [
-						'<%= pkg.buildFolder %>/css/*.css',
-						'<%= pkg.buildFolder %>/js/*.js',
-						'*.html'
-					]
-				},
-				options: {
-					watchTask: true
-				}
-			}
 		}
 	});
 
@@ -330,7 +272,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-pixrem' );
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 
-	grunt.loadNpmTasks( 'grunt-contrib-requirejs' );
+	grunt.loadNpmTasks( 'grunt-webpack' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-modernizr' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
@@ -339,26 +281,21 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-svgmin' );
 	grunt.loadNpmTasks( 'grunt-svg2png' );
 	grunt.loadNpmTasks( 'grunt-imageoptim' );
-	grunt.loadNpmTasks( 'grunt-grunticon' );
 
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-humans-txt' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-inline' );
-	grunt.loadNpmTasks( 'grunt-browser-sync' );
 
 
 	grunt.registerTask( 'dev', [
 		'css:dev',
-		'icons',
 		'js:dev',
-		'browserSync',
 		'watch'
 	]);
 
 	grunt.registerTask( 'build', [
 		'css:build',
-		'icons',
 		'js:build',
 		'images',
 		'humans_txt'
@@ -374,7 +311,7 @@ module.exports = function ( grunt ) {
 	]);
 
 	grunt.registerTask( 'js:dev', [
-		'requirejs',
+		'webpack',
 		'jshint',
 		'concat',
 		'inline'
@@ -388,11 +325,6 @@ module.exports = function ( grunt ) {
 	grunt.registerTask( 'js:build', [
 		'js:dev',
 		'uglify'
-	]);
-
-	grunt.registerTask( 'icons', [
-		'svgmin:icons',
-		'grunticon'
 	]);
 
 	grunt.registerTask( 'images', [

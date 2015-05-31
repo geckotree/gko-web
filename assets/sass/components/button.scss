@@ -19,12 +19,8 @@
 		color: $white;
 	}
 
-	&:focus {
-		box-shadow: 0 .3rem 0 0 rgba( $black, .1 );
-	}
-
 	&:active {
-		transform: scale( .9 );
+		transform: $active-scale-small;
 	}
 }
 

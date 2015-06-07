@@ -1,7 +1,12 @@
 ---
 layout: default
-title: Blog
+title: Articles for front-end devs
 ---
+
+<header class="o-wrap o-wrap--large o-page-heading">
+	<h1 class="mega">Articles for Front-End Devs</h1>
+	<p class="intro u-light-text">Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>
+</header>
 
 <div class="o-listings">
 	{% for post in paginator.posts %}
@@ -18,7 +23,7 @@ title: Blog
 								{% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
 								{% when '2' or '22' %}{{ d }}<sup>nd</sup>
 								{% when '3' or '23' %}{{ d }}<sup>rd</sup>
-								{% else %}{{ d }}th
+								{% else %}{{ d }}<sup>th</sup>
 							{% endcase %}
 							{{ post.date | date: "%b %Y" }}
 						</time>

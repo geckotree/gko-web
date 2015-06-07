@@ -91,20 +91,40 @@ module.exports = function ( grunt ) {
 				dest: '<%= pkg.buildFolder %>/css/ie.css'
 			}
 		},
+		critical: {
+			options: {
+				base: './',
+				css: [ '<%= pkg.buildFolder %>/css/style.css' ],
+				height: 900,
+				width: 1200
+			},
+			blog: {
+				src: '_site/blog/index.html',
+				dest: '_site/blog/index.html'
+			},
+			improvingFrontEndPerformance: {
+				src: '_site/blog/improving-front-end-performance/index.html',
+				dest: '_site/blog/improving-front-end-performance/index.html'
+			},
+			anIntroductionToCreatingYourOwnBoilerplate: {
+				src: '_site/blog/an-introduction-to-creating-your-own-boilerplate/index.html',
+				dest: '_site/blog/an-introduction-to-creating-your-own-boilerplate/index.html'
+			}
+		},
 		cssmin: {
 			main: {
 				expand: true,
 				cwd: '<%= pkg.buildFolder %>/css/',
 				src: 'style.css',
 				dest: '<%= pkg.buildFolder %>/css/',
-				ext: '.min.css'
+				ext: '.css'
 			},
 			ie: {
 				expand: true,
 				cwd: '<%= pkg.buildFolder %>/css/',
 				src: 'ie.css',
 				dest: '<%= pkg.buildFolder %>/css/',
-				ext: '.min.css'
+				ext: '.css'
 			}
 		},
 
@@ -155,10 +175,48 @@ module.exports = function ( grunt ) {
 			}
 		},
 
+		htmlmin: {
+			dist: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true,
+					removeScriptTypeAttributes: true,
+					removeStyleLinkTypeAttributes: true,
+					removeOptionalTags: true,
+					minifyURLs: true
+				},
+				files: {
+					'_site/index.html': '_site/index.html',
+					'_site/blog/index.html': '_site/blog/index.html',
+					'_site/blog/2/index.html': '_site/2/blog/index.html',
+					'_site/blog/improving-front-end-performance/index.html': '_site/blog/improving-front-end-performance/index.html',
+					'_site/blog/an-introduction-to-creating-your-own-boilerplate/index.html': '_site/blog/an-introduction-to-creating-your-own-boilerplate/index.html'
+				}
+			}
+		},
 
 		/*
 		 * IMAGES
 		 */
+		responsive_images: {
+			options: {
+				sizes: [{
+					width: 320,
+				}, {
+					width: 640,
+				}, {
+					width: 1024
+				}]
+			},
+			bitmap: {
+				files: [{
+					expand: true,
+					src: [ '**.{jpg,gif,png}' ],
+					cwd: '<%= pkg.assetsFolder %>/img/bitmap/',
+					custom_dest: '<%= pkg.buildFolder %>/img/bitmap/{%= width %}/'
+				}]
+			}
+		},
 		svgmin: {
 			options: {
 				plugins: [
@@ -195,7 +253,7 @@ module.exports = function ( grunt ) {
 				},
 				src: [
 					'<%= pkg.buildFolder %>/img/brand-icons/*.{png,gif,jpg}',
-					'<%= pkg.buildFolder %>/img/bitmap/*.{png,gif,jpg}',
+					'<%= pkg.buildFolder %>/img/bitmap/**/*.{png,gif,jpg}',
 					'<%= pkg.buildFolder %>/img/svg/*.png'
 				]
 			}
@@ -244,16 +302,6 @@ module.exports = function ( grunt ) {
 						dest: '<%= pkg.buildFolder %>/img/brand-icons'
 					}
 				]
-			},
-			bitmap: {
-				files: [
-					{
-						expand: true,
-						cwd: '<%= pkg.assetsFolder %>/img/bitmap/',
-						src: [ '*' ],
-						dest: '<%= pkg.buildFolder %>/img/bitmap'
-					}
-				]
 			}
 		},
 		inline: {
@@ -270,6 +318,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-css-mqpacker' );
 	grunt.loadNpmTasks( 'grunt-stripmq' );
 	grunt.loadNpmTasks( 'grunt-pixrem' );
+	grunt.loadNpmTasks( 'grunt-critical' );
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 
 	grunt.loadNpmTasks( 'grunt-webpack' );
@@ -278,6 +327,9 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 
+	grunt.loadNpmTasks( 'grunt-contrib-htmlmin' );
+
+	grunt.loadNpmTasks( 'grunt-responsive-images' );
 	grunt.loadNpmTasks( 'grunt-svgmin' );
 	grunt.loadNpmTasks( 'grunt-svg2png' );
 	grunt.loadNpmTasks( 'grunt-imageoptim' );
@@ -291,13 +343,15 @@ module.exports = function ( grunt ) {
 	grunt.registerTask( 'dev', [
 		'css:dev',
 		'js:dev',
+		'images:dev',
 		'watch'
 	]);
 
 	grunt.registerTask( 'build', [
 		'css:build',
 		'js:build',
-		'images',
+		'htmlmin',
+		'images:build',
 		'humans_txt'
 	]);
 
@@ -319,7 +373,8 @@ module.exports = function ( grunt ) {
 
 	grunt.registerTask( 'css:build', [
 		'css:dev',
-		'cssmin'
+		'cssmin',
+		'critical'
 	]);
 
 	grunt.registerTask( 'js:build', [
@@ -327,11 +382,15 @@ module.exports = function ( grunt ) {
 		'uglify'
 	]);
 
-	grunt.registerTask( 'images', [
+	grunt.registerTask( 'images:dev', [
+		'responsive_images'
+	]);
+
+	grunt.registerTask( 'images:build', [
+		'images:dev',
 		'svgmin:svg',
 		// 'svg2png',
 		'copy:brand',
-		'copy:bitmap',
 		'imageoptim'
 	]);
 };

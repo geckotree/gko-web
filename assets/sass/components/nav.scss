@@ -6,13 +6,27 @@
 
 .c-page__header {
 	background: $background-colour;
-	transition: transform $speed ease;
+	background: rgba( $background-colour, .9 );
+	left: 0;
+	position: fixed;
+	transition: background $speed ease,
+				transform $speed ease;
+	top: 0;
+	width: 100%;
 	z-index: 10;
+
+	&:hover {
+		background: rgba( $background-colour, 1 );
+	}
 }
 
 .c-nav {
 	@include clearfix;
 	padding: 2rem 0;
+}
+
+.c-nav__logo {
+	margin-bottom: -.8rem;
 }
 
 .c-nav__list {
@@ -41,7 +55,7 @@
 				transform $speed ease;
 
 	.icon {
-		color: $grey-2;
+		color: $grey-4;
 		font-size: 1.6rem;
 		transition: color $speed ease;
 	}
@@ -83,7 +97,7 @@
 
 .c-nav__nav-toggle {
 	.icon {
-		color: $grey-2;
+		color: $grey-4;
 	}
 }
 
@@ -128,7 +142,7 @@
 	}
 
 	.c-nav__toggle-menu-button {
-		fill: $grey-2;
+		fill: $grey-4;
 		height: 8.8rem;
 		left: 0;
 		padding: 1.5rem 2rem;

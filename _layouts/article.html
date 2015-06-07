@@ -17,7 +17,7 @@ layout: default
 							{% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
 							{% when '2' or '22' %}{{ d }}<sup>nd</sup>
 							{% when '3' or '23' %}{{ d }}<sup>rd</sup>
-							{% else %}{{ d }}th
+							{% else %}{{ d }}<sup>th</sup>
 						{% endcase %}
 						{{ page.date | date: "%b %Y" }}
 					</time>
@@ -26,17 +26,14 @@ layout: default
 				<li class="c-article__item-meta" itemprop="author">
 					{{ author.name }}
 				</li>
+				<li class="c-article__item-meta">
+					{{ content | reading_time | pluralize: "min" }} to read
+				</li>
 			</ul>
 		</header>
 
 		<div class="o-wrap o-wrap--medium s-free-content" itemprop="articleBody">
 			<p class="intro">{{ page.exerpt }}</p>
-
-			<div class="">
-				<h2 class="gamma">TL;DR</h2>
-				{{ page.tldr }}
-			</div>
-
 			{{ content }}
 		</div>
 	</div>

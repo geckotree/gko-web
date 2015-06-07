@@ -19,13 +19,4 @@
 			background: rgba( $sec, .1 );
 		}
 	}
-
-	code {
-		background: $grey-1;
-		background: rgba( $grey-1, .75 );
-		border-radius: $border-radius;
-		font-family: Consolas, Courier, monospace;
-		font-size: 90%;
-		padding: .3rem .5rem;
-	}
 }

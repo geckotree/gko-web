@@ -26,3 +26,9 @@ exclude: [
 	"package.json", 
 	"README.md" 
 ]
+
+# Plugins
+gems: [ 
+	liquid_reading_time, 
+	liquid_pluralize 
+]

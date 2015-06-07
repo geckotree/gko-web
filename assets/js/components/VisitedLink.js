@@ -2,7 +2,7 @@ define( function() {
 	'use strict';
 
 	function VisitedLink( el ) {
-		this._link = el;
+		this._$link = el;
 
 		this._setLocalStorage();
 		this._setVisitedLink();
@@ -16,8 +16,8 @@ define( function() {
 		_setVisitedLink: function() {
 			var _this = this;
 
-			if( this._link.host == window.location.host && localStorage.getItem( 'visited-' + this._link.pathname ) ) {
-				_this._link.classList.add( 'is-visited' );
+			if( this._$link.host == window.location.host && localStorage.getItem( 'visited-' + this._$link.pathname ) ) {
+				_this._$link.classList.add( 'is-visited' );
 			}
 		}
 	};

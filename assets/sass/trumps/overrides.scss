@@ -25,6 +25,10 @@
 	transition: color $speed ease;
 }
 
+.u-light-text {
+	color: $grey-3;
+}
+
 @include respond-min( $mq-large ) {
 
 	.flexbox {

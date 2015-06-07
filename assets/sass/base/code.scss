@@ -1,0 +1,31 @@
+/* ===========================================================
+
+	# CODE
+
+=========================================================== */
+
+pre {
+	background: $grey-1;
+	background: rgba( $grey-1, .5 );
+	border-radius: $border-radius;
+	margin: $line-height 0;
+	overflow: scroll;
+	padding: 2rem 3rem;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+
+code {
+	background: $grey-1;
+	background: rgba( $grey-1, .75 );
+	border-radius: $border-radius;
+	font-family: Consolas, Courier, monospace;
+	font-size: 90%;
+	padding: .3rem .5rem;
+}
+
+pre code {
+	background: transparent;
+	border-radius: 0;
+	padding: 0;
+}

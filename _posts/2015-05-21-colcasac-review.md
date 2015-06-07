@@ -9,12 +9,6 @@ date:   2015-05-21 08:33:38
 
 exerpt: "With the latest update to GoSquared we set ourselves the target of achieving a smooth 60 frames per second for all the core UI and animation, across all devices."
 ---
-
-### TL;DR
-I wrote a big list of the things I want to achieve and made it public for the world to see.
-
-As with anything public and open source, it’s there to be commented on, voted on, criticised and contributed to!
-
 ## What actually happens in the browser?
 
 Before understanding how to optimise [web sites](https://www.google.com "Google's Homepage") and * applications for efficient * rendering, it’s important to understand what is actually going on in the browser between the code you write and the pixels being drawn to screen. There are six different tasks a browser performs to accomplish all this:

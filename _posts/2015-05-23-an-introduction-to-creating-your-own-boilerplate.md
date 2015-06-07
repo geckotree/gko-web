@@ -3,15 +3,12 @@ layout: article
 permalink: /blog/:title/
 
 title:  "An introduction to creating your own boilerplate"
-blogTitle: An introduction to creating your own <span class="u-highlight-text">boilerplate</span>
+blogTitle: An introduction to creating your own <span class="u-highlight-text">front-end boilerplate</span>
 author: rob
 date:   2015-05-23 08:33:38
 
 exerpt: "With the latest update to GoSquared we set ourselves the target of achieving a smooth 60 frames per second for all the core UI and animation, across all devices."
-
-tldr: "I wrote a big list of the things I want to achieve and made it public for the world to see. As with anything public and open source, it’s there to be commented on, voted on, criticised and contributed to!"
 ---
-
 ## What actually happens in the browser?
 
 Before understanding how to optimise [web sites](https://www.google.com "Google's Homepage") and * applications for efficient * rendering, it’s important to understand what is actually going on in the browser between the code you write and the pixels being drawn to screen. There are six different tasks a browser performs to accomplish all this:
@@ -26,10 +23,10 @@ Before understanding how to optimise [web sites](https://www.google.com "Google'
 This post is only really focussing on the aspects related to achieving smooth animations without visual delay. I won’t focus on the parts about downloading and parsing assets.
 
 <figure class="o-media o-media--large">
-    <img srcset="../../assets/build/img/bitmap/robot-machine-sketchx2.jpg 2440w,
-            ../../assets/build/img/bitmap/robot-machine-sketch.jpg 1220w" 
+    <img srcset="../../assets/build/img/bitmap/1024/article-img.jpg 1024w,
+            ../../assets/build/img/bitmap/640/article-img.jpg 640w" 
         sizes="100vw"
-        src="../../assets/build/img/bitmap/robot-machine-sketch.jpg" 
+        src="../../assets/build/img/bitmap/320/article-img.jpg" 
         alt="">
 </figure>
 

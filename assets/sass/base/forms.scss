@@ -1,0 +1,79 @@
+/* ===========================================================
+
+	# FORMS
+
+=========================================================== */
+
+input,
+select,
+textarea {
+	background: none;
+	border: $border-width solid $border-colour;
+	border-radius: $border-radius;
+	padding: 1rem 1.5rem;
+	transition: border $speed ease;
+	width: 100%;
+
+	&:focus {
+		border-color: $pri;
+	}
+
+	.is-valid & {
+		border-color: $success;
+	}
+
+	.is-invalid & {
+		border-color: $error;
+	}
+
+	.is-disabled & {
+		background: $disabled;
+		cursor: not-allowed;
+	}
+}
+
+textarea {
+	overflow: auto; // Hide scrollbar IE
+	resize: vertical;
+
+	.is-disabled & {
+		resize: none;
+	}
+}
+
+label {
+	display: block;
+	padding-bottom: 1rem;
+
+	.is-disabled & {
+		cursor: not-allowed;
+	}
+}
+
+label[for] {
+	cursor: pointer;
+
+	.is-disabled & {
+		cursor: not-allowed;
+	}
+}
+
+
+
+//= PLACEHOLDER ==============================================
+
+::-webkit-input-placeholder {
+   color: $placeholder-colour;
+}
+
+:-moz-placeholder { // Firefox 18-
+   color: $placeholder-colour;
+}
+
+::-moz-placeholder {  // Firefox 19+
+   color: $placeholder-colour;
+}
+
+:-ms-input-placeholder {
+   color: $placeholder-colour;
+}

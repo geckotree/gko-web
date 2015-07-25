@@ -1,0 +1,11 @@
+<div class="o-form__field{{#if valid}} is-valid{{/if}}{{#if invalid}} is-invalid{{/if}}{{#if disabled}} is-disabled{{/if}}">
+	<label class="o-label" for="{{for}}">{{label}} {{#if optional}}<span class="o-label__note">Optional</span>{{/if}}</label>
+	<div class="o-select">
+		<select id="{{for}}" name="{{for}}"{{#if disabled}} disabled{{/if}}>
+			{{#each options}}
+				<option value="{{optValue}}"{{#if selected}} selected{{/if}}>{{option}}</option>
+			{{/each}}
+		</select>
+	</div>
+	{{#if invalid}}<span class="o-validation">Please select a value</span>{{/if}}
+</div>

@@ -1,0 +1,5 @@
+<div class="o-form__field{{#if valid}} is-valid{{/if}}{{#if invalid}} is-invalid{{/if}}{{#if disabled}} is-disabled{{/if}}">
+	<label class="o-label" for="{{for}}">{{label}} {{#if optional}}<span class="o-label__note">Optional</span>{{/if}}</label>
+	<textarea class="o-textarea" id="{{for}}" cols="30" rows="8" placeholder="{{placeholder}}"{{#if disabled}} disabled{{/if}}></textarea>
+	{{#if invalid}}<span class="o-validation">Please enter a value</span>{{/if}}
+</div>

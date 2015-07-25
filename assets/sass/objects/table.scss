@@ -1,0 +1,45 @@
+/* ===========================================================
+
+  # TABLES
+
+=========================================================== */
+
+.o-table {
+	width: 100%;
+}
+
+.o-table--scroll {
+	overflow-y: hidden;
+	overflow-x: auto;
+	position: relative;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+
+@include respond-max( $mq-medium ) {
+	.o-table--stacked {
+		thead {
+			display: none;
+		}
+
+		td {
+			display: block;
+
+			&:before {
+				content: attr( data-label ) ': ';
+				display: block;
+				width: 100%;
+			}
+		}
+
+		tr:nth-child( odd ) td {
+			&:first-child {
+				border-radius: $border-radius $border-radius 0 0;
+			}
+
+			&:last-child {
+				border-radius: 0 0 $border-radius $border-radius;
+			}
+		}
+	}
+}

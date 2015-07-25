@@ -1,0 +1,87 @@
+/* ===========================================================
+
+	# VARIABLES
+
+=========================================================== */
+
+$old-ie: 	false!default;
+$base-dir: 	'/assets';
+$fonts: 	'#{$base-dir}/fonts';
+$images: 	'#{$base-dir}/build/img';
+
+
+/* ===========================================================
+
+	# COLOURS
+
+=========================================================== */
+
+$white: 	#FFFFFF;
+$black: 	#000000;
+$red:		red;
+$green:		green;
+$grey:		#CCCCCC;
+
+$pri: 		#57B275;
+$sec: 		#F05D71;
+$ter: 		#F2D044;
+
+
+
+/* ===========================================================
+
+	# BASE VALUES
+
+=========================================================== */
+
+$font-family:			Arial, Helvetica, Geneva, sans-serif;
+$font-size-body-small:	1.8em;
+$font-size-body-large:	2em;
+$font-size--small:		1.6rem;
+$font-size--large:		2rem;
+$line-height:			1.4em;
+$type-scale--small:		1.100;
+$type-scale--medium:	1.150;
+$type-scale--large:		1.200;
+
+$heading-colour:		$black;
+$text-colour:			$black;
+$background-colour:		$white;
+$border-colour:			$grey;
+$link-colour:			$pri;
+$link-colour-hover:		$sec;
+$placeholder-colour:	$grey;
+$highlight-colour:		lighten( $pri, 20 );
+
+$error:					$red;
+$success:				$green;
+$disabled:				$grey;
+
+$padding--small:		4rem;
+$padding--medium:		6rem;
+$padding--large:		8rem;
+
+$border-width: 			.2rem;
+$border-radius: 		.4rem;
+$speed: 				.3s;
+
+$wrap--medium:			75rem;
+$wrap--large:			92rem;
+$wrap--x-large:			140rem;
+
+$active-scale-small:	scale( .98 );
+$active-scale-medium:	scale( .95 );
+
+
+
+/* ===========================================================
+
+	# MEDIA QUERIES
+
+=========================================================== */
+
+$mq-small: 				500px;
+$mq-medium: 			800px;
+$mq-large: 				1000px;
+$mq-x-large: 			1280px;
+$mq-xx-large: 			1500px;

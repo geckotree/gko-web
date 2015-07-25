@@ -1,0 +1,23 @@
+/* ===========================================================
+
+	# Wrap
+
+=========================================================== */
+
+.o-sg-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.o-sg-wrap--large {
+	max-width: 130rem;
+}
+
+@include respond-min( $mq-small ) {
+	.o-sg-wrap {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}

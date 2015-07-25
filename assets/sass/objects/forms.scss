@@ -1,0 +1,129 @@
+/* ===========================================================
+
+	# FORMS
+
+=========================================================== */
+
+.o-form__field {
+	& + & {
+		margin-top: 2rem;
+	}
+}
+
+.o-input,
+.o-select select,
+.o-textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.o-validation {
+	display: block;
+	margin-top: $line-height / 4;
+
+	.is-valid & {
+		color: $success;
+	}
+
+	.is-invalid & {
+		color: $error;
+	}
+}
+
+
+
+//= LABEL ====================================================
+
+.o-label__note {
+	color: $border-colour;
+	float: right;
+	font-size: .8em;
+	font-style: italic;
+}
+
+
+
+//= SELECT ===================================================
+
+.o-select {
+	position: relative;
+	vertical-align: middle;
+	z-index: 1;
+
+	select {
+		position: relative;
+		text-indent: .01px;
+		text-overflow: '';
+		z-index: 1;
+
+		&::-ms-expand {
+		    display: none;
+		}
+
+		.lt-ie10 & {
+			padding-right: 1rem;
+		}
+	}
+
+	&:after {
+		background: $background-colour;
+		border-radius: 0 $border-radius - $border-width $border-radius - $border-width 0;
+		box-sizing: border-box;
+		color: $border-colour;
+		content: '\25BE';
+		display: block;
+		height: calc( 100% - .2rem );
+		padding: 1rem 1.5rem;
+		position: absolute;
+		pointer-events: none;
+		right: $border-width;
+		top: $border-width;
+		z-index: 0;
+
+		.lt-ie10 & {
+			display: none;
+		}
+	}
+}
+
+// FireFox 30 hide native down arrow
+:-moz-any( .o-select ):after {
+	z-index: 1;
+}
+
+
+//= FIELDSET =================================================
+
+.o-fieldset__legend {
+	margin-bottom: $line-height / 2;
+	width: 100%;
+
+	.o-label__note {
+		float: none;
+	}
+}
+
+.o-fieldset__list {
+	list-style: none;
+}
+
+.o-fieldset__item {
+	margin: 0;
+
+	input {
+		margin: 0 .5rem 0 0;
+		width: auto;
+	}
+}
+
+
+//= BUTTON ===================================================
+
+.o-input + .button,
+.o-select + .button,
+.o-textarea + .button {
+	margin-top: $line-height * 2;
+}

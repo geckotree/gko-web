@@ -1,0 +1,19 @@
+/* ===========================================================
+
+	# List
+
+=========================================================== */
+
+.o-sg-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.o-sg-list__item {
+	margin: 0;
+}
+
+.o-sg-list__section {
+	counter-increment: step-counter;
+}

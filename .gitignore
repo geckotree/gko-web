@@ -1,7 +1,5 @@
 .sass-cache
-
-_site
-assets/components
-assets/build
 node_modules
-sitespeed-result
+assets/bower_components
+assets/build
+patterns/build

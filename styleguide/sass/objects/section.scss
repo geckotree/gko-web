@@ -1,0 +1,43 @@
+/* ===========================================================
+
+	# Section
+
+=========================================================== */
+
+.o-sg-section {
+	padding: 8rem 0;
+}
+
+.o-sg-section__sub {
+	& + & {
+		margin-top: 8rem;
+	}
+}
+
+.o-sg-section__heading {
+	margin-bottom: 2rem;
+
+	&:before {
+		color: $sg-grey;
+		content: '0' counter( step-counter ) '. ';
+		font-size: 0.6em;
+	}
+
+	small {
+		color: $sg-grey;
+		font-size: .3em;
+		font-weight: normal;
+		text-transform: capitalize;
+	}
+}
+
+.o-sg-section__sub-heading {
+	color: $sg-grey;
+	text-transform: capitalize;
+}
+
+@include respond-min( 1350px ) {
+	.o-sg-section__heading {
+		margin-left: -5.5rem;
+	}
+}

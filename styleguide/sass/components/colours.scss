@@ -1,0 +1,41 @@
+/* ===========================================================
+
+	# Colours
+
+=========================================================== */
+
+.c-sg-colours__colour {
+	border-radius: $border-radius;
+	height: 15rem;
+}
+
+.c-sg-colours__list__item__list {
+	padding: 2rem 0;
+}
+
+@include respond-max( $mq-medium ) {
+	.c-sg-colours__list__item {
+		& + & {
+			margin-top: 2rem;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-sg-colours__list {
+		@include clearfix;
+		margin-left: -4rem;
+	}
+
+	.c-sg-colours__list__item {
+		float: left;
+		padding-left: 4rem;
+		width: 50%;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-sg-colours__list__item {
+		width: 25%;
+	}
+}

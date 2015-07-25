@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://geckotree.co.uk/sitemap.xml
+Host: http://geckotree.co.uk

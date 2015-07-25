@@ -1,0 +1,15 @@
+$sg-grey: #D2D2D2;
+
+@import '../../assets/sass/settings/global.scss';
+
+@import '../../assets/sass/tools/mixins.scss';
+
+@import 'objects/page.scss',
+		'objects/wrap.scss',
+		'objects/section.scss',
+		'objects/grid.scss',
+		'objects/list.scss';
+
+@import 'components/header.scss',
+		'components/colours.scss',
+		'components/typography.scss';

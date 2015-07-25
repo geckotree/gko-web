@@ -1,0 +1,22 @@
+{
+  "name": "gko-web",
+  "version": "1.0.0",
+  "homepage": "http://geckotree.co.uk",
+  "authors": [
+  	{
+      "name": "Rob Simpson",
+      "homepage": "http://geckotree.co.uk",
+      "email": "<rob@geckotree.co.uk>"
+    },
+    {
+      "name": "Kev Simpson",
+      "homepage": "http://geckotree.co.uk",
+      "email": "<kev@geckotree.co.uk>"
+    }
+  ],
+  "devDependencies": {
+	  "fastclick": "~1.0.3",
+	  "html5shiv": "~3.7.2",
+	  "modernizr": "~2.8.3"
+  }
+}

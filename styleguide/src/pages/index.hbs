@@ -1,0 +1,230 @@
+---
+title: Styleguide
+---
+
+<div class="o-sg-wrap o-sg-wrap--large">
+	<ol class="o-sg-list">
+		<li class="o-sg-list__item o-sg-list__section" id="colour">
+			<section class="o-sg-section c-sg-colours">
+				<header class="o-sg-section__header">
+					<h1 class="o-sg-section__heading">Colour Palette</h1>
+				</header>
+
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Primary Colours</h5>
+
+					<ul class="o-sg-list c-sg-colours__list">
+						{{#each colours.primary}}
+							<li class="o-sg-list__item c-sg-colours__list__item">
+								<div class="c-sg-colours__colour" style="background-color: #{{hex}};"></div>
+
+								<ul class="o-sg-list c-sg-colours__list__item__list">
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item"><h5>{{name}}</h5></li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">CMYK: {{cmyk}}</li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">RGB: {{rgb}}</li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">Hex: {{hex}}</li>
+								</ul>
+							</li>
+						{{/each}}
+					</ul>
+				</div>
+
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Secondary Colours</h5>
+
+					<ul class="o-sg-list c-sg-colours__list">
+						{{#each colours.secondary}}
+							<li class="o-sg-list__item c-sg-colours__list__item">
+								<div class="c-sg-colours__colour" style="background-color: #{{hex}};"></div>
+
+								<ul class="o-sg-list c-sg-colours__list__item__list">
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item"><h5>{{name}}</h5></li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">CMYK: {{cmyk}}</li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">RGB: {{rgb}}</li>
+									<li class="o-sg-list__item c-sg-colours__list__item__list__item">Hex: {{hex}}</li>
+								</ul>
+							</li>
+						{{/each}}
+					</ul>
+				</div>
+			</section>
+		</li>
+
+		<li class="o-sg-list__item o-sg-list__section" id="typography">
+			<section class="o-sg-section c-sg-typography">
+				<header class="o-sg-section__header">
+					<h1 class="o-sg-section__heading">Typography</h1>
+				</header>
+				
+				<div class="o-sg-section__sub">
+					<ul class="o-sg-list c-sg-typography__list">
+						{{#each typography.headings}}
+							<li class="o-sg-list__item c-sg-typography__list__item">
+								<h5 class="o-sg-section__sub-heading">{{name}}</h5>
+								<h1 class="{{name}}">{{{font}}}</h1>
+							</li>
+						{{/each}}
+					</ul>
+				</div>
+				
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Paragraph</h5>
+
+					{{{typography.paragraph}}}
+				</div>
+
+				<div class="o-sg-grid-row">
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Unordered List</h5>
+
+						<ul>
+							{{#each typography.unordered-list}}
+								<li>
+									{{item}}
+									{{#if child-unordered-list}}
+										<ul>
+											{{#each child-unordered-list}}
+												<li>{{item}}</li>
+											{{/each}}
+										</ul>
+									{{/if}}
+								</li>
+							{{/each}}
+						</ul>
+					</div>
+
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Ordered List</h5>
+
+						<ol>
+							{{#each typography.ordered-list}}
+								<li>
+									{{item}}
+									{{#if child-ordered-list}}
+										<ol>
+											{{#each child-ordered-list}}
+												<li>{{item}}</li>
+											{{/each}}
+										</ol>
+									{{/if}}
+								</li>
+							{{/each}}
+						</ol>
+					</div>
+				</div>
+
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Blockquote</h5>
+
+					{{> blockquote typography.blockquote }}
+				</div>
+			</section>
+		</li>
+
+		<li class="o-sg-list__item o-sg-list__section" id="buttons">
+			<section class="o-sg-section c-sg-forms">
+				<header class="o-sg-section__header">
+					<h1 class="o-sg-section__heading">Buttons</h1>
+				</header>
+
+				<div class="o-sg-grid-row">
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--thirds o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Primary Button</h5>
+
+						<div class="o-form__field">
+							<button class="c-button c-button--primary">Button</button>
+						</div>
+					</div>
+
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--thirds o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Secondary Button</h5>
+
+						<div class="o-form__field">
+							<button class="c-button c-button--secondary">Button</button>
+						</div>
+					</div>
+
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--thirds o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Disabled Button</h5>
+
+						<div class="o-form__field">
+							<button class="c-button c-button--disabled" disabled="disabled">Button</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</li>
+
+		<li class="o-sg-list__item o-sg-list__section" id="tables">
+			<section class="o-sg-section c-sg-forms">
+				<header class="o-sg-section__header">
+					<h1 class="o-sg-section__heading">Tables <em><small>These are different in mobile view</small></em></h1>
+				</header>
+
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Scroll Table</h5>
+
+					{{> table table.table-scroll }}
+				</div>
+
+				<div class="o-sg-section__sub">
+					<h5 class="o-sg-section__sub-heading">Stacked Table</h5>
+
+					{{> table table.table-stacked }}
+				</div>
+			</section>
+		</li>
+
+		<li class="o-sg-list__item o-sg-list__section" id="forms">
+			<section class="o-sg-section c-sg-forms">
+				<header class="o-sg-section__header">
+					<h1 class="o-sg-section__heading">Forms</h1>
+				</header>
+
+				<div class="o-sg-grid-row">
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Default Inputs</h5>
+
+						{{> input forms.input }}
+						{{> select forms.select }}
+						{{> textarea forms.textarea }}
+						{{> checkbox forms.checkbox }}
+						{{> radio forms.radio }}
+					</div>
+
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Disabled Inputs</h5>
+
+						{{> input forms.input-disabled }}
+						{{> select forms.select-disabled }}
+						{{> textarea forms.textarea-disabled }}
+						{{> checkbox forms.checkbox }}
+						{{> radio forms.radio }}
+					</div>
+				</div>
+
+				<div class="o-sg-grid-row">
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Valid Inputs</h5>
+
+						{{> input forms.input-valid }}
+						{{> select forms.select-valid }}
+						{{> textarea forms.textarea-valid }}
+						{{> checkbox forms.checkbox }}
+						{{> radio forms.radio }}
+					</div>
+
+					<div class="o-sg-grid-row__col o-sg-grid-row__col--half o-sg-section__sub">
+						<h5 class="o-sg-section__sub-heading">Invalid Inputs</h5>
+
+						{{> input forms.input-invalid }}
+						{{> select forms.select-invalid }}
+						{{> textarea forms.textarea-invalid }}
+						{{> checkbox forms.checkbox }}
+						{{> radio forms.radio }}
+					</div>
+				</div>
+			</section>
+		</li>
+	</ol>
+</div>

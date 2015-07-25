@@ -1,0 +1,176 @@
+{
+	"input": {
+		"label": "Input",
+		"optional": true,
+		"type": "text",
+		"placeholder": "Placeholder text...",
+		"for": "input"
+	},
+	"input-valid": {
+		"label": "Input",
+		"valid": true,
+		"type": "text",
+		"placeholder": "Placeholder text...",
+		"for": "inputValid"
+	},
+	"input-invalid": {
+		"label": "Input",
+		"invalid": true,
+		"type": "text",
+		"placeholder": "Placeholder text...",
+		"for": "inputInvalid"
+	},
+	"input-disabled": {
+		"label": "Input",
+		"disabled": true,
+		"type": "text",
+		"placeholder": "Placeholder text...",
+		"for": "inputDisabled"
+	},
+
+
+	"select": {
+    "label": "Select",
+    "optional": true,
+    "options": [
+      {
+        "option": "Please select...",
+        "optValue": "0",
+        "selected": true
+      },
+      {
+        "option": "Option 1",
+        "optValue": "1"
+      },
+      {
+        "option": "Option 2",
+        "optValue": "2"
+      }
+    ]
+  },
+  "select-valid": {
+    "label": "Select",
+    "valid": true,
+    "options": [
+      {
+        "option": "Please select...",
+        "optValue": "0",
+        "selected": true
+      },
+      {
+        "option": "Option 1",
+        "optValue": "1"
+      },
+      {
+        "option": "Option 2",
+        "optValue": "2"
+      }
+    ]
+  },
+  "select-invalid": {
+    "label": "Select",
+    "invalid": true,
+    "options": [
+      {
+        "option": "Please select...",
+        "optValue": "0",
+        "selected": true
+      },
+      {
+        "option": "Option 1",
+        "optValue": "1"
+      },
+      {
+        "option": "Option 2",
+        "optValue": "2"
+      }
+    ]
+  },
+  "select-disabled": {
+    "label": "Select",
+    "disabled": true,
+    "options": [
+      {
+        "option": "Please select...",
+        "optValue": "0",
+        "selected": true
+      },
+      {
+        "option": "Option 1",
+        "optValue": "1"
+      },
+      {
+        "option": "Option 2",
+        "optValue": "2"
+      }
+    ]
+  },
+
+	"textarea": {
+		"label": "Textarea",
+		"optional": true,
+		"placeholder": "Enter your message here...",
+		"for": "textarea"
+	},
+	"textarea-valid": {
+		"label": "Textarea",
+		"valid": true,
+		"placeholder": "Enter your message here...",
+		"for": "textareaValid"
+	},
+	"textarea-invalid": {
+		"label": "Textarea",
+		"invalid": true,
+		"placeholder": "Enter your message here...",
+		"for": "textareaInvalid"
+	},
+	"textarea-disabled": {
+		"label": "Textarea",
+		"disabled": true,
+		"placeholder": "Enter your message here...",
+		"for": "textareaDisabled"
+	},
+
+	 "checkbox": {
+  	"label": "Checkbox",
+  	"optional": true,
+  	"checkboxes": [
+  		{
+  			"checkValue": "Choice A",
+  			"for": "checkbox1"
+  		},
+  		{
+  			"checkValue": "Choice B",
+  			"for": "checkbox2"
+  		},
+  		{
+  			"checkValue": "Choice C",
+  			"for": "checkbox3"
+  		}
+  	]
+  },
+
+  "radio": {
+  	"label": "Radio buttons",
+  	"optional": true,
+  	"radios": [
+  		{
+  			"radioValue": "Option A",
+  			"for": "radio1",
+  			"name": "radio"
+  		},
+  		{
+  			"radioValue": "Option B",
+  			"for": "radio2",
+  			"name": "radio"
+
+  		},
+  		{
+  			"radioValue": "Option C",
+  			"for": "radio3",
+  			"name": "radio"
+
+  		}
+  	]
+  }
+}

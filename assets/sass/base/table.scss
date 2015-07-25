@@ -1,0 +1,34 @@
+/* ===========================================================
+
+	# TABLE
+
+=========================================================== */
+
+table {
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+}
+
+th,
+td {
+	border-bottom: none;
+	padding: 1rem 2rem;
+	text-align: left;
+}
+
+tr:nth-child( odd ) td {
+	background: $border-colour;
+
+	&:first-child {
+		border-radius: $border-radius 0 0 $border-radius;
+	}
+
+	&:last-child {
+		border-radius: 0 $border-radius $border-radius 0;
+	}
+}

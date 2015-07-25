@@ -1,0 +1,112 @@
+/* ===========================================================
+
+	# Header
+
+=========================================================== */
+
+.c-sg-header {
+	background: $pri;
+	text-align: center;
+}
+
+.c-sg-header__logo {
+	display: block;
+	padding: 1rem;
+
+	svg {
+		margin-bottom: -.7rem;
+	}
+}
+
+
+.c-sg-nav {
+	text-align: left;
+}
+
+.c-sg-nav__link {
+	background: transparent;
+	display: block;
+	padding: 1rem 2rem;
+	transition: background $speed ease,
+				color $speed ease;
+
+	&:hover {
+		background: darken( $pri, 5 );
+	}
+}
+
+.c-sg-nav__link__label {
+	color: $white;
+}
+
+@include respond-max( $mq-medium ) {
+	.c-sg-nav__link {
+		@include clearfix;
+
+		svg {
+			float: right;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-sg-header {
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 7rem;
+	}
+
+	.c-sg-header__logo {
+		background: darken( $pri, 5 );
+		padding: 2rem 1rem;
+	}
+
+
+	.c-sg-nav__item {
+		text-align: center;
+
+		&:hover {
+			.c-sg-nav__link__label {
+				left: 8.5rem;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.c-sg-nav__link {
+		height: 7rem;
+		padding: 2rem 1.5rem;
+		position: relative;
+	}
+
+	.c-sg-nav__link__label {
+		background: darken( $pri, 5 );
+		border-radius: $border-radius;
+		left: 7rem;
+		margin-top: -2.8rem;
+		opacity: 0;
+		padding: 1.5rem 2rem;
+		position: absolute;
+		transition: left $speed ease,
+					opacity $speed ease,
+					visibility $speed ease;
+		top: 50%;
+		visibility: hidden;
+		white-space: nowrap;
+
+		&:before {
+			background: darken( $pri, 5 );
+			border-radius: 100%;
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -.5rem;
+			left: -.5rem;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}

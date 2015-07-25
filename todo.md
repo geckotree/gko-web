@@ -11,7 +11,7 @@
 ## assets/sass/components/case-study/card.scss
 
 -  **todo** `(line 7)`  sort out the image dev and build tasks
--  **todo** `(line 99)`  bind to modernizr classes
+-  **todo** `(line 107)`  bind to modernizr classes
 
 ## assets/sass/components/footer.scss
 

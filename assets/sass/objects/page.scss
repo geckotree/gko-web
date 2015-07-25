@@ -20,10 +20,17 @@ html {
 .o-page__content {
 	background: $background-colour;
 	flex: 1 1 auto;
+	padding-bottom: $padding-small;
 	width: 100%;
 }
 
-@include respond-min( $mq-large ) {
+@include respond-min( $mq-small ) {
+	.o-page__content {
+		padding-bottom: $padding-medium;
+	}
+}
+
+@include respond-min( $mq-medium ) {
 	.o-page__content {
 		padding-bottom: $padding-large;
 	}

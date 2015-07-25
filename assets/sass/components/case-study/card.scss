@@ -8,6 +8,10 @@
 .s-case-study-card--geckotree {
 	background-color: rgba( $pri, .15 );
 	background-image: url( '#{$images}/background/geckotree-logo.svg' );
+
+	&:hover {
+		background-color: rgba( $pri, .25 );
+	}
 }
 
 .s-case-study-card--adspy {
@@ -16,6 +20,10 @@
 
 	.c-button {
 		background: $adspy-pri;
+	}
+
+	&:hover {
+		background-color: rgba( $adspy-pri, .20 );
 	}
 }
 
@@ -97,24 +105,25 @@
 	// }
 
 	//@todo bind to modernizr classes
+	.is-hidden {
+		.c-case-study-card {
+			opacity: 0;
+			transform: translateY( 5rem );
+		}
+
+		.c-case-study-card-row > :last-child {
+			.c-case-study-card {
+				transition-delay: $speed * 2;
+			}
+		}
+	}
+
 	.c-case-study-card {
-		opacity: 0;
-		transform: translateY( 5rem );
-		transition: opacity $speed ease $speed,
+		opacity: 1;
+		transform: translateY( 0 );
+		transition: background-color $speed ease,
+					opacity $speed ease $speed,
 					transform $speed ease $speed;
-	}
-
-	.c-case-study-card-row > :last-child {
-		.c-case-study-card {
-			transition-delay: $speed * 2;
-		}
-	}
-
-	.is-inview {
-		.c-case-study-card {
-			opacity: 1;
-			transform: translateY( 0 );
-		}
 	}
 }
 

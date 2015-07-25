@@ -58,9 +58,3 @@
 		width: 1.6rem;
 	}
 }
-
-@include respond-min( $mq-large ) {
-	.c-page__footer {
-		// padding: $padding-small 0;
-	}
-}

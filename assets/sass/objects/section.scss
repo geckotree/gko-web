@@ -9,10 +9,18 @@
 	padding-top: $padding-small;
 }
 
+.o-section__header {
+	margin-bottom: $padding-small;
+}
+
 @include respond-min( $mq-small ) {
 	.o-section {
 		padding-bottom: $padding-medium;
 		padding-top: $padding-medium;
+	}
+
+	.o-section__header {
+		margin-bottom: $padding-medium;
 	}
 }
 
@@ -20,5 +28,9 @@
 	.o-section {
 		padding-bottom: $padding-large;
 		padding-top: $padding-large;
+	}
+
+	.o-section__header {
+		margin-bottom: $padding-large;
 	}
 }

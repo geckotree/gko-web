@@ -28,11 +28,17 @@
 
 		//@todo sort this out
 		var myElement = document.querySelector( '.c-case-study-card-row' );
+		var Element = document.querySelector( '.js-instagram-images' );
 
 		var elementWatcher = ScrollMonitor.create( myElement, { top: -150 } );
+		var Watcher = ScrollMonitor.create( Element, { top: -200 } );
 
 		elementWatcher.enterViewport(function() {
-		    myElement.classList.add('is-inview');
+		    myElement.classList.remove('is-hidden');
+		});
+
+		Watcher.enterViewport(function() {
+		    Element.classList.add('is-inview');
 		});
 	}
 })();

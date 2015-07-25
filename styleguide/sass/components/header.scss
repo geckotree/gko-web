@@ -54,10 +54,10 @@
 		position: fixed;
 		top: 0;
 		width: 7rem;
+		z-index: 10;
 	}
 
 	.c-sg-header__logo {
-		// background: darken( #DDF0E3, 5 );
 		padding: 2rem 1rem;
 	}
 

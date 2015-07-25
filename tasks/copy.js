@@ -19,5 +19,15 @@ module.exports = {
 				dest: '<%= assetsBuildFolder %>/img/bitmap'
 			}
 		]
+	},
+	svgImages: {
+		files: [
+			{
+				expand: true,
+				cwd: '<%= assetsFolder %>/img/background/',
+				src: [ '*' ],
+				dest: '<%= assetsBuildFolder %>/img/background'
+			}
+		]
 	}
 };

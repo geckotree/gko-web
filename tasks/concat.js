@@ -4,6 +4,7 @@ module.exports = {
 		src: [
 			'<%= assetsFolder %>/js/lib/modernizr.js',
 			'<%= assetsFolder %>/bower_components/fastclick/lib/fastclick.js',
+			'<%= assetsFolder %>/bower_components/scrollMonitor/scrollMonitor.js',
 			'<%= assetsFolder %>/js/utils/*.js',
 			'<%= assetsFolder %>/js/components/*.js',
 			'<%= assetsFolder %>/js/main.js'

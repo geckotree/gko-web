@@ -1,6 +1,6 @@
 /* ===========================================================
 
-	# PAGE
+	# Page
 
 =========================================================== */
 
@@ -9,13 +9,22 @@ html {
 }
 
 .o-page {
-	background: $background-colour;
+	background: #EFEFEF; //@todo create a variable for this
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+
+	margin-bottom: 54rem; //@todo must match footer height
 }
 
 .o-page__content {
+	background: $background-colour;
 	flex: 1 1 auto;
 	width: 100%;
+}
+
+@include respond-min( $mq-large ) {
+	.o-page__content {
+		padding-bottom: $padding-large;
+	}
 }

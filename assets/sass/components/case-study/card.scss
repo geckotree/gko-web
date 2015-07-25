@@ -1,0 +1,137 @@
+/* ===========================================================
+
+	# Case Study - Card
+
+=========================================================== */
+
+//@todo sort out the image dev and build tasks
+.s-case-study-card--geckotree {
+	background-color: rgba( $pri, .15 );
+	background-image: url( '#{$images}/background/geckotree-logo.svg' );
+}
+
+.s-case-study-card--adspy {
+	background-color: rgba( $adspy-pri, .10 );
+	background-image: url( '#{$images}/background/adspy-logo.svg' );
+
+	.c-button {
+		background: $adspy-pri;
+	}
+}
+
+.c-case-study-card {
+	background-position: bottom -7rem right -12rem;
+	background-repeat: no-repeat;
+	padding: 4rem 2rem;
+}
+
+.c-case-study-card__header {
+	margin-bottom: 2rem;
+	max-width: 54rem;
+}
+
+@include respond-max( $mq-small ) {
+	.c-case-study-card-row {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.c-case-study-card-row {
+		margin-left: -4rem;
+		margin-right: -4rem;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study-card {
+		border-radius: $border-radius * 10;
+		padding: 4rem;
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-case-study-card-col {
+		& + & {
+			margin-top: 2rem;
+		}
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study-card-row {
+		@include clearfix;
+		margin-left: -4rem;
+	}
+
+	.c-case-study-card-col {
+		float: left;
+		padding-left: 4rem;
+		width: 50%;
+	}
+
+	.c-case-study-card {
+		padding: 6rem 4rem;
+
+		// &:hover {
+		// 	.c-case-study-card__ctas .c-button {
+		// 		opacity: 1;
+		// 		transform: translateY( 0 );
+		// 		visibility: visible;
+		// 	}
+		// }
+	}
+
+	.c-case-study-card__header {
+		margin-bottom: 4rem;
+	}
+
+	// .c-case-study-card__ctas .c-button {
+	// 	opacity: 0;
+	// 	transform: translateY( .5rem );
+	// 	transition: opacity $speed ease,
+	// 				transform $speed ease,
+	// 				visibility $speed ease;
+	// 	visibility: hidden;
+	// }
+
+	//@todo bind to modernizr classes
+	.c-case-study-card {
+		opacity: 0;
+		transform: translateY( 5rem );
+		transition: opacity $speed ease $speed,
+					transform $speed ease $speed;
+	}
+
+	.c-case-study-card-row > :last-child {
+		.c-case-study-card {
+			transition-delay: $speed * 2;
+		}
+	}
+
+	.is-inview {
+		.c-case-study-card {
+			opacity: 1;
+			transform: translateY( 0 );
+		}
+	}
+}
+
+@include respond-min( $mq-x-large ) {
+	.c-case-study-card-row {
+		margin-left: -6rem;
+	}
+
+	.c-case-study-card-col {
+		padding-left: 6rem;
+	}
+
+	.c-case-study-card {
+		padding: 8rem 6rem;
+	}
+
+	.c-case-study-card__header {
+		margin-bottom: 8rem;
+	}
+}

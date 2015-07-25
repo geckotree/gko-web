@@ -3,6 +3,7 @@
 
 	if( 'visibilityState' in document ) {
 		var FastClick = window.FastClick;
+		var ScrollMonitor = window.scrollMonitor;
 		var Toggle = window.Toggle;
 
 		var i;
@@ -24,5 +25,14 @@
 			moduleName = $node.getAttribute( 'data-module' );
 			new window[moduleName]( $node );
 		}
+
+		//@todo sort this out
+		var myElement = document.querySelector( '.c-case-study-card-row' );
+
+		var elementWatcher = ScrollMonitor.create( myElement, { top: -150 } );
+
+		elementWatcher.enterViewport(function() {
+		    myElement.classList.add('is-inview');
+		});
 	}
 })();

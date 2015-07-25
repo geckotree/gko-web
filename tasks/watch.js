@@ -5,10 +5,10 @@ module.exports = {
 			'<%= assetsFolder %>/sass/**/**/*.scss'
 		],
 		tasks: [
-			'newer:sass',
-			'newer:autoprefixer',
-			'newer:stripmq',
-			'newer:pixrem'
+			'sass',
+			'autoprefixer',
+			'stripmq',
+			'pixrem'
 		]
 	},
 	js: {
@@ -16,8 +16,8 @@ module.exports = {
 			'<%= assetsFolder %>/js/**/*.js'
 		],
 		tasks: [
-			'newer:jshint',
-			'newer:concat'
+			'jshint',
+			'concat'
 		]
 	},
 	html: {

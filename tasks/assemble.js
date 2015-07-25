@@ -8,7 +8,7 @@ module.exports = {
 			partials: [ '<%= styleguideFolder %>/src/components/**/*.hbs' ],
 			layout: 'default.hbs',
 		},
-		src: '<%= styleguideFolder %>/src/pages/index.hbs',
+		src: '<%= styleguideFolder %>/src/pages/*.hbs',
 		dest: '<%= styleguideBuildFolder %>/'
 	}
 };

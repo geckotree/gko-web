@@ -1,0 +1,26 @@
+/* ===========================================================
+
+	# Hero
+
+=========================================================== */
+
+.c-hero__figure {
+	margin: 0 auto;
+	max-width: 512px;
+	-webkit-mask: url('#{$images}/background/geckotree-mask.svg');
+	-webkit-mask-size: 100%;
+
+	&:hover {
+		.c-hero__figure__img {
+			transform: scale( 1.1 );
+		}
+	}
+}
+
+.c-hero__figure__img {
+	transition: transform $speed * 10 ease;
+}
+
+.c-hero__header {
+	margin-top: 6rem;
+}

@@ -19,6 +19,10 @@
 		'objects/forms.scss',
 		'objects/media.scss';
 
-@import 'components/buttons.scss';
+@import 'components/buttons.scss',
+		'components/footer.scss',
+		'components/hero.scss';
+
+@import 'components/case-study/card.scss';
 
 @import 'trumps/overrides.scss';

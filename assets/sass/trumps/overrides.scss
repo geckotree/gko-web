@@ -1,13 +1,17 @@
 /* ===========================================================
 
-  # OVERRIDES
+  # Overrides
 
 =========================================================== */
 
-.clearfix {
-	@include clearfix;
+.u-hide-text {
+	@include hide-text;
 }
 
-.hide-text {
-	@include hide-text;
+.u-center-content {
+	text-align: center;
+}
+
+.u-highlight-text {
+	color: $pri;
 }

@@ -1,6 +1,6 @@
 /* ===========================================================
 
-	# BUTTONS
+	# Buttons
 
 =========================================================== */
 
@@ -45,11 +45,11 @@
 
 .c-button--disabled {
 	background: $border-colour;
-	color: $black;
+	color: $text-colour;
 	cursor: not-allowed;
 
 	&:hover,
 	&:focus {
-		color: $black;
+		color: $text-colour;
 	}
 }

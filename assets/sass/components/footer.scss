@@ -1,0 +1,19 @@
+/* ===========================================================
+
+	# Footer
+
+=========================================================== */
+
+.c-page__footer {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+
+@include respond-min( $mq-large ) {
+	.c-page__footer {
+		padding: 8rem 0;
+	}
+}

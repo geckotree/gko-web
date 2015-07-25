@@ -86,6 +86,7 @@ module.exports = function( grunt ) {
 	]);
 
 	grunt.registerTask( 'images', [
+		'copy:svgImages',
 		'svgmin:svgImages',
 		'svg2png',
 		'copy:brandIcons',

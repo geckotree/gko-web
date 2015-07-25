@@ -5,7 +5,7 @@
 =========================================================== */
 
 .c-sg-header {
-	background: $pri;
+	background: $white;
 	text-align: center;
 }
 
@@ -27,16 +27,14 @@
 	background: transparent;
 	display: block;
 	padding: 1rem 2rem;
-	transition: background $speed ease,
-				color $speed ease;
 
-	&:hover {
-		background: darken( $pri, 5 );
+	svg {
+		fill: $sg-grey;
 	}
 }
 
 .c-sg-nav__link__label {
-	color: $white;
+	color: $sg-grey;
 }
 
 @include respond-max( $mq-medium ) {
@@ -59,7 +57,7 @@
 	}
 
 	.c-sg-header__logo {
-		background: darken( $pri, 5 );
+		// background: darken( #DDF0E3, 5 );
 		padding: 2rem 1rem;
 	}
 
@@ -83,7 +81,7 @@
 	}
 
 	.c-sg-nav__link__label {
-		background: darken( $pri, 5 );
+		background: $white;
 		border-radius: $border-radius;
 		left: 7rem;
 		margin-top: -2.8rem;
@@ -98,7 +96,7 @@
 		white-space: nowrap;
 
 		&:before {
-			background: darken( $pri, 5 );
+			background: $white;
 			border-radius: 100%;
 			content: '';
 			position: absolute;

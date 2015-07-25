@@ -5,7 +5,7 @@
 =========================================================== */
 
 .c-button {
-	border-radius: $border-radius;
+	border-radius: $border-radius * 100;
 	display: inline-block;
 	line-height: 1;
 	padding: 1.5rem 2rem;

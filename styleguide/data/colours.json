@@ -2,27 +2,33 @@
 	"primary": [
 		{
 			"name": "Fern Green",
-			"cmyk": "68 6 72 0",
 			"rgb": "87 178 117",
 			"hex": "57B275"
 		},
 		{
 			"name": "Froly Pink",
-			"cmyk": "0 79 42 0",
 			"rgb": "240 93 113",
 			"hex": "F05D71"
 		},
 		{
 			"name": "Ronchi Yellow",
-			"cmyk": "6 15 85 0",
 			"rgb": "242 208 68",
 			"hex": "F2D044"
 		}
 	],
 	"secondary": [
 		{
+			"name": "Mine Shaft Dark",
+			"rgb": "39 39 39",
+			"hex": "272727"
+		},
+		{
+			"name": "Mine Shaft Light",
+			"rgb": "56 56 56",
+			"hex": "383838"
+		},
+		{
 			"name": "Alabaster Grey",
-			"cmyk": "6 16 85 0",
 			"rgb": "242 208 68",
 			"hex": "F7F7F7"
 		}

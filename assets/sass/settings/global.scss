@@ -16,15 +16,27 @@ $images: 	'#{$base-dir}/build/img';
 
 =========================================================== */
 
-$white: 	#FFFFFF;
-$black: 	#000000;
-$red:		red;
-$green:		green;
-$grey:		#CCCCCC;
+$white: 		#FFFFFF;
+$black: 		#000000;
+$light-1:		#F7F7F7;
+$dark-1:		#272727;
+$dark-2:		#383838;
 
-$pri: 		#57B275;
-$sec: 		#F05D71;
-$ter: 		#F2D044;
+$fern-green:	#57B275;
+$foly-pink:		#F05D71;
+$ronchi-yellow:	#F2D044;
+
+$red:			#EC4E50;
+$green:			#57B275;
+$grey:			#E2E2E2;
+
+$twitter: 		#55ACEE;
+$dribbble: 		#EA4C89;
+$instagram: 	#3F729B;
+
+$pri: 			$fern-green;
+$sec: 			$foly-pink;
+$ter: 			$ronchi-yellow;
 
 
 
@@ -34,40 +46,40 @@ $ter: 		#F2D044;
 
 =========================================================== */
 
-$font-family:			Arial, Helvetica, Geneva, sans-serif;
-$font-size-body-small:	1.8em;
+$font-family:			'Gotham Rounded', Helvetica, Geneva, sans-serif;
+$font-size-body-small:	1.6em;
 $font-size-body-large:	2em;
-$font-size--small:		1.6rem;
-$font-size--large:		2rem;
+$font-size-small:		1.6rem;
+$font-size-large:		2rem;
 $line-height:			1.4em;
-$type-scale--small:		1.100;
-$type-scale--medium:	1.150;
-$type-scale--large:		1.200;
+$type-scale-small:		1.100;
+$type-scale-medium:		1.150;
+$type-scale-large:		1.200;
 
-$heading-colour:		$black;
-$text-colour:			$black;
-$background-colour:		$white;
+$heading-colour:		$dark-1;
+$text-colour:			$dark-2;
+$background-colour:		$light-1;
 $border-colour:			$grey;
 $link-colour:			$pri;
 $link-colour-hover:		$sec;
 $placeholder-colour:	$grey;
-$highlight-colour:		lighten( $pri, 20 );
+$highlight-colour:		lighten( $pri, 35 );
 
 $error:					$red;
 $success:				$green;
 $disabled:				$grey;
 
-$padding--small:		4rem;
-$padding--medium:		6rem;
-$padding--large:		8rem;
+$padding-small:			4rem;
+$padding-medium:		6rem;
+$padding-large:			8rem;
 
 $border-width: 			.2rem;
 $border-radius: 		.4rem;
 $speed: 				.3s;
 
-$wrap--medium:			75rem;
-$wrap--large:			92rem;
-$wrap--x-large:			140rem;
+$wrap-medium:			75rem;
+$wrap-large:			92rem;
+$wrap-x-large:			140rem;
 
 $active-scale-small:	scale( .98 );
 $active-scale-medium:	scale( .95 );

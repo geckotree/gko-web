@@ -1,8 +1,8 @@
-$sg-grey: #D2D2D2;
-
 @import '../../assets/sass/settings/global.scss';
 
 @import '../../assets/sass/tools/mixins.scss';
+
+$sg-grey: darken( $background-colour, 20 );
 
 @import 'objects/page.scss',
 		'objects/wrap.scss',

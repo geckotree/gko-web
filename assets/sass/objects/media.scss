@@ -36,13 +36,13 @@ img {
 }
 
 .o-media--large {
-	margin: $padding--small 0;
+	margin: $padding-small 0;
 	position: relative;
 }
 
 @include respond-min( $mq-medium ) {
 	.o-media--large {
-		margin: $padding--medium 0;
+		margin: $padding-medium 0;
 	}
 
 	.o-media--left,

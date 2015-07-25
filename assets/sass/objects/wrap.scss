@@ -22,15 +22,15 @@
 }
 
 .o-wrap--medium {
-	max-width: $wrap--medium;
+	max-width: $wrap-medium;
 }
 
 .o-wrap--large {
-	max-width: $wrap--large;
+	max-width: $wrap-large;
 }
 
 .o-wrap--x-large {
-	max-width: $wrap--x-large;
+	max-width: $wrap-x-large;
 }
 
 @include respond-min( $mq-small ) {

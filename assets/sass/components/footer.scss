@@ -10,10 +10,57 @@
 	position: fixed;
 	width: 100%;
 	z-index: -1;
+
+	.icon {
+		fill: #BCBEC0; //@todo variable
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+}
+
+.c-footer__social__list {
+	list-style: none;
+}
+
+.c-footer__social__item {
+	display: inline-block;
+	margin: $padding-large 2rem 0;
+}
+
+.c-footer__social__link {
+	display: block;
+
+	&:hover {
+		.icon--twitter {
+			fill: $twitter;
+		}
+
+		.icon--dribbble {
+			fill: $dribbble;
+		}
+
+		.icon--instagram {
+			fill: $instagram;
+		}
+	}
+}
+
+.c-footer__label {
+	color: #BCBEC0; //@todo var
+	display: inline-block;
+	font-weight: 600;
+	margin-left: -1rem;
+	margin-top: 2rem;
+
+	.icon {
+		fill: $red-1;
+		height: 1.6rem;
+		width: 1.6rem;
+	}
 }
 
 @include respond-min( $mq-large ) {
 	.c-page__footer {
-		padding: 8rem 0;
+		// padding: $padding-small 0;
 	}
 }

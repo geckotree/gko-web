@@ -61,3 +61,11 @@
     position: absolute;
     width: 1px;
 }
+
+@mixin unstyled-list {
+	list-style: none;
+
+	li {
+		margin: 0;
+	}
+}

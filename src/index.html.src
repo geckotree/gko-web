@@ -117,16 +117,35 @@
 				<div class="c-footer__social">
 					<ul class="c-footer__social__list">
 						<li class="c-footer__social__item">
-							<a href="#" class="c-footer__social__link"><span class="u-hide-text">Twitter</span></a>
+							<a href="https://twitter.com/geckotree" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--twitter">
+									<use xlink:href="#icon--twitter"></use>
+								</svg>
+								<span class="u-hide-text">Twitter</span>
+							</a>
 						</li>
 						<li class="c-footer__social__item">
-							<a href="#" class="c-footer__social__link"><span class="u-hide-text">Dribbble</span></a>
+							<a href="https://dribbble.com/geckotree" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--dribbble">
+									<use xlink:href="#icon--dribbble"></use>
+								</svg>
+
+								<span class="u-hide-text">Dribbble</span>
+							</a>
 						</li>
 						<li class="c-footer__social__item">
-							<a href="#" class="c-footer__social__link"><span class="u-hide-text">Instagram</span></a>
+							<a href="https://instagram.com/geckotree/" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--instagram">
+									<use xlink:href="#icon--instagram"></use>
+								</svg>
+
+								<span class="u-hide-text">Instagram</span>
+							</a>
 						</li>
 					</ul>
 				</div>
+
+				<span class="c-footer__label">Made with <svg class="icon icon--heart"><use xlink:href="#icon--heart"></use></svg> in the UK</span>
 			</div>
 		</footer>
 

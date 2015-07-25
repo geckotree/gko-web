@@ -13,6 +13,11 @@
 -  **todo** `(line 7)`  sort out the image dev and build tasks
 -  **todo** `(line 99)`  bind to modernizr classes
 
+## assets/sass/components/footer.scss
+
+-  **todo** `(line 15)`  variable
+-  **todo** `(line 49)`  var
+
 ## assets/sass/objects/page.scss
 
 -  **todo** `(line 12)`  create a variable for this

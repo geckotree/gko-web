@@ -1,28 +1,27 @@
 /* ===========================================================
 
-	# Icons
+	# Feat Media Grid
 
 =========================================================== */
 
-.icon {
-	transition: fill $speed ease;
+.c-feat-media-grid__img {
+	transition: transform $speed * 10 ease;
+	width: 100%;
 }
 
-.icon--twitter {
+.c-feat-media-grid__figure {
+	border-radius: $border-radius;
+	overflow: hidden;
+
 	&:hover {
-		fill: $twitter;
-	}
-}
-
-
-.o-grid-col {
-	img {
-		width: 100%;
+		.c-feat-media-grid__img {
+			transform: scale( 1.1 );
+		}
 	}
 }
 
 @include respond-max( $mq-small ) {
-	.o-grid-col {
+	.c-feat-media-grid__col {
 		& + & {
 			margin-top: $padding-small;
 		}
@@ -30,17 +29,14 @@
 }
 
 @include respond-min( $mq-small ) {
-	.o-grid-row {
+	.c-feat-media-grid__row {
 		@include clearfix;
 		margin-left: -$padding-small;
 	}
 
-	.o-grid-col {
+	.c-feat-media-grid__col {
 		float: left;
 		padding-left: $padding-small;
-	}
-
-	.o-grid-col--fifth {
 		width: 50%;
 
 		&:first-child {
@@ -50,13 +46,13 @@
 }
 
 @include respond-min-max( $mq-small, $mq-medium ) {
-	.o-grid-col--fifth:nth-child( n+2 ) {
+	.c-feat-media-grid__col:nth-child( n+2 ) {
 		margin-top: $padding-small;
 	}
 }
 
 @include respond-min( $mq-medium ) {
-	.o-grid-col--fifth {
+	.c-feat-media-grid__col {
 		width: 20%;
 
 		&:first-child {
@@ -66,37 +62,38 @@
 }
 
 @include respond-min-max( $mq-medium, $mq-large ) {
-	.o-grid-row {
+	.c-feat-media-grid__row {
 		margin-left: -$padding-small / 2;
 	}
 
-	.o-grid-col {
+	.c-feat-media-grid__col {
 		padding-left: $padding-small / 2;
 	}
 
-	.o-grid-col--fifth:nth-last-child( -n+3 ) {
+	.c-feat-media-grid__col:nth-last-child( -n+3 ) {
 		margin-top: $padding-small / 2;
 	}
 }
 
 @include respond-min( $mq-large ) {
-	.o-grid-col--fifth:nth-last-child( -n+3 ) {
+	.c-feat-media-grid__col:nth-last-child( -n+3 ) {
 		margin-top: $padding-small;
 	}
 
-	.o-grid-col--fifth:nth-child( 2 ),
-	.o-grid-col--fifth:nth-last-child( 2 ) {
+	//@todo modernizr bind
+	.c-feat-media-grid__col:nth-child( 2 ),
+	.c-feat-media-grid__col:nth-last-child( 2 ) {
 		opacity: 0;
 		transition: opacity $speed ease $speed;
 	}
 
-	.o-grid-col--fifth:nth-last-child( 2 ) {
+	.c-feat-media-grid__col:nth-last-child( 2 ) {
 		transition-delay: $speed * 2;
 	}
 
 	.is-inview {
-		.o-grid-col--fifth:nth-child( 2 ),
-		.o-grid-col--fifth:nth-last-child( 2 ) {
+		.c-feat-media-grid__col:nth-child( 2 ),
+		.c-feat-media-grid__col:nth-last-child( 2 ) {
 			opacity: 1;
 		}
 	}

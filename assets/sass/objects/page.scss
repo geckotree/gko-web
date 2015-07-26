@@ -9,12 +9,10 @@ html {
 }
 
 .o-page {
-	background: #EFEFEF; //@todo create a variable for this
+	background: #EFEFEF; //@todo var
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-
-	margin-bottom: 53.3rem; //@todo must match footer height
 }
 
 .o-page__content {
@@ -25,12 +23,20 @@ html {
 }
 
 @include respond-min( $mq-small ) {
+	.o-page {
+		margin-bottom: 38.6rem + $padding-medium;
+	}
+
 	.o-page__content {
 		padding-bottom: $padding-medium;
 	}
 }
 
 @include respond-min( $mq-medium ) {
+	.o-page {
+		margin-bottom: 45.3rem + $padding-large;
+	}
+
 	.o-page__content {
 		padding-bottom: $padding-large;
 	}

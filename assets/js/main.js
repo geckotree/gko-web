@@ -34,7 +34,7 @@
 		var Watcher = ScrollMonitor.create( Element, { top: -200 } );
 
 		elementWatcher.enterViewport(function() {
-		    myElement.classList.remove('is-hidden');
+		    myElement.classList.add('is-inview');
 		});
 
 		Watcher.enterViewport(function() {

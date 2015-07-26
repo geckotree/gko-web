@@ -62,6 +62,12 @@
     width: 1px;
 }
 
+@mixin icon( $colour, $height, $width ) {
+	fill: $colour;
+	height: $height;
+	width: $width;
+}
+
 @mixin unstyled-list {
 	list-style: none;
 

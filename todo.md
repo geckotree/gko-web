@@ -11,14 +11,16 @@
 ## assets/sass/components/case-study/card.scss
 
 -  **todo** `(line 7)`  sort out the image dev and build tasks
--  **todo** `(line 107)`  bind to modernizr classes
+
+## assets/sass/components/feat-media-grid.scss
+
+-  **todo** `(line 83)`  modernizr bind
 
 ## assets/sass/components/footer.scss
 
--  **todo** `(line 15)`  variable
--  **todo** `(line 49)`  var
+-  **todo** `(line 9)`  var
+-  **todo** `(line 41)`  var
 
 ## assets/sass/objects/page.scss
 
--  **todo** `(line 12)`  create a variable for this
--  **todo** `(line 17)`  must match footer height
+-  **todo** `(line 12)`  var

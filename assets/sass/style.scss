@@ -2,6 +2,8 @@
 
 @import 'tools/mixins.scss';
 
+@import 'animations/base.scss';
+
 @import 'generic/reset.scss';
 
 @import 'base/text.scss',
@@ -23,7 +25,8 @@
 @import 'components/icons.scss',
 		'components/buttons.scss',
 		'components/footer.scss',
-		'components/hero.scss';
+		'components/hero.scss',
+		'components/feat-media-grid.scss';
 
 @import 'components/case-study/card.scss';
 

@@ -7,8 +7,8 @@
 .o-wrap {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: $padding-small / 2;
+	padding-right: $padding-small / 2;
 
 	.o-wrap {
 		padding-left: 0;
@@ -35,7 +35,7 @@
 
 @include respond-min( $mq-small ) {
 	.o-wrap {
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding-left: $padding-small;
+		padding-right: $padding-small;
 	}
 }

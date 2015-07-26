@@ -200,8 +200,7 @@
 			</div>
 		</footer>
 
-		<!-- @todo fix -->
-		<div style="display:none;">@@icons</div>
+		<div class="u-icons">@@icons</div>
 		<script src="assets/build/js/main.js"></script>
 		<script>@@googleAnalytics</script>
 	</body>

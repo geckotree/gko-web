@@ -12,10 +12,6 @@
 
 -  **todo** `(line 7)`  sort out the image dev and build tasks
 
-## assets/sass/components/feat-media-grid.scss
-
--  **todo** `(line 83)`  modernizr bind
-
 ## assets/sass/components/footer.scss
 
 -  **todo** `(line 9)`  var

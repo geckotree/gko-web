@@ -1,5 +1,5 @@
 /* Modernizr (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-cssclasses-cssanimations-svg
+ * Build: http://modernizr.com/download/#-cssclasses-cssanimations-svg-opacity
  */
 ;
 
@@ -22,7 +22,13 @@ window.Modernizr = (function( window, document, undefined ) {
     inputElem  ,
 
 
-    toString = {}.toString,    omPrefixes = 'Webkit Moz O ms',
+    toString = {}.toString,
+
+    prefixes = ' -webkit- -moz- -o- -ms- '.split(' '),
+
+
+
+    omPrefixes = 'Webkit Moz O ms',
 
     cssomPrefixes = omPrefixes.split(' '),
 
@@ -153,7 +159,17 @@ window.Modernizr = (function( window, document, undefined ) {
           props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
           return testDOMProps(props, prefixed, elem);
         }
-    }    tests['cssanimations'] = function() {
+    }
+
+
+    tests['opacity'] = function() {
+                setCssAll('opacity:.55');
+
+                    return (/^0.55$/).test(mStyle.opacity);
+    };
+
+
+    tests['cssanimations'] = function() {
         return testPropsAll('animationName');
     };
     tests['svg'] = function() {
@@ -204,6 +220,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     Modernizr._version      = version;
 
+    Modernizr._prefixes     = prefixes;
     Modernizr._domPrefixes  = domPrefixes;
     Modernizr._cssomPrefixes  = cssomPrefixes;
 

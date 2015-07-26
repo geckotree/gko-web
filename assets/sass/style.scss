@@ -30,6 +30,12 @@
 		'components/pagination.scss',
 		'components/feat-media-grid.scss';
 
-@import 'components/case-study/card.scss';
+@import 'components/case-study/page-nav.scss',
+		'components/case-study/section.scss',
+		'components/case-study/hero.scss',
+		'components/case-study/card.scss';
+
+@import 'components/case-study/adspy/base.scss',
+		'components/case-study/adspy/hero.scss';
 
 @import 'trumps/overrides.scss';

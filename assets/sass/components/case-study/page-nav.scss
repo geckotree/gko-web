@@ -1,0 +1,20 @@
+/* ===========================================================
+
+	# Case Study - Page Nav
+
+=========================================================== */
+
+.c-case-study__page-nav__sections {
+	@include unstyled-list;
+	counter-reset: section;
+}
+
+.c-case-study__page-nav__section {
+	counter-increment: section;
+}
+
+.c-case-study__page-nav__link {
+	&:before {
+		content: counters( section, '.' ) ' ';
+	}
+}

@@ -1,5 +1,5 @@
 /* Modernizr (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-cssclasses-cssanimations-svg-opacity
+ * Build: http://modernizr.com/download/#-cssclasses-svg-cssanimations-flexbox-opacity
  */
 ;
 
@@ -159,7 +159,10 @@ window.Modernizr = (function( window, document, undefined ) {
           props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
           return testDOMProps(props, prefixed, elem);
         }
-    }
+    }    tests['flexbox'] = function() {
+      return testPropsAll('flexWrap');
+    };
+
 
 
     tests['opacity'] = function() {

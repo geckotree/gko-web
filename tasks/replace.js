@@ -25,7 +25,8 @@ module.exports = {
         	flatten: true,
         	src: [
         		'src/index.html',
-        		'src/blog.html'
+        		'src/blog.html',
+        		'src/adspy.html'
         	],
         	dest: ''
         }]

@@ -5,6 +5,7 @@
 =========================================================== */
 
 //@todo sort out the image dev and build tasks
+//@todo move these into case-study folders
 
 .c-case-study--geckotree {
 	background-color: rgba( $pri, .15 );
@@ -18,10 +19,6 @@
 .c-case-study--adspy {
 	background-color: rgba( $adspy-pri, .10 );
 	background-image: url( '#{$images}/background/adspy-logo.svg' );
-
-	.c-button {
-		background: $adspy-pri;
-	}
 
 	&:hover {
 		background-color: rgba( $adspy-pri, .20 );

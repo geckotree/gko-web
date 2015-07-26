@@ -11,6 +11,11 @@
 ## assets/sass/components/case-study/card.scss
 
 -  **todo** `(line 7)`  sort out the image dev and build tasks
+-  **todo** `(line 8)`  move these into case-study folders
+
+## assets/sass/components/case-study/section.scss
+
+-  **todo** `(line 18)`  update this
 
 ## assets/sass/components/footer.scss
 

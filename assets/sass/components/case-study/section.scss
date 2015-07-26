@@ -1,0 +1,114 @@
+/* ===========================================================
+
+	# Case Study - Section
+
+=========================================================== */
+
+.c-case-study__sections {
+	@include unstyled-list;
+	counter-reset: section;
+}
+
+.c-case-study__section {
+	counter-increment: section;
+}
+
+.c-case-study__section__heading {
+	&:before {
+		color: $grey; //@todo update this
+		content: counters( section, '.' ) ' ';
+		font-size: .75em;
+	}
+}
+
+.c-case-study__section__grid-col--7 {
+	margin-top: $padding-small;
+}
+
+@include respond-max( $mq-small ) {
+	.c-case-study__section__heading {
+		margin-left: -3rem;
+	}
+}
+
+@include respond-min( $mq-small ) {
+	.c-case-study__section__grid-col--7 {
+		margin-top: $padding-medium;
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.c-case-study__section__heading {
+		margin-left: -4.5rem;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__section__grid-col--7 {
+		margin-top: $padding-large;
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-case-study__section__heading {
+		margin-left: -5.4rem;
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__section__header {
+		text-align: center;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__section__header--center {
+		text-align: center;
+
+		.c-case-study__section__heading {
+			margin-left: -5.4rem;
+		}
+	}
+
+	.c-case-study__section__grid-row {
+		@include clearfix;
+		margin-left: -$padding-small;
+
+		.c-case-study__section__description {
+			padding-left: 6rem;
+		}
+	}
+
+	.c-case-study__section__grid-row--right {
+		.c-case-study__section__grid-col--5 {
+			float: right;
+		}
+	}
+
+	.c-case-study__section__grid-col {
+		float: left;
+		padding-left: $padding-small;
+	}
+
+	.c-case-study__section__grid-col--5 {
+		width: 41.666666666%;
+	}
+
+	.c-case-study__section__grid-col--7 {
+		margin-top: 0;
+		width: 58.333333333%;
+	}
+
+	.flexbox {
+		.c-case-study__section__grid-row {
+			align-items: center;
+			display: flex;
+		}
+
+		.c-case-study__section__grid-row--right {
+			.c-case-study__section__grid-col--5 {
+				order: 2;
+			}
+		}
+	}
+}

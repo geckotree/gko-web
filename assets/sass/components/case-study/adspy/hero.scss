@@ -1,0 +1,19 @@
+/* ===========================================================
+
+	# AdSpy - Hero
+
+=========================================================== */
+
+.s-case-study--adspy {
+	.c-case-study__hero {
+		background-color: rgba( $adspy-pri, .2 );
+		background-image: url( '#{$images}/background/city-background.svg' );
+		background-position: bottom;
+		background-repeat: repeat-x;
+	}
+
+	.c-case-study__hero__mark img {
+		max-width: 400px;
+		width: 100%;
+	}
+}

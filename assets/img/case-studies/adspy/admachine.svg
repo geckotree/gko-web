@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="545px" height="545px" viewBox="0 0 545 545" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M482.249127,394.000636 C497.094218,369.613573 508.038394,342.590539 514.215087,313.798104 L502.666667,313.798104 L502.666667,322.152535 L498.333333,322.152535 L494.333333,255.317092 L486,255.317092 L486,247.965193 L481.833333,247.965193 L481.833333,244.790509 L475.5,244.790509 L473.5,215.550003 L471.5,244.790509 L465.166667,244.790509 L465.166667,247.965193 L461,247.965193 L461,255.317092 L452.666667,255.317092 L448.166667,330.506965 L444.333333,330.506965 L444.333333,313.798104 L436.166667,313.798104 L436.166667,305.443674 L437.666667,305.443674 C439,305.443674 440.166667,304.274054 440.166667,302.937345 L440.166667,299.595573 C440.166667,298.258864 439,297.089244 437.666667,297.089244 L423.5,297.089244 C423.5,287.89937 416,280.380383 406.833333,280.380383 C397.666667,280.380383 390.166667,287.89937 390.166667,297.089244 L376.166667,297.089244 C374.833333,297.089244 373.666667,298.258864 373.666667,299.595573 L373.666667,302.937345 C373.666667,304.274054 374.833333,305.443674 376.166667,305.443674 L377.666667,305.443674 L377.666667,347.215826 L369.333333,347.215826 L369.333333,338.861395 L352.666667,338.861395 L352.666667,347.215826 L350.5,347.215826 L350.5,326.663927 L352.166667,326.663927 C353.5,326.663927 354.666667,325.494307 354.666667,324.157598 L354.666667,320.815826 C354.666667,319.479117 353.5,318.309497 352.166667,318.309497 L304.166667,318.309497 C302.833333,318.309497 301.666667,319.479117 301.666667,320.815826 L301.666667,324.157598 C301.666667,325.494307 302.833333,326.663927 304.166667,326.663927 L305.833333,326.663927 L305.833333,352.228484 L278.5,352.228484 L260.833333,300.431016 L243.166667,352.228484 L216,352.228484 L216,326.663927 L217.666667,326.663927 C219,326.663927 220.166667,325.494307 220.166667,324.157598 L220.166667,320.815826 C220.166667,319.479117 219,318.309497 217.666667,318.309497 L169.666667,318.309497 C168.333333,318.309497 167.166667,319.479117 167.166667,320.815826 L167.166667,324.157598 C167.166667,325.494307 168.333333,326.663927 169.666667,326.663927 L171.333333,326.663927 L171.333333,347.215826 L169.333333,347.215826 L169.333333,338.861395 L152.666667,338.861395 L152.666667,347.215826 L144.333333,347.215826 L144.333333,305.443674 L145.833333,305.443674 C147.166667,305.443674 148.333333,304.274054 148.333333,302.937345 L148.333333,299.595573 C148.333333,298.258864 147.166667,297.089244 145.833333,297.089244 L131.666667,297.089244 C131.666667,287.89937 124.166667,280.380383 115,280.380383 C105.833333,280.380383 98.3333333,287.89937 98.3333333,297.089244 L84.1666667,297.089244 C82.8333333,297.089244 81.6666667,298.258864 81.6666667,299.595573 L81.6666667,302.937345 C81.6666667,304.274054 82.8333333,305.443674 84.1666667,305.443674 L85.6666667,305.443674 L85.6666667,313.798104 L77.6666667,313.798104 L77.6666667,330.506965 L73.8333333,330.506965 L69.3333333,255.317092 L61,255.317092 L61,247.965193 L56.8333333,247.965193 L56.8333333,244.790509 L50.5,244.790509 L48.5,215.550003 L46.5,244.790509 L40.1666667,244.790509 L40.1666667,247.965193 L36,247.965193 L36,255.317092 L27.6666667,255.317092 L23.6666667,322.152535 L19.3333333,322.152535 L19.3333333,313.798104 L5.78491313,313.798104 C11.9616056,342.590539 22.9057824,369.613573 37.7508734,394.000636 L482.249127,394.000636 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <rect id="path-5" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <rect id="path-7" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <path d="M56,14 L56,0 L16,0 L16,14 L15.0016723,14 C14.4498156,14 14,14.4519098 14,15.0093689 L14,16.9906311 C14,17.5566468 14.448464,18 15.0016723,18 L56.9983277,18 C57.5501844,18 58,17.5480902 58,16.9906311 L58,15.0093689 C58,14.4433532 57.551536,14 56.9983277,14 L56,14 Z M16,18 L56,18 L70.1883059,37.8636283 C73.3980159,42.3572223 71.5274312,46 66.0095352,46 L5.99046484,46 C0.472883464,46 -1.39560894,42.3538525 1.81169408,37.8636283 L16,18 Z" id="path-9"></path>
+        <path d="M56,14 L56,0 L16,0 L16,14 L15.0016723,14 C14.4498156,14 14,14.4519098 14,15.0093689 L14,16.9906311 C14,17.5566468 14.448464,18 15.0016723,18 L56.9983277,18 C57.5501844,18 58,17.5480902 58,16.9906311 L58,15.0093689 C58,14.4433532 57.551536,14 56.9983277,14 L56,14 Z M16,18 L56,18 L70.1883059,37.8636283 C73.3980159,42.3572223 71.5274312,46 66.0095352,46 L5.99046484,46 C0.472883464,46 -1.39560894,42.3538525 1.81169408,37.8636283 L16,18 Z" id="path-11"></path>
+        <rect id="path-13" x="0" y="0" width="44" height="24" rx="15"></rect>
+        <circle id="path-15" cx="25" cy="25" r="25"></circle>
+        <circle id="path-17" cx="25" cy="25" r="25"></circle>
+        <circle id="path-19" cx="25" cy="25" r="25"></circle>
+        <path id="path-21" d="M148,5.5 C148,8.538 145.538,11 142.5,11 L5.5,11 C2.462,11 0,8.538 0,5.5 C0,2.462 2.462,0 5.5,0 L142.5,0 C145.538,0 148,2.462 148,5.5"></path>
+        <path id="path-23" d="M25.5,13 L39,13 L39,0 L25.5,0 C11.693,0 0.5,11.193 0.5,25 C0.5,38.807 11.693,50 25.5,50 L39,50 L39,37 L25.5,37 C18.872,37 13.5,31.627 13.5,25 C13.5,18.373 18.872,13 25.5,13"></path>
+        <path id="path-25" d="M20,10.5 C20,16.023 15.523,20.5 10,20.5 C4.477,20.5 0,16.023 0,10.5 C0,4.977 4.477,0.5 10,0.5 C15.523,0.5 20,4.977 20,10.5"></path>
+        <rect id="path-27" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <path d="M56,14 L56,2.84217094e-14 L16,2.84217094e-14 L16,14 L15.0016723,14 C14.4498156,14 14,14.4519098 14,15.0093689 L14,16.9906311 C14,17.5566468 14.448464,18 15.0016723,18 L56.9983277,18 C57.5501844,18 58,17.5480902 58,16.9906311 L58,15.0093689 C58,14.4433532 57.551536,14 56.9983277,14 L56,14 Z M16,18 L56,18 L70.1883059,37.8636283 C73.3980159,42.3572223 71.5274312,46 66.0095352,46 L5.99046484,46 C0.472883464,46 -1.39560894,42.3538525 1.81169408,37.8636283 L16,18 Z" id="path-29"></path>
+        <rect id="path-31" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <rect id="path-33" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <rect id="path-35" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <rect id="path-37" x="0" y="0" width="40" height="40" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <g id="ad-machine" sketch:type="MSLayerGroup" transform="translate(-11.000000, 0.000000)">
+                <g id="background" transform="translate(16.000000, 0.000000)">
+                    <path d="M482.854777,394 C506.435258,354.867551 520,309.017883 520,260 C520,116.405965 403.594035,0 260,0 C116.405965,0 0,116.405965 0,260 C0,309.017883 13.5647421,354.867551 37.1452228,394 L482.854777,394 Z" id="blue-oval" fill="#229EE0" sketch:type="MSShapeGroup"></path>
+                    <mask id="mask-2" sketch:name="city " fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="city-" fill-opacity="0.05" fill="#000000" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                </g>
+                <path d="M397.375,135.986 C397.324,135.986 397.275,135.993 397.224,135.994 C397.314,135.27 397.375,134.538 397.375,133.79 C397.375,123.965 389.41,116 379.585,116 C371.332,116 364.411,121.629 362.402,129.251 C360.105,127.777 357.38,126.911 354.449,126.911 C346.299,126.911 339.692,133.518 339.692,141.668 C339.692,142.239 339.732,142.8 339.795,143.354 C339.289,143.284 338.776,143.236 338.251,143.236 C332.037,143.236 327,148.273 327,154.486 C327,160.699 332.037,165.736 338.25,165.736 L397.375,165.736 C405.59,165.736 412.25,159.076 412.25,150.861 C412.25,142.646 405.59,135.986 397.375,135.986 L397.375,135.986 Z" id="cloud" opacity="0.06" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M182.474484,70.023319 C182.474484,62.2785686 176.195916,56 168.451165,56 C161.945575,56 156.48996,60.4371705 154.906326,66.4453626 C153.09567,65.283453 150.947635,64.6008113 148.637217,64.6008113 C142.212818,64.6008113 137.00472,69.8089096 137.00472,76.2333082 C137.00472,76.6834102 137.036251,77.1256295 137.085912,77.562331 C136.687047,77.5071521 136.282665,77.4693152 135.868823,77.4693152 C130.970515,77.4693152 127,81.4398299 127,86.3373499 C127,91.23487 130.970515,95.2053847 135.868035,95.2053847 L182.474484,95.2053847 C188.95012,95.2053847 194.199997,89.9555081 194.199997,83.4798721 C194.199997,77.004236 188.95012,71.7543594 182.474484,71.7543594 C182.4264,71.1899583 182.474484,70.6129448 182.474484,70.023319 Z" id="cloud" opacity="0.06" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <g id="lower-machine" transform="translate(181.000000, 394.000000)">
+                    <g id="advert-eight" transform="translate(132.000000, 98.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-4" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#63B55A" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-4)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="advert-seven" transform="translate(30.000000, 111.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-6" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#63B55A" sketch:type="MSShapeGroup" xlink:href="#path-5"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-6)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="advert-six" transform="translate(30.000000, 58.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-8" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="Mask" fill="#63B55A" sketch:type="MSShapeGroup" xlink:href="#path-7"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-8)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="right-shoot" transform="translate(111.000000, 39.000000)">
+                        <path d="M21,18 L61,18 L75.1883059,37.8636283 C78.3980159,42.3572223 76.5274312,46 71.0095352,46 L10.9904648,46 C5.47288346,46 3.60439106,42.3538525 6.81169408,37.8636283 L21,18 Z" id="pipe-shoot" fill="#D9DDDD" sketch:type="MSShapeGroup"></path>
+                        <rect id="pipe" fill="#D9DDDD" sketch:type="MSShapeGroup" x="21" y="0" width="40" height="18"></rect>
+                        <rect id="pipe-join" fill="#63B55A" sketch:type="MSShapeGroup" x="19" y="14" width="44" height="4" rx="1"></rect>
+                        <g id="shadow" transform="translate(5.000000, 0.000000)">
+                            <mask id="mask-10" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-9"></use>
+                            </mask>
+                            <use id="Mask" opacity="0" fill="#D9DDDD" sketch:type="MSShapeGroup" xlink:href="#path-9"></use>
+                            <path d="M-2,0 L56,0 L56,9.01220703 L27.2099609,46 L-2,46 L-2,0 Z" fill-opacity="0.05" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-10)"></path>
+                        </g>
+                    </g>
+                    <g id="left-shoot" transform="translate(9.000000, 39.000000)">
+                        <path d="M21,18 L61,18 L75.1883059,37.8636283 C78.3980159,42.3572223 76.5274312,46 71.0095352,46 L10.9904648,46 C5.47288346,46 3.60439106,42.3538525 6.81169408,37.8636283 L21,18 Z" id="pipe-shoot" fill="#D9DDDD" sketch:type="MSShapeGroup"></path>
+                        <rect id="pipe" fill="#D9DDDD" sketch:type="MSShapeGroup" x="21" y="0" width="40" height="18"></rect>
+                        <rect id="pipe-join" fill="#63B55A" sketch:type="MSShapeGroup" x="19" y="14" width="44" height="4" rx="1"></rect>
+                        <g id="shadow" transform="translate(5.000000, 0.000000)">
+                            <mask id="mask-12" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-11"></use>
+                            </mask>
+                            <use id="Mask" opacity="0" fill="#D9DDDD" sketch:type="MSShapeGroup" xlink:href="#path-11"></use>
+                            <path d="M-2,0 L56,0 L56,9.01220703 L27.2099609,46 L-2,46 L-2,0 Z" fill-opacity="0.05" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-12)"></path>
+                        </g>
+                    </g>
+                    <g id="machine-body">
+                        <path d="M0,0 L0,6.667 C0,25.076 14.924,40 33.333,40 L166.667,40 C185.076,40 200,25.076 200,6.667 L200,0 L0,0" fill="#DFE4E5" sketch:type="MSShapeGroup"></path>
+                        <g id="control-room" transform="translate(78.000000, 8.000000)">
+                            <rect id="window-background" fill="#CBD6DF" sketch:type="MSShapeGroup" x="0" y="0" width="44" height="24" rx="15"></rect>
+                            <g id="ninja" transform="translate(14.000000, 2.000000)" sketch:type="MSShapeGroup">
+                                <path d="M0.16434,10.95444 C0.06414,10.87338 0,10.74924 0,10.61016 C0,10.36566 0.1974,10.16808 0.44064,10.16808 C0.56598,10.16808 0.67914,10.22058 0.75942,10.30488 L5.1399,14.70084 C5.23044,14.78178 5.2875,14.89962 5.2875,15.03102 C5.2875,15.27504 5.0901,15.4731 4.84686,15.4731 C4.70076,15.4731 4.57116,15.40164 4.491,15.2916 L0.1644,10.95444 L0.16434,10.95444 Z" id="sword" fill="#E05C46"></path>
+                                <path d="M8.3718,18.56778 L7.49058,18.56778 C7.49058,19.78836 6.50406,20.77824 5.2875,20.77824 C4.07094,20.77824 3.08442,19.78842 3.08442,18.56778 L3.08442,16.35732 C2.1111,16.35732 1.32192,15.56556 1.32192,14.58894 C1.32192,13.61238 2.11104,12.82056 3.08442,12.82056 L12.77808,12.82056 C13.7514,12.82056 14.54058,13.61232 14.54058,14.58894 C14.54058,15.5655 13.75146,16.35732 12.77808,16.35732 L12.77808,18.56778 C12.77808,19.78836 11.79156,20.77824 10.575,20.77824 C9.35844,20.77824 8.37192,19.78842 8.37192,18.56778 L8.3718,18.56778 Z" id="body" fill="#292929"></path>
+                                <g id="head" transform="translate(0.840000, 0.000000)">
+                                    <path d="M13.70046,7.07346 C13.70046,10.73574 10.74126,13.70478 7.09116,13.70478 C3.44106,13.70478 0.48186,10.73568 0.48186,7.07346 C0.48186,3.41118 3.44106,0.44214 7.09116,0.44214 C10.74126,0.44214 13.70046,3.41124 13.70046,7.07346" id="face" fill="#FFE6CC"></path>
+                                    <path d="M2.26902,12.82062 C3.5724,13.92228 5.25336,14.589 7.09116,14.589 C8.92854,14.589 10.6095,13.92234 11.91288,12.82062 L2.26902,12.82062" id="head-shadow" fill="#3D3E3E"></path>
+                                    <path d="M14.01066,1.74936 C14.12172,1.69986 14.17146,1.569 14.12214,1.45758 C14.09172,1.38864 14.03052,1.34352 13.96266,1.33026 L13.69962,1.3263 C13.23564,1.3263 12.85938,0.96558 12.825,0.50886 L12.8193,0.22326 L12.8193,0.22104 C12.8193,0.099 12.7206,0 12.59898,0 C12.52938,0 12.46986,0.03402 12.42978,0.08442 L12.42804,0.084 L11.34498,1.4421 C10.1619,0.54114 8.69154,0 7.09122,0 C3.19746,0 0.04128,3.16668 0.04128,7.07346 C0.04128,10.98018 3.19746,14.14692 7.09122,14.14692 C10.98498,14.14692 14.14116,10.98024 14.14116,7.07346 C14.14116,5.33514 13.51374,3.74586 12.47736,2.51418 L14.01072,1.74936 L14.01066,1.74936 Z M12.79452,6.5487 C12.8082,6.7092 12.81918,6.87012 12.81918,7.03368 C12.81918,7.97664 12.58872,8.86392 12.18732,9.64866 C10.6068,9.95682 8.88972,9.24414 7.0911,9.24414 C5.29248,9.24414 3.5754,9.95676 1.99488,9.64866 C1.59348,8.86398 1.36302,7.9767 1.36302,7.03368 C1.36302,6.87012 1.37406,6.7092 1.38768,6.5487 C3.03342,6.01776 4.98888,5.70738 7.09104,5.70738 C9.19326,5.70738 11.14872,6.0177 12.7944,6.5487 L12.79452,6.5487 Z" fill="#292929"></path>
+                                    <path d="M4.0068,7.07346 C3.5199,7.07346 3.12558,7.46958 3.12558,7.95762 C3.12558,8.44566 3.51996,8.84178 4.0068,8.84178 C4.49322,8.84178 4.88802,8.44566 4.88802,7.95762 C4.88802,7.46958 4.49322,7.07346 4.0068,7.07346" id="eye" fill="#292929"></path>
+                                    <path d="M10.17552,8.84178 C10.66194,8.84178 11.05674,8.44566 11.05674,7.95762 C11.05674,7.46958 10.66194,7.07346 10.17552,7.07346 C9.6891,7.07346 9.2943,7.46958 9.2943,7.95762 C9.2943,8.44566 9.6891,8.84178 10.17552,8.84178" id="eye" fill="#292929"></path>
+                                </g>
+                            </g>
+                            <g id="control-base">
+                                <mask id="mask-14" sketch:name="Mask" fill="white">
+                                    <use xlink:href="#path-13"></use>
+                                </mask>
+                                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-13"></use>
+                                <path d="M5,18 L39,18 L39,23 L5,23 L5,18 Z" fill="#333E47" sketch:type="MSShapeGroup" mask="url(#mask-14)"></path>
+                            </g>
+                            <path d="M17,15 L27,15 L27,18 L17,18 L17,15 Z" id="control-pad" fill="#333E47" sketch:type="MSShapeGroup"></path>
+                            <g id="button" transform="translate(29.000000, 16.000000)" sketch:type="MSShapeGroup">
+                                <path d="M3,1 C3,1.552 2.552,2 2,2 C1.448,2 1,1.552 1,1 C1,0.448 1.448,0 2,0 C2.552,0 3,0.448 3,1" fill="#E15C46"></path>
+                                <path d="M0,1 L4,1 L4,2 L0,2 L0,1 Z" id="base" fill="#333E47"></path>
+                            </g>
+                            <g id="joystick" transform="translate(11.000000, 11.000000)" sketch:type="MSShapeGroup">
+                                <path d="M0,6 L3,6 L3,7 L0,7 L0,6 Z" id="base" fill="#333E47"></path>
+                                <path d="M1,1 L2,1 L2,6 L1,6 L1,1 Z" id="stick" fill="#333E47"></path>
+                                <path d="M3,1.5 C3,2.328 2.328,3 1.5,3 C0.672,3 0,2.328 0,1.5 C0,0.672 0.672,0 1.5,0 C2.328,0 3,0.672 3,1.5" id="handle" fill="#63B65A"></path>
+                            </g>
+                            <rect id="window-frame" stroke="#C6C8C6" stroke-width="3" sketch:type="MSShapeGroup" x="0" y="0" width="44" height="24" rx="15"></rect>
+                        </g>
+                        <g id="right-decor-circle-copy" transform="translate(145.000000, 12.000000)" sketch:type="MSShapeGroup">
+                            <circle id="outer" fill="#C6C8C6" cx="7.5" cy="7.5" r="7.5"></circle>
+                            <circle id="center" fill="#DEE3E4" cx="7.5" cy="7.5" r="5.5"></circle>
+                            <circle id="inner" fill="#C6C8C6" cx="7.5" cy="7.5" r="3.5"></circle>
+                        </g>
+                        <g id="left-decor-circle" transform="translate(39.000000, 12.000000)" sketch:type="MSShapeGroup">
+                            <circle id="outer" fill="#C6C8C6" cx="7.5" cy="7.5" r="7.5"></circle>
+                            <circle id="center" fill="#DEE3E4" cx="7.5" cy="7.5" r="5.5"></circle>
+                            <circle id="inner" fill="#C6C8C6" cx="7.5" cy="7.5" r="3.5"></circle>
+                        </g>
+                        <path d="M0,6.667 C0,25.076 14.924,40 33.333,40 L139.440755,40 L179.078125,0 L0,0 L0,6.667 Z" id="shadow" fill-opacity="0.05" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                </g>
+                <g id="upper-machine" transform="translate(0.000000, 127.000000)">
+                    <g id="arm">
+                        <g id="bottom-arm" transform="translate(21.000000, 218.000000)" sketch:type="MSShapeGroup">
+                            <path d="M0.25,0 L160.25,0 L160.25,30 L0.25,30 L0.25,0 Z" fill="#333E47"></path>
+                            <g id="bolts" transform="translate(49.000000, 11.000000)" fill="#2A3238">
+                                <path d="M7.5,4 C7.5,6.071 5.821,7.75 3.75,7.75 C1.679,7.75 0,6.071 0,4 C0,1.929 1.679,0.25 3.75,0.25 C5.821,0.25 7.5,1.929 7.5,4" id="bolt"></path>
+                                <path d="M25,4 C25,6.071 23.321,7.75 21.25,7.75 C19.179,7.75 17.5,6.071 17.5,4 C17.5,1.929 19.179,0.25 21.25,0.25 C23.321,0.25 25,1.929 25,4" id="bolt"></path>
+                                <path d="M42.5,4 C42.5,6.071 40.821,7.75 38.75,7.75 C36.679,7.75 35,6.071 35,4 C35,1.929 36.679,0.25 38.75,0.25 C40.821,0.25 42.5,1.929 42.5,4" id="bolt"></path>
+                                <path d="M60,4 C60,6.071 58.321,7.75 56.25,7.75 C54.179,7.75 52.5,6.071 52.5,4 C52.5,1.929 54.179,0.25 56.25,0.25 C58.321,0.25 60,1.929 60,4" id="bolt"></path>
+                                <path d="M77.5,4 C77.5,6.071 75.821,7.75 73.75,7.75 C71.679,7.75 70,6.071 70,4 C70,1.929 71.679,0.25 73.75,0.25 C75.821,0.25 77.5,1.929 77.5,4" id="bolt"></path>
+                            </g>
+                            <path d="M0.25,15 L160.25,15 L160.25,30 L0.25,30 L0.25,15 Z" id="shadow" fill-opacity="0.1" fill="#000000"></path>
+                        </g>
+                        <g id="left-arm" transform="translate(21.000000, 26.000000)" sketch:type="MSShapeGroup">
+                            <path d="M0,0.75 L30,0.75 L30,222 L0,222 L0,0.75 Z" fill="#333E47"></path>
+                            <g id="bolts" transform="translate(11.000000, 43.000000)" fill="#2A3238">
+                                <path d="M4.25,122.75 C6.321,122.75 8,124.429 8,126.5 C8,128.571 6.321,130.25 4.25,130.25 C2.179,130.25 0.5,128.571 0.5,126.5 C0.5,124.429 2.179,122.75 4.25,122.75" id="bolt"></path>
+                                <path d="M4.25,105.25 C6.321,105.25 8,106.929 8,109 C8,111.071 6.321,112.75 4.25,112.75 C2.179,112.75 0.5,111.071 0.5,109 C0.5,106.929 2.179,105.25 4.25,105.25" id="bolt"></path>
+                                <path d="M4.25,87.75 C6.321,87.75 8,89.429 8,91.5 C8,93.571 6.321,95.25 4.25,95.25 C2.179,95.25 0.5,93.571 0.5,91.5 C0.5,89.429 2.179,87.75 4.25,87.75" id="bolt"></path>
+                                <path d="M4.25,70.25 C6.321,70.25 8,71.929 8,74 C8,76.071 6.321,77.75 4.25,77.75 C2.179,77.75 0.5,76.071 0.5,74 C0.5,71.929 2.179,70.25 4.25,70.25" id="bolt"></path>
+                                <path d="M4.25,52.75 C6.321,52.75 8,54.429 8,56.5 C8,58.571 6.321,60.25 4.25,60.25 C2.179,60.25 0.5,58.571 0.5,56.5 C0.5,54.429 2.179,52.75 4.25,52.75" id="bolt"></path>
+                                <path d="M4.25,35.25 C6.321,35.25 8,36.929 8,39 C8,41.071 6.321,42.75 4.25,42.75 C2.179,42.75 0.5,41.071 0.5,39 C0.5,36.929 2.179,35.25 4.25,35.25" id="bolt"></path>
+                                <path d="M4.25,17.75 C6.321,17.75 8,19.429 8,21.5 C8,23.571 6.321,25.25 4.25,25.25 C2.179,25.25 0.5,23.571 0.5,21.5 C0.5,19.429 2.179,17.75 4.25,17.75" id="bolt"></path>
+                                <path d="M4.25,0.25 C6.321,0.25 8,1.929 8,4 C8,6.071 6.321,7.75 4.25,7.75 C2.179,7.75 0.5,6.071 0.5,4 C0.5,1.929 2.179,0.25 4.25,0.25" id="bolt"></path>
+                            </g>
+                            <path d="M0,0.75 L15,0.75 L15,222 L0,222 L0,0.75 Z" id="shadow" fill-opacity="0.1" fill="#000000"></path>
+                        </g>
+                        <g id="connector-circle" transform="translate(156.000000, 208.000000)">
+                            <circle fill="#2A3338" sketch:type="MSShapeGroup" cx="25" cy="25" r="25"></circle>
+                            <circle id="connector-circle-inner" stroke="#63B55A" stroke-width="4" sketch:type="MSShapeGroup" cx="25" cy="25" r="13"></circle>
+                            <g id="shadow">
+                                <mask id="mask-16" sketch:name="Mask" fill="white">
+                                    <use xlink:href="#path-15"></use>
+                                </mask>
+                                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-15"></use>
+                                <rect id="Rectangle-31" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-16)" x="0" y="25" width="50" height="25"></rect>
+                            </g>
+                        </g>
+                        <g id="connector-circle" transform="translate(36.000000, 233.000000) rotate(-315.000000) translate(-36.000000, -233.000000) translate(11.000000, 208.000000)">
+                            <circle fill="#2A3338" sketch:type="MSShapeGroup" cx="25" cy="25" r="25"></circle>
+                            <circle id="connector-circle-inner" stroke="#63B55A" stroke-width="4" sketch:type="MSShapeGroup" cx="25" cy="25" r="13"></circle>
+                            <g id="shadow">
+                                <mask id="mask-18" sketch:name="Mask" fill="white">
+                                    <use xlink:href="#path-17"></use>
+                                </mask>
+                                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-17"></use>
+                                <rect id="Rectangle-31" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-18)" x="0" y="25" width="50" height="25"></rect>
+                            </g>
+                        </g>
+                        <g id="connector-circle" transform="translate(36.000000, 36.000000) rotate(-315.000000) translate(-36.000000, -36.000000) translate(11.000000, 11.000000)">
+                            <circle fill="#2A3338" sketch:type="MSShapeGroup" cx="25" cy="25" r="25"></circle>
+                            <circle id="connector-circle-inner" stroke="#63B55A" stroke-width="4" sketch:type="MSShapeGroup" cx="25" cy="25" r="13"></circle>
+                            <g id="shadow" transform="translate(-0.000000, 0.000000)">
+                                <mask id="mask-20" sketch:name="Mask" fill="white">
+                                    <use xlink:href="#path-19"></use>
+                                </mask>
+                                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-19"></use>
+                                <rect id="Rectangle-31" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-20)" x="0" y="25" width="50" height="25"></rect>
+                            </g>
+                        </g>
+                        <g id="top-arm" transform="translate(31.000000, 11.000000)">
+                            <g id="top-bar" transform="translate(0.000000, 19.000000)">
+                                <mask id="mask-22" sketch:name="Mask" fill="white">
+                                    <use xlink:href="#path-21"></use>
+                                </mask>
+                                <use id="Mask" fill="#333E47" sketch:type="MSShapeGroup" xlink:href="#path-21"></use>
+                                <rect id="Rectangle-34" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-22)" x="0" y="5.5" width="148" height="5.5"></rect>
+                            </g>
+                            <g id="magnet" transform="translate(146.000000, 0.000000)">
+                                <g id="shadow">
+                                    <mask id="mask-24" sketch:name="Mask" fill="white">
+                                        <use xlink:href="#path-23"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#333E47" sketch:type="MSShapeGroup" xlink:href="#path-23"></use>
+                                    <path d="M1,0 L52,50 L1,50 L1,0 Z" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-24)"></path>
+                                </g>
+                                <rect id="magnet-white" fill="#FFFFFF" sketch:type="MSShapeGroup" x="39" y="37" width="13" height="13"></rect>
+                                <path d="M39,37 L52,50 L39,50 L39,37 Z" id="shadow" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup"></path>
+                                <rect id="magnet-white" fill="#FFFFFF" sketch:type="MSShapeGroup" x="39" y="0" width="13" height="13"></rect>
+                                <path d="M90.5,10.75 L93,2 L63,4.5 L85.5,8.25 L83,17 L113,14.5 L90.5,10.75" id="electric-larger" fill="#EFA439" sketch:type="MSShapeGroup"></path>
+                                <path d="M112.375,4.396 L111.333,0.75 L123.833,1.792 L114.458,3.354 L115.5,7 L103,5.958 L112.375,4.396" id="electric-small" fill="#EFA439" sketch:type="MSShapeGroup"></path>
+                                <path d="M86.125,41.688 L88,48.25 L65.5,46.375 L82.375,43.563 L80.5,37 L103,38.875 L86.125,41.688" id="electric-medium" fill="#EFA439" sketch:type="MSShapeGroup"></path>
+                            </g>
+                            <g id="top-bar-connector" transform="translate(146.000000, 24.500000) rotate(-315.000000) translate(-146.000000, -24.500000) translate(136.000000, 14.000000)">
+                                <path d="M20,10.5 C20,16.023 15.523,20.5 10,20.5 C4.477,20.5 0,16.023 0,10.5 C0,4.977 4.477,0.5 10,0.5 C15.523,0.5 20,4.977 20,10.5" fill="#2A3238" sketch:type="MSShapeGroup"></path>
+                                <circle id="top-bar-connector-inner" stroke="#63B55A" sketch:type="MSShapeGroup" cx="10" cy="10.5" r="4.5"></circle>
+                                <g id="shdaow">
+                                    <mask id="mask-26" sketch:name="Mask" fill="white">
+                                        <use xlink:href="#path-25"></use>
+                                    </mask>
+                                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-25"></use>
+                                    <rect id="Rectangle-35" fill-opacity="0.1" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-26)" x="0" y="11" width="20" height="10"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="advert-five" transform="translate(260.000000, 95.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-28" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-27"></use>
+                            </mask>
+                            <use id="Mask" fill="#63B55A" sketch:type="MSShapeGroup" xlink:href="#path-27"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-28)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="shoot" transform="translate(277.500000, 146.000000) scale(-1, 1) rotate(-180.000000) translate(-277.500000, -146.000000) translate(239.000000, 122.000000)">
+                        <path d="M21,19 L61,19 L75.1883059,38.8636283 C78.3980159,43.3572223 76.5274312,47 71.0095352,47 L10.9904648,47 C5.47288346,47 3.60439106,43.3538525 6.81169408,38.8636283 L21,19 Z" id="pipe-shoot" fill="#2D353B" sketch:type="MSShapeGroup"></path>
+                        <rect id="pipe" fill="#2D353B" sketch:type="MSShapeGroup" x="21" y="1" width="40" height="18"></rect>
+                        <rect id="pipe-join" fill="#63B55A" sketch:type="MSShapeGroup" x="19" y="15" width="44" height="4" rx="1"></rect>
+                        <g id="shadow" transform="translate(5.000000, 1.000000)">
+                            <mask id="mask-30" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-29"></use>
+                            </mask>
+                            <use id="Mask" opacity="0" fill="#2D353B" sketch:type="MSShapeGroup" xlink:href="#path-29"></use>
+                            <path d="M-2,2.84217094e-14 L56,2.84217094e-14 L56,9.01220703 L27.2099609,46 L-2,46 L-2,2.84217094e-14 Z" fill-opacity="0.100000001" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-30)"></path>
+                        </g>
+                    </g>
+                    <g id="body" transform="translate(181.000000, 168.000000)" sketch:type="MSShapeGroup">
+                        <g id="handle" transform="translate(196.000000, 37.000000)">
+                            <path d="M8,51 C8,53.209 6.209,55 4,55 C1.791,55 0,53.209 0,51 L0,46 C0,43.791 1.791,42 4,42 C6.209,42 8,43.791 8,46 L8,51" id="welding-bottom" fill="#2D353B"></path>
+                            <path d="M8,9 C8,11.209 6.209,13 4,13 C1.791,13 0,11.209 0,9 L0,4 C0,1.791 1.791,0 4,0 C6.209,0 8,1.791 8,4 L8,9" id="welding-top" fill="#2D353B"></path>
+                            <path d="M18,4 L8,4 L8,9 L18,9 L18,46 L8,46 L8,51 L18,51 C20.761,51 23,48.761 23,46 L23,9 C23,6.239 20.761,4 18,4" id="pipe" fill="#EFA439"></path>
+                            <path d="M18,27.257 L18,46 L8,46 L8,51 L18,51 C20.761,51 23,48.761 23,46 L23,32.257 L18,27.257" id="pipe-shadow" fill-opacity="0.1" fill="#000000"></path>
+                        </g>
+                        <path d="M200,99 L200,33.333 C200,14.924 185.076,0 166.667,0 L33.333,0 C14.924,0 0,14.924 0,33.333 L0,99 L200,99" fill="#333E47"></path>
+                        <circle id="green-button" stroke="#2C343A" stroke-width="5" fill="#63B55A" cx="40" cy="52" r="12"></circle>
+                        <rect id="window-border" fill="#2C343A" x="120" y="23" width="58" height="58" rx="14"></rect>
+                        <path d="M0,32.9999644 C0,14.7745873 14.7667187,0 32.9942559,0 L106,0 L200,94 L200,99 L0,99 L0,32.9999644 Z" id="shadow" fill-opacity="0.100000001" fill="#000000"></path>
+                        <g id="screen" transform="translate(126.000000, 29.000000)">
+                            <rect id="window" fill="#B5CCDD" x="0" y="0" width="46" height="46" rx="8"></rect>
+                            <path d="M32.383,27.883 C31.743,27.883 31.103,28.127 30.615,28.615 C29.639,29.591 29.639,31.174 30.615,32.151 C31.103,32.639 31.743,32.883 32.383,32.883 C33.022,32.883 33.662,32.639 34.151,32.151 C35.127,31.174 35.127,29.591 34.151,28.615 C33.662,28.127 33.022,27.883 32.383,27.883" id="reflection-small" fill="#D8E5ED"></path>
+                            <path d="M12.545,25.545 C11.905,25.545 11.265,25.789 10.777,26.277 C9.801,27.254 9.801,28.836 10.777,29.813 L18.732,37.768 C19.22,38.256 19.86,38.5 20.5,38.5 C21.14,38.5 21.78,38.256 22.268,37.768 C23.244,36.792 23.244,35.208 22.268,34.232 L14.313,26.277 C13.825,25.789 13.185,25.545 12.545,25.545" id="reflection-medium" fill="#D8E5ED"></path>
+                            <path d="M11.75,7.25 C11.11,7.25 10.47,7.494 9.982,7.982 C9.006,8.959 9.006,10.541 9.982,11.518 L24.124,25.66 C24.613,26.148 25.252,26.392 25.892,26.392 C26.532,26.392 27.172,26.148 27.66,25.66 C28.636,24.684 28.636,23.101 27.66,22.124 L13.518,7.982 C13.03,7.494 12.39,7.25 11.75,7.25" id="reflection-large" fill="#D8E5ED"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="hover-board" transform="translate(446.000000, 188.000000)" sketch:type="MSShapeGroup">
+                    <path d="M57.621,34.523 L61.702,8 L48.798,8 L52.879,34.523 C51.717,35.293 50.949,36.609 50.949,38.107 C50.949,40.483 52.875,42.409 55.25,42.409 C57.625,42.409 59.551,40.483 59.551,38.107 C59.551,36.609 58.783,35.293 57.621,34.523" id="base" fill="#333E47"></path>
+                    <path d="M0,0 L0,4 C0,6.761 2.239,9 5,9 L105,9 C107.761,9 110,6.761 110,4 L110,0 L0,0" id="board" fill="#2D353B"></path>
+                    <path d="M64.75,61.5 C64.75,62.881 63.631,64 62.25,64 L48.25,64 C46.869,64 45.75,62.881 45.75,61.5 C45.75,60.119 46.869,59 48.25,59 L62.25,59 C63.631,59 64.75,60.119 64.75,61.5" id="stripe-small" fill="#EFA439"></path>
+                    <path d="M75.25,73.5 C75.25,74.881 74.131,76 72.75,76 L37.75,76 C36.369,76 35.25,74.881 35.25,73.5 C35.25,72.119 36.369,71 37.75,71 L72.75,71 C74.131,71 75.25,72.119 75.25,73.5" id="stripe-large" fill="#EFA439"></path>
+                </g>
+                <g id="adverts" transform="translate(426.000000, 92.000000)">
+                    <g id="advert-four" transform="translate(0.000000, 50.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-32" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-31"></use>
+                            </mask>
+                            <use id="Mask" fill="#63B55A" sketch:type="MSShapeGroup" xlink:href="#path-31"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-32)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="advert-three" transform="translate(80.000000, 50.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-34" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-33"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-33"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-34)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#63B55A">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="advert-two" transform="translate(80.000000, 0.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-36" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-35"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-35"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-36)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#63B55A">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="advert-one" transform="translate(30.000000, 0.000000)">
+                        <g id="ad-bar-background">
+                            <mask id="mask-38" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-37"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-37"></use>
+                            <rect fill="#343E48" sketch:type="MSShapeGroup" mask="url(#mask-38)" x="0" y="0" width="40" height="6"></rect>
+                        </g>
+                        <g id="ad-bar" transform="translate(3.000000, 2.000000)" fill="#82848A" sketch:type="MSShapeGroup">
+                            <circle id="ad-bar-circle" cx="7" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="4" cy="1" r="1"></circle>
+                            <circle id="ad-bar-circle" cx="1" cy="1" r="1"></circle>
+                        </g>
+                        <text id="Ad" sketch:type="MSTextLayer" font-family="Open Sans" font-size="16" font-weight="bold" fill="#63B55A">
+                            <tspan x="9" y="27">Ad</tspan>
+                        </text>
+                        <path d="M0,3.0065012 C0,1.34605644 0.949316621,0.949316621 2.12233193,2.12233193 L37.8776681,37.8776681 C39.0497996,39.0497996 38.6576906,40 36.9934988,40 L3.0065012,40 C1.34605644,40 0,38.6576906 0,36.9934988 L0,3.0065012 Z" id="shadow" fill-opacity="0.049999997" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <path d="M55.25,56 L49,56 C47.619,56 46.5,57.119 46.5,58.5 C46.5,59.881 47.619,61 49,61 L55.25,61 C56.631,61 57.75,59.881 57.75,58.5 C57.75,57.119 56.631,56 55.25,56" id="stripe-medium" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    <path d="M65.25,65 L56.5,65 C55.119,65 54,66.119 54,67.5 C54,68.881 55.119,70 56.5,70 L65.25,70 C66.631,70 67.75,68.881 67.75,67.5 C67.75,66.119 66.631,65 65.25,65" id="stripe-large" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    <path d="M51.5,78 L49,78 C47.619,78 46.5,79.119 46.5,80.5 C46.5,81.881 47.619,83 49,83 L51.5,83 C52.881,83 54,81.881 54,80.5 C54,79.119 52.881,78 51.5,78" id="stripe-small" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

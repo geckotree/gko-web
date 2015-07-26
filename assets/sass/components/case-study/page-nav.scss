@@ -14,7 +14,98 @@
 }
 
 .c-case-study__page-nav__link {
+	color: $adspy-pri; //@todo var
+	display: block;
+	font-weight: 500;
+}
+
+.c-case-study__page-nav__link__label {
 	&:before {
-		content: counters( section, '.' ) ' ';
+		color: $grey; //@todo update this
+		content: counters( section, '.' ) '. ';
+		font-size: .75em;
+	}
+}
+
+.c-case-study__page-nav__sections__child {
+	margin: 0;
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__page-nav {
+		padding: $padding-small / 2;
+	}
+
+	.c-case-study__page-nav__sections {
+		background: #fff; //@todo more suitable colour
+		border-radius: $border-radius;
+		padding: $padding-small / 8 0;
+	}
+
+	.c-case-study__page-nav__link {
+		padding: $padding-small / 8 $padding-small / 2;
+	}
+
+	.c-case-study__page-nav__sections__child {
+		padding: 0;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	//@todo only make fixed when content area comes into view
+	.c-case-study__page-nav {
+		position: fixed;
+		right: 0;
+		top: 50%;
+		transform: translateY( -50% );
+	}
+
+	.c-case-study__page-nav__link {
+		@include clearfix;
+		padding: $padding-small / 8 $padding-small / 4;
+
+		&:hover {
+			.c-case-study__page-nav__link__dot {
+				transform: scale( 1.5 );
+			}
+
+			.c-case-study__page-nav__link__label {
+				opacity: 1;
+				transform: translateX( 0 );
+				visibility: visible;
+			}
+		}
+	}
+
+	.c-case-study__page-nav__link__dot {
+		background: $grey; //@todo update
+		border-radius: 100%;
+		display: block;
+		float: right;
+		height: 1rem;
+		margin: .8rem 1rem;
+		transition: transform $speed ease;
+		width: 1rem;
+	}
+
+	.c-case-study__page-nav__link__label {
+		float: right;
+		transform: translateX( 1rem );
+		transition: opacity $speed ease,
+					transform $speed ease,
+					visibility $speed ease;
+		visibility: hidden;
+	}
+
+	.opacity {
+		.c-case-study__page-nav__link__label {
+			opacity: 0;
+		}
+	}
+}
+
+@include respond-min( $mq-x-large ) {
+	.c-case-study__page-nav__link {
+		padding-right: $padding-small / 2;
 	}
 }

@@ -14,9 +14,14 @@
 }
 
 .c-case-study__page-nav__link {
-	color: $adspy-pri; //@todo var
+	color: #BCBEC0; //@todo var
 	display: block;
 	font-weight: 500;
+
+	&:hover,
+	&:focus {
+		color: #BCBEC0;
+	}
 }
 
 .c-case-study__page-nav__link__label {
@@ -64,15 +69,24 @@
 		@include clearfix;
 		padding: $padding-small / 8 $padding-small / 4;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			.c-case-study__page-nav__link__dot {
-				transform: scale( 1.5 );
+				transform: scale( 1.4 );
 			}
 
 			.c-case-study__page-nav__link__label {
 				opacity: 1;
 				transform: translateX( 0 );
 				visibility: visible;
+			}
+		}
+
+		&:active {
+			transform: scale( 1 );
+
+			.c-case-study__page-nav__link__dot {
+				transform: scale( 1.2 );
 			}
 		}
 	}
@@ -84,7 +98,8 @@
 		float: right;
 		height: 1rem;
 		margin: .8rem 1rem;
-		transition: transform $speed ease;
+		transition: background $speed ease,
+					transform $speed ease;
 		width: 1rem;
 	}
 

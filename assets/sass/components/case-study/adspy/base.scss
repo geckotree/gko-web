@@ -12,4 +12,13 @@
 	.c-button {
 		background: $adspy-pri;
 	}
+
+	.c-case-study__page-nav__link {
+		&:hover,
+		&:focus {
+			.c-case-study__page-nav__link__dot {
+				background: $adspy-pri;
+			}
+		}
+	}
 }

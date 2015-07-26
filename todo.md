@@ -16,10 +16,10 @@
 ## assets/sass/components/case-study/page-nav.scss
 
 -  **todo** `(line 17)`  var
--  **todo** `(line 24)`  update this
--  **todo** `(line 40)`  more suitable colour
--  **todo** `(line 55)`  only make fixed when content area comes into view
--  **todo** `(line 81)`  update
+-  **todo** `(line 29)`  update this
+-  **todo** `(line 45)`  more suitable colour
+-  **todo** `(line 60)`  only make fixed when content area comes into view
+-  **todo** `(line 95)`  update
 
 ## assets/sass/components/case-study/section.scss
 

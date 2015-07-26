@@ -20,8 +20,14 @@ module.exports = {
                 }
             ]
         },
-        files: {
-            'index.html': 'src/index.html.src'
-        }
-    },
+        files: [{
+        	expand: true,
+        	flatten: true,
+        	src: [
+        		'src/index.html',
+        		'src/blog.html'
+        	],
+        	dest: ''
+        }]
+    }
 };

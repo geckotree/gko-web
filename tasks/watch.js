@@ -22,7 +22,7 @@ module.exports = {
 	},
 	html: {
 		files: [
-			'src/*.html.src',
+			'src/*.html',
 		],
 		tasks: [
 			'replace'

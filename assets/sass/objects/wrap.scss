@@ -33,6 +33,10 @@
 	max-width: $wrap-x-large;
 }
 
+.o-wrap--xx-large {
+	max-width: $wrap-xx-large;
+}
+
 @include respond-min( $mq-small ) {
 	.o-wrap {
 		padding-left: $padding-small;

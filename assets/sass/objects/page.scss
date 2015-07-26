@@ -22,6 +22,10 @@ html {
 	width: 100%;
 }
 
+.o-page__heading {
+	padding-top: $padding-small / 2;
+}
+
 @include respond-min( $mq-small ) {
 	.o-page {
 		margin-bottom: 38.6rem + $padding-medium;
@@ -29,6 +33,10 @@ html {
 
 	.o-page__content {
 		padding-bottom: $padding-medium;
+	}
+
+	.o-page__heading {
+		padding-top: $padding-medium / 2;
 	}
 }
 
@@ -39,5 +47,10 @@ html {
 
 	.o-page__content {
 		padding-bottom: $padding-large;
+	}
+
+	.o-page__heading {
+		text-align: center;
+		padding-top: $padding-large / 2;
 	}
 }

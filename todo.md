@@ -17,6 +17,10 @@
 -  **todo** `(line 9)`  var
 -  **todo** `(line 41)`  var
 
+## assets/sass/components/listing.scss
+
+-  **todo** `(line 45)`  var
+
 ## assets/sass/objects/page.scss
 
 -  **todo** `(line 12)`  var

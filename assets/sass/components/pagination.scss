@@ -1,0 +1,148 @@
+/* ===========================================================
+
+	# Listing
+
+=========================================================== */
+
+.c-pagination {
+	padding-top: $padding-small;
+}
+
+.c-pagination__list {
+	list-style: none;
+}
+
+.c-pagination__item {
+	display: inline-block;
+	margin: 0 0 0 -.25em;
+	width: 50%;
+}
+
+.c-pagination__link {
+	border: $border-width * 1.5 solid $pri;
+	border-radius: $border-radius * 10;
+	display: block;
+	font-weight: $bold;
+	padding: 1.2rem 1.7rem 1rem 1.8rem;
+	transition: transform $speed ease;
+
+	&:hover {
+		color: $pri;
+	}
+
+	&:focus {
+		color: $sec;
+		border-color: $sec;
+
+		.icon {
+			fill: $sec;
+		}
+	}
+
+	&:active {
+		transform: $active-scale-medium;
+	}
+
+	.icon {
+		@include icon( $pri, 1.2rem, 1.2rem );
+	}
+}
+
+.c-pagination__link--prev {
+	float: right;
+	margin-right: $padding-small / 4;
+}
+
+.c-pagination__link--next {
+	float: left;
+	margin-left:  $padding-small / 4;
+}
+
+.c-pagination__link--disabled {
+	border-color: $disabled;
+	color: $disabled;
+	cursor: not-allowed;
+
+	&:hover,
+	&:focus {
+		color: $disabled;
+		border-color: $disabled;
+
+		.icon {
+			fill: $disabled;
+		}
+	}
+
+	&:active {
+		transform: scale( 1 );
+	}
+
+	.icon {
+		fill: $disabled;
+	}
+}
+
+.c-pagination__link--prev__text {
+	float: right;
+}
+
+.c-pagination__link--next__text {
+	float: left;
+}
+
+@include respond-min( $mq-medium ) {
+	.c-pagination__link {
+		.icon {
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-pagination__link--prev__text {
+		margin-left: .5rem;
+	}
+
+	.c-pagination__link--next__text {
+		margin-right: .5rem;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-pagination__link--prev {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-left: .5rem;
+				width: 6.4rem;
+			}
+		}
+	}
+
+	.c-pagination__link--next {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin-right: .5rem;
+				width: 5.7rem;
+			}
+		}
+	}
+
+	.c-pagination__link--disabled {
+		&:hover,
+		&:focus {
+			.c-pagination__link__text {
+				margin: 0;
+				width: 0;
+			}
+		}
+	}
+
+	.c-pagination__link__text {
+		overflow: hidden;
+		transition: width $speed ease;
+		width: 0;
+	}
+}

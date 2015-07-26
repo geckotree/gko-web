@@ -65,12 +65,20 @@
 		transform: translateY( -50% );
 	}
 
-	.c-case-study__page-nav__link {
+	.c-case-study__page-nav__section {
 		@include clearfix;
+	}
+
+	.c-case-study__page-nav__link {
+		border-radius: $border-radius 0 0 $border-radius;
+		float: right;
 		padding: $padding-small / 8 $padding-small / 4;
+		transition: background $speed ease;
 
 		&:hover,
 		&:focus {
+			background: $background-colour;
+
 			.c-case-study__page-nav__link__dot {
 				transform: scale( 1.4 );
 			}

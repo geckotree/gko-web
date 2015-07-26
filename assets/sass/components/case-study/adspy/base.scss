@@ -15,7 +15,8 @@
 
 	.c-case-study__page-nav__link {
 		&:hover,
-		&:focus {
+		&:focus,
+		&.is-active {
 			.c-case-study__page-nav__link__dot {
 				background: $adspy-pri;
 			}

@@ -19,7 +19,7 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 -  **todo** `(line 60)`  only make fixed when content area comes into view
--  **todo** `(line 103)`  update
+-  **todo** `(line 120)`  update
 
 ## assets/sass/components/case-study/section.scss
 

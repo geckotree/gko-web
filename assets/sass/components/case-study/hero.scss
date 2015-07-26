@@ -6,7 +6,7 @@
 
 .c-case-study__hero {
 	background-color: rgba( $pri, .2 );
-	margin-bottom: $padding-small;
+	// margin-bottom: $padding-small;
 }
 
 .c-case-study__hero__mark {
@@ -16,7 +16,7 @@
 @include respond-min( $mq-small ) {
 	.c-case-study__hero {
 		height: 66vh;
-		margin-bottom: $padding-medium;
+		// margin-bottom: $padding-medium;
 	}
 }
 
@@ -28,7 +28,7 @@
 
 @include respond-min( $mq-medium ) {
 	.c-case-study__hero {
-		margin-bottom: $padding-large;
+		// margin-bottom: $padding-large;
 	}
 
 	.c-case-study__hero__row {

@@ -58,11 +58,24 @@
 
 @include respond-min( $mq-large ) {
 	//@todo only make fixed when content area comes into view
+	.c-case-study__content {
+		position: relative;
+	}
+
 	.c-case-study__page-nav {
-		position: fixed;
+		position: absolute;
 		right: 0;
-		top: 50%;
-		transform: translateY( -50% );
+		top: 0;
+		// transform: translateY( -50% );
+
+		&.is-fixed {
+			position: fixed;
+		}
+
+		&.is-bottom {
+			bottom: -$padding-large;
+			top: auto;
+		}
 	}
 
 	.c-case-study__page-nav__section {
@@ -76,12 +89,16 @@
 		transition: background $speed ease;
 
 		&:hover,
-		&:focus {
-			background: $background-colour;
-
+		&:focus,
+		&.is-active {
 			.c-case-study__page-nav__link__dot {
 				transform: scale( 1.4 );
 			}
+		}
+
+		&:hover,
+		&:focus {
+			background: $background-colour;
 
 			.c-case-study__page-nav__link__label {
 				opacity: 1;

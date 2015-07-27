@@ -12,6 +12,14 @@
 	width: 10rem;
 }
 
+@include respond-max( $mq-small ) {
+	.c-case-study__colours__colour {
+		& + & {
+			margin-top: $padding-small / 2;
+		}
+	}
+}
+
 @include respond-min( $mq-medium ) {
 	.c-case-study__colours__colour {
 		margin: 0 $padding-small;

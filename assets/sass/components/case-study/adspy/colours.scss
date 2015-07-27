@@ -4,16 +4,17 @@
 
 =========================================================== */
 
-//@todo set as variables
+$adspy-sec:		#6DBD4C;
+$adspy-ter:		#F5C022;
 
 .c-case-study__colours__colour--pri {
-	background: linear-gradient( to right, #229EE0 50%, #2095D4 50% );
+	background: linear-gradient( to right, $adspy-pri 50%, darken( $adspy-pri, 3 ) 50% );
 }
 
 .c-case-study__colours__colour--sec {
-	background: linear-gradient( to right, #6DBD4C 50%, #6AAE48 50% );
+	background: linear-gradient( to right, $adspy-sec 50%, darken( $adspy-sec, 3 ) 50% );
 }
 
 .c-case-study__colours__colour--ter {
-	background: linear-gradient( to right, #F5C022 50%, #F8AC13 50% );
+	background: linear-gradient( to right, $adspy-ter 50%, darken( $adspy-ter, 3 ) 50% );
 }

@@ -14,10 +14,6 @@
 
 -  **todo** `(line 29)`  sort this out
 
-## assets/sass/components/case-study/adspy/colours.scss
-
--  **todo** `(line 7)`  set as variables
-
 ## assets/sass/components/case-study/card.scss
 
 -  **todo** `(line 7)`  sort out the image dev and build tasks
@@ -33,7 +29,7 @@
 
 ## assets/sass/components/case-study/section.scss
 
--  **todo** `(line 18)`  update this
+-  **todo** `(line 19)`  update this
 
 ## assets/sass/components/footer.scss
 

@@ -17,11 +17,11 @@
 }
 
 .c-case-study--adspy {
-	background-color: rgba( $adspy-pri, .10 );
+	// background-color: rgba( $adspy-pri, .10 );
 	background-image: url( '#{$images}/background/adspy-logo.svg' );
 
 	&:hover {
-		background-color: rgba( $adspy-pri, .20 );
+		// background-color: rgba( $adspy-pri, .20 );
 	}
 }
 

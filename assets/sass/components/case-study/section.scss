@@ -11,6 +11,7 @@
 .c-case-study__section {
 	counter-increment: section;
 	margin: 0;
+	padding: $padding-small / 2 0;
 }
 
 .c-case-study__section__heading {
@@ -36,6 +37,10 @@
 }
 
 @include respond-min( $mq-small ) {
+	.c-case-study__section {
+		padding: $padding-medium / 2 0;
+	}
+
 	.c-case-study__section__grid-col--7 {
 		margin-top: $padding-medium;
 	}
@@ -52,6 +57,10 @@
 }
 
 @include respond-min( $mq-medium ) {
+	.c-case-study__section {
+		padding: $padding-large / 2 0;
+	}
+
 	.c-case-study__section__grid-col--7 {
 		margin-top: $padding-large;
 	}

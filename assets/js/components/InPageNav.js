@@ -26,6 +26,7 @@
 			var _this = this;
 
 			this._attachEventHandlers();
+			this._createFakeFooter();
 			this._stickySideNav();
 			this._setActiveSectionsOnScroll();
 
@@ -58,7 +59,6 @@
 			if( window.matchMedia( '( min-width: 1000px )' ).matches ) {
 				//@todo check if nav is bigger than viewport
 				_this._$pageNav.setAttribute( 'style', 'margin-bottom:' + margin + 'px;' + 'margin-top:' + margin + 'px;' );
-				_this._createFakeFooter();
 				_this._setHeroWatcher();
 				_this._setFooterWatcher( margin );
 			} else {

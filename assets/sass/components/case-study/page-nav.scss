@@ -82,9 +82,9 @@
 	}
 
 	.c-case-study__page-nav__link {
-		border-radius: $border-radius 0 0 $border-radius;
+		border-radius: $border-radius * 10 0 0 $border-radius * 10;
 		float: right;
-		padding: $padding-small / 16 $padding-small / 4;
+		padding: $padding-small / 16 $padding-small / 8 $padding-small / 16 $padding-small / 2.5;
 		transition: background $speed ease;
 
 		&:hover,
@@ -139,7 +139,7 @@
 	}
 }
 
-@include respond-min( $mq-x-large ) {
+@include respond-min( $mq-xx-large ) {
 	.c-case-study__page-nav__link {
 		padding-right: $padding-small / 2;
 	}

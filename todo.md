@@ -8,6 +8,7 @@
 
 -  **todo** `(line 32)`  scroll to section when click on section link - mobile and desktop
 -  **todo** `(line 48)`  check if this works with orientation change
+-  **todo** `(line 59)`  check if nav is bigger than viewport
 
 ## assets/js/main.js
 
@@ -24,7 +25,7 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 -  **todo** `(line 60)`  only make fixed when content area comes into view
--  **todo** `(line 120)`  update
+-  **todo** `(line 115)`  update
 
 ## assets/sass/components/case-study/section.scss
 

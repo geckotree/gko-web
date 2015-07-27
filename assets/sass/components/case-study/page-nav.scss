@@ -66,7 +66,6 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		// transform: translateY( -50% );
 
 		&.is-fixed {
 			position: fixed;
@@ -85,20 +84,16 @@
 	.c-case-study__page-nav__link {
 		border-radius: $border-radius 0 0 $border-radius;
 		float: right;
-		padding: $padding-small / 8 $padding-small / 4;
+		padding: $padding-small / 16 $padding-small / 4;
 		transition: background $speed ease;
-
-		&:hover,
-		&:focus,
-		&.is-active {
-			.c-case-study__page-nav__link__dot {
-				transform: scale( 1.4 );
-			}
-		}
 
 		&:hover,
 		&:focus {
 			background: $background-colour;
+
+			.c-case-study__page-nav__link__dot {
+				transform: scale( 1.4 );
+			}
 
 			.c-case-study__page-nav__link__label {
 				opacity: 1;

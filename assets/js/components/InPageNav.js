@@ -11,12 +11,11 @@
 		};
 
 		this._$el = el;
+		this._$pageNavLinks = this._$el.querySelectorAll( '.js-page-nav-link' );
 		this._$hero = this._$el.querySelector( '.js-hero' );
 		this._$content = this._$el.querySelector( '.js-content' );
 		this._$pageNav = this._$el.querySelector( '.js-page-nav' );
 		this._$footer = document.querySelector( '.js-footer' );
-
-		this._$pageNavLinks = this._$el.querySelectorAll( '.js-page-nav-link' );
 		this._$sections = this._$el.querySelectorAll( '[data-section]' );
 
 		this._init();
@@ -26,24 +25,15 @@
 		_init: function() {
 			var _this = this;
 
-			this._stickySideNav();
 			this._attachEventHandlers();
+			this._stickySideNav();
+			this._setActiveSectionsOnScroll();
 
 			//@todo scroll to section when click on section link - mobile and desktop
-			//@todo update active section when scroll to section - only desktop
 		},
 
 		_attachEventHandlers: function() {
-			var i;
 			var _this = this;
-
-			// for( i = 0; i < this._$pageNavLinks.length; i++ ) {
-			// 	var $pageNavLink = _this._$pageNavLinks[ i ];
-
-			// 	$pageNavLink.addEventListener( 'click', function() {
-			// 		var target = this.getAttribute( 'data-scroll-to' );
-			// 	} );
-			// }
 
 			Array.prototype.forEach.call( this._$pageNavLinks, function( $pageNavLink ) {
 				$pageNavLink.addEventListener( 'click', function( e ) {
@@ -54,16 +44,6 @@
 					_this._scrollToSection( $target );
 				} );
 			} );
-
-			for( i = 0; i < this._$sections.length; i++ ) {
-				var $section = _this._$sections[ i ];
-				var target = $section.getAttribute( 'data-section' );
-				var $pageNavLink = _this._$el.querySelector( '[data-scroll-to="' + target + '"]' );
-				var watcher = ScrollMonitor.create( $section );
-
-				_this._sectionEnterView( watcher, $pageNavLink );
-				_this._sectionExitView( watcher, $pageNavLink );
-			}
 
 			//@todo check if this works with orientation change
 			window.addEventListener( 'resize', function() {
@@ -83,6 +63,23 @@
 			} else {
 				_this._$pageNav.setAttribute( 'style', 'margin-bottom: 0px;' + 'margin-top: 0px;' );
 			}
+		},
+
+		_setActiveSectionsOnScroll: function() {
+			var _this = this;
+
+			for( var i = 0; i < this._$sections.length; i++ ) {
+				var $section = _this._$sections[ i ];
+				var target = $section.getAttribute( 'data-section' );
+				var $pageNavLink = _this._$el.querySelector( '[data-scroll-to="' + target + '"]' );
+				var watcher = ScrollMonitor.create( $section );
+
+				_this._setSectionScrollWatcher( watcher, $pageNavLink );
+			}
+		},
+
+		_scrollToSection: function( $target ) {
+			console.log( $target );
 		},
 
 		_createFakeFooter: function() {
@@ -136,23 +133,19 @@
 			}
 		},
 
-		_scrollToSection: function( $target ) {
-			console.log( $target );
-		},
-
-		_sectionEnterView: function( watcher, el ) {
+		_setSectionScrollWatcher: function( watcher, $pageNavLink ) {
 			var _this = this;
 
-			watcher.enterViewport( function() {
-				el.classList.add( _this._classes.active );
+			watcher.lock();
+
+			watcher.stateChange( function() {
+				$pageNavLink.classList.toggle( _this._classes.active, this.isAboveViewport );
 			} );
-		},
 
-		_sectionExitView: function( watcher, el ) {
-			var _this = this;
-
-			watcher.exitViewport( function() {
-				el.classList.remove( _this._classes.active );
+			watcher.visibilityChange( function() {
+				if( watcher.top && watcher.isAboveViewport ) {
+					$pageNavLink.classList.add( _this._classes.active );
+				}
 			} );
 		}
 	};

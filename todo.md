@@ -7,8 +7,7 @@
 ## assets/js/components/InPageNav.js
 
 -  **todo** `(line 32)`  scroll to section when click on section link - mobile and desktop
--  **todo** `(line 33)`  update active section when scroll to section - only desktop
--  **todo** `(line 68)`  check if this works with orientation change
+-  **todo** `(line 48)`  check if this works with orientation change
 
 ## assets/js/main.js
 

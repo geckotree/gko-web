@@ -4,6 +4,12 @@
 	var ScrollMonitor = window.scrollMonitor;
 
 	function InPageNav( el ) {
+		this._classes = {
+			fixed: 'is-fixed',
+			bottom: 'is-bottom',
+			active: 'is-active'
+		};
+
 		this._$el = el;
 		this._$hero = this._$el.querySelector( '.js-hero' );
 		this._$content = this._$el.querySelector( '.js-content' );
@@ -13,46 +19,70 @@
 		this._$pageNavLinks = this._$el.querySelectorAll( '.js-page-nav-link' );
 		this._$sections = this._$el.querySelectorAll( '[data-section]' );
 
-		this._stickySideNav();
-		// this._attachEventHandlers();
+		this._init();
 	}
 
 	InPageNav.prototype = {
-		// _attachEventHandlers: function() {
-		// 	var i;
-		// 	var _this = this;
+		_init: function() {
+			var _this = this;
 
-		// 	Array.prototype.forEach.call( this._$pageNavLinks, function( pageNavLink ) {
-		// 		pageNavLink.addEventListener( 'click', function( e ) {
-		// 			var target = this.getAttribute( 'data-scroll-to' );
-		// 			var $target = _this._$el.querySelector( '[data-section="' + target + '"]' );
+			this._stickySideNav();
+			this._attachEventHandlers();
 
-		// 			e.preventDefault();
+			//@todo scroll to section when click on section link - mobile and desktop
+			//@todo update active section when scroll to section - only desktop
+		},
 
-		// 			_this._scrollToSection();
-		// 		});
-		// 	});
+		_attachEventHandlers: function() {
+			var i;
+			var _this = this;
 
-		// 	for( i = 0; i < this._$sections.length; i++ ) {
-		// 		var $section = _this._$sections[ i ];
-		// 		var target = $section.getAttribute( 'data-section' );
-		// 		var $pageNavLink = _this._$el.querySelector( '[data-scroll-to="' + target + '"]' );
-		// 		var watcher = ScrollMonitor.create( $section );
+			// for( i = 0; i < this._$pageNavLinks.length; i++ ) {
+			// 	var $pageNavLink = _this._$pageNavLinks[ i ];
 
-		// 		_this._sectionEnterView( watcher, $pageNavLink );
-		// 		_this._sectionExitView( watcher, $pageNavLink );
-		// 	}
-		// },
+			// 	$pageNavLink.addEventListener( 'click', function() {
+			// 		var target = this.getAttribute( 'data-scroll-to' );
+			// 	} );
+			// }
+
+			Array.prototype.forEach.call( this._$pageNavLinks, function( $pageNavLink ) {
+				$pageNavLink.addEventListener( 'click', function( e ) {
+					var target = this.getAttribute( 'data-scroll-to' );
+					var $target = _this._$el.querySelector( '[data-section="' + target + '"]' );
+
+					e.preventDefault();
+					_this._scrollToSection( $target );
+				} );
+			} );
+
+			for( i = 0; i < this._$sections.length; i++ ) {
+				var $section = _this._$sections[ i ];
+				var target = $section.getAttribute( 'data-section' );
+				var $pageNavLink = _this._$el.querySelector( '[data-scroll-to="' + target + '"]' );
+				var watcher = ScrollMonitor.create( $section );
+
+				_this._sectionEnterView( watcher, $pageNavLink );
+				_this._sectionExitView( watcher, $pageNavLink );
+			}
+
+			//@todo check if this works with orientation change
+			window.addEventListener( 'resize', function() {
+				_this._stickySideNav();
+			} );
+		},
 
 		_stickySideNav: function() {
 			var _this = this;
 			var margin = ( ScrollMonitor.viewportHeight - this._$pageNav.offsetHeight ) / 2;
 
-			this._$pageNav.setAttribute( 'style', 'margin-bottom:' + margin + 'px;' + 'margin-top:' + margin + 'px' );
-
-			this._createFakeFooter();
-			this._setHeroWatcher();
-			this._setFooterWatcher( margin );
+			if( window.matchMedia( '( min-width: 1000px )' ).matches ) {
+				_this._$pageNav.setAttribute( 'style', 'margin-bottom:' + margin + 'px;' + 'margin-top:' + margin + 'px;' );
+				_this._createFakeFooter();
+				_this._setHeroWatcher();
+				_this._setFooterWatcher( margin );
+			} else {
+				_this._$pageNav.setAttribute( 'style', 'margin-bottom: 0px;' + 'margin-top: 0px;' );
+			}
 		},
 
 		_createFakeFooter: function() {
@@ -76,7 +106,7 @@
 			heroWatcher.lock();
 
 			heroWatcher.visibilityChange( function() {
-				_this._$pageNav.classList.toggle( 'is-fixed', !heroWatcher.isInViewport );
+				_this._$pageNav.classList.toggle( _this._classes.fixed, !heroWatcher.isInViewport );
 			} );
 		},
 
@@ -88,35 +118,43 @@
 
 			footerWatcher.fullyEnterViewport( function() {
 				if( footerWatcher.isAboveViewport ) {
-					_this._$pageNav.classList.remove( 'is-fixed' );
-					_this._$pageNav.classList.add( 'is-bottom' );
+					_this._$pageNav.classList.remove( _this._classes.fixed );
+					_this._$pageNav.classList.add( _this._classes.bottom );
 				}
 			} );
 
 			footerWatcher.partiallyExitViewport( function() {
 				if( !footerWatcher.isAboveViewport ) {
-					_this._$pageNav.classList.add( 'is-fixed' );
-					_this._$pageNav.classList.remove( 'is-bottom' );
+					_this._$pageNav.classList.add( _this._classes.fixed );
+					_this._$pageNav.classList.remove( _this._classes.bottom );
 				}
 			} );
 
 			if( footerWatcher.isAboveViewport ) {
-				this._$pageNav.classList.remove( 'is-fixed' );
-				this._$pageNav.classList.add( 'is-bottom' );
+				this._$pageNav.classList.remove( _this._classes.fixed );
+				this._$pageNav.classList.add( _this._classes.bottom );
 			}
 		},
 
-		// _sectionEnterView: function( watcher, el ) {
-		// 	watcher.enterViewport( function() {
-		// 		el.classList.add( 'is-active' );
-		// 	});
-		// },
+		_scrollToSection: function( $target ) {
+			console.log( $target );
+		},
 
-		// _sectionExitView: function( watcher, el ) {
-		// 	watcher.exitViewport( function() {
-		// 		el.classList.remove( 'is-active' );
-		// 	});
-		// }
+		_sectionEnterView: function( watcher, el ) {
+			var _this = this;
+
+			watcher.enterViewport( function() {
+				el.classList.add( _this._classes.active );
+			} );
+		},
+
+		_sectionExitView: function( watcher, el ) {
+			var _this = this;
+
+			watcher.exitViewport( function() {
+				el.classList.remove( _this._classes.active );
+			} );
+		}
 	};
 
 	window.InPageNav = InPageNav;

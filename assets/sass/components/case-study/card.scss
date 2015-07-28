@@ -9,7 +9,8 @@
 
 .c-case-study--geckotree {
 	background-color: rgba( $pri, .15 );
-	background-image: url( '#{$images}/background/geckotree-logo.svg' );
+	//@todo no-svg
+	background-image: url( '#{$images}/case-studies/geckotree/geckotree-logo.svg' );
 
 	&:hover {
 		background-color: rgba( $pri, .25 );
@@ -18,7 +19,8 @@
 
 .c-case-study--adspy {
 	background-color: rgba( $adspy-pri, .10 );
-	background-image: url( '#{$images}/background/adspy-logo.svg' );
+	//@todo no-svg
+	background-image: url( '#{$images}/case-studies/adspy/adspy-logo.svg' );
 
 	&:hover {
 		background-color: rgba( $adspy-pri, .20 );

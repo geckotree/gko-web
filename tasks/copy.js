@@ -1,33 +1,12 @@
 'use strict';
 module.exports = {
-	brandIcons: {
-		files: [
-			{
-				expand: true,
-				cwd: '<%= assetsFolder %>/img/brand-icons/',
-				src: [ '*' ],
-				dest: '<%= assetsBuildFolder %>/img/brand-icons'
-			}
-		]
-	},
-	bitmapImages: {
-		files: [
-			{
-				expand: true,
-				cwd: '<%= assetsFolder %>/img/bitmap/',
-				src: [ '*' ],
-				dest: '<%= assetsBuildFolder %>/img/bitmap'
-			}
-		]
-	},
-	svgImages: {
-		files: [
-			{
-				expand: true,
-				cwd: '<%= assetsFolder %>/img/background/',
-				src: [ '*' ],
-				dest: '<%= assetsBuildFolder %>/img/background'
-			}
-		]
+	images: {
+		files: [ {
+			flatten: false,
+			expand: true,
+			cwd: '<%= assetsFolder %>/img',
+			src: '**/*',
+			dest: '<%= assetsBuildFolder %>/img/'
+		} ]
 	}
 };

@@ -7,10 +7,17 @@
 .s-case-study--adspy {
 	.c-case-study__hero {
 		background-color: rgba( $adspy-pri, .2 );
-		//@todo no-svg
-		background-image: url( '#{$images}/case-studies/adspy/city-background.svg' );
 		background-position: bottom;
 		background-repeat: repeat-x;
+
+		.no-js &,
+		.no-svg & {
+			background-image: url( '#{$images}/case-studies/adspy/city-background.png' );
+		}
+
+		.svg & {
+			background-image: url( '#{$images}/case-studies/adspy/city-background.svg' );
+		}
 	}
 
 	.c-case-study__hero__mark img {

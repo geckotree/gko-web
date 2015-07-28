@@ -30,15 +30,18 @@
 		'components/pagination.scss',
 		'components/feat-media-grid.scss';
 
-@import 'components/case-study/page-nav.scss',
-		'components/case-study/section.scss',
-		'components/case-study/hero.scss',
-		'components/case-study/colours.scss',
-		'components/case-study/card.scss';
+@import 'components/case-studies/page-nav.scss',
+		'components/case-studies/section.scss',
+		'components/case-studies/hero.scss',
+		'components/case-studies/colours.scss',
+		'components/case-studies/card.scss';
 
-@import 'components/case-study/adspy/base.scss',
-		'components/case-study/adspy/page-nav.scss',
-		'components/case-study/adspy/hero.scss',
-		'components/case-study/adspy/colours.scss';
+@import 'components/case-studies/adspy/base.scss',
+		'components/case-studies/adspy/page-nav.scss',
+		'components/case-studies/adspy/hero.scss',
+		'components/case-studies/adspy/colours.scss',
+		'components/case-studies/adspy/card.scss';
+
+@import 'components/case-studies/geckotree/card.scss';
 
 @import 'trumps/overrides.scss';

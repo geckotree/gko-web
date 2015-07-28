@@ -1,0 +1,22 @@
+/* ===========================================================
+
+	# Adspy - Card
+
+=========================================================== */
+
+.c-case-study--adspy {
+	background-color: rgba( $adspy-pri, .10 );
+
+	.no-js &,
+	.no-svg & {
+		background-image: url( '#{$images}/case-studies/adspy/adspy-logo.png' );
+	}
+
+	.svg & {
+		background-image: url( '#{$images}/case-studies/adspy/adspy-logo.svg' );
+	}
+
+	&:hover {
+		background-color: rgba( $adspy-pri, .20 );
+	}
+}

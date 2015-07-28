@@ -14,23 +14,12 @@
 
 -  **todo** `(line 29)`  sort this out
 
-## assets/sass/components/case-study/adspy/hero.scss
-
--  **todo** `(line 10)`  no-svg
-
-## assets/sass/components/case-study/card.scss
-
--  **todo** `(line 7)`  sort out the image dev and build tasks
--  **todo** `(line 8)`  move these into case-study folders
--  **todo** `(line 12)`  no-svg
--  **todo** `(line 22)`  no-svg
-
-## assets/sass/components/case-study/page-nav.scss
+## assets/sass/components/case-studies/page-nav.scss
 
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 -  **todo** `(line 60)`  test no-js
 
-## assets/sass/components/case-study/section.scss
+## assets/sass/components/case-studies/section.scss
 
 -  **todo** `(line 19)`  update this

@@ -1,0 +1,22 @@
+/* ===========================================================
+
+	# Geckotree - Card
+
+=========================================================== */
+
+.c-case-study--geckotree {
+	background-color: rgba( $pri, .15 );
+
+	.no-js &,
+	.no-svg & {
+		background-image: url( '#{$images}/case-studies/geckotree/geckotree-logo.png' );
+	}
+
+	.svg & {
+		background-image: url( '#{$images}/case-studies/geckotree/geckotree-logo.svg' );
+	}
+
+	&:hover {
+		background-color: rgba( $pri, .25 );
+	}
+}

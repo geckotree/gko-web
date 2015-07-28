@@ -4,29 +4,6 @@
 
 =========================================================== */
 
-//@todo sort out the image dev and build tasks
-//@todo move these into case-study folders
-
-.c-case-study--geckotree {
-	background-color: rgba( $pri, .15 );
-	//@todo no-svg
-	background-image: url( '#{$images}/case-studies/geckotree/geckotree-logo.svg' );
-
-	&:hover {
-		background-color: rgba( $pri, .25 );
-	}
-}
-
-.c-case-study--adspy {
-	background-color: rgba( $adspy-pri, .10 );
-	//@todo no-svg
-	background-image: url( '#{$images}/case-studies/adspy/adspy-logo.svg' );
-
-	&:hover {
-		background-color: rgba( $adspy-pri, .20 );
-	}
-}
-
 .c-case-study-card {
 	background-position: bottom -7rem right -12rem;
 	background-repeat: no-repeat;

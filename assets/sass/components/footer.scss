@@ -6,7 +6,7 @@
 
 .c-footer {
 	.icon {
-		@include icon( #BCBEC0, 3.2rem, 3.2rem ); //@todo var
+		@include icon( $med-2, 3.2rem, 3.2rem );
 	}
 }
 
@@ -38,7 +38,7 @@
 }
 
 .c-footer__label {
-	color: #BCBEC0; //@todo var
+	color: $med-2;
 	display: inline-block;
 	font-weight: $bold;
 	margin-left: -$padding-small / 4;

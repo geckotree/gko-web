@@ -14,13 +14,13 @@
 }
 
 .c-case-study__page-nav__link {
-	color: #BCBEC0; //@todo var
+	color: $med-1;
 	display: block;
 	font-weight: 500;
 
 	&:hover,
 	&:focus {
-		color: #BCBEC0;
+		color: $med-1;
 	}
 }
 
@@ -57,7 +57,7 @@
 }
 
 @include respond-min( $mq-large ) {
-	//@todo only make fixed when content area comes into view
+	//@todo test no-js
 	.c-case-study__content {
 		position: relative;
 	}

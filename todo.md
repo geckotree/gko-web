@@ -21,25 +21,11 @@
 
 ## assets/sass/components/case-study/page-nav.scss
 
--  **todo** `(line 17)`  var
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
--  **todo** `(line 60)`  only make fixed when content area comes into view
+-  **todo** `(line 60)`  test no-js
 -  **todo** `(line 115)`  update
 
 ## assets/sass/components/case-study/section.scss
 
 -  **todo** `(line 19)`  update this
-
-## assets/sass/components/footer.scss
-
--  **todo** `(line 9)`  var
--  **todo** `(line 41)`  var
-
-## assets/sass/components/listing.scss
-
--  **todo** `(line 45)`  var
-
-## assets/sass/objects/page.scss
-
--  **todo** `(line 12)`  var

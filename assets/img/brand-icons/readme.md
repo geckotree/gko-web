@@ -1,1 +1,0 @@
-Add brand/favicons in here

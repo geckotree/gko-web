@@ -57,7 +57,12 @@
 }
 
 @include respond-min( $mq-large ) {
-	//@todo test no-js
+	.no-js {
+		.c-case-study__page-nav {
+			top: $padding-small;
+		}
+	}
+
 	.c-case-study__content {
 		position: relative;
 	}

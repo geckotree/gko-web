@@ -6,9 +6,9 @@
 
 ## assets/js/components/InPageNav.js
 
--  **todo** `(line 33)`  scroll to section when click on section link - mobile and desktop
--  **todo** `(line 49)`  check if this works with orientation change
--  **todo** `(line 60)`  check if nav is bigger than viewport
+-  **todo** `(line 39)`  scroll to section when click on section link - mobile and desktop
+-  **todo** `(line 56)`  check if this works with orientation change
+-  **todo** `(line 77)`  check if nav is bigger than viewport
 
 ## assets/js/main.js
 

@@ -18,6 +18,12 @@
 		this._$footer = document.querySelector( '.js-footer' );
 		this._$sections = this._$el.querySelectorAll( '[data-section]' );
 
+		this._easing = {
+			easeInOutQuad: function( t ) {
+				return t < .5 ? 2 * t * t : -1 + ( 4 - 2 * t ) * t; // jshint ignore:line
+			}
+		};
+
 		this._init();
 	}
 
@@ -40,9 +46,10 @@
 				$pageNavLink.addEventListener( 'click', function( e ) {
 					var target = this.getAttribute( 'data-scroll-to' );
 					var $target = _this._$el.querySelector( '[data-section="' + target + '"]' );
+					var targetOffset = _this._elOffset( $target );
 
 					e.preventDefault();
-					_this._scrollToSection( $target );
+					_this._scrollTo( targetOffset.top, 300, _this._easing.easeInOutQuad );
 				} );
 			} );
 
@@ -50,6 +57,16 @@
 			window.addEventListener( 'resize', function() {
 				_this._stickySideNav();
 			} );
+		},
+
+		_elOffset: function( elt ) {
+			var rect = elt.getBoundingClientRect();
+			var bodyElt = document.body;
+
+			return {
+				top: rect.top + bodyElt.scrollTop,
+				left: rect.left + bodyElt.scrollLeft
+			};
 		},
 
 		_stickySideNav: function() {
@@ -79,8 +96,33 @@
 			}
 		},
 
-		_scrollToSection: function( $target ) {
-			console.log( $target );
+		_scrollTo: function( Y, duration, easingFunction, callback ) {
+			var start = Date.now();
+			var elem = document.documentElement.scrollTop ? document.documentElement : document.body;
+			var from = elem.scrollTop;
+
+			if( from === Y ) {
+				callback();
+				return;
+			}
+
+			function min( a, b ) {
+				return a < b ? a : b;
+			}
+
+			function scroll( timestamp ) {
+				var currentTime = Date.now();
+				var time = min( 1, ( ( currentTime - start ) / duration ) );
+				var easedT = easingFunction( time );
+
+				elem.scrollTop = ( easedT * ( Y - from ) ) + from;
+
+				if( time < 1 ) requestAnimationFrame( scroll );
+				else
+				if( callback ) callback();
+			}
+
+			requestAnimationFrame( scroll );
 		},
 
 		_createFakeFooter: function() {

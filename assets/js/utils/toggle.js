@@ -32,7 +32,7 @@
 			var scopeSelector = this._classes.scopePrefix + this._classes.targetClass + '-';
 
 			this._$toggle.addEventListener( 'click', function() {
-				if( _this._$html.classList.contains(  scopeSelector + _this._classes.visibleClass ) ) {
+				if( _this._$html.classList.contains( scopeSelector + _this._classes.visibleClass ) ) {
 					_this._$html.classList.remove( scopeSelector + _this._classes.visibleClass );
 					_this._$html.classList.add( scopeSelector + _this._classes.hiddenClass );
 					_this._$target.setAttribute( 'aria-hidden', true );
@@ -41,9 +41,9 @@
 					_this._$html.classList.add( scopeSelector + _this._classes.visibleClass );
 					_this._$target.setAttribute( 'aria-hidden', false );
 				}
-			});
+			} );
 		}
 	};
 
 	window.Toggle = Toggle;
-})();
+} )();

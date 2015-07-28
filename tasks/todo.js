@@ -2,11 +2,11 @@
 module.exports = {
 	options: {
 		file: 'todo.md',
-		marks: [{
+		marks: [ {
 			name: 'todo',
 			pattern: /@(todo)/,
 			color: 'blue'
-		}],
+		} ],
 		title: 'TODO list:',
 		usePackage: true
 	},
@@ -15,4 +15,3 @@ module.exports = {
 		'<%= assetsFolder %>/sass/**/**/*.scss'
 	]
 };
-

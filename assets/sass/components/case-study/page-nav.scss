@@ -87,8 +87,7 @@
 		padding: $padding-small / 16 $padding-small / 8 $padding-small / 16 $padding-small / 2.5;
 		transition: background $speed ease;
 
-		&:hover,
-		&:focus {
+		&:hover {
 			background: $background-colour;
 
 			.c-case-study__page-nav__link__dot {

@@ -24,7 +24,7 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 -  **todo** `(line 60)`  test no-js
--  **todo** `(line 115)`  update
+-  **todo** `(line 114)`  update
 
 ## assets/sass/components/case-study/section.scss
 

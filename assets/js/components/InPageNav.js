@@ -64,7 +64,7 @@
 			var bodyElt = document.body;
 
 			return {
-				top: rect.top + bodyElt.scrollTop,
+				top: rect.top + bodyElt.scrollTop + 1,
 				left: rect.left + bodyElt.scrollLeft
 			};
 		},

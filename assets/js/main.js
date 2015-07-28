@@ -23,22 +23,18 @@
 		for( i = 0; i < $nodes.length; i++ ) {
 			$node = $nodes[ i ];
 			moduleName = $node.getAttribute( 'data-module' );
-			new window[moduleName]( $node );
+			new window[ moduleName ]( $node );
 		}
 
 		//@todo sort this out
-		// var myElement = document.querySelector( '.c-case-study-card-row' );
-		// var Element = document.querySelector( '.js-instagram-images' );
+		var myElement = document.querySelector( '.c-case-study-card-row' );
 
-		// var elementWatcher = ScrollMonitor.create( myElement, { top: -150 } );
-		// var Watcher = ScrollMonitor.create( Element, { top: -200 } );
+		var elementWatcher = ScrollMonitor.create( myElement, {
+			top: -150
+		} );
 
-		// elementWatcher.enterViewport(function() {
-		//     myElement.classList.add('is-inview');
-		// });
-
-		// Watcher.enterViewport(function() {
-		//     Element.classList.add('is-inview');
-		// });
+		elementWatcher.enterViewport( function() {
+			myElement.classList.add( 'is-inview' );
+		} );
 	}
-})();
+} )();

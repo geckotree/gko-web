@@ -6,7 +6,7 @@
 
 ## assets/js/components/InPageNav.js
 
--  **todo** `(line 39)`  scroll to section when click on section link - mobile and desktop
+-  **todo** `(line 39)`  toggle button on mobile
 -  **todo** `(line 56)`  check if this works with orientation change
 -  **todo** `(line 77)`  check if nav is bigger than viewport
 
@@ -24,7 +24,6 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 -  **todo** `(line 60)`  test no-js
--  **todo** `(line 114)`  update
 
 ## assets/sass/components/case-study/section.scss
 

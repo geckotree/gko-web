@@ -36,7 +36,7 @@
 			this._stickySideNav();
 			this._setActiveSectionsOnScroll();
 
-			//@todo scroll to section when click on section link - mobile and desktop
+			//@todo toggle button on mobile
 		},
 
 		_attachEventHandlers: function() {

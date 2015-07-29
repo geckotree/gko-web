@@ -46,9 +46,63 @@
 	</head>
 
 	<body class="o-page" data-module="InPageNav">
-	    <header class="o-page__header" role="banner">
-	        <!-- @note header content -->
-	    </header>
+	    <header class="c-header" role="banner">
+			<div class="c-header__inner">
+				<a href="index.html" class="c-header__logo">
+					<svg class="icon icon--logo">
+                        <use xlink:href="#icon--logo"></use>
+                    </svg>
+				</a>
+
+				<button class="c-header__toggle-menu-button" data-module="Toggle" data-toggle="js-nav">
+					<svg class="icon icon--menu">
+                        <use xlink:href="#icon--menu"></use>
+                    </svg>
+				</button>
+
+				<nav class="c-nav js-nav" role="navigation">
+					<div class="c-nav__list">
+						<div class="c-nav__item">
+							<a href="#" class="c-nav__link">work 
+								<svg class="icon icon--briefcase">
+		                            <use xlink:href="#icon--briefcase"></use>
+		                        </svg>
+							</a>
+						</div>
+						<div class="c-nav__item">
+							<a href="#" class="c-nav__link">services 
+								<svg class="icon icon--coffee">
+		                            <use xlink:href="#icon--coffee"></use>
+		                        </svg>
+							</a>
+						</div>
+						<div class="c-nav__item">
+							<a href="#" class="c-nav__link">about 
+								<svg class="icon icon--heart">
+		                            <use xlink:href="#icon--heart"></use>
+		                        </svg>
+							</a>
+						</div>
+						<div class="c-nav__item--align-right">
+							<div class="c-nav__item">
+								<a href="/blog" class="c-nav__link">blog 
+									<svg class="icon icon--chat">
+			                            <use xlink:href="#icon--chat"></use>
+			                        </svg>
+								</a>
+							</div>
+							<div class="c-nav__item">
+								<a href="#" class="c-nav__link c-nav__link--button c-button--primary">planner 
+									<svg class="icon icon--feather">
+			                            <use xlink:href="#icon--feather"></use>
+			                        </svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
 	    <main class="o-page__content s-case-study--adspy" role="main">
 	        <section class="c-case-study__hero js-hero">

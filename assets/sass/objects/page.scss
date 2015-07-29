@@ -55,3 +55,15 @@ html {
 		padding-top: $padding-large / 2;
 	}
 }
+
+@include respond-max( $mq-large ) {
+	.o-page__content {
+		padding-top: 7.8rem;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.o-page__content {
+		padding-top: 8.8rem;
+	}
+}

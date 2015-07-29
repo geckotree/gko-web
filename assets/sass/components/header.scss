@@ -1,0 +1,92 @@
+/* ===========================================================
+
+	# Header
+
+=========================================================== */
+
+.c-header {
+	// background: $background-colour;
+	// background: rgba( $background-colour, .9 );
+	transition: background $speed ease,
+				transform $speed ease;
+
+	// &:hover {
+	// 	background: rgba( $background-colour, 1 );
+	// }
+}
+
+.c-header__inner {
+	@include clearfix;
+	padding-top: $padding-small / 2;
+}
+
+.icon--logo {
+	@include icon( $pri, 4.8rem, 4.8rem );
+	margin-bottom: -.8rem;
+}
+
+.no-enhance {
+	.c-header__toggle-menu-button {
+		display: none;
+	}
+}
+
+.enhance {
+	//@todo apply this after scroll
+	.c-header {
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-header {
+		background: $background-colour;
+		position: relative;
+		text-align: center;
+	}
+
+	.c-header__inner {
+		background: $background-colour;
+		padding-top: 1.5rem;
+	}
+
+	.c-header__logo {
+		display: inline-block;
+		width: 60%;
+	}
+
+	.c-header__toggle-menu-button {
+		height: 7.8rem;
+		left: 0;
+		padding: $padding-small / 4 $padding-small / 2;
+		position: absolute;
+		text-align: left;
+		top: 0;
+		width: 20%;
+		z-index: 10;
+	}
+
+	.enhance {
+		.c-header__inner {
+			padding-bottom: 1.5rem;
+		}
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-header__inner {
+		padding: $padding-small / 2;
+	}
+
+	.c-header__logo {
+		float: left;
+	}
+
+	.c-header__toggle-menu-button {
+		display: none;
+	}
+}

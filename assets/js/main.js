@@ -26,7 +26,7 @@
 			new window[ moduleName ]( $node );
 		}
 
-		//@todo sort this out
+		//@todo create as reusable module
 		var myElement = document.querySelector( '.c-case-study-card-row' );
 
 		var elementWatcher = ScrollMonitor.create( myElement, {

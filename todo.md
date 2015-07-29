@@ -12,14 +12,21 @@
 
 ## assets/js/main.js
 
--  **todo** `(line 29)`  sort this out
+-  **todo** `(line 29)`  create as reusable module
 
 ## assets/sass/components/case-studies/page-nav.scss
 
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
--  **todo** `(line 60)`  test no-js
 
 ## assets/sass/components/case-studies/section.scss
 
 -  **todo** `(line 19)`  update this
+
+## assets/sass/components/header.scss
+
+-  **todo** `(line 35)`  apply this after scroll
+
+## assets/sass/components/nav.scss
+
+-  **todo** `(line 91)`  sort this if no-js

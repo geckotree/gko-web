@@ -11,3 +11,42 @@
 .icon {
 	transition: fill $speed ease;
 }
+
+.icon--menu {
+	@include icon( $med-1, 1.6rem, 1.6rem );
+}
+
+.icon--menu__top-path,
+.icon--menu__middle-path,
+.icon--menu__middle-path {
+	animation-duration: $speed;
+	animation-fill-mode: both;
+}
+
+.is-active {
+	.icon--menu__top-path {
+		animation-name: menuPathIn1;
+	}
+
+	.icon--menu__middle-path {
+		animation-name: menuPathIn2;
+	}
+
+	.icon--menu__middle-path {
+		animation-name: menuPathIn3;
+	}
+}
+
+.is-inactive {
+	.icon--menu__top-path {
+		animation-name: menuPathOut1;
+	}
+
+	.icon--menu__middle-path {
+		animation-name: menuPathOut2;
+	}
+
+	.icon--menu__middle-path {
+		animation-name: menuPathOut3;
+	}
+}

@@ -1,0 +1,147 @@
+/* ===========================================================
+
+	# Nav
+
+=========================================================== */
+
+.c-nav__list {
+	list-style: none;
+}
+
+.c-nav__item {
+	font-weight: $bold;
+	margin: 0;
+}
+
+.c-nav__link {
+	color: $med-2;
+	transition: color $speed ease,
+				transform $speed ease;
+
+	.icon {
+		@include icon( $med-1, 1.6rem, 1.6rem );
+	}
+
+	&:hover,
+	&:focus {
+		color: $text-colour;
+
+		.icon {
+			fill: $sec;
+		}
+	}
+}
+
+.c-nav__link--button {
+	border-radius: $border-radius * 10;
+	color: $white;
+	transition: background $speed ease,
+				transform $speed ease;
+
+	.icon {
+		fill: $white;
+	}
+
+	&:hover,
+	&:focus {
+		background: $sec;
+		color: $white;
+
+		.icon {
+			fill: $white;
+		}
+	}
+
+	&:active {
+		transform: $active-scale-small;
+	}
+}
+
+@include respond-max( $mq-medium ) {
+	.c-nav__link {
+		.icon {
+			margin: .3rem 0;
+		}
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-nav__item {
+		.icon {
+			margin: .6rem 0;
+		}
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-nav__link {
+		display: block;
+		padding: $padding-small / 4 $padding-small / 2;
+		text-align: left;
+
+		.icon {
+			float: right;
+		}
+	}
+
+	.c-nav__link--button {
+		border-radius: 0;
+	}
+
+	//@todo sort this if no-js
+	//hides nav by default to prevent flicker of animation
+	.no-enhance{
+		.c-nav {
+			display: none;
+		}
+	}
+
+	.enhance {
+		.c-nav {
+			animation-duration: $speed * 1.5;
+			animation-fill-mode: both;
+			background: $background-colour;
+			display: block;
+			left: 0;
+			padding-top: $padding-small / 4;
+			position: absolute;
+			top: 0;
+			transform: translateY( -100% );
+			transition: transform $speed ease;
+			width: 100%;
+			z-index: -1;
+
+			&.is-visible {
+				animation-name: navBounceInDown;
+			}
+
+			&.is-hidden {
+				animation-name: navBounceOutUp;
+			}
+		}
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-nav__item {
+		float: left;
+	}
+
+	.c-nav__menu {
+		padding-left: 4.8rem;
+		width: 100%;
+	}
+
+	.c-nav__list {
+		@include clearfix;
+	}
+
+	.c-nav__item--align-right {
+		float: right;
+	}
+
+	.c-nav__link {
+		display: block;
+		padding: $padding-small / 4 $padding-small / 2;
+	}
+}

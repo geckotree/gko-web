@@ -2,7 +2,8 @@
 
 @import 'tools/mixins.scss';
 
-@import 'animations/base.scss';
+@import 'animations/base.scss',
+		'animations/nav.scss';
 
 @import 'generic/reset.scss';
 
@@ -24,6 +25,8 @@
 
 @import 'components/icons.scss',
 		'components/buttons.scss',
+		'components/header.scss',
+		'components/nav.scss',
 		'components/footer.scss',
 		'components/hero.scss',
 		'components/listing.scss',

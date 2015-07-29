@@ -29,16 +29,16 @@
 
 		_attachEventHandlers: function() {
 			var _this = this;
-			var scopeSelector = this._classes.scopePrefix + this._classes.targetClass + '-';
+			// var scopeSelector = this._classes.scopePrefix + this._classes.targetClass + '-';
 
 			this._$toggle.addEventListener( 'click', function() {
-				if( _this._$html.classList.contains( scopeSelector + _this._classes.visibleClass ) ) {
-					_this._$html.classList.remove( scopeSelector + _this._classes.visibleClass );
-					_this._$html.classList.add( scopeSelector + _this._classes.hiddenClass );
+				if( _this._$target.classList.contains( _this._classes.visibleClass ) ) {
+					_this._$target.classList.remove( _this._classes.visibleClass );
+					_this._$target.classList.add( _this._classes.hiddenClass );
 					_this._$target.setAttribute( 'aria-hidden', true );
 				} else {
-					_this._$html.classList.remove( scopeSelector + _this._classes.hiddenClass );
-					_this._$html.classList.add( scopeSelector + _this._classes.visibleClass );
+					_this._$target.classList.remove( _this._classes.hiddenClass );
+					_this._$target.classList.add( _this._classes.visibleClass );
 					_this._$target.setAttribute( 'aria-hidden', false );
 				}
 			} );

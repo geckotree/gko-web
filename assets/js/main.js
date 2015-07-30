@@ -27,14 +27,14 @@
 		}
 
 		//@todo create as reusable module
-		var myElement = document.querySelector( '.c-case-study-card-row' );
+		// var myElement = document.querySelector( '.c-case-study-card-row' );
 
-		var elementWatcher = ScrollMonitor.create( myElement, {
-			top: -150
-		} );
+		// var elementWatcher = ScrollMonitor.create( myElement, {
+		// 	top: -150
+		// } );
 
-		elementWatcher.enterViewport( function() {
-			myElement.classList.add( 'is-inview' );
-		} );
+		// elementWatcher.enterViewport( function() {
+		// 	myElement.classList.add( 'is-inview' );
+		// } );
 	}
 } )();

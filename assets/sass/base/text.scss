@@ -27,27 +27,12 @@ body {
 	font-size: $font-size-body-small;
 }
 
-p + p,
-p + ul,
-p + ol,
-ul + p,
-ol + p {
+p + p, p + ul, p + ol, ul + p, ol + p,
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6,
+ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6,
+ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6,
+pre + h1, pre + h2, pre + h3, pre + h4, pre + h5, pre + h6 {
 	margin-top: $line-height; // Preserves verticle rythm being equal to line-height
-}
-
-p + h1,
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6,
-ul + h1,
-ul + h2,
-ul + h3,
-ul + h4,
-ul + h5,
-ul + h6 {
-	padding-top: $line-height;
 }
 
 em {

@@ -13,7 +13,8 @@
 		'base/button.scss',
 		'base/lists.scss',
 		'base/table.scss',
-		'base/forms.scss';
+		'base/forms.scss',
+		'base/free-content.scss';
 
 @import 'objects/page.scss',
 		'objects/wrap.scss',
@@ -29,9 +30,10 @@
 		'components/nav.scss',
 		'components/footer.scss',
 		'components/hero.scss',
-		'components/listing.scss',
 		'components/pagination.scss',
 		'components/feat-media-grid.scss';
+
+@import 'components/listing/listing.scss';
 
 @import 'components/case-studies/page-nav.scss',
 		'components/case-studies/section.scss',

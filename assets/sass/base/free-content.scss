@@ -1,0 +1,42 @@
+/* ===========================================================
+
+	# Free Content
+
+=========================================================== */
+
+.s-free-content {
+	a {
+		background: $pri;
+		background: rgba( $pri, .1 );
+		border-radius: $border-radius;
+		padding: .3rem .5rem;
+		transition: background $speed ease,
+					color $speed ease,
+					transform $speed ease;
+
+		&:hover,
+		&:focus {
+			background: rgba( $sec, .1 );
+		}
+	}
+
+	.o-table {
+		margin: $padding-small / 2 0;
+	}
+}
+
+@include respond-min( $mq-small ) {
+	.s-free-content {
+		.o-table {
+			margin: $padding-medium / 2 0;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.s-free-content {
+		.o-table {
+			margin: $padding-large / 2 0;
+		}
+	}
+}

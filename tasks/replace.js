@@ -22,6 +22,7 @@ module.exports = {
 			src: [
 				'src/index.html',
 				'src/blog.html',
+				'src/article.html',
 				'src/adspy.html'
 			],
 			dest: ''

@@ -20,3 +20,9 @@
 .u-rounded-corners {
 	border-radius: $border-radius;
 }
+
+@include respond-max( $mq-small ) {
+	.u-hide-mobile {
+		display: none;
+	}
+}

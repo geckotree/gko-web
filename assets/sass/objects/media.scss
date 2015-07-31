@@ -12,11 +12,11 @@ img {
 .o-media {
 	margin: $padding-small / 2 0;
 	position: relative;
-}
 
-.o-media img {
-	border-radius: $border-radius;
-	width: 100%;
+	img {
+		border-radius: $border-radius;
+		width: 100%;
+	}
 }
 
 .o-media--video {

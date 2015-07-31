@@ -22,7 +22,7 @@ td {
 }
 
 tr:nth-child( odd ) td {
-	background: $border-colour;
+	background: $light-2;
 
 	&:first-child {
 		border-radius: $border-radius 0 0 $border-radius;

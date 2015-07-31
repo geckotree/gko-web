@@ -10,9 +10,13 @@ img {
 }
 
 .o-media {
-	img {
-		width: 100%;
-	}
+	margin: $padding-small / 2 0;
+	position: relative;
+}
+
+.o-media img {
+	border-radius: $border-radius;
+	width: 100%;
 }
 
 .o-media--video {
@@ -35,14 +39,15 @@ img {
 	}
 }
 
-.o-media--large {
-	margin: $padding-small 0;
-	position: relative;
+@include respond-min( $mq-small ) {
+	.o-media {
+		margin: $padding-medium / 2 0;
+	}
 }
 
 @include respond-min( $mq-medium ) {
-	.o-media--large {
-		margin: $padding-medium 0;
+	.o-media {
+		margin: $padding-large / 2 0;
 	}
 
 	.o-media--left,

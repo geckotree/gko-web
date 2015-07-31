@@ -134,6 +134,7 @@
 			$fakeFooter.style.width = '100%';
 			$fakeFooter.style.zIndex = '-10';
 			$fakeFooter.setAttribute( 'class', 'js-fake-footer' );
+			$fakeFooter.setAttribute( 'role', 'presentation' );
 
 			this._$content.appendChild( $fakeFooter );
 			this._$fakeFooter = this._$el.querySelector( '.js-fake-footer' );

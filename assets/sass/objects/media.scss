@@ -39,15 +39,47 @@ img {
 	}
 }
 
+@include respond-max( $mq-small ) {
+	.o-media {
+		margin-left: -$padding-small / 2;
+
+		figcaption {
+			margin-left: $padding-small / 2;
+		}
+	}
+}
+
 @include respond-min( $mq-small ) {
 	.o-media {
 		margin: $padding-medium / 2 0;
 	}
 }
 
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.o-media {
+		margin-left: -$padding-small;
+
+		figcaption {
+			margin-left: $padding-small;
+		}
+	}
+}
+
+@include respond-max( $mq-medium ) {
+	.o-media {
+		img {
+			border-radius: 0 $border-radius $border-radius 0;
+		}
+	}
+}
+
 @include respond-min( $mq-medium ) {
 	.o-media {
 		margin: $padding-large / 2 0;
+
+		img {
+			border-radius: $border-radius;
+		}
 	}
 
 	.o-media--left,

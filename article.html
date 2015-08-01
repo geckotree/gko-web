@@ -112,15 +112,15 @@
 		</header>
 
 		<main class="o-page__content" role="main">
-			<article class="c-article" itemscope itemtype="http://schema.org/Article">
+			<article class="c-article" itemscope itemtype="http://schema.org/BlogPosting">
 				<div class="o-section o-wrap o-wrap--x-large">
 					<header class="c-article__header">
-						<h1 class="c-article__heading tera" itemprop="name">Improving front-end <span class="u-highlight-text">performance</span></h1>
+						<h1 class="c-article__heading tera" itemprop="headline">Improving front-end <span class="u-highlight-text">performance</span></h1>
 
 						<ul class="c-listing__meta-data">
 							<li class="c-listing__meta-data__item">
 								<time datetime="2015-05-2409:33:38" pubdate="pubdate">24<sup>th</sup> May 2015</time>
-								<meta itemprop="dateCreated" content="2015-05-24">
+								<meta itemprop="datePublished" content="2015-05-24">
 							</li>
 							<li class="c-listing__meta-data__item u-hide-mobile" itemprop="author">Rob Simpson</li>
 							<li class="c-listing__meta-data__item">9mins to read</li>
@@ -181,7 +181,7 @@
 						<p>Third-party scripts are common culprits for making additional requests—many make more than 1 request to grab additional files such as scripts, images or CSS. Your browser’s built-in developer tools can help you sniff out the offenders.</p>
 
 						<figure class="o-media">
-						    <img src="../../assets/build/img/blog/article-img.jpg" alt="">
+						    <img src="../../assets/build/img/blog/article-img.jpg" alt="" itemprop="image">
 						    <figcaption>Google Chrome Developer Tools’ Network tab</figcaption>
 						</figure>
 
@@ -322,24 +322,17 @@
 
 						<p>Since then I managed to strip away even more (7KB compressed), and the script rounds out to only 0.365KB when compressed and gzipped.</p>
 
-						<pre>
-							<code>
-								<head>
-							        <style>
-							            /* inline critical CSS */
-							        </style>
-							        <script>
-							            // inline the loadCSS script
-							            function loadCSS( href, before, media, callback ){ ... }
-							            // then load your stylesheet
-							            loadCSS("/path/to/stylesheet.css");
-							        </script>
-							        <noscript>
-							            <link href="/path/to/stylesheet.css" rel="stylesheet">
-							        </noscript>
-							    </head>
-						    </code>
-						</pre>
+						<pre><code>&lt;head&gt;
+									&lt;style&gt;
+										/* inline critical CSS */
+									&lt;/style&gt;
+								&lt;/head&gt;
+
+								&lt;script&gt;
+									// inline the loadCSS script
+									function loadCSS( href, before, media, callback ){ ... }
+									loadCSS( '/path/to/stylesheet.css' );
+								&lt;/script&gt;</code></pre>
 
 						<p>JavaScript can also be render-blocking; therefore its delivery should also be optimized, which can be done the following ways:</p>
 

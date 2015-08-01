@@ -1,0 +1,41 @@
+/* ===========================================================
+
+	# Code
+
+=========================================================== */
+
+pre {
+	background: $light-2;
+	border-radius: $border-radius;
+	margin: $padding-small / 2 0;
+	overflow: scroll;
+	padding: $padding-small / 2;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+
+code {
+	background: $light-2;
+	border-radius: $border-radius;
+	font-family: Consolas, Courier, monospace;
+	font-size: 90%;
+	padding: .3rem .5rem;
+}
+
+pre code {
+	background: transparent;
+	border-radius: 0;
+	padding: 0;
+}
+
+@include respond-min( $mq-small ) {
+	pre {
+		margin: $padding-medium / 2 0;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	pre {
+		margin: $padding-large / 2 0;
+	}
+}

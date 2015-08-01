@@ -82,6 +82,7 @@
 	}
 }
 
+//@todo move to own file
 .c-listing--side-by-side__item-meta {
 	margin-bottom: 0;
 }
@@ -144,7 +145,7 @@
 	}
 
 	.c-listing--side-by-side__link {
-		background: rgba( $grey, .2 );
+		background: $light-2;
 		padding: 4rem;
 
 		&:active {

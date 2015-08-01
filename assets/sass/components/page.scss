@@ -40,10 +40,6 @@ html {
 }
 
 @include respond-min( $mq-small ) {
-	.c-page {
-		margin-bottom: 38.6rem + $padding-medium;
-	}
-
 	.c-page__content {
 		&:after {
 			bottom: -$padding-medium / 2;
@@ -57,10 +53,6 @@ html {
 }
 
 @include respond-min( $mq-medium ) {
-	.c-page {
-		margin-bottom: 45.3rem + $padding-large;
-	}
-
 	.c-page__content {
 		&:after {
 			bottom: -$padding-large / 2;
@@ -81,6 +73,12 @@ html {
 }
 
 @include respond-min( $mq-large ) {
+	.no-touch {
+		.c-page {
+			margin-bottom: 45.3rem + $padding-large;
+		}
+	}
+
 	.c-page__content {
 		padding-top: 8.8rem;
 

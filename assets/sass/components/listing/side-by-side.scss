@@ -1,0 +1,106 @@
+/* ===========================================================
+
+	# Side By Side
+
+=========================================================== */
+
+.c-listing--side-by-side__item-meta {
+	margin-bottom: 0;
+}
+
+@include respond-max( $mq-medium ) {
+	.flexbox {
+		.c-listings--side-by-side {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.c-listing--side-by-side {
+			width: 100%;
+		}
+
+		.c-listing--next {
+			order: 1;
+		}
+
+		.c-listing--prev {
+			order: 2;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-listings--side-by-side {
+		@include clearfix;
+		max-width: $wrap-large + 12rem;
+	}
+
+	.c-listing--side-by-side {
+		width: 50%;
+	}
+
+	.c-listing--prev {
+		float: left;
+		margin-left: 0; // This is to align the listing to the *left* with flexbox
+	}
+
+	.c-listing--prev__link {
+		margin-right: 2rem;
+
+		&:hover {
+			transform: translateX( -.5rem );
+		}
+	}
+
+	.c-listing--next {
+		float: right;
+		margin-right: 0; // This is to align the listing to the *right* with flexbox
+	}
+
+	.c-listing--next__link {
+		margin-left: 2rem;
+
+		&:hover {
+			transform: translateX( .5rem );
+		}
+	}
+
+	.c-listing--side-by-side__link {
+		background: $light-2;
+		padding: 4rem;
+
+		&:active {
+			transform: $active-scale-small;
+		}
+	}
+
+	.c-listing--side-by-side__meta-data {
+		color: $med-2;
+	}
+
+	.flexbox {
+		.c-listings--side-by-side {
+			align-items: stretch;
+			display: flex;
+		}
+
+		.c-listing--side-by-side {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.c-listing--side-by-side__link {
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+		}
+
+		.c-listing--side-by-side__meta-data {
+			margin-top: auto;
+		}
+
+		.c-listing--side-by-side__meta-data__item {
+			margin-bottom: 0;
+		}
+	}
+}

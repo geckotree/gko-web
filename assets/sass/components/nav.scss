@@ -134,6 +134,10 @@
 
 	.c-nav__list {
 		@include clearfix;
+
+		& > :first-child {
+			padding-left: $padding-small / 4;
+		}
 	}
 
 	.c-nav__item--align-right {

@@ -27,10 +27,6 @@
 
 -  **todo** `(line 35)`  apply this after scroll
 
-## assets/sass/components/listing/listing.scss
-
--  **todo** `(line 103)`  move to own file
-
 ## assets/sass/components/nav.scss
 
 -  **todo** `(line 91)`  sort this if no-js

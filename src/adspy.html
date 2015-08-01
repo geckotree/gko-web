@@ -54,13 +54,13 @@
                     </svg>
 				</a>
 
-				<button class="c-header__toggle-menu-button" data-module="Toggle" data-toggle="js-nav">
+				<button class="c-header__toggle-menu-button" id="toggle-menu" aria-haspopup="true" data-module="Toggle" data-toggle="js-nav">
 					<svg class="icon icon--menu">
                         <use xlink:href="#icon--menu"></use>
                     </svg>
 				</button>
 
-				<nav class="c-nav js-nav" role="navigation">
+				<nav class="c-nav js-nav" aria-labelledby="toggle-menu" role="navigation">
 					<div class="c-nav__list">
 						<div class="c-nav__item">
 							<a href="#" class="c-nav__link">work 

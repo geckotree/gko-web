@@ -18,15 +18,15 @@
 		'base/code.scss',
 		'base/free-content.scss';
 
-@import 'objects/page.scss',
-		'objects/wrap.scss',
+@import 'objects/wrap.scss',
 		'objects/section.scss',
 		'objects/grid.scss',
 		'objects/table.scss',
 		'objects/forms.scss',
 		'objects/media.scss';
 
-@import 'components/icons.scss',
+@import 'components/page.scss',
+		'components/icons.scss',
 		'components/buttons.scss',
 		'components/header.scss',
 		'components/nav.scss',
@@ -36,7 +36,8 @@
 		'components/pagination.scss',
 		'components/feat-media-grid.scss';
 
-@import 'components/listing/listing.scss';
+@import 'components/listing/listing.scss',
+		'components/listing/side-by-side.scss';
 
 @import 'components/case-studies/page-nav.scss',
 		'components/case-studies/section.scss',

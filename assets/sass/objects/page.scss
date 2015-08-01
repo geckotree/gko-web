@@ -13,18 +13,30 @@ html {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 
 .o-page__content {
 	background: $background-colour;
 	flex: 1 1 auto;
-	padding-bottom: $padding-small;
 	position: relative;
 	width: 100%;
+
+	&:after {
+		background: $light-1;
+		border-radius: 50%;
+		bottom: -$padding-small / 2;
+		content: '';
+		height: $padding-small;
+		left: -10%;
+		position: absolute;
+		width: 120%;
+		z-index: -1;
+	}
 }
 
 .o-page__heading {
-	padding-top: $padding-small / 2;
+	padding-top: $padding-small;
 }
 
 @include respond-min( $mq-small ) {
@@ -33,11 +45,14 @@ html {
 	}
 
 	.o-page__content {
-		padding-bottom: $padding-medium;
+		&:after {
+			bottom: -$padding-medium / 2;
+			height: $padding-medium;
+		}
 	}
 
 	.o-page__heading {
-		padding-top: $padding-medium / 2;
+		padding-top: $padding-medium;
 	}
 }
 
@@ -47,12 +62,15 @@ html {
 	}
 
 	.o-page__content {
-		padding-bottom: $padding-large;
+		&:after {
+			bottom: -$padding-large / 2;
+			height: $padding-large;
+		}
 	}
 
 	.o-page__heading {
 		text-align: center;
-		padding-top: $padding-large / 2;
+		padding-top: $padding-large;
 	}
 }
 
@@ -65,5 +83,10 @@ html {
 @include respond-min( $mq-large ) {
 	.o-page__content {
 		padding-top: 8.8rem;
+
+		&:after {
+			bottom: -$padding-large;
+			height: $padding-large * 2;
+		}
 	}
 }

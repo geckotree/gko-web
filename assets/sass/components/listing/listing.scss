@@ -30,6 +30,10 @@
 		.u-highlight-text {
 			color: $sec;
 		}
+
+		.c-listing__visited-badge {
+			background: $sec;
+		}
 	}
 
 	&:active {
@@ -57,6 +61,20 @@
 
 	& + & {
 		margin-left: $padding-small / 4;
+	}
+}
+
+.c-listing__visited-badge {
+	background: $pri;
+	border-radius: 100%;
+	display: inline-block;
+	height: 2rem;
+	padding: .4rem .5rem .2rem .5rem;
+	transition: background $speed ease;
+	width: 2rem;
+
+	.icon {
+		@include icon( $white, 1rem, 1rem );
 	}
 }
 
@@ -172,6 +190,14 @@
 			display: flex;
 			flex: 1 1 auto;
 			flex-direction: column;
+		}
+
+		.c-listing--side-by-side__meta-data {
+			margin-top: auto;
+		}
+
+		.c-listing--side-by-side__meta-data__item {
+			margin-bottom: 0;
 		}
 	}
 }

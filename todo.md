@@ -29,7 +29,7 @@
 
 ## assets/sass/components/listing/listing.scss
 
--  **todo** `(line 85)`  move to own file
+-  **todo** `(line 103)`  move to own file
 
 ## assets/sass/components/nav.scss
 

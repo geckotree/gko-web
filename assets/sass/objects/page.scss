@@ -8,7 +8,7 @@ html {
 	height: 100%;
 }
 
-.o-page {
+.c-page {
 	background: $light-2;
 	display: flex;
 	flex-direction: column;
@@ -16,7 +16,7 @@ html {
 	overflow-x: hidden;
 }
 
-.o-page__content {
+.c-page__content {
 	background: $background-colour;
 	flex: 1 1 auto;
 	position: relative;
@@ -35,53 +35,53 @@ html {
 	}
 }
 
-.o-page__heading {
+.c-page__heading {
 	padding-top: $padding-small;
 }
 
 @include respond-min( $mq-small ) {
-	.o-page {
+	.c-page {
 		margin-bottom: 38.6rem + $padding-medium;
 	}
 
-	.o-page__content {
+	.c-page__content {
 		&:after {
 			bottom: -$padding-medium / 2;
 			height: $padding-medium;
 		}
 	}
 
-	.o-page__heading {
+	.c-page__heading {
 		padding-top: $padding-medium;
 	}
 }
 
 @include respond-min( $mq-medium ) {
-	.o-page {
+	.c-page {
 		margin-bottom: 45.3rem + $padding-large;
 	}
 
-	.o-page__content {
+	.c-page__content {
 		&:after {
 			bottom: -$padding-large / 2;
 			height: $padding-large;
 		}
 	}
 
-	.o-page__heading {
+	.c-page__heading {
 		text-align: center;
 		padding-top: $padding-large;
 	}
 }
 
 @include respond-max( $mq-large ) {
-	.o-page__content {
+	.c-page__content {
 		padding-top: 7.8rem;
 	}
 }
 
 @include respond-min( $mq-large ) {
-	.o-page__content {
+	.c-page__content {
 		padding-top: 8.8rem;
 
 		&:after {

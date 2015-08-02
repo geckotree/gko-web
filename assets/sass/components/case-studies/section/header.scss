@@ -1,0 +1,11 @@
+/* ===========================================================
+
+	# Case Study - Header
+
+=========================================================== */
+
+@include respond-max( $mq-large ) {
+	.c-case-study__section__header {
+		text-align: center;
+	}
+}

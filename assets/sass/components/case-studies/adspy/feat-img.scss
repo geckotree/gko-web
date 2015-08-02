@@ -1,0 +1,24 @@
+/* ===========================================================
+
+	# Adspy - Feat Image
+
+=========================================================== */
+
+//@todo creat more responisve sized images
+//@todo handle retina images
+
+.c-case-study__section__feat-img__img--admachine-sketch {
+	background-image: url( '#{$images}/case-studies/adspy/robot-machine-sketch.jpg' );
+}
+
+@include respond-max( $mq-large ) {
+	.c-case-study__section__feat-img__img--admachine-sketch {
+		padding-top: 49.180327868%;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__section__feat-img__img--robot-sketch {
+		background-image: url( '#{$images}/case-studies/adspy/robot-sketch.jpg' );
+	}
+}

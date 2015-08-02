@@ -1,0 +1,42 @@
+/* ===========================================================
+
+	# Page
+
+=========================================================== */
+
+.c-page__heading {
+	padding-top: $padding-small;
+}
+
+@include respond-min( $mq-small ) {
+	.c-page__heading {
+		padding-top: $padding-medium;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-page__heading {
+		margin-left: -$padding-large;
+		padding-bottom: $padding-large / 2;
+		padding-top: $padding-large;
+
+		.o-wrap {
+			@include clearfix;
+		}
+	}
+
+	.c-page__heading__details,
+	.c-page__heading__figure {
+		float: left;
+	}
+
+	.c-page__heading__details {
+		padding-left: $padding-medium;
+		width: 60%;
+	}
+
+	.c-page__heading__figure {
+		padding-left: $padding-medium;
+		width: 40%;
+	}
+}

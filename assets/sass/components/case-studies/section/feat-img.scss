@@ -1,0 +1,63 @@
+/* ===========================================================
+
+	# Case Study - Feat Image
+
+=========================================================== */
+
+.c-case-study__section__feat-img-col {
+	width: 100%;
+}
+
+.c-case-study__section__feat-img__img {
+	background-color: $light-2;
+	background-position: center;
+	background-size: cover;
+	border-radius: $border-radius;
+	height: 100%;
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__section__feat-img-row {
+		@include clearfix;
+		margin-left: -$padding-small;
+	}
+
+	.c-case-study__section__feat-img-col {
+		float: left;
+		height: 40rem;
+		padding-left: $padding-small;
+	}
+
+	.c-case-study__section__feat-img-col--large {
+		width: 70%;
+	}
+
+	.c-case-study__section__feat-img-col--small {
+		width: 30%;
+	}
+}
+
+@include respond-min( $mq-x-large ) {
+	.c-case-study__section__feat-img-col {
+		height: 50rem;
+	}
+}
+
+@include respond-min( $mq-xx-large ) {
+	.c-case-study__section__feat-img {
+		padding-left: 7rem;
+		padding-right: 7rem;
+	}
+
+	.c-case-study__section__feat-img-col {
+		height: 50rem;
+	}
+
+	.c-case-study__section__feat-img-col--large {
+		width: 75%;
+	}
+
+	.c-case-study__section__feat-img-col--small {
+		width: 25%;
+	}
+}

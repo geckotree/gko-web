@@ -1,0 +1,25 @@
+/* ===========================================================
+
+	# Page
+
+=========================================================== */
+
+html {
+	height: 100%;
+}
+
+.c-page {
+	background: $light-2;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+@include respond-min( $mq-large ) {
+	.no-touch {
+		.c-page {
+			margin-bottom: 45.3rem + $padding-large * 1.5;
+		}
+	}
+}

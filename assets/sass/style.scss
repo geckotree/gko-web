@@ -25,8 +25,11 @@
 		'objects/forms.scss',
 		'objects/media.scss';
 
-@import 'components/page.scss',
-		'components/icons.scss',
+@import 'components/page/base.scss',
+		'components/page/content.scss',
+		'components/page/heading.scss';
+
+@import 'components/icons.scss',
 		'components/buttons.scss',
 		'components/header.scss',
 		'components/nav.scss',
@@ -39,8 +42,13 @@
 @import 'components/listing/listing.scss',
 		'components/listing/side-by-side.scss';
 
-@import 'components/case-studies/page-nav.scss',
-		'components/case-studies/section.scss',
+@import 'components/case-studies/section/section.scss',
+		'components/case-studies/section/header.scss',
+		'components/case-studies/section/heading.scss',
+		'components/case-studies/section/figure.scss',
+		'components/case-studies/section/grid.scss',
+		'components/case-studies/section/feat-img.scss',
+		'components/case-studies/page-nav.scss',
 		'components/case-studies/hero.scss',
 		'components/case-studies/colours.scss',
 		'components/case-studies/card.scss';
@@ -49,6 +57,7 @@
 		'components/case-studies/adspy/page-nav.scss',
 		'components/case-studies/adspy/hero.scss',
 		'components/case-studies/adspy/colours.scss',
+		'components/case-studies/adspy/feat-img.scss',
 		'components/case-studies/adspy/card.scss';
 
 @import 'components/case-studies/geckotree/card.scss';

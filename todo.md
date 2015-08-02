@@ -14,14 +14,19 @@
 
 -  **todo** `(line 29)`  create as reusable module
 
+## assets/sass/components/case-studies/adspy/feat-img.scss
+
+-  **todo** `(line 7)`  creat more responisve sized images
+-  **todo** `(line 8)`  handle retina images
+
 ## assets/sass/components/case-studies/page-nav.scss
 
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 
-## assets/sass/components/case-studies/section.scss
+## assets/sass/components/case-studies/section/heading.scss
 
--  **todo** `(line 19)`  update this
+-  **todo** `(line 9)`  update this
 
 ## assets/sass/components/header.scss
 

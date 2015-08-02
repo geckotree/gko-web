@@ -1,0 +1,39 @@
+/* ===========================================================
+
+	# Case Study - Heading
+
+=========================================================== */
+
+.c-case-study__section__heading {
+	&:before {
+		color: $grey; //@todo update this
+		content: counters( section, '.' ) ' ';
+		font-size: .75em;
+	}
+}
+
+@include respond-max( $mq-small ) {
+	.c-case-study__section__heading {
+		margin-left: -3rem;
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.c-case-study__section__heading {
+		margin-left: -4.5rem;
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-case-study__section__heading {
+		margin-left: -5.4rem;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__section__header--center {
+		.c-case-study__section__heading {
+			margin-left: -5.4rem;
+		}
+	}
+}

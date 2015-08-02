@@ -1,0 +1,21 @@
+/* ===========================================================
+
+	# Case Study - Figure
+
+=========================================================== */
+
+.c-case-study__section__figure {
+	padding-top: $padding-small;
+}
+
+@include respond-min( $mq-small ) {
+	.c-case-study__section__figure {
+		padding-top: $padding-medium;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__section__figure {
+		padding-top: $padding-large;
+	}
+}

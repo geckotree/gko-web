@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M160,80 C160,35.81722 124.18278,0 80,0 C35.81722,0 0,35.81722 0,80 L0,160 L160,160 L160,80 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="35" height="22"></rect>
+        <rect id="path-5" x="0" y="0" width="20" height="20" rx="40"></rect>
+        <rect id="path-7" x="0" y="0" width="20" height="20" rx="40"></rect>
+        <path d="M36,0 C36,9.9411255 27.9411255,18 18,18 C8.0588745,18 0,9.9411255 0,0 L36,0 Z" id="path-9"></path>
+        <rect id="path-11" x="0" y="0" width="20" height="20" rx="40"></rect>
+        <rect id="path-13" x="0" y="0" width="20" height="20" rx="40"></rect>
+        <rect id="path-15" x="0" y="0" width="170" height="10" rx="40"></rect>
+        <rect id="path-17" x="0" y="0" width="34" height="14" rx="20"></rect>
+        <path id="path-19" d="M7.68825975,32 L22.3900679,32 C26.9341327,28.0673072 30,20.5826419 30,12 C30,7.64178013 29.2094495,3.56667949 27.8362341,4.4408921e-16 C27,0 3,7.10542736e-14 2.17783078,4.4408921e-16 C0.795949965,3.53889743 0,7.62692226 0,12 C0,20.6318643 3.10113431,28.1531218 7.68825975,32 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <rect id="table" fill="#383838" sketch:type="MSShapeGroup" x="96" y="463" width="600" height="3" rx="40"></rect>
+            <g id="torso" sketch:type="MSLayerGroup" transform="translate(236.000000, 274.000000)">
+                <g id="body" transform="translate(0.000000, 28.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#1EBDDB" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="154" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="136" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="118" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="100" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="82" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="64" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="46" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="28" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="10" width="160" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="5" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="23" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="41" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="59" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="77" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="95" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="113" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="131" y="0" width="6" height="160"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="149" y="0" width="6" height="160"></rect>
+                </g>
+                <rect id="arm" fill="#383838" sketch:type="MSShapeGroup" x="29" y="108" width="3" height="80" rx="6"></rect>
+                <rect id="arm" fill="#383838" sketch:type="MSShapeGroup" x="128" y="108" width="3" height="80" rx="6"></rect>
+                <g id="button" transform="translate(77.000000, 51.000000)" stroke="#383838" stroke-width="3" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <circle cx="4" cy="129" r="3"></circle>
+                    <circle cx="4" cy="111" r="3"></circle>
+                    <circle cx="4" cy="93" r="3"></circle>
+                    <circle cx="4" cy="75" r="3"></circle>
+                    <circle cx="3" cy="57" r="3"></circle>
+                    <circle cx="3" cy="39" r="3"></circle>
+                    <circle cx="3" cy="21" r="3"></circle>
+                    <circle cx="3" cy="3" r="3"></circle>
+                </g>
+                <g id="pocket" transform="translate(36.000000, 77.000000)" sketch:type="MSShapeGroup">
+                    <rect stroke="#383838" stroke-width="3" fill="#1EBDDB" x="0" y="0" width="26" height="26" rx="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" x="0" y="3" width="26" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" x="0" y="17" width="26" height="6"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" x="3" y="0" width="6" height="26"></rect>
+                    <rect id="checkered" fill-opacity="0.5" fill="#FFFFFF" x="17" y="0" width="6" height="26"></rect>
+                </g>
+                <g id="neck" transform="translate(63.000000, 0.000000)">
+                    <mask id="mask-4" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                    <circle id="shadow" fill-opacity="0.400000006" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-4)" cx="17" cy="-37" r="50"></circle>
+                </g>
+                <g id="shadow" transform="translate(52.000000, 20.000000)" stroke="#000000" stroke-width="3" fill="#F05D71" sketch:type="MSShapeGroup" opacity="0.5">
+                    <path d="M34,19.4738604 L34,20.2921666 L50.3630218,26.2423563 C53.4763203,27.3744648 56,25.6063922 56,22.2933216 L56,4.29101151 C56,0.980868025 53.4762389,-0.790102138 50.3630218,0.341976801 L34,6.29216656 L34,6.52625711 C32.937765,5.57633415 31.5347669,5 29.9966691,5 L26.0033309,5 C24.4626008,5 23.0608231,5.57701633 22,6.52613963 L22,6.29247123 L5.63697818,0.342281474 C2.52367973,-0.78982705 3.55271368e-15,0.978245597 3.55271368e-15,4.29131618 L0,22.2936263 C0,25.6037698 2.52376109,27.3747399 5.63697818,26.242661 L22,20.2924712 L22,19.4737429 C23.062235,20.4236659 24.4652331,21 26.0033309,21 L29.9966691,21 C31.5373992,21 32.9391769,20.4229837 34,19.4738604 Z" id="right"></path>
+                </g>
+                <g id="bow-tie" transform="translate(52.000000, 17.000000)" stroke="#383838" stroke-width="3" sketch:type="MSShapeGroup" fill="#F2D044">
+                    <path d="M34,7.29216656 L50.3630218,1.3419768 C53.4762389,0.209897862 56,1.98086802 56,5.29101151 L56,23.2933216 C56,26.6063922 53.4763203,28.3744648 50.3630218,27.2423563 L34,21.2921666 L34,7.29216656 Z" id="right"></path>
+                    <path d="M0,7.29216656 L16.3630218,1.3419768 C19.4762389,0.209897862 22,1.98086802 22,5.29101151 L22,23.2933216 C22,26.6063922 19.4763203,28.3744648 16.3630218,27.2423563 L0,21.2921666 L0,7.29216656 Z" id="left" transform="translate(11.000000, 14.292319) rotate(-180.000000) translate(-11.000000, -14.292319) "></path>
+                    <rect id="center" x="20" y="6" width="16" height="16" rx="6"></rect>
+                </g>
+            </g>
+            <g id="face" sketch:type="MSLayerGroup" transform="translate(251.000000, 111.000000)">
+                <g id="ear" transform="translate(107.000000, 88.000000)">
+                    <mask id="mask-6" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup" xlink:href="#path-5"></use>
+                    <rect id="shadow" fill-opacity="0.300000012" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-6)" x="10" y="-1" width="3" height="22"></rect>
+                </g>
+                <g id="ear" transform="translate(2.000000, 88.000000)">
+                    <mask id="mask-8" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup" xlink:href="#path-7"></use>
+                    <rect id="shadow" fill-opacity="0.300000012" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-8)" x="6" y="-1" width="3" height="22"></rect>
+                </g>
+                <path d="M114,116 C114,143.614237 91.6142375,166 64,166 C36.3857625,166 14,143.614237 14,116 L14,72.0063161 C14,68.6891193 16.687681,66 19.9930648,66 L110.002676,66 C112.210337,66 114,67.7942683 114,70.0071897 L114,116 Z" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup"></path>
+                <path d="M106.206938,28.5519932 C104.084463,21.9953619 97.9406296,17.255102 90.6923077,17.255102 C87.2892873,17.255102 84.1297201,18.2999577 81.5154609,20.0870878 C73.5806927,7.98787 59.9175215,0 44.3931624,0 C19.8754958,0 0,19.9233286 0,44.5 C0,57.7769919 5.80057742,69.6959259 15,77.8492896 L15,69.0063161 C15,65.6891193 17.687681,63 20.9930648,63 L59.6016572,63 C66.9379837,71.569309 77.8347889,77 90,77 C112.09139,77 130,59.09139 130,37 C130,31.9152861 129.051256,27.0521632 127.321136,22.5779979 C119.35446,26.4721952 112.130698,28.0736267 106.206938,28.5519932 Z" id="Oval-20" stroke="#383838" stroke-width="3" fill="#484848" sketch:type="MSShapeGroup"></path>
+                <g id="tongue" transform="translate(46.000000, 129.000000)">
+                    <mask id="mask-10" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#C83347" sketch:type="MSShapeGroup" xlink:href="#path-9"></use>
+                    <ellipse stroke="#383838" stroke-width="3" fill="#F05D71" sketch:type="MSShapeGroup" mask="url(#mask-10)" cx="18" cy="21" rx="15" ry="10"></ellipse>
+                </g>
+                <g id="moustach" transform="translate(40.000000, 120.000000)" stroke-width="3" stroke="#383838" fill="#484848" sketch:type="MSShapeGroup">
+                    <path d="M9.58578644,13 C13.5991088,12.9230769 18.5088634,12.6153846 21.5857864,6 C22.5857864,5 21.5857864,6 20.5857864,6 C15.5857864,6 13.7205036,0 9.0473249,0 C4.37414625,0 0.585786438,1.78835981 0.585786438,6.46153846 C0.585786438,11.1347171 4.37414625,12.9230769 9.58578644,13 Z" transform="translate(11.292893, 6.500000) scale(-1, 1) translate(-11.292893, -6.500000) "></path>
+                    <path d="M34.5857864,13 C38.5991088,12.9230769 43.5088634,12.6153846 46.5857864,6 C47.5857864,5 46.5857864,6 45.5857864,6 C40.5857864,6 38.7205036,0 34.0473249,0 C29.3741462,0 25.5857864,1.78835981 25.5857864,6.46153846 C25.5857864,11.1347171 29.3741462,12.9230769 34.5857864,13 Z"></path>
+                </g>
+                <g id="nose" transform="translate(56.000000, 108.000000)" sketch:type="MSShapeGroup">
+                    <path d="M13,5 C13,7.76142375 10.7614237,10 8,10 C5.23857625,10 3,7.76142375 3,5 L13,5 Z" stroke="#383838" stroke-width="3"></path>
+                    <rect fill="#F7CEAE" x="3" y="2" width="10" height="3"></rect>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="2" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="14.5" cy="2" r="1.5"></circle>
+                    <path d="M12.7710989,3.5 C12.9198231,3.97352061 13,4.47739714 13,5 C13,7.76142375 10.7614237,10 8,10 C5.23857625,10 3,7.76142375 3,5 C3,4.47739714 3.08017691,3.97352061 3.22890114,3.5 C3.86603296,5.52855348 5.76117911,7 8,7 C10.2388209,7 12.133967,5.52855348 12.7710989,3.5 Z" id="shadow" fill-opacity="0.400000006" fill="#000000"></path>
+                </g>
+                <g id="eye-" transform="translate(79.000000, 91.000000)" sketch:type="MSShapeGroup">
+                    <circle id="arch" stroke="#383838" stroke-width="3" cx="10" cy="7" r="7"></circle>
+                    <rect id="overlay" fill="#F7CEAE" x="0" y="7" width="20" height="10"></rect>
+                    <circle id="end-point" fill="#383838" cx="18.5" cy="7" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="7" r="1.5"></circle>
+                </g>
+                <g id="eye" transform="translate(29.000000, 91.000000)" sketch:type="MSShapeGroup">
+                    <circle id="arch" stroke="#383838" stroke-width="3" cx="10" cy="7" r="7"></circle>
+                    <rect id="overlay" fill="#F7CEAE" x="0" y="7" width="20" height="10"></rect>
+                    <circle id="end-point" fill="#383838" cx="18.5" cy="7" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="7" r="1.5"></circle>
+                </g>
+            </g>
+            <g id="face" sketch:type="MSLayerGroup" transform="translate(340.000000, 214.000000)">
+                <g id="ear" transform="translate(107.000000, 88.000000)">
+                    <mask id="mask-12" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup" xlink:href="#path-11"></use>
+                    <rect id="shadow" fill-opacity="0.300000012" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-12)" x="10" y="-1" width="3" height="22"></rect>
+                </g>
+                <g id="ear" transform="translate(2.000000, 88.000000)">
+                    <mask id="mask-14" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-13"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup" xlink:href="#path-13"></use>
+                    <rect id="shadow" fill-opacity="0.300000012" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-14)" x="6" y="-1" width="3" height="22"></rect>
+                </g>
+                <path d="M114,116 C114,143.614237 91.6142375,166 64,166 C36.3857625,166 14,143.614237 14,116 L14,72.0063161 C14,68.6891193 16.687681,66 19.9930648,66 L110.002676,66 C112.210337,66 114,67.7942683 114,70.0071897 L114,116 Z" stroke="#383838" stroke-width="3" fill="#F7CEAE" sketch:type="MSShapeGroup"></path>
+                <path d="M106.206938,28.5519932 C104.084463,21.9953619 97.9406296,17.255102 90.6923077,17.255102 C87.2892873,17.255102 84.1297201,18.2999577 81.5154609,20.0870878 C73.5806927,7.98787 59.9175215,0 44.3931624,0 C19.8754958,0 0,19.9233286 0,44.5 C0,57.7769919 5.80057742,69.6959259 15,77.8492896 L15,69.0063161 C15,65.6891193 17.687681,63 20.9930648,63 L59.6016572,63 C66.9379837,71.569309 77.8347889,77 90,77 C112.09139,77 130,59.09139 130,37 C130,31.9152861 129.051256,27.0521632 127.321136,22.5779979 C119.35446,26.4721952 112.130698,28.0736267 106.206938,28.5519932 Z" id="Oval-20" stroke="#383838" stroke-width="3" fill="#484848" sketch:type="MSShapeGroup"></path>
+                <path d="M82,129 C82,138.941125 73.9411255,147 64,147 C54.0588745,147 46,138.941125 46,129 L82,129 Z" id="mouth" stroke="#383838" stroke-width="3" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <g id="moustach" transform="translate(40.000000, 120.000000)" stroke-width="3" stroke="#383838" fill="#484848" sketch:type="MSShapeGroup">
+                    <path d="M9.58578644,13 C13.5991088,12.9230769 18.5088634,12.6153846 21.5857864,6 C22.5857864,5 21.5857864,6 20.5857864,6 C15.5857864,6 13.7205036,0 9.0473249,0 C4.37414625,0 0.585786438,1.78835981 0.585786438,6.46153846 C0.585786438,11.1347171 4.37414625,12.9230769 9.58578644,13 Z" transform="translate(11.292893, 6.500000) scale(-1, 1) translate(-11.292893, -6.500000) "></path>
+                    <path d="M34.5857864,13 C38.5991088,12.9230769 43.5088634,12.6153846 46.5857864,6 C47.5857864,5 46.5857864,6 45.5857864,6 C40.5857864,6 38.7205036,0 34.0473249,0 C29.3741462,0 25.5857864,1.78835981 25.5857864,6.46153846 C25.5857864,11.1347171 29.3741462,12.9230769 34.5857864,13 Z"></path>
+                </g>
+                <g id="nose" transform="translate(56.000000, 108.000000)" sketch:type="MSShapeGroup">
+                    <path d="M13,5 C13,7.76142375 10.7614237,10 8,10 C5.23857625,10 3,7.76142375 3,5 L13,5 Z" stroke="#383838" stroke-width="3"></path>
+                    <rect fill="#F7CEAE" x="3" y="2" width="10" height="3"></rect>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="2" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="14.5" cy="2" r="1.5"></circle>
+                    <path d="M12.7710989,3.5 C12.9198231,3.97352061 13,4.47739714 13,5 C13,7.76142375 10.7614237,10 8,10 C5.23857625,10 3,7.76142375 3,5 C3,4.47739714 3.08017691,3.97352061 3.22890114,3.5 C3.86603296,5.52855348 5.76117911,7 8,7 C10.2388209,7 12.133967,5.52855348 12.7710989,3.5 Z" id="shadow" fill-opacity="0.400000006" fill="#000000"></path>
+                </g>
+                <g id="eye-" transform="translate(79.000000, 91.000000)" sketch:type="MSShapeGroup">
+                    <circle id="arch" stroke="#383838" stroke-width="3" cx="10" cy="7" r="7"></circle>
+                    <rect id="overlay" fill="#F7CEAE" x="0" y="7" width="20" height="10"></rect>
+                    <circle id="end-point" fill="#383838" cx="18.5" cy="7" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="7" r="1.5"></circle>
+                </g>
+                <g id="eye" transform="translate(29.000000, 91.000000)" sketch:type="MSShapeGroup">
+                    <circle id="arch" stroke="#383838" stroke-width="3" cx="10" cy="7" r="7"></circle>
+                    <rect id="overlay" fill="#F7CEAE" x="0" y="7" width="20" height="10"></rect>
+                    <circle id="end-point" fill="#383838" cx="18.5" cy="7" r="1.5"></circle>
+                    <circle id="end-point" fill="#383838" cx="1.5" cy="7" r="1.5"></circle>
+                </g>
+            </g>
+            <g id="plant" sketch:type="MSLayerGroup" transform="translate(603.000000, 367.000000)" stroke="#383838" stroke-width="3">
+                <g id="pot" transform="translate(5.000000, 41.000000)" fill="#D8D8D8" sketch:type="MSShapeGroup">
+                    <path d="M4,11 L56,11 L53,55 L7,55 L4,11 Z" id="pot-bottom"></path>
+                    <rect id="pot-top" x="0" y="0" width="60" height="12" rx="4"></rect>
+                </g>
+                <path d="M0,8.99339768 C0,8.44475929 0.452362061,8 0.992786407,8 L22.0066283,8 C27.5258151,8 32.1272941,12.4748759 32.2477923,17.9930838 C32.2477923,17.9930838 32.7142857,29.8571429 32,32 C31.2857143,34.1428571 28.0306803,26 26,26 L10.009496,26 C4.48140401,26 0,21.5274343 0,15.9998866 L0,8.99339768 Z" id="small-leaf" fill="#63C285" sketch:type="MSShapeGroup"></path>
+                <path d="M40.1572897,9.95432513 C40.6227057,4.45670317 45.4800655,0 51.0002213,0 L83.0003895,0 C83.5524591,0 84,0.438917756 84,1.00307055 L84,12.9954924 C84,18.5208294 79.5185149,23 73.9994584,23 L47,23 C47,23 43.4008606,38.203299 41,29 C38.5991394,19.796701 40.1572897,9.95432513 40.1572897,9.95432513 Z" id="big-leaf" fill="#63C285" sketch:type="MSShapeGroup"></path>
+            </g>
+            <rect id="book" stroke="#383838" stroke-width="3" fill="#F05D71" sketch:type="MSShapeGroup" x="540" y="458" width="50" height="5"></rect>
+            <rect id="book" stroke="#383838" stroke-width="3" fill="#63C285" sketch:type="MSShapeGroup" x="537" y="450" width="50" height="5"></rect>
+            <rect id="book" stroke="#383838" stroke-width="3" fill="#FDB822" sketch:type="MSShapeGroup" x="540" y="442" width="50" height="5"></rect>
+            <g id="laptop" sketch:type="MSLayerGroup" transform="translate(320.000000, 354.000000)">
+                <g id="base-shadow" transform="translate(0.000000, 99.000000)">
+                    <mask id="mask-16" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#E9EAEA" sketch:type="MSShapeGroup" xlink:href="#path-15"></use>
+                    <rect fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-16)" x="0" y="7" width="170" height="3"></rect>
+                </g>
+                <rect id="screen" stroke="#383838" stroke-width="3" fill="#E9EAEA" sketch:type="MSShapeGroup" x="15" y="0" width="140" height="100" rx="2"></rect>
+                <path d="M94.4739772,55.5930184 C92.5591412,58.8295612 89.0330372,61 85,61 C78.9248678,61 74,56.0751322 74,50 C74,43.9248678 78.9248678,39 85,39 C87.7287705,39 90.2254703,39.9936127 92.1480372,41.6387758 C90.2345069,43.1005271 89,45.4060963 89,48 C89,51.5355844 91.2935501,54.5354815 94.4739772,55.5930184 Z" id="logo" stroke="#383838" stroke-width="3" fill="#57B275" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="mouse" sketch:type="MSLayerGroup" transform="translate(226.000000, 449.000000)">
+                <g id="shadow">
+                    <mask id="mask-18" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-17"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#E9EAEA" sketch:type="MSShapeGroup" xlink:href="#path-17"></use>
+                    <rect fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-18)" x="1" y="11" width="32" height="3"></rect>
+                </g>
+            </g>
+            <g id="mug" sketch:type="MSLayerGroup" transform="translate(138.000000, 431.000000)">
+                <rect id="handle" stroke="#383838" stroke-width="3" sketch:type="MSShapeGroup" x="30" y="6" width="8" height="10"></rect>
+                <g id="shadow">
+                    <mask id="mask-20" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-19"></use>
+                    </mask>
+                    <use id="Mask" stroke="#383838" stroke-width="3" fill="#E9EAEA" sketch:type="MSShapeGroup" xlink:href="#path-19"></use>
+                    <rect fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-20)" x="5" y="29" width="20" height="3"></rect>
+                </g>
+                <g id="shine" transform="translate(5.000000, 3.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <rect x="0" y="4" width="3" height="8" rx="20"></rect>
+                    <circle cx="1.5" cy="1.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

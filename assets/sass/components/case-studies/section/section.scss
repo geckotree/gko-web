@@ -1,0 +1,27 @@
+/* ===========================================================
+
+	# Case Study - Section
+
+=========================================================== */
+
+.c-case-study__sections {
+	counter-reset: section;
+}
+
+.c-case-study__section {
+	counter-increment: section;
+	margin: 0;
+	// padding: $padding-small / 2 0;
+}
+
+@include respond-min( $mq-small ) {
+	.c-case-study__section {
+		// padding: $padding-medium / 2 0;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__section {
+		// padding: $padding-large / 2 0;
+	}
+}

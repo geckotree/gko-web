@@ -1,20 +1,8 @@
 /* ===========================================================
 
-	# Page
+	# Page Content
 
 =========================================================== */
-
-html {
-	height: 100%;
-}
-
-.c-page {
-	background: $light-2;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	overflow-x: hidden;
-}
 
 .c-page__content {
 	background: $background-colour;
@@ -35,20 +23,12 @@ html {
 	}
 }
 
-.c-page__heading {
-	padding-top: $padding-small;
-}
-
 @include respond-min( $mq-small ) {
 	.c-page__content {
 		&:after {
 			bottom: -$padding-medium / 2;
 			height: $padding-medium;
 		}
-	}
-
-	.c-page__heading {
-		padding-top: $padding-medium;
 	}
 }
 
@@ -59,11 +39,6 @@ html {
 			height: $padding-large;
 		}
 	}
-
-	.c-page__heading {
-		text-align: center;
-		padding-top: $padding-large;
-	}
 }
 
 @include respond-max( $mq-large ) {
@@ -73,12 +48,6 @@ html {
 }
 
 @include respond-min( $mq-large ) {
-	.no-touch {
-		.c-page {
-			margin-bottom: 45.3rem + $padding-large;
-		}
-	}
-
 	.c-page__content {
 		padding-top: 8.8rem;
 

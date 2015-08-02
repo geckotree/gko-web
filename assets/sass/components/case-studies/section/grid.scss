@@ -1,0 +1,65 @@
+/* ===========================================================
+
+	# Case Study - Grid
+
+=========================================================== */
+
+.c-case-study__section__grid-col--7 {
+	margin-top: $padding-small;
+}
+
+@include respond-min( $mq-small ) {
+	.c-case-study__section__grid-col--7 {
+		margin-top: $padding-medium;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__section__grid-col--7 {
+		margin-top: $padding-large;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__section__grid-row {
+		@include clearfix;
+		margin-left: -$padding-small;
+
+		.c-case-study__section__description {
+			padding-left: 6rem;
+		}
+	}
+
+	.c-case-study__section__grid-row--right {
+		.c-case-study__section__grid-col--5 {
+			float: right;
+		}
+	}
+
+	.c-case-study__section__grid-col {
+		float: left;
+		padding-left: $padding-small;
+	}
+
+	.c-case-study__section__grid-col--5 {
+		width: 41.666666666%;
+	}
+
+	.c-case-study__section__grid-col--7 {
+		margin-top: 0;
+		width: 58.333333333%;
+	}
+
+	.flexbox {
+		.c-case-study__section__grid-row {
+			align-items: center;
+			display: flex;
+		}
+
+		.c-case-study__section__grid-row--right {
+			.c-case-study__section__grid-col--5 {
+				order: 2;
+			}
+		}
+	}
+}

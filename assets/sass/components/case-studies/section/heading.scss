@@ -6,7 +6,7 @@
 
 .c-case-study__section__heading {
 	&:before {
-		color: $grey; //@todo update this
+		color: $med-1;
 		content: counters( section, '.' ) ' ';
 		font-size: .75em;
 	}
@@ -32,6 +32,8 @@
 
 @include respond-min( $mq-large ) {
 	.c-case-study__section__header--center {
+		text-align: center;
+
 		.c-case-study__section__heading {
 			margin-left: -5.4rem;
 		}

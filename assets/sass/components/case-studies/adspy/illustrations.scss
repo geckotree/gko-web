@@ -1,0 +1,129 @@
+/* ===========================================================
+
+	# Adspy - Illustrations
+
+=========================================================== */
+
+.s-case-study--adspy {
+	.c-case-study__illustrations-extras {
+		list-style: none;
+	}
+
+	.c-case-study__illustrations-extras__item {
+		counter-increment: step-counter;
+		margin: 0;
+	}
+
+	.c-case-study__illustrations-extras__number {
+		display: block;
+		margin-bottom: $padding-small;
+		position: relative;
+
+		&:before {
+			background: $background-colour;
+			border-radius: 100%;
+			border-style: solid;
+			border-width: $border-width * 2;
+			box-shadow: 0 0 0 1.2rem $background-colour;
+			box-sizing: border-box;
+			content: counter( step-counter );
+			display: inline-block;
+			font-size: 2.4rem;
+			font-weight: $bold;
+			height: 6.4rem;
+			padding: 1.6rem 1rem 2rem;
+			position: relative;
+			width: 6.4rem;
+			z-index: 10;
+		}
+
+		&:after {
+			background: $light-2;
+			content: '';
+			height: $border-width * 2;
+			left: 0;
+			margin: -$border-width;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+		}
+	}
+
+	.c-case-study__illustrations-extras__number--pri:before {
+		border-color: rgba( $adspy-pri, .5 );
+		color: $adspy-pri;
+	}
+
+	.c-case-study__illustrations-extras__number--sec:before {
+		border-color: rgba( $adspy-sec, .5 );
+		color: $adspy-sec;
+	}
+
+	.c-case-study__illustrations-extras__number--ter:before {
+		border-color: rgba( $adspy-ter, .5 );
+		color: $adspy-ter;
+	}
+
+	@include respond-max( $mq-small ) {
+		.c-case-study__illustrations-extras__item + .c-case-study__illustrations-extras__item {
+			margin-top: $padding-small;
+		}
+	}
+
+	@include respond-min( $mq-small ) {
+		.c-case-study__illustrations-extras__number {
+			margin-bottom: $padding-medium;
+		}
+	}
+
+	@include respond-min-max( $mq-small, $mq-medium ) {
+		.c-case-study__illustrations-extras__item + .c-case-study__illustrations-extras__item {
+			margin-top: $padding-medium;
+		}
+	}
+
+	@include respond-min( $mq-medium ) {
+		.c-case-study__illustrations-extras__number {
+			margin-bottom: $padding-large;
+
+			&:before {
+				font-size: 3.2rem;
+				height: 8rem;
+				padding: 2.4rem;
+				width: 8rem;
+			}
+		}
+	}
+
+	@include respond-min-max( $mq-medium, $mq-large ) {
+		.c-case-study__illustrations-extras__item + .c-case-study__illustrations-extras__item {
+			margin-top: $padding-large;
+		}
+	}
+
+	@include respond-min( $mq-large ) {
+		.c-case-study__illustrations-extras {
+			@include clearfix;
+		}
+
+		.c-case-study__illustrations-extras__item {
+			float: left;
+			width: 33.3333333333%;
+		}
+
+
+
+		.c-case-study__illustrations-extras__number--sec:after {
+			left: auto;
+			right: 50%;
+			width: 60%;
+		}
+
+		.c-case-study__illustrations-extras__number--ter:after {
+			left: 50%;
+			width: 60%;
+		}
+	}
+}
+
+

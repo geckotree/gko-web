@@ -24,10 +24,6 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 
-## assets/sass/components/case-studies/section/heading.scss
-
--  **todo** `(line 9)`  update this
-
 ## assets/sass/components/header.scss
 
 -  **todo** `(line 35)`  apply this after scroll

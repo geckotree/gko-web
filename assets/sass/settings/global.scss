@@ -31,7 +31,6 @@ $ronchi-yellow:	#F2D044;
 
 $red-1:			#EC4E50;
 $green:			#57B275;
-$grey:			#E2E2E2;
 
 $twitter: 		#55ACEE;
 $dribbble: 		#EA4C89;
@@ -75,10 +74,10 @@ $type-scale-large:		1.200;
 $heading-colour:		$dark-1;
 $text-colour:			$dark-2;
 $background-colour:		$light-1;
-$border-colour:			$grey;
+$border-colour:			$med-1;
 $link-colour:			$pri;
 $link-colour-hover:		$sec;
-$placeholder-colour:	$grey;
+$placeholder-colour:	$med-1;
 $highlight-colour:		lighten( $pri, 35 );
 
 $error:					$red-1;

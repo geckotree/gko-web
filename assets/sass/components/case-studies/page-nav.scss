@@ -26,7 +26,7 @@
 
 .c-case-study__page-nav__link__label {
 	&:before {
-		color: $grey; //@todo update this
+		color: $med-1; //@todo update this
 		content: counters( section, '.' ) '. ';
 		font-size: .75em;
 	}
@@ -71,6 +71,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+		z-index: 20;
 
 		&.is-fixed {
 			position: fixed;

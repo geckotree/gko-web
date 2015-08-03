@@ -30,6 +30,14 @@
 			fill: $sec;
 		}
 	}
+
+	&.is-active {
+		color: $text-colour;
+
+		.icon {
+			fill: $pri;
+		}
+	}
 }
 
 .c-nav__link--button {

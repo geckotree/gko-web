@@ -85,6 +85,16 @@
 	}
 }
 
+@include respond-min( $mq-small ) {
+	.c-listing__meta-data__item--large {
+		font-size: $font-size-large / $type-scale-medium;
+
+		& + & {
+			margin-left: $padding-small / 2;
+		}
+	}
+}
+
 @include respond-min-max( $mq-small, $mq-medium ) {
 	.c-listing__link {
 		margin-left: -$padding-small;
@@ -97,5 +107,9 @@
 	.c-listing__link {
 		border-radius: $border-radius * 5;
 		padding: $padding-small $padding-medium;
+	}
+
+	.c-listing__meta-data__item--large {
+		font-size: $font-size-large / $type-scale-large;
 	}
 }

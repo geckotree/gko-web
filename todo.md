@@ -31,3 +31,7 @@
 ## assets/sass/components/nav.scss
 
 -  **todo** `(line 99)`  sort this if no-js
+
+## assets/sass/components/syntax-highlight.scss
+
+-  **todo** `(line 7)`  refactor

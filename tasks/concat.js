@@ -3,6 +3,7 @@ module.exports = {
 	main: {
 		src: [
 			'<%= assetsFolder %>/js/libs/modernizr.js',
+			'<%= assetsFolder %>/js/libs/Prism.js',
 			'<%= assetsFolder %>/bower_components/fastclick/lib/fastclick.js',
 			'<%= assetsFolder %>/bower_components/scrollMonitor/scrollMonitor.js',
 			'<%= assetsFolder %>/js/utils/*.js',

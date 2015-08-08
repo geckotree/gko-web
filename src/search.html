@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" href="">
-		<title>Improving front-end performance - Geckotree</title>
+		<title>Blog - Geckotree</title>
 
 		<!-- Add to homescreen for Chrome on Android -->
     	<meta name="mobile-web-app-capable" content="yes">
@@ -112,92 +112,88 @@
 		</header>
 
 		<main class="c-page__content" role="main">
-			<article class="c-article" itemscope itemtype="http://schema.org/BlogPosting">
-				<div class="o-section o-wrap o-wrap--x-large">
-					<header class="c-article__header">
-						<h1 class="c-article__heading tera" itemprop="headline"><span class="u-highlight-text">Mobile app</span> introduction template</h1>
-
-						<ul class="c-listing__meta-data">
-							<li class="c-listing__meta-data__item">
-								<time datetime="2015-05-2409:33:38" pubdate="pubdate">20<sup>th</sup> October 2014</time>
-								<meta itemprop="datePublished" content="2015-05-24">
-							</li>
-							<li class="c-listing__meta-data__item u-hide-mobile" itemprop="author">Rob Simpson</li>
-							<li class="c-listing__meta-data__item">9mins to read</li>
-						</ul>
-					</header>
-
-					<div class="o-wrap o-wrap--medium s-free-content" itemprop="articleBody">
-						<p class="intro">A basic template to showcase the best features of your app, enriched with a video slider for a better user understanding.</p>
-						
-						<p>A video is one of the most effective ways to introduce an app to an audience. Users often want to see how the app works before even deciding whether to download it or not. A screenshot could do the work, but with motion being a fundamental part of todays apps user experience, an animated gif and video elements make a difference. A great example is <a href="#">Pinterest Messages</a> website.</p>
-
-						<p>Therefore we created a customisable, responsive template which turns into video slider on desktop screen ;)</p>
-
-						<p>Note: all videos in the demo have been created in Adobe After Effects, and exported as .mp4 using Adobe Media Encoder. While <a href="">Miro Video Converter</a> app has been used to get the .webm video format.</p>
-
-						<h2>Creating the structure</h2>
-
-						<p>The <abbr title="">HTML</abbr> is structured in 2 main <code>&lt;div&gt;</code> elements (<code>.cd-product-intro</code> and <code>#cd-product-tour</code>) – the first containing the app intro (title, action buttons..) and the second the app features slider – wrapped inside a <code>&lt;main&gt;</code> element.</p>
-
-						<p>The app features slider is an unordered list: each item of the list contains a <code>.cd-caption</code> element (feature title and description) and a <code>.cd-image-container</code> element (feature image/video).</p>
-
-						<p>The video is not directly inserted in the HTML structure, but will be loaded using jQuery.</p>
-
-						<p>Two additional <code>&lt;div&gt;</code> elements (<code>.cd-slider-nav</code> for the app features slider navigation and the <code>.cd-loader</code> for the top loading bar) have been added to the <code>main.cd-main-content</code>.</p>
-
-						<h2>Adding style</h2>
-
-						<p>On small devices, the CSS is pretty straightforward (you can check the code for more details/comments).</p>
-
-						<p>On desktop devices (viewport width more than 1070px), we assigned a <code>position: absolute</code> and <code>width: 50%</code> to the <code>.cd-product-intro</code> and placed it on the left side of the screen.</p>
-
-						<p>For the <code>#cd-product-tour</code> element, we set <code>width: 100%</code> and <code>left: 0</code> but assigned it a <code>translateX(75%)</code> so that only the phone image is visible.</p>
-
-						<p>Here is an image to show you the initial positioning of the template components:</p>
-
-						<p>When user clicks the Start button, we add the .is-product-tour class to the .cd-single-item element: a translateX(-50%) is assigned to the .cd-product-intro (to hide it from the viewport) and a translateX(0) to the #cd-product-tour (so that both .cd-caption and .cd-image-container are visible). CSS3 transitions to the transform and opacity values have been added in order to achieve the smooth animation.</p>
-					</div>
+			<header class="c-page__heading" style="padding-bottom: 0;">
+				<div class="o-wrap o-wrap--x-large">
+					<h1 class="mega" style="color:#BCBEC0;padding-bottom:0;"><div style="display:inline-block;width:2px;height:70px;margin-bottom:-14px;margin-right:10px;background:#383838;"></div>Type to <span class="u-highlight-text">search</span>...</h1>
 				</div>
-				
-				<div class="o-wrap o-wrap--large c-listings--side-by-side">
-					<article class="o-wrap c-listing c-listing--side-by-side c-listing--prev" itemscope itemtype="http://schema.org/NewsArticle">
-						<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--prev__link" itemprop="url" title="">
-							<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">An introduction to creating your own <span class="u-highlight-text">boilerplate</span></h2>
+			</header>
+			
+			<div class="o-section">
+				<section class="c-listing-wrap">
+					<article class="o-wrap c-listing" itemscope="" itemtype="http://schema.org/Blog">
+						<a href="#" class="c-listing__link" itemprop="url" title="Improving front-end performance">
+							<h2 class="c-listing__heading" itemprop="name">Improving front-end <span class="u-highlight-text" style="color:#42bbb7;">performance</span></h2>
 
-							<ul class="c-listing__meta-data c-listing--side-by-side__list-meta">
-								<li class="c-listing__meta-data__item c-listing--side-by-side__item-meta">Prev Post</li>
-								<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
-									<span class="c-listing__visited-text">Seen</span>
-									<span class="c-listing__visited-badge">
-										<svg class="icon icon--check">
-											<use xlink:href="#icon--check"></use>
-										</svg>
-									</span>
+							<ul class="c-listing__meta-data">
+								<li class="c-listing__meta-data__item">
+									<span style="background:#42bbb7;border-radius:40px;color:#fff;padding:5px 10px;">blog</span>
 								</li>
+								<li class="c-listing__meta-data__item">http://geckotree.co.uk/blog/improving-front-end-performance</li>
 							</ul>
+
+							<div class="c-listing__description">
+								<p>Last year I wrote a post, Need for Speed, where I shared my workflows and techniques along with the tools involved in the development of my site.</p>
+							</div>
 						</a>
 					</article>
 
-					<article class="o-wrap c-listing c-listing--side-by-side c-listing--next" itemscope itemtype="http://schema.org/NewsArticle">
-						<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--next__link" itemprop="url" title="">
-							<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">A fresh start at <span class="u-highlight-text">geckotree</span></h2>
+					<article class="o-wrap c-listing" itemscope="" itemtype="http://schema.org/Blog">
+						<a href="#" class="c-listing__link" itemprop="url">
+							<h2 class="c-listing__heading" itemprop="name">Responsible <span class="u-highlight-text" style="color:#42bbb7;">social share links</span></h2>
 
-							<ul class="c-listing__meta-data c-listing--side-by-side__meta-data">
-								<li class="c-listing__meta-data__item c-listing--side-by-side__meta-data__item">Next Post</li>
-								<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
-									<span class="c-listing__visited-text">Seen</span>
-									<span class="c-listing__visited-badge">
-										<svg class="icon icon--check">
-											<use xlink:href="#icon--check"></use>
-										</svg>
-									</span>
+							<ul class="c-listing__meta-data">
+								<li class="c-listing__meta-data__item">
+									<span style="background:#42bbb7;border-radius:40px;color:#fff;padding:5px 10px;">blog</span>
 								</li>
+								<li class="c-listing__meta-data__item">http://geckotree.co.uk/blog/responsible-social-share-links</li>
 							</ul>
+
+							<div class="c-listing__description">
+								<p>Social share scripts are convenient and easy to copy &amp; paste but rely on JavaScript and add additional overhead to your site, which means more HTTP requests and slower load times.</p>
+							</div>
 						</a>
 					</article>
-				</div>
-			</article>
+
+					<article class="o-wrap c-listing" itemscope="" itemtype="http://schema.org/Blog">
+						<a href="#" class="c-listing__link" itemprop="url">
+							<h2 class="c-listing__heading" itemprop="name">Why <span class="u-highlight-text">work</span> with us?</h2>
+
+							<ul class="c-listing__meta-data">
+								<li class="c-listing__meta-data__item">
+									<span style="background:#57B275;border-radius:40px;color:#fff;padding:5px 10px;">about</span>
+								</li>
+								<li class="c-listing__meta-data__item">http://geckotree.co.uk/about</li>
+							</ul>
+
+							<div class="c-listing__description">
+								<p>Social share scripts are convenient and easy to copy &amp; paste but rely on JavaScript and add additional overhead to your site, which means more HTTP requests and slower load times.</p>
+							</div>
+						</a>
+					</article>
+				</section>
+
+				<nav class="c-pagination u-center-content">
+					<ul class="c-pagination__list">
+						<li class="c-pagination__item">
+							<span class="c-pagination__link c-pagination__link--prev c-pagination__link--disabled">
+								<span class="c-pagination__link__text c-pagination__link--prev__text">Newer</span>
+								<svg class="icon icon--arrow-left">
+									<use xlink:href="#icon--arrow-left"></use>
+								</svg>
+							</span>
+						</li>
+
+						<li class="c-pagination__item">
+							<a href="#" class="c-pagination__link c-pagination__link--next">
+								<span class="c-pagination__link__text c-pagination__link--next__text">Older</span>
+								<svg class="icon icon--arrow-right">
+									<use xlink:href="#icon--arrow-right"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</main>
 
 		<footer class="c-footer" role="contentinfo">

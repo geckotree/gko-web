@@ -1,0 +1,125 @@
+/* ===========================================================
+
+	# Carousel
+
+=========================================================== */
+
+.no-enhance {
+	.o-carousel__item + .o-carousel__item {
+		margin-top: $padding-small;
+	}
+}
+
+.enhance {
+	.o-carousel {
+		overflow: hidden;
+	}
+
+	.o-carousel__list {
+		@include clearfix;
+		margin-bottom: $padding-small;
+		transition: transform $speed * 1.5 ease;
+	}
+
+	.o-carousel__item {
+		float: left;
+		opacity: .35;
+		transition: opacity $speed * 1.5 ease;
+
+		&.is-active {
+			opacity: 1;
+		}
+
+		img {
+			border-radius: $border-radius;
+			width: 100%;
+		}
+	}
+
+	.o-carousel__nav {
+		background: $white;
+		border-radius: $border-radius * 10;
+		margin: 0 auto;
+		//@todo make this specific to component not object
+		max-width: $wrap-medium;
+		position: relative;
+	}
+
+	.o-carousel__nav__list {
+		@include clearfix;
+		list-style: none;
+		position: relative;
+		z-index: 1;
+	}
+
+	.o-carousel__nav__item {
+		float: left;
+		margin: 0;
+	}
+
+	.o-carousel__nav__button {
+		display: block;
+		font-weight: $bold;
+		padding: 1rem;
+		transition: color $speed * 1.5 ease;
+		width: 100%;
+
+		// @todo states
+
+		&:focus {
+			color: $pri;
+		}
+
+		&.is-active {
+			color: $white;
+		}
+	}
+
+	.o-carousel__nav__slider {
+		background: $pri;
+		border-radius: $border-radius * 10;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transition: transform $speed * 1.5 ease;
+	}
+}
+
+@include respond-min( $mq-small ) {
+	.no-enhance {
+		.o-carousel__item + .o-carousel__item {
+			margin-top: $padding-medium;
+		}
+	}
+}
+
+@include respond-max( $mq-medium ) {
+	.enhance {
+		.o-carousel__nav__label {
+			@include hide-text;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.no-enhance {
+		.o-carousel__item + .o-carousel__item {
+			margin-top: $padding-large;
+		}
+	}
+
+	.enhance {
+		.o-carousel {
+			overflow: visible;
+		}
+
+		.o-carousel__item {
+			padding: 0 $padding-small / 4;
+		}
+
+		.o-carousel__nav__button {
+			padding: 1.7rem;
+		}
+	}
+}

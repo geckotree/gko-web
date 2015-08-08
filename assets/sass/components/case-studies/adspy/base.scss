@@ -12,4 +12,42 @@
 	.c-button {
 		background: $adspy-pri;
 	}
+
+	.o-carousel__nav__button {
+		&:focus {
+			color: $adspy-sec;
+		}
+
+		&.is-active {
+			color: $white;
+		}
+	}
+
+	.o-carousel__nav__slider {
+		background: $adspy-pri;
+	}
+
+	.c-social-share__link {
+		border-color: $adspy-pri;
+
+		.icon {
+			fill: $adspy-pri;
+		}
+
+		&:hover,
+		&:focus {
+			.icon {
+				fill: $background-colour;
+			}
+		}
+
+		&:hover {
+			background: $adspy-pri;
+		}
+
+		&:focus {
+			background: $adspy-sec;
+			border-color: $adspy-sec;
+		}
+	}
 }

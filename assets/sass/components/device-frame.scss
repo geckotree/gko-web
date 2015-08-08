@@ -1,0 +1,64 @@
+/* ===========================================================
+
+	# Device Frame
+
+=========================================================== */
+
+.c-device-frame {
+	background: #ccc; //@todo need better colour
+	box-shadow:0 18px 38px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+
+	& + & {
+		margin-top: $padding-small;
+	}
+}
+
+.c-device-frame__inner {
+	height: 70rem;
+	overflow: scroll;
+}
+
+.c-device-frame__header {
+	padding: $padding-small / 4 $padding-small / 2;
+}
+
+.c-device-frame__button {
+	background: $background-colour;
+	border-radius: 100%;
+	display: inline-block;
+	height: 1rem;
+	width: 1rem;
+
+	& + & {
+		margin-left: $padding-small / 8;
+	}
+}
+
+.c-device-frame--mobile {
+	max-width: 32rem;
+}
+
+.c-device-frame--tablet {
+	max-width: 78rem;
+}
+
+.c-device-frame--desktop {
+	border-radius: $border-radius * 3 $border-radius * 3 0 0;
+}
+
+@include respond-min( $mq-small ) {
+	.c-device-frame {
+		& + & {
+			margin-top: $padding-medium;
+		}
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-device-frame {
+		& + & {
+			margin-top: $padding-large;
+		}
+	}
+}

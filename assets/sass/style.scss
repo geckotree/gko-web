@@ -23,7 +23,8 @@
 		'objects/grid.scss',
 		'objects/table.scss',
 		'objects/forms.scss',
-		'objects/media.scss';
+		'objects/media.scss',
+		'objects/carousel.scss';
 
 @import 'components/page/base.scss',
 		'components/page/content.scss',
@@ -37,8 +38,10 @@
 		'components/hero.scss',
 		'components/article.scss',
 		'components/pagination.scss',
+		'components/social-share.scss',
 		'components/feat-media-grid.scss',
-		'components/syntax-highlight.scss';
+		'components/syntax-highlight.scss',
+		'components/device-frame.scss';
 
 @import 'components/listing/listing.scss',
 		'components/listing/side-by-side.scss';

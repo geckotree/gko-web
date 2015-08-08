@@ -5,7 +5,7 @@
 		this._$el = el;
 		this._$caseStudyLogo = this._$el.querySelector( '.js-case-study-logo' );
 
-		this._init();
+		// this._init();
 	}
 
 	AdSpy.prototype = {

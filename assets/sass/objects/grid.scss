@@ -1,0 +1,43 @@
+/* ===========================================================
+
+	# Grid
+
+=========================================================== */
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__mobile__row {
+		@include clearfix;
+		margin-left: -$padding-small;
+
+		& > :first-child {
+			.c-device-frame--mobile {
+				float: right;
+			}
+		}
+
+		& > :last-child {
+			.c-device-frame--mobile {
+				float: left;
+			}
+		}
+	}
+
+	.c-case-study__mobile__col {
+		float: left;
+		padding-left: $padding-small;
+		width: 50%;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__tablet__row {
+		@include clearfix;
+		margin-left: -$padding-small;
+	}
+
+	.c-case-study__tablet__col {
+		float: left;
+		padding-left: $padding-small;
+		width: 50%;
+	}
+}

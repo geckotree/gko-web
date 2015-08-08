@@ -4,6 +4,13 @@
 
 ## TODO
 
+## assets/js/components/Carousel.js
+
+-  **todo** `(line 1)`  lazy load images
+-  **todo** `(line 2)`  calculate slider slide distance after resize
+-  **todo** `(line 3)`  add touch functionality
+-  **todo** `(line 4)`  add click next item preview functionality
+
 ## assets/js/components/InPageNav.js
 
 -  **todo** `(line 39)`  toggle button on mobile
@@ -24,6 +31,10 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 
+## assets/sass/components/device-frame.scss
+
+-  **todo** `(line 8)`  need better colour
+
 ## assets/sass/components/header.scss
 
 -  **todo** `(line 35)`  apply this after scroll
@@ -35,3 +46,8 @@
 ## assets/sass/components/syntax-highlight.scss
 
 -  **todo** `(line 7)`  refactor
+
+## assets/sass/objects/carousel.scss
+
+-  **todo** `(line 43)`  make this specific to component not object
+-  **todo** `(line 67)`  states

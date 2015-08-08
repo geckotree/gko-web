@@ -1,0 +1,61 @@
+/* ===========================================================
+
+	# Social Share
+
+=========================================================== */
+
+.c-social-share {
+
+}
+
+.c-social-share__list {
+	list-style: none;
+}
+
+.c-social-share__item {
+	display: inline-block;
+	margin: 0;
+
+	& + & {
+		margin-left: $padding-small / 2;
+	}
+}
+
+.c-social-share__link {
+	border: $border-width * 1.5 solid $pri;
+	border-radius: 100%;
+	display: table-cell;
+	height: 6.4rem;
+	line-height: 1;
+	transition: background $speed ease,
+				border $speed ease,
+				transform $speed ease;
+	vertical-align: middle;
+	width: 6.4rem;
+
+	.icon {
+		@include icon( $pri, 3.2rem, 3.2rem );
+		margin-bottom: -.5rem;
+		transition: fill $speed ease;
+	}
+
+	&:hover,
+	&:focus {
+		.icon {
+			fill: $background-colour;
+		}
+	}
+
+	&:hover {
+		background: $pri;
+	}
+
+	&:focus {
+		background: $sec;
+		border-color: $sec;
+	}
+
+	&:active {
+		transform: $active-scale-small;
+	}
+}

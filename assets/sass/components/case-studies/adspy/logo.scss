@@ -1,0 +1,79 @@
+/* ===========================================================
+
+	# AdSpy - Logo
+
+=========================================================== */
+
+.c-case-study__logo--pri,
+.c-case-study__logo--sec,
+.c-case-study__logo--ter {
+	.path {
+		transition: fill $speed ease;
+	}
+}
+
+.c-case-study__logo--pri {
+	.path {
+		fill: $adspy-pri;
+	}
+}
+
+.c-case-study__logo--sec {
+	.path {
+		fill: $adspy-sec;
+	}
+}
+
+.c-case-study__logo--ter {
+	.path {
+		fill: $adspy-ter;
+	}
+}
+
+.c-case-study__logo__switcher {
+	list-style: none;
+	margin-top: $padding-small / 2;
+}
+
+.c-case-study__logo__item {
+	display: inline-block;
+	margin: 0 $padding-small / 4;
+}
+
+.c-case-study__logo__button {
+	border: $border-width * 1.5 solid $background-colour;
+	border-radius: 100%;
+	height: 3.2rem;
+	transition: background $speed ease,
+				box-shadow $speed ease;
+	width: 3.2rem;
+
+	&:focus,
+	&.is-active {
+		box-shadow: 0 0 0 $border-width * 1.5 $light-3;
+	}
+}
+
+.c-case-study__logo__button--pri {
+	background: $adspy-pri;
+
+	&:hover {
+		background: darken( $adspy-pri, 6 );
+	}
+}
+
+.c-case-study__logo__button--sec {
+	background: $adspy-sec;
+
+	&:hover {
+		background: darken( $adspy-sec, 6 );
+	}
+}
+
+.c-case-study__logo__button--ter {
+	background: $adspy-ter;
+
+	&:hover {
+		background: darken( $adspy-ter, 6 );
+	}
+}

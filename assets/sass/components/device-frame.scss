@@ -5,7 +5,7 @@
 =========================================================== */
 
 .c-device-frame {
-	border: $border-width * 1.5 solid $med-1;
+	border: $border-width * 1.5 solid $light-3;
 	border-radius: $border-radius * 2;
 	// box-shadow:0 0 1rem rgba( $black, .1 );
 	margin: 0 auto;
@@ -20,13 +20,13 @@
 }
 
 .c-device-frame__footer {
-	border-top: $border-width * 1.5 solid $med-1;
+	border-top: $border-width * 1.5 solid $light-3;
 	padding: $padding-small / 4;
 }
 
 .c-device-frame__button,
 .c-device-frame__camera {
-	background: $med-1;
+	background: $light-3;
 	border-radius: 100%;
 	display: inline-block;
 	height: 1rem;
@@ -35,7 +35,7 @@
 
 .c-device-frame__button--large {
 	background: transparent;
-	border: $border-width * 1.5 solid $med-1;
+	border: $border-width * 1.5 solid $light-3;
 	height: 3rem;
 	margin-bottom: -.9rem;
 	width: 3rem;

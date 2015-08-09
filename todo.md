@@ -19,7 +19,8 @@
 
 ## assets/js/main.js
 
--  **todo** `(line 29)`  create as reusable module
+-  **todo** `(line 17)`  this isnt working
+-  **todo** `(line 28)`  create as reusable module
 
 ## assets/sass/components/case-studies/adspy/feat-img.scss
 

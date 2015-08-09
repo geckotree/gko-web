@@ -3,8 +3,6 @@
 
 	if( 'visibilityState' in document ) {
 		var FastClick = window.FastClick;
-		var ScrollMonitor = window.scrollMonitor;
-		var Toggle = window.Toggle;
 
 		var i;
 		var $node;
@@ -16,6 +14,7 @@
 		$html.classList.remove( 'no-enhance' );
 		$html.classList.add( 'enhance' );
 
+		//@todo this isnt working
 		for( i = 0; i < $fastclick.length; i++ ) {
 			FastClick.attach( $fastclick[ i ] );
 		}

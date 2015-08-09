@@ -22,7 +22,7 @@ module.exports = {
 	},
 	html: {
 		files: [
-			'src/*.html',
+			'*.html',
 		],
 		tasks: [
 			'replace'
@@ -33,7 +33,7 @@ module.exports = {
 			'<%= styleguideFolder %>/src/**/*.hbs',
 			'<%= styleguideFolder %>/**/*.json'
 		],
-		tasks: [ 'assemble:styleguide' ]
+		tasks: [ 'assemble' ]
 	},
 	todo: {
 		files: [

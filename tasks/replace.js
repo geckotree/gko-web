@@ -20,12 +20,11 @@ module.exports = {
 			expand: true,
 			flatten: true,
 			src: [
-				'src/index.html',
-				'src/blog.html',
-				'src/article.html',
-				'src/post.html',
-				'src/adspy.html',
-				'src/search.html'
+				'index.html',
+				'blog.html',
+				'article.html',
+				'adspy.html',
+				'search.html'
 			],
 			dest: ''
 		} ]

@@ -38,8 +38,8 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'dev', [
 		'css:dev',
 		'js:dev',
-		'images:dev',
 		'styleguide',
+		'images:dev',
 		'todo',
 		'watch'
 	] );
@@ -96,6 +96,6 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'styleguide', [
 		'clean:styleguide',
 		'sass:styleguide',
-		'assemble:styleguide'
+		'assemble'
 	] );
 };

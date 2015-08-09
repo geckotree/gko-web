@@ -13,13 +13,20 @@ html {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	overflow-x: hidden;
+}
+
+.c-page__inner {
+	overflow: hidden;
 }
 
 @include respond-min( $mq-large ) {
 	.no-touch {
 		.c-page {
-			margin-bottom: 45.3rem + $padding-large * 1.5;
+			margin-bottom: 45.3rem + $padding-large / 2;
+		}
+
+		.c-page__inner {
+			padding-bottom: $padding-large;
 		}
 	}
 }

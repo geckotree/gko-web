@@ -1,8 +1,26 @@
 /* ===========================================================
 
-	# Grid
+	# Interface
 
 =========================================================== */
+
+@include respond-max( $mq-small ) {
+	.c-case-study__mobile__col,
+	.c-case-study__tablet__col {
+		& + & {
+			margin-top: $padding-small;
+		}
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-medium ) {
+	.c-case-study__mobile__col,
+	.c-case-study__tablet__col {
+		& + & {
+			margin-top: $padding-medium;
+		}
+	}
+}
 
 @include respond-min( $mq-medium ) {
 	.c-case-study__mobile__row {
@@ -26,6 +44,14 @@
 		float: left;
 		padding-left: $padding-small;
 		width: 50%;
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-case-study__tablet__col {
+		& + & {
+			margin-top: $padding-large;
+		}
 	}
 }
 

@@ -14,11 +14,6 @@
 	}
 }
 
-.c-device-frame__inner {
-	height: 70rem;
-	overflow: scroll;
-}
-
 .c-device-frame__header {
 	padding: $padding-small / 4 $padding-small / 2;
 }
@@ -60,5 +55,10 @@
 		& + & {
 			margin-top: $padding-large;
 		}
+	}
+
+	.c-device-frame__inner {
+		height: 70rem;
+		overflow: scroll;
 	}
 }

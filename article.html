@@ -53,570 +53,572 @@
 		<![endif]-->
 	</head>
 	<body class="c-page">
-		<header class="c-header" role="banner">
-			<div class="c-header__inner">
-				<a href="index.html" class="c-header__logo">
-					<svg class="icon icon--logo">
-                        <use xlink:href="#icon--logo"></use>
-                    </svg>
-				</a>
+		<div class="c-page__inner">
+			<header class="c-header" role="banner">
+				<div class="c-header__inner">
+					<a href="index.html" class="c-header__logo">
+						<svg class="icon icon--logo">
+	                        <use xlink:href="#icon--logo"></use>
+	                    </svg>
+					</a>
 
-				<button class="c-header__toggle-menu-button" id="toggle-menu" aria-haspopup="true" data-module="Toggle" data-toggle="js-nav">
-					<svg class="icon icon--menu">
-                        <use xlink:href="#icon--menu"></use>
-                    </svg>
-				</button>
+					<button class="c-header__toggle-menu-button" id="toggle-menu" aria-haspopup="true" data-module="Toggle" data-toggle="js-nav">
+						<svg class="icon icon--menu">
+	                        <use xlink:href="#icon--menu"></use>
+	                    </svg>
+					</button>
 
-				<nav class="c-nav js-nav" aria-labelledby="toggle-menu" role="navigation">
-					<div class="c-nav__list">
-						<div class="c-nav__item">
-							<a href="#" class="c-nav__link">work 
-								<svg class="icon icon--briefcase">
-		                            <use xlink:href="#icon--briefcase"></use>
-		                        </svg>
-							</a>
-						</div>
-						<div class="c-nav__item">
-							<a href="#" class="c-nav__link">services 
-								<svg class="icon icon--coffee">
-		                            <use xlink:href="#icon--coffee"></use>
-		                        </svg>
-							</a>
-						</div>
-						<div class="c-nav__item">
-							<a href="#" class="c-nav__link">about 
-								<svg class="icon icon--heart">
-		                            <use xlink:href="#icon--heart"></use>
-		                        </svg>
-							</a>
-						</div>
-						<div class="c-nav__item--align-right">
+					<nav class="c-nav js-nav" aria-labelledby="toggle-menu" role="navigation">
+						<div class="c-nav__list">
 							<div class="c-nav__item">
-								<a href="/blog" class="c-nav__link is-active">blog 
-									<svg class="icon icon--chat">
-			                            <use xlink:href="#icon--chat"></use>
+								<a href="#" class="c-nav__link">work 
+									<svg class="icon icon--briefcase">
+			                            <use xlink:href="#icon--briefcase"></use>
 			                        </svg>
 								</a>
 							</div>
 							<div class="c-nav__item">
-								<a href="#" class="c-nav__link c-nav__link--button c-button--primary">planner 
-									<svg class="icon icon--feather">
-			                            <use xlink:href="#icon--feather"></use>
+								<a href="#" class="c-nav__link">services 
+									<svg class="icon icon--coffee">
+			                            <use xlink:href="#icon--coffee"></use>
 			                        </svg>
 								</a>
 							</div>
+							<div class="c-nav__item">
+								<a href="#" class="c-nav__link">about 
+									<svg class="icon icon--heart">
+			                            <use xlink:href="#icon--heart"></use>
+			                        </svg>
+								</a>
+							</div>
+							<div class="c-nav__item--align-right">
+								<div class="c-nav__item">
+									<a href="/blog" class="c-nav__link is-active">blog 
+										<svg class="icon icon--chat">
+				                            <use xlink:href="#icon--chat"></use>
+				                        </svg>
+									</a>
+								</div>
+								<div class="c-nav__item">
+									<a href="#" class="c-nav__link c-nav__link--button c-button--primary">planner 
+										<svg class="icon icon--feather">
+				                            <use xlink:href="#icon--feather"></use>
+				                        </svg>
+									</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
-		</header>
-
-		<main class="c-page__content" role="main">
-			<article class="c-article" itemscope itemtype="http://schema.org/BlogPosting">
-				<div class="o-section o-wrap o-wrap--x-large">
-					<header class="c-article__header">
-						<h1 class="c-article__heading tera" itemprop="headline">Improving front-end <span class="u-highlight-text">performance</span></h1>
-
-						<ul class="c-listing__meta-data c-listing__meta-data--large">
-							<li class="c-listing__meta-data__item c-listing__meta-data__item--large">
-								<time datetime="2015-05-2409:33:38" pubdate="pubdate">22<sup>nd</sup> April 2015</time>
-								<meta itemprop="datePublished" content="2015-05-24">
-							</li>
-							<li class="c-listing__meta-data__item c-listing__meta-data__item--large u-hide-mobile" itemprop="author">Rob Simpson</li>
-							<li class="c-listing__meta-data__item c-listing__meta-data__item--large">9mins to read</li>
-						</ul>
-					</header>
-
-					<div class="o-wrap o-wrap--medium s-free-content" itemprop="articleBody">
-						<p class="intro">Last year I wrote a post, Need for Speed, where I shared my workflows and techniques along with the tools involved in the development of my site.</p>
-
-						<p>Since then my site has gone through another redesign, and although I made various workflow and server-side improvements, I gave front-end performance extra attention. Here’s what I did, why I did it, and the tools I used to optimize front-end performance on my site.</p>
-
-						<h2>Minimize Requests</h2>
-
-						<p>Every asset required to render the page (external CSS or JS files, webfonts, images, etc.) as your site loads is an additional HTTP request. The average website makes <a href="">93 requests</a>!</p>
-
-						<p>My goal was to minimize HTTP requests. One way is to compile or concatenate (combining/merging) CSS and JS into one file each. Automating this process (e.g. using a build tool like <a href="">Grunt</a> or <a href="">Gulp</a>) is ideal, but at the very least should be done manually for production.</p>
-
-						<p>Third-party scripts are common culprits for making additional requests—many make more than 1 request to grab additional files such as scripts, images or CSS. Your browser’s built-in developer tools can help you sniff out the offenders.</p>
-
-						<figure class="o-media">
-						    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/developer-tools.jpg" alt="" itemprop="image">
-						    <figcaption>Google Chrome Developer Tools’ Network tab</figcaption>
-						</figure>
-
-						<p>For example, Facebook’s script makes 3 requests. A test environment with social sharing scripts from a handful of popular social sites shows that they quickly add up:</p>
-
-						<div class="o-table o-table--scroll">
-							<table>
-								<caption>Source: <a href="">Responsible Social Share Links</a></caption>
-							  	<thead>
-							    	<tr>
-							      		<th style="text-align: left">Site</th>
-							      		<th style="text-align: center">Files</th>
-							      		<th style="text-align: right">Size</th>
-							    	</tr>
-							  	</thead>
-							  	<tbody>
-							    	<tr>
-							      		<td style="text-align: left">Google+</td>
-							      		<td style="text-align: center">1</td>
-							      		<td style="text-align: right">15.1KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left">Facebook</td>
-							      		<td style="text-align: center">3</td>
-							      		<td style="text-align: right">73.3KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left">LinkedIn</td>
-							      		<td style="text-align: center">2</td>
-							      		<td style="text-align: right">47.7KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left">Pinterest</td>
-							      		<td style="text-align: center">3</td>
-							      		<td style="text-align: right">12.9KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left">Tumblr</td>
-							      		<td style="text-align: center">1</td>
-							      		<td style="text-align: right">1.5KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left">Twitter</td>
-							      		<td style="text-align: center">4</td>
-							      		<td style="text-align: right">52.7KB</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: left"><strong>Total</strong></td>
-							      		<td style="text-align: center"><strong>14</strong></td>
-							      		<td style="text-align: right"><strong>203.2KB</strong></td>
-							    	</tr>
-							  	</tbody>
-							</table>
-						</div>
-
-						<p>That’s an additional 14 HTTP requests and 203.2KB. Instead, I went with <a href="">“share-intent” URLs</a>, which are basically links used to pass and construct data into a share and can be used to create social share links using just HTML. It allowed me to strip away the third-party scripts I was using for sharing, which accounted for 7 requests. I wrote more on this matter on <a href="">Responsible Social Share Links</a>.</p>
-
-						<p>Evaluate each third-party script and determine its importance. There may be a way to accomplish what it does without depending on the third-party. You may lose some functionality (e.g. like/tweet/share count) but ask the question: “Is the like count <em>that</em> important?”</p>
-
-						<h2>Compression / Optimization</h2>
-
-						<p>Now that I had found ways to minimize requests made, I began looking for ways to cut fat off the meat. The smaller the files, the faster they load. The <a href="">average page size is 1,950KB</a>. Here’s the content breakdown:</p>
-
-						<p>I used these numbers as a reference and starting point to compare and find ways to cut weight where I could. <a href="">What Does My Site Cost?</a> built by <a href="">Tim Kadlec</a>, is a wonderful tool to help you test and visualize what it costs to visit your site from around the world based on the weight of your site.</p>
-
-						<h3>CSS and JavaScript</h3>
-
-						<p>Compressing/minifying your stylesheets and JavaScript files can noticeably decrease file sizes—I saved up to 56% from one file in compression alone.</p>
-
-						<div class="o-table o-table--scroll">
-						    <table>
-							  	<thead>
-							    	<tr>
-							      		<th style="text-align: right">&nbsp;</th>
-							      		<th style="text-align: center">Before Compression</th>
-							      		<th style="text-align: center">After</th>
-							      		<th style="text-align: center">Savings</th>
-							    	</tr>
-							  	</thead>
-							  	<tbody>
-							    	<tr>
-							      		<td style="text-align: right"><strong>CSS</strong></td>
-							      		<td style="text-align: center">135KB</td>
-							      		<td style="text-align: center">104KB</td>
-							      		<td style="text-align: center">23.0%</td>
-							    	</tr>
-							    	<tr>
-							      		<td style="text-align: right"><strong>JS</strong></td>
-							      		<td style="text-align: center">16KB</td>
-							      		<td style="text-align: center">7KB</td>
-							      		<td style="text-align: center">56.3%</td>
-							    	</tr>
-							  	</tbody>
-							</table>
-						</div>
-
-						<p>I write CSS using the <a href="">BEM (Block, Element, Modifier) methodology</a>, and it can result in long, verbose class names. Refactoring some of my code to be less verbose (“navigation” to “nav”, “introduction” to “intro”) gave me some savings but wasn’t nearly as noticeable as before-vs-after compression, which I expected.</p>
-
-						<div class="o-table o-table--scroll">
-						   	<table>
-							  	<thead>
-							    	<tr>
-							      		<th style="text-align: right">Verbose Classes</th>
-							      		<th style="text-align: center">Less Verbose</th>
-							      		<th style="text-align: center">Savings</th>
-							    	</tr>
-							  	</thead>
-							  	<tbody>
-							    	<tr>
-							      		<td style="text-align: right">104KB</td>
-							      		<td style="text-align: center">97KB</td>
-							      		<td style="text-align: center">6.7%</td>
-							    	</tr>
-							  	</tbody>
-							</table>
-						</div>
-
-						<p>I also re-evaluated the need for jQuery. Of the 135KB of minified JavaScript, about 96KB was the jQuery library alone—71%! There wasn’t a lot that relied on jQuery, so I took the time to refactor my code. I shaved off 122KB by stripping away jQuery and rewriting it in vanilla JavaScript, which cut the file size down to 13KB minified.</p>
-
-						<div class="o-table o-table--scroll">
-						    <table>
-							  	<thead>
-							    	<tr>
-							      		<th style="text-align: center">jQuery</th>
-							      		<th style="text-align: center">Vanilla JS</th>
-							      		<th style="text-align: center">Savings</th>
-							    	</tr>
-							  	</thead>
-							  	<tbody>
-							    	<tr>
-							      		<td style="text-align: center">135KB</td>
-							      		<td style="text-align: center">13KB</td>
-							      		<td style="text-align: center">122KB (90%)</td>
-							    	</tr>
-							  	</tbody>
-							</table>
-						</div>
-
-						<p>Since then I managed to strip away even more (7KB compressed), and the script rounds out to only 0.365KB when compressed and gzipped.</p>
-
-						<h3>Images</h3>
-
-						<p>Images typically make up the bulk of a website. The average site has <a href="">1,249KB of images</a>.</p>
-
-						<p>I ditched icon fonts and replaced them with inline SVGs. In addition, any images that could be drawn as vectors were placed with inline SVGs as well. One page of the previous version of my site was loading 145KB in icon webfonts alone, and of the hundreds of icons in the webfonts, I was only utilizing a dozen of them. In comparison, one page of the current site loads 10KB of inline SVGs—that’s a 93% difference.</p>
-
-						<p><a href="">SVG sprites</a> look interesting and seem like they could be a viable solution to replacing common inline SVG icons I use throughout the site.</p>
-
-						<p>Use CSS instead of images when possible—there’s so much that can be done with CSS nowadays. However, browser compatibility may be an issue with modern CSS; therefore, make good use of <a href="">caniuse.com</a> and enhance progressively.</p>
-
-						<p>You can also squeeze bytes out of images by optimizing them. There are 2 ways to optimize images:</p>
-
-						<ol>
-							<li>Lossy—lowers image quality</li>
-							<li>Lossless—doesn’t affect quality</li>
-						</ol>
-
-						<p>For best results I do both, and the order is important. First, compress images using a lossy method, such as resizing images to sizes no bigger than necessary, then exporting them at a slightly lower quality without compromising too much (e.g. I usually export JPGs at 82–92%).</p>
-
-						<figure class="o-media">
-						    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/imageoptim.jpg" alt="">
-						    <figcaption>ImageOptim, an image optimization tool for OS X</figcaption>
-						</figure>
-
-						<p>Next, run images through a lossless image optimization tool like <a href="">ImageOptim</a>, which further reduces image file sizes by removing unnecessary information such as metadata or color profiles.</p>
-
-						<h2>Page Rendering</h2>
-
-						<p>At this point, after all that work and sweating those details, I thought <em>for sure</em> my <a href="">Google PageSpeed Insights</a> scores would be in the 90s. To my demise, they weren’t.</p>
-
-						<figure class="o-media">
-						    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/pagespeed-render-blocking.jpg" alt="">
-						</figure>
-
-						<p>PSI scores were 73/100 on mobile while desktop score faired a bit better at 88/100. It suggested that I “eliminate render-blocking JavaScript and CSS.”</p>
-
-						<p>Render-blocking files increase the time it takes for the browser to display the content because the files need to first be downloaded and processed. Multiple render-blocking files require the browser to take multiple trips to fetch and process them, further increasing that wait time.</p>
-
-						<p>Optimizing JavaScript, CSS and webfont delivery can improve the page’s “time to first render.” To minimize that time, it’s important to understand the “<a href="">critical rendering path</a>,” which is what happens between when the first byte of the page is received and when the page is first rendered into pixels.</p>
-
-						<p><a href="">WebPagetest</a> is the best tool out there to help you profile and visualize your site and pages’ performance.</p>
-
-						<p>When minimizing the time to first render, we’re giving more attention to the perception of speed by rendering the content as quickly as possible, then allowing the additional presentational “stuff” to be rendered progressively as they’re processed.</p>
-
-						<h3>CSS</h3>
-
-						<p>Browsers, by default, treat CSS as render blocking; therefore, when it hits the pipeline, browsers hold off rendering until the CSS has been downloaded and processed. External stylesheets mean more network trips, which increase that wait time, and large stylesheets increase that time as well.</p>
-
-						<p>We can improve the page render time by inlining “critical CSS” in the <code>&lt;head&gt;</code> so the browser can quickly render the above-the-fold content of a page without having to wait to download the entire stylesheet, and then loading the full stylesheet in a non-rendering-blocking way.</p>
-
-						<pre class="language-markup"><code>&lt;head&gt;
-						  &lt;style&gt;
-						    /* inline critical CSS */
-						  &lt;/style&gt;
-						&lt;/head&gt;</code></pre>
-
-						<p>Determining what CSS is or isn’t critical requires (1) viewing the page on mobile and/or desktop viewport sizes, (2) identifying the elements that are visible within that viewport, and (3) selecting the CSS that accompanies those elements.</p>
-
-						<p>This can be a bit tricky, especially when done manually, but fantastic tools are available to help expedite or even automate this process. I used <a href="">grunt-criticalcss</a> by <a href="">Filament Group</a> to help generate critical CSS for pages, which I then manually optimize the CSS a bit as well (merging duplicate media queries and removing CSS I deem as unnecessary).</p>
-
-						<p>Now that the critical CSS is inlined in the <code>&lt;head&gt;</code>, load the rest of the stylesheet asynchronously, which I do with the help of <a href="">loadCSS</a>.</p>
-
-						<pre class="language-markup"><code>&lt;head&gt;
-						  &lt;style&gt;
-						    /* inline critical CSS */
-						  &lt;/style&gt;
-						  &lt;script&gt;
-						   // inline the loadCSS script
-						   function loadCSS( href, before, media, callback ){ ... }
-						   // then load your stylesheet
-						   loadCSS("/path/to/stylesheet.css");
-						  &lt;/script&gt;
-						  &lt;noscript&gt;
-						    &lt;link href="/path/to/stylesheet.css" "stylesheet"&gt;
-						  &lt;/noscript&gt;
-						&lt;/head&gt;</code></pre>
-
-						<p>Google also gives an <a href="">alternate example</a> of loading CSS in a non-render-blocking way.</p>
-
-						<h3>JavaScript</h3>
-
-						<p>JavaScript can also be render-blocking; therefore its delivery should also be optimized, which can be done the following ways:</p>
-
-						<ol>
-							<li>Inlining small scripts.</li>
-							<li>Loading external scripts at the bottom of the document.</li>
-							<li>Deferring the execution of scripts using the <code>defer</code> attribute.</li>
-							<li>Asynchronously loading possible scripts using the <code>async</code> attribute.</li>
-						</ol>
-
-						<p><code>defer</code> downloads the script as the HTML is parsed but waits to execute once the page has been rendered. <a href="">defer support</a> is pretty good; however is reported to be inconsistent and unreliable; therefore is best to both <code>defer</code> and have them at the bottom of the document.</p>
-
-						<p><code>async</code> downloads the script as the HTML is parsed and executes the moment it has been downloaded. This allows for multiple scripts to be downloaded and executed concurrently; however, they’re not guaranteed to load in a specific order. Any scripts that depend on each other may need to be modified to account for these scenarios.</p>
-
-						<p><a href=""><code>async</code> support</a> is not as great as <code>defer</code>, which is why I chose to use <a href="">loadJS</a>, a script for asynchronously loading JS files. It supports older browsers and also has a useful feature to conditionally load a script.</p>
-
-						<!---->
-
-						<h3>Webfonts</h3>
-
-						<p>Webfonts make the content more legible and beautiful but can also have negative side effects to page rendering. When loading a page, especially on mobile connections, you may have noticed text becoming invisible for a period of time. This is known as <a href="">FOIT (Flash of Invisible Text)</a>.</p>
-
-						<p>When a browser attempts to download a web font, it hides the text for a period of time until it finishes downloading the font and is ready to display the text. In worst case scenarios, the text becomes and stays invisible indefinitely, making the content completely unreadable.</p>
-
-						<p>The way <a href="">I solved FOIT</a> is by progressively loading fonts by first relying on default, system fonts (e.g. Helvetica and Georgia) to allow the content to be rendered quickly. Web fonts are then loaded asynchronously using loadCSS and rely on font events with the help of the <a href="">Font Face Observer</a> library to detect when the fonts have been downloaded. Once the fonts are downloaded and available, a class is added to the document which sets the page in the correct font.</p>
-
-						<!---->
-
-						<p>Progressively loading fonts results in FOUT (Flash of Unstyled Text) and/or FOFT (Flash of Faux Text) depending on how it’s done.</p>
-
-						<p>However, the benefit is that the content comes and stays available without going invisible. I wrote an in-depth post on how I defeated FOIT in <a href="">Font Loading with Font Events</a>.</p>
-
-						<h2>Other</h2>
-
-						<p>Additional methods, such as enabling gzipping and caching, configuring SSL, and serving assets from a Content Delivery Network (CDN) can improve front-end performance but would require some server-side finagling. For the sake of this post, I won’t get into them; however, I do want to stress that I recommend them and they will have an overall, positive impact on the performance of your site.</p>
-
-						<p>I will mention that because a healthy percentage of visits on my site are outside of the U.S., and my server is located in NYC, I decided to serve some of my assets onto a CDN. They’re deployed to an <a href="">Amazon S3</a> bucket, which is tied to a <a href="">CloudFront</a> distribution.</p>
-
-						<h2>Round Up</h2>
-
-						<p>I’ve been making performance improvements incrementally over the course of a few months, and although it’s been a lot of work, I definitely notice a difference. I occasionally get comments about how fast my site is, and it’s a result of these performance tweaks.</p>
-
-						<p>I haven’t done a great job of keeping track of the metrics (especially early on), but let’s look at some comparisons with the numbers we do have.</p>
-						
-						<div class="o-table o-table--scroll">
-							<table>
-							  	<thead>
-							    	<tr>
-							      		<th>&nbsp;</th>
-							      		<th style="text-align: center">Average</th>
-							      		<th style="text-align: center">My Site</th>
-							      		<th style="text-align: center">Change</th>
-							    	</tr>
-							  	</thead>
-							  	<tbody>
-							    	<tr>
-							      		<td>Requests</td>
-							      		<td style="text-align: center">93</td>
-							      		<td style="text-align: center">19</td>
-							      		<td style="text-align: center">-87.6%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>Page size</td>
-							      		<td style="text-align: center">1950KB</td>
-							      		<td style="text-align: center">524KB</td>
-							      		<td style="text-align: center">-73.1%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>HTML</td>
-							      		<td style="text-align: center">58KB</td>
-							      		<td style="text-align: center">2.8KB</td>
-							      		<td style="text-align: center">-95.1%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>Images</td>
-							      		<td style="text-align: center">1249KB</td>
-							      		<td style="text-align: center">66.3</td>
-							      		<td style="text-align: center">-94.7%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>CSS</td>
-							      		<td style="text-align: center">60KB</td>
-							      		<td style="text-align: center">14.6KB</td>
-							      		<td style="text-align: center">-75.7%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>JS</td>
-							      		<td style="text-align: center">303KB</td>
-							      		<td style="text-align: center">6.1KB</td>
-							      		<td style="text-align: center">-98.0%</td>
-							    	</tr>
-							    	<tr>
-							      		<td>Fonts</td>
-							      		<td style="text-align: center">87KB</td>
-							      		<td style="text-align: center">10.2KB</td>
-							      		<td style="text-align: center">-88.3%</td>
-							    	</tr>
-							  	</tbody>
-							</table>
-						</div>
-
-						<p>That’s an overall 87.5% better than average!—Not bad. Google PageSpeed Insights now gives my site favorable scores as well.</p>
-
-						<figure class="o-media">
-						    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/pagespeed-ok.jpg" alt="">
-						    <figcaption>Google PageSpeed Insights results after optimizations</figcaption>
-						</figure>
-
-						<p>In regards to WebPagetest results, I noticed that although bytes increased on the About page, my start-render and fully-loaded times decreased considerably.</p>
-
-						<p>Performance improvements will always be a work-in-progress, and with <a href="">HTTP/2 on its way</a>, some of this is bound to change—techniques that used to work well may not work as well anymore, while others may become deprecated altogether.</p>
-
-						<p>I feel that I’ve made a lot of headway and learned a lot over the past few months. My site is <a href="">open-sourced on Github</a>, so feel free to take a peek at what’s going on under the hood. I’ve yet to figure it all out, but I hope that my sharing what I’ve done and learned with you gives you some insight. If you have any questions or wanna chat, feel free to hit me up on Twitter <a href="">@jonsuh</a> or <a href="">drop me an email</a>.</p>
-
-						<h2>Resources</h2>
-
-						<p>Chock full of useful resources to get you neck deep in performance.</p>
-
-						<ul>
-							<li>
-								<a href="">Google PageSpeed Insights</a>
-							</li>
-							<li>
-								<a href="">SpeedCurve</a>
-							</li>
-							<li>
-								<a href="">WebPagetest</a>
-							</li>
-							<li>
-								<a href="">What Does My Site Cost?</a>
-							</li>
-							<li>
-								<a href="">Front-end performance for web designers and front-end developers</a>
-							</li>
-							<li>
-								<a href="">How we make RWD sites load fast as heck</a>
-							</li>
-							<li>
-								<a href="">Improving Smashing Magazine’s Performance: A Case Study</a>
-							</li>
-							<li>
-								<a href="">More Weight Doesn’t Mean More Wait</a>
-							</li>
-							<li>
-								<a href="">Optimizing Performance</a>
-							</li>
-							<li>
-								<a href="">RWD Bloat Part I and Part II</a>
-							</li>
-							<li>
-								<a href="">Google PageSpeed Module</a>
-							</li>
-							<li>
-								<a href="">Responsible Social Share Links</a>
-							</li>
-							<li>
-								<a href="">Inlining critical CSS for first-time visits</a>
-							</li>
-						</ul>
-					</div>
+					</nav>
 				</div>
-				
-				<div class="o-wrap o-wrap--large c-listings--side-by-side">
-					<article class="o-wrap c-listing c-listing--side-by-side c-listing--prev" itemscope itemtype="http://schema.org/Blog">
-						<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--prev__link" itemprop="url" title="">
-							<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">Faster font loading with <span class="u-highlight-text">font events</span></h2>
+			</header>
 
-							<ul class="c-listing__meta-data c-listing--side-by-side__list-meta">
-								<li class="c-listing__meta-data__item c-listing--side-by-side__item-meta">Prev Post</li>
-								<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
-									<span class="c-listing__visited-text">Seen</span>
-									<span class="c-listing__visited-badge">
-										<svg class="icon icon--check">
-											<use xlink:href="#icon--check"></use>
-										</svg>
-									</span>
+			<main class="c-page__content" role="main">
+				<article class="c-article" itemscope itemtype="http://schema.org/BlogPosting">
+					<div class="o-section o-wrap o-wrap--x-large">
+						<header class="c-article__header">
+							<h1 class="c-article__heading tera" itemprop="headline">Improving front-end <span class="u-highlight-text">performance</span></h1>
+
+							<ul class="c-listing__meta-data c-listing__meta-data--large">
+								<li class="c-listing__meta-data__item c-listing__meta-data__item--large">
+									<time datetime="2015-05-2409:33:38" pubdate="pubdate">22<sup>nd</sup> April 2015</time>
+									<meta itemprop="datePublished" content="2015-05-24">
+								</li>
+								<li class="c-listing__meta-data__item c-listing__meta-data__item--large u-hide-mobile" itemprop="author">Rob Simpson</li>
+								<li class="c-listing__meta-data__item c-listing__meta-data__item--large">9mins to read</li>
+							</ul>
+						</header>
+
+						<div class="o-wrap o-wrap--medium s-free-content" itemprop="articleBody">
+							<p class="intro">Last year I wrote a post, Need for Speed, where I shared my workflows and techniques along with the tools involved in the development of my site.</p>
+
+							<p>Since then my site has gone through another redesign, and although I made various workflow and server-side improvements, I gave front-end performance extra attention. Here’s what I did, why I did it, and the tools I used to optimize front-end performance on my site.</p>
+
+							<h2>Minimize Requests</h2>
+
+							<p>Every asset required to render the page (external CSS or JS files, webfonts, images, etc.) as your site loads is an additional HTTP request. The average website makes <a href="">93 requests</a>!</p>
+
+							<p>My goal was to minimize HTTP requests. One way is to compile or concatenate (combining/merging) CSS and JS into one file each. Automating this process (e.g. using a build tool like <a href="">Grunt</a> or <a href="">Gulp</a>) is ideal, but at the very least should be done manually for production.</p>
+
+							<p>Third-party scripts are common culprits for making additional requests—many make more than 1 request to grab additional files such as scripts, images or CSS. Your browser’s built-in developer tools can help you sniff out the offenders.</p>
+
+							<figure class="o-media">
+							    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/developer-tools.jpg" alt="" itemprop="image">
+							    <figcaption>Google Chrome Developer Tools’ Network tab</figcaption>
+							</figure>
+
+							<p>For example, Facebook’s script makes 3 requests. A test environment with social sharing scripts from a handful of popular social sites shows that they quickly add up:</p>
+
+							<div class="o-table o-table--scroll">
+								<table>
+									<caption>Source: <a href="">Responsible Social Share Links</a></caption>
+								  	<thead>
+								    	<tr>
+								      		<th style="text-align: left">Site</th>
+								      		<th style="text-align: center">Files</th>
+								      		<th style="text-align: right">Size</th>
+								    	</tr>
+								  	</thead>
+								  	<tbody>
+								    	<tr>
+								      		<td style="text-align: left">Google+</td>
+								      		<td style="text-align: center">1</td>
+								      		<td style="text-align: right">15.1KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left">Facebook</td>
+								      		<td style="text-align: center">3</td>
+								      		<td style="text-align: right">73.3KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left">LinkedIn</td>
+								      		<td style="text-align: center">2</td>
+								      		<td style="text-align: right">47.7KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left">Pinterest</td>
+								      		<td style="text-align: center">3</td>
+								      		<td style="text-align: right">12.9KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left">Tumblr</td>
+								      		<td style="text-align: center">1</td>
+								      		<td style="text-align: right">1.5KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left">Twitter</td>
+								      		<td style="text-align: center">4</td>
+								      		<td style="text-align: right">52.7KB</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: left"><strong>Total</strong></td>
+								      		<td style="text-align: center"><strong>14</strong></td>
+								      		<td style="text-align: right"><strong>203.2KB</strong></td>
+								    	</tr>
+								  	</tbody>
+								</table>
+							</div>
+
+							<p>That’s an additional 14 HTTP requests and 203.2KB. Instead, I went with <a href="">“share-intent” URLs</a>, which are basically links used to pass and construct data into a share and can be used to create social share links using just HTML. It allowed me to strip away the third-party scripts I was using for sharing, which accounted for 7 requests. I wrote more on this matter on <a href="">Responsible Social Share Links</a>.</p>
+
+							<p>Evaluate each third-party script and determine its importance. There may be a way to accomplish what it does without depending on the third-party. You may lose some functionality (e.g. like/tweet/share count) but ask the question: “Is the like count <em>that</em> important?”</p>
+
+							<h2>Compression / Optimization</h2>
+
+							<p>Now that I had found ways to minimize requests made, I began looking for ways to cut fat off the meat. The smaller the files, the faster they load. The <a href="">average page size is 1,950KB</a>. Here’s the content breakdown:</p>
+
+							<p>I used these numbers as a reference and starting point to compare and find ways to cut weight where I could. <a href="">What Does My Site Cost?</a> built by <a href="">Tim Kadlec</a>, is a wonderful tool to help you test and visualize what it costs to visit your site from around the world based on the weight of your site.</p>
+
+							<h3>CSS and JavaScript</h3>
+
+							<p>Compressing/minifying your stylesheets and JavaScript files can noticeably decrease file sizes—I saved up to 56% from one file in compression alone.</p>
+
+							<div class="o-table o-table--scroll">
+							    <table>
+								  	<thead>
+								    	<tr>
+								      		<th style="text-align: right">&nbsp;</th>
+								      		<th style="text-align: center">Before Compression</th>
+								      		<th style="text-align: center">After</th>
+								      		<th style="text-align: center">Savings</th>
+								    	</tr>
+								  	</thead>
+								  	<tbody>
+								    	<tr>
+								      		<td style="text-align: right"><strong>CSS</strong></td>
+								      		<td style="text-align: center">135KB</td>
+								      		<td style="text-align: center">104KB</td>
+								      		<td style="text-align: center">23.0%</td>
+								    	</tr>
+								    	<tr>
+								      		<td style="text-align: right"><strong>JS</strong></td>
+								      		<td style="text-align: center">16KB</td>
+								      		<td style="text-align: center">7KB</td>
+								      		<td style="text-align: center">56.3%</td>
+								    	</tr>
+								  	</tbody>
+								</table>
+							</div>
+
+							<p>I write CSS using the <a href="">BEM (Block, Element, Modifier) methodology</a>, and it can result in long, verbose class names. Refactoring some of my code to be less verbose (“navigation” to “nav”, “introduction” to “intro”) gave me some savings but wasn’t nearly as noticeable as before-vs-after compression, which I expected.</p>
+
+							<div class="o-table o-table--scroll">
+							   	<table>
+								  	<thead>
+								    	<tr>
+								      		<th style="text-align: right">Verbose Classes</th>
+								      		<th style="text-align: center">Less Verbose</th>
+								      		<th style="text-align: center">Savings</th>
+								    	</tr>
+								  	</thead>
+								  	<tbody>
+								    	<tr>
+								      		<td style="text-align: right">104KB</td>
+								      		<td style="text-align: center">97KB</td>
+								      		<td style="text-align: center">6.7%</td>
+								    	</tr>
+								  	</tbody>
+								</table>
+							</div>
+
+							<p>I also re-evaluated the need for jQuery. Of the 135KB of minified JavaScript, about 96KB was the jQuery library alone—71%! There wasn’t a lot that relied on jQuery, so I took the time to refactor my code. I shaved off 122KB by stripping away jQuery and rewriting it in vanilla JavaScript, which cut the file size down to 13KB minified.</p>
+
+							<div class="o-table o-table--scroll">
+							    <table>
+								  	<thead>
+								    	<tr>
+								      		<th style="text-align: center">jQuery</th>
+								      		<th style="text-align: center">Vanilla JS</th>
+								      		<th style="text-align: center">Savings</th>
+								    	</tr>
+								  	</thead>
+								  	<tbody>
+								    	<tr>
+								      		<td style="text-align: center">135KB</td>
+								      		<td style="text-align: center">13KB</td>
+								      		<td style="text-align: center">122KB (90%)</td>
+								    	</tr>
+								  	</tbody>
+								</table>
+							</div>
+
+							<p>Since then I managed to strip away even more (7KB compressed), and the script rounds out to only 0.365KB when compressed and gzipped.</p>
+
+							<h3>Images</h3>
+
+							<p>Images typically make up the bulk of a website. The average site has <a href="">1,249KB of images</a>.</p>
+
+							<p>I ditched icon fonts and replaced them with inline SVGs. In addition, any images that could be drawn as vectors were placed with inline SVGs as well. One page of the previous version of my site was loading 145KB in icon webfonts alone, and of the hundreds of icons in the webfonts, I was only utilizing a dozen of them. In comparison, one page of the current site loads 10KB of inline SVGs—that’s a 93% difference.</p>
+
+							<p><a href="">SVG sprites</a> look interesting and seem like they could be a viable solution to replacing common inline SVG icons I use throughout the site.</p>
+
+							<p>Use CSS instead of images when possible—there’s so much that can be done with CSS nowadays. However, browser compatibility may be an issue with modern CSS; therefore, make good use of <a href="">caniuse.com</a> and enhance progressively.</p>
+
+							<p>You can also squeeze bytes out of images by optimizing them. There are 2 ways to optimize images:</p>
+
+							<ol>
+								<li>Lossy—lowers image quality</li>
+								<li>Lossless—doesn’t affect quality</li>
+							</ol>
+
+							<p>For best results I do both, and the order is important. First, compress images using a lossy method, such as resizing images to sizes no bigger than necessary, then exporting them at a slightly lower quality without compromising too much (e.g. I usually export JPGs at 82–92%).</p>
+
+							<figure class="o-media">
+							    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/imageoptim.jpg" alt="">
+							    <figcaption>ImageOptim, an image optimization tool for OS X</figcaption>
+							</figure>
+
+							<p>Next, run images through a lossless image optimization tool like <a href="">ImageOptim</a>, which further reduces image file sizes by removing unnecessary information such as metadata or color profiles.</p>
+
+							<h2>Page Rendering</h2>
+
+							<p>At this point, after all that work and sweating those details, I thought <em>for sure</em> my <a href="">Google PageSpeed Insights</a> scores would be in the 90s. To my demise, they weren’t.</p>
+
+							<figure class="o-media">
+							    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/pagespeed-render-blocking.jpg" alt="">
+							</figure>
+
+							<p>PSI scores were 73/100 on mobile while desktop score faired a bit better at 88/100. It suggested that I “eliminate render-blocking JavaScript and CSS.”</p>
+
+							<p>Render-blocking files increase the time it takes for the browser to display the content because the files need to first be downloaded and processed. Multiple render-blocking files require the browser to take multiple trips to fetch and process them, further increasing that wait time.</p>
+
+							<p>Optimizing JavaScript, CSS and webfont delivery can improve the page’s “time to first render.” To minimize that time, it’s important to understand the “<a href="">critical rendering path</a>,” which is what happens between when the first byte of the page is received and when the page is first rendered into pixels.</p>
+
+							<p><a href="">WebPagetest</a> is the best tool out there to help you profile and visualize your site and pages’ performance.</p>
+
+							<p>When minimizing the time to first render, we’re giving more attention to the perception of speed by rendering the content as quickly as possible, then allowing the additional presentational “stuff” to be rendered progressively as they’re processed.</p>
+
+							<h3>CSS</h3>
+
+							<p>Browsers, by default, treat CSS as render blocking; therefore, when it hits the pipeline, browsers hold off rendering until the CSS has been downloaded and processed. External stylesheets mean more network trips, which increase that wait time, and large stylesheets increase that time as well.</p>
+
+							<p>We can improve the page render time by inlining “critical CSS” in the <code>&lt;head&gt;</code> so the browser can quickly render the above-the-fold content of a page without having to wait to download the entire stylesheet, and then loading the full stylesheet in a non-rendering-blocking way.</p>
+
+							<pre class="language-markup"><code>&lt;head&gt;
+							  &lt;style&gt;
+							    /* inline critical CSS */
+							  &lt;/style&gt;
+							&lt;/head&gt;</code></pre>
+
+							<p>Determining what CSS is or isn’t critical requires (1) viewing the page on mobile and/or desktop viewport sizes, (2) identifying the elements that are visible within that viewport, and (3) selecting the CSS that accompanies those elements.</p>
+
+							<p>This can be a bit tricky, especially when done manually, but fantastic tools are available to help expedite or even automate this process. I used <a href="">grunt-criticalcss</a> by <a href="">Filament Group</a> to help generate critical CSS for pages, which I then manually optimize the CSS a bit as well (merging duplicate media queries and removing CSS I deem as unnecessary).</p>
+
+							<p>Now that the critical CSS is inlined in the <code>&lt;head&gt;</code>, load the rest of the stylesheet asynchronously, which I do with the help of <a href="">loadCSS</a>.</p>
+
+							<pre class="language-markup"><code>&lt;head&gt;
+							  &lt;style&gt;
+							    /* inline critical CSS */
+							  &lt;/style&gt;
+							  &lt;script&gt;
+							   // inline the loadCSS script
+							   function loadCSS( href, before, media, callback ){ ... }
+							   // then load your stylesheet
+							   loadCSS("/path/to/stylesheet.css");
+							  &lt;/script&gt;
+							  &lt;noscript&gt;
+							    &lt;link href="/path/to/stylesheet.css" "stylesheet"&gt;
+							  &lt;/noscript&gt;
+							&lt;/head&gt;</code></pre>
+
+							<p>Google also gives an <a href="">alternate example</a> of loading CSS in a non-render-blocking way.</p>
+
+							<h3>JavaScript</h3>
+
+							<p>JavaScript can also be render-blocking; therefore its delivery should also be optimized, which can be done the following ways:</p>
+
+							<ol>
+								<li>Inlining small scripts.</li>
+								<li>Loading external scripts at the bottom of the document.</li>
+								<li>Deferring the execution of scripts using the <code>defer</code> attribute.</li>
+								<li>Asynchronously loading possible scripts using the <code>async</code> attribute.</li>
+							</ol>
+
+							<p><code>defer</code> downloads the script as the HTML is parsed but waits to execute once the page has been rendered. <a href="">defer support</a> is pretty good; however is reported to be inconsistent and unreliable; therefore is best to both <code>defer</code> and have them at the bottom of the document.</p>
+
+							<p><code>async</code> downloads the script as the HTML is parsed and executes the moment it has been downloaded. This allows for multiple scripts to be downloaded and executed concurrently; however, they’re not guaranteed to load in a specific order. Any scripts that depend on each other may need to be modified to account for these scenarios.</p>
+
+							<p><a href=""><code>async</code> support</a> is not as great as <code>defer</code>, which is why I chose to use <a href="">loadJS</a>, a script for asynchronously loading JS files. It supports older browsers and also has a useful feature to conditionally load a script.</p>
+
+							<!---->
+
+							<h3>Webfonts</h3>
+
+							<p>Webfonts make the content more legible and beautiful but can also have negative side effects to page rendering. When loading a page, especially on mobile connections, you may have noticed text becoming invisible for a period of time. This is known as <a href="">FOIT (Flash of Invisible Text)</a>.</p>
+
+							<p>When a browser attempts to download a web font, it hides the text for a period of time until it finishes downloading the font and is ready to display the text. In worst case scenarios, the text becomes and stays invisible indefinitely, making the content completely unreadable.</p>
+
+							<p>The way <a href="">I solved FOIT</a> is by progressively loading fonts by first relying on default, system fonts (e.g. Helvetica and Georgia) to allow the content to be rendered quickly. Web fonts are then loaded asynchronously using loadCSS and rely on font events with the help of the <a href="">Font Face Observer</a> library to detect when the fonts have been downloaded. Once the fonts are downloaded and available, a class is added to the document which sets the page in the correct font.</p>
+
+							<!---->
+
+							<p>Progressively loading fonts results in FOUT (Flash of Unstyled Text) and/or FOFT (Flash of Faux Text) depending on how it’s done.</p>
+
+							<p>However, the benefit is that the content comes and stays available without going invisible. I wrote an in-depth post on how I defeated FOIT in <a href="">Font Loading with Font Events</a>.</p>
+
+							<h2>Other</h2>
+
+							<p>Additional methods, such as enabling gzipping and caching, configuring SSL, and serving assets from a Content Delivery Network (CDN) can improve front-end performance but would require some server-side finagling. For the sake of this post, I won’t get into them; however, I do want to stress that I recommend them and they will have an overall, positive impact on the performance of your site.</p>
+
+							<p>I will mention that because a healthy percentage of visits on my site are outside of the U.S., and my server is located in NYC, I decided to serve some of my assets onto a CDN. They’re deployed to an <a href="">Amazon S3</a> bucket, which is tied to a <a href="">CloudFront</a> distribution.</p>
+
+							<h2>Round Up</h2>
+
+							<p>I’ve been making performance improvements incrementally over the course of a few months, and although it’s been a lot of work, I definitely notice a difference. I occasionally get comments about how fast my site is, and it’s a result of these performance tweaks.</p>
+
+							<p>I haven’t done a great job of keeping track of the metrics (especially early on), but let’s look at some comparisons with the numbers we do have.</p>
+							
+							<div class="o-table o-table--scroll">
+								<table>
+								  	<thead>
+								    	<tr>
+								      		<th>&nbsp;</th>
+								      		<th style="text-align: center">Average</th>
+								      		<th style="text-align: center">My Site</th>
+								      		<th style="text-align: center">Change</th>
+								    	</tr>
+								  	</thead>
+								  	<tbody>
+								    	<tr>
+								      		<td>Requests</td>
+								      		<td style="text-align: center">93</td>
+								      		<td style="text-align: center">19</td>
+								      		<td style="text-align: center">-87.6%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>Page size</td>
+								      		<td style="text-align: center">1950KB</td>
+								      		<td style="text-align: center">524KB</td>
+								      		<td style="text-align: center">-73.1%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>HTML</td>
+								      		<td style="text-align: center">58KB</td>
+								      		<td style="text-align: center">2.8KB</td>
+								      		<td style="text-align: center">-95.1%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>Images</td>
+								      		<td style="text-align: center">1249KB</td>
+								      		<td style="text-align: center">66.3</td>
+								      		<td style="text-align: center">-94.7%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>CSS</td>
+								      		<td style="text-align: center">60KB</td>
+								      		<td style="text-align: center">14.6KB</td>
+								      		<td style="text-align: center">-75.7%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>JS</td>
+								      		<td style="text-align: center">303KB</td>
+								      		<td style="text-align: center">6.1KB</td>
+								      		<td style="text-align: center">-98.0%</td>
+								    	</tr>
+								    	<tr>
+								      		<td>Fonts</td>
+								      		<td style="text-align: center">87KB</td>
+								      		<td style="text-align: center">10.2KB</td>
+								      		<td style="text-align: center">-88.3%</td>
+								    	</tr>
+								  	</tbody>
+								</table>
+							</div>
+
+							<p>That’s an overall 87.5% better than average!—Not bad. Google PageSpeed Insights now gives my site favorable scores as well.</p>
+
+							<figure class="o-media">
+							    <img src="https://jonsuh.com/assets/images/blog/need-for-speed-2/pagespeed-ok.jpg" alt="">
+							    <figcaption>Google PageSpeed Insights results after optimizations</figcaption>
+							</figure>
+
+							<p>In regards to WebPagetest results, I noticed that although bytes increased on the About page, my start-render and fully-loaded times decreased considerably.</p>
+
+							<p>Performance improvements will always be a work-in-progress, and with <a href="">HTTP/2 on its way</a>, some of this is bound to change—techniques that used to work well may not work as well anymore, while others may become deprecated altogether.</p>
+
+							<p>I feel that I’ve made a lot of headway and learned a lot over the past few months. My site is <a href="">open-sourced on Github</a>, so feel free to take a peek at what’s going on under the hood. I’ve yet to figure it all out, but I hope that my sharing what I’ve done and learned with you gives you some insight. If you have any questions or wanna chat, feel free to hit me up on Twitter <a href="">@jonsuh</a> or <a href="">drop me an email</a>.</p>
+
+							<h2>Resources</h2>
+
+							<p>Chock full of useful resources to get you neck deep in performance.</p>
+
+							<ul>
+								<li>
+									<a href="">Google PageSpeed Insights</a>
+								</li>
+								<li>
+									<a href="">SpeedCurve</a>
+								</li>
+								<li>
+									<a href="">WebPagetest</a>
+								</li>
+								<li>
+									<a href="">What Does My Site Cost?</a>
+								</li>
+								<li>
+									<a href="">Front-end performance for web designers and front-end developers</a>
+								</li>
+								<li>
+									<a href="">How we make RWD sites load fast as heck</a>
+								</li>
+								<li>
+									<a href="">Improving Smashing Magazine’s Performance: A Case Study</a>
+								</li>
+								<li>
+									<a href="">More Weight Doesn’t Mean More Wait</a>
+								</li>
+								<li>
+									<a href="">Optimizing Performance</a>
+								</li>
+								<li>
+									<a href="">RWD Bloat Part I and Part II</a>
+								</li>
+								<li>
+									<a href="">Google PageSpeed Module</a>
+								</li>
+								<li>
+									<a href="">Responsible Social Share Links</a>
+								</li>
+								<li>
+									<a href="">Inlining critical CSS for first-time visits</a>
 								</li>
 							</ul>
-						</a>
-					</article>
+						</div>
+					</div>
+					
+					<div class="o-wrap o-wrap--large c-listings--side-by-side">
+						<article class="o-wrap c-listing c-listing--side-by-side c-listing--prev" itemscope itemtype="http://schema.org/Blog">
+							<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--prev__link" itemprop="url" title="">
+								<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">Faster font loading with <span class="u-highlight-text">font events</span></h2>
 
-					<article class="o-wrap c-listing c-listing--side-by-side c-listing--next" itemscope itemtype="http://schema.org/Blog">
-						<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--next__link" itemprop="url" title="">
-							<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">Responsible <span class="u-highlight-text">social share links</span></h2>
+								<ul class="c-listing__meta-data c-listing--side-by-side__list-meta">
+									<li class="c-listing__meta-data__item c-listing--side-by-side__item-meta">Prev Post</li>
+									<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
+										<span class="c-listing__visited-text">Seen</span>
+										<span class="c-listing__visited-badge">
+											<svg class="icon icon--check">
+												<use xlink:href="#icon--check"></use>
+											</svg>
+										</span>
+									</li>
+								</ul>
+							</a>
+						</article>
 
-							<ul class="c-listing__meta-data c-listing--side-by-side__meta-data">
-								<li class="c-listing__meta-data__item c-listing--side-by-side__meta-data__item">Next Post</li>
-								<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
-									<span class="c-listing__visited-text">Seen</span>
-									<span class="c-listing__visited-badge">
-										<svg class="icon icon--check">
-											<use xlink:href="#icon--check"></use>
-										</svg>
-									</span>
-								</li>
-							</ul>
-						</a>
-					</article>
+						<article class="o-wrap c-listing c-listing--side-by-side c-listing--next" itemscope itemtype="http://schema.org/Blog">
+							<a href="" class="c-listing__link c-listing--side-by-side__link c-listing--next__link" itemprop="url" title="">
+								<h2 class="c-listing__heading c-listing--side-by-side__heading gamma" itemprop="name">Responsible <span class="u-highlight-text">social share links</span></h2>
+
+								<ul class="c-listing__meta-data c-listing--side-by-side__meta-data">
+									<li class="c-listing__meta-data__item c-listing--side-by-side__meta-data__item">Next Post</li>
+									<li class="c-listing__meta-data__item c-listing__meta-data__item--visited">
+										<span class="c-listing__visited-text">Seen</span>
+										<span class="c-listing__visited-badge">
+											<svg class="icon icon--check">
+												<use xlink:href="#icon--check"></use>
+											</svg>
+										</span>
+									</li>
+								</ul>
+							</a>
+						</article>
+					</div>
+				</article>
+
+				<!-- <div id="disqus_thread"></div>
+				<script type="text/javascript">
+				    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				    var disqus_shortname = 'geckotree'; // Required - Replace '<example>' with your forum shortname
+
+				    /* * * DON'T EDIT BELOW THIS LINE * * */
+				    (function() {
+				        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				    })();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+			</main>
+
+			<footer class="c-footer" role="contentinfo">
+				<div class="o-section o-wrap u-center-content">
+					<div class="c-footer__planner">
+						<h3 class="alpha">Interest? Let's get <span class="u-highlight-text">started</span></h3>
+						<a href="#" class="c-button c-button--primary">planner</a>
+					</div>
+					
+					<ul class="c-footer__social">
+						<li class="c-footer__social__item">
+							<a href="https://twitter.com/geckotree" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--twitter">
+									<use xlink:href="#icon--twitter"></use>
+								</svg>
+								<span class="u-hide-text">Twitter</span>
+							</a>
+						</li>
+						<li class="c-footer__social__item">
+							<a href="https://dribbble.com/geckotree" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--dribbble">
+									<use xlink:href="#icon--dribbble"></use>
+								</svg>
+
+								<span class="u-hide-text">Dribbble</span>
+							</a>
+						</li>
+						<li class="c-footer__social__item">
+							<a href="https://instagram.com/geckotree/" class="c-footer__social__link" target="_blank">
+								<svg class="icon icon--instagram">
+									<use xlink:href="#icon--instagram"></use>
+								</svg>
+
+								<span class="u-hide-text">Instagram</span>
+							</a>
+						</li>
+					</ul>
+
+					<span class="c-footer__label">Made with <svg class="icon icon--heart"><use xlink:href="#icon--heart"></use></svg> in the UK</span>
 				</div>
-			</article>
-
-			<!-- <div id="disqus_thread"></div>
-			<script type="text/javascript">
-			    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			    var disqus_shortname = 'geckotree'; // Required - Replace '<example>' with your forum shortname
-
-			    /* * * DON'T EDIT BELOW THIS LINE * * */
-			    (function() {
-			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			    })();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
-		</main>
-
-		<footer class="c-footer" role="contentinfo">
-			<div class="o-section o-wrap u-center-content">
-				<div class="c-footer__planner">
-					<h3 class="alpha">Interest? Let's get <span class="u-highlight-text">started</span></h3>
-					<a href="#" class="c-button c-button--primary">planner</a>
-				</div>
-				
-				<ul class="c-footer__social">
-					<li class="c-footer__social__item">
-						<a href="https://twitter.com/geckotree" class="c-footer__social__link" target="_blank">
-							<svg class="icon icon--twitter">
-								<use xlink:href="#icon--twitter"></use>
-							</svg>
-							<span class="u-hide-text">Twitter</span>
-						</a>
-					</li>
-					<li class="c-footer__social__item">
-						<a href="https://dribbble.com/geckotree" class="c-footer__social__link" target="_blank">
-							<svg class="icon icon--dribbble">
-								<use xlink:href="#icon--dribbble"></use>
-							</svg>
-
-							<span class="u-hide-text">Dribbble</span>
-						</a>
-					</li>
-					<li class="c-footer__social__item">
-						<a href="https://instagram.com/geckotree/" class="c-footer__social__link" target="_blank">
-							<svg class="icon icon--instagram">
-								<use xlink:href="#icon--instagram"></use>
-							</svg>
-
-							<span class="u-hide-text">Instagram</span>
-						</a>
-					</li>
-				</ul>
-
-				<span class="c-footer__label">Made with <svg class="icon icon--heart"><use xlink:href="#icon--heart"></use></svg> in the UK</span>
-			</div>
-		</footer>
+			</footer>
+		</div>
 
 		<div class="u-icons"><svg xmlns="http://www.w3.org/2000/svg"><symbol viewBox="0 0 16 22" id="icon--arrow-left"><title>Arrow Left</title>  <path d="M12.938.188c-6.625 3.719-12.344 9.563-12.563 9.813-.5.563-.5 1.438 0 2 .219.25 5.938 6.094 12.563 9.813.438.25.969.25 1.406 0 .438-.219.719-.688.75-1.188 0-.063.281-4.75.281-9.625s-.281-9.563-.281-9.625c-.031-.5-.313-.938-.75-1.188-.438-.25-.969-.25-1.406 0z"/> </symbol><symbol viewBox="0 0 16 22" id="icon--arrow-right"><title>Arrow Right</title>  <path d="M2.438 21.813c6.625-3.719 12.313-9.563 12.531-9.813.531-.563.531-1.438 0-2-.219-.25-5.906-6.094-12.531-9.813-.438-.25-.969-.25-1.406 0-.438.25-.719.688-.75 1.188 0 .063-.281 4.75-.281 9.625s.281 9.563.281 9.625c.031.5.313.969.75 1.188.438.25.969.25 1.406 0z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--briefcase"><title>Briefcase</title>  <path d="M30.828 9.099c.778 3.244 1.167 6.432 1.167 9.566 0 3.089-.378 6.311-1.133 9.665-.222.933-.811 1.478-1.767 1.633-4.4.644-8.766.967-13.098.967-4.333 0-8.699-.322-13.098-.967-.955-.156-1.544-.7-1.767-1.633-.755-3.356-1.133-6.577-1.133-9.665 0-3.088.378-6.277 1.133-9.566.111-.489.361-.883.749-1.184.389-.301.839-.45 1.35-.45h4.233v-4.732c0-.511.161-.967.483-1.367.322-.4.738-.644 1.25-.733 2.178-.423 4.444-.634 6.799-.634 2.355 0 4.621.211 6.799.634.511.111.928.361 1.25.749.322.389.483.839.484 1.35v4.732h4.233c.511 0 .961.15 1.35.45.389.3.627.694.716 1.184zm-19.098-4.665v3.033h8.532v-3.033c-2.844-.334-5.688-.334-8.532 0z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--chat"><title>Chat</title>  <path d="M31.533 5.888c.309 1.952.464 4.023.464 6.213 0 2.166-.155 4.214-.464 6.143-.191 1.262-.887 2.417-2.089 3.465s-2.47 1.643-3.803 1.785c-2.619.262-5.202.405-7.75.429l-6.82 6.607c-.214.214-.476.321-.785.321-.119 0-.273-.024-.464-.072-.453-.191-.679-.547-.679-1.071v-5.857l-2.786-.214c-1.309-.142-2.571-.755-3.786-1.838-1.215-1.083-1.929-2.268-2.143-3.553-.286-1.999-.429-4.035-.429-6.106 0-2.143.143-4.226.429-6.249.214-1.285.929-2.47 2.143-3.553 1.215-1.083 2.477-1.696 3.786-1.838 3.333-.333 6.547-.499 9.641-.499 3.094 0 6.308.166 9.641.499 1.309.142 2.571.755 3.786 1.838 1.215 1.083 1.917 2.268 2.106 3.553l.001-.003z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--check"><title>Check</title>  <path d="M31.525 5.03c-1.285-1.138-2.679-2.055-4.147-2.863-.661-.367-1.541-.11-2.019.587l-11.781 16.736-6.9-9.689c-.477-.697-1.358-.954-2.019-.624-1.505.844-2.899 1.798-4.184 2.899-.587.514-.624 1.431-.147 2.129 0 0 9.102 12.809 10.203 14.35 1.615 2.202 4.551 2.092 6.092 0 1.138-1.578 15.047-21.433 15.047-21.433.477-.697.44-1.615-.147-2.092z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--coffee"><title>Coffee</title>  <path d="M11.6 7.356c1.338-1.237 3.678-2.14 4.213-3.611.535-1.505-.368-3.009-1.471-3.745 0 1.572-.435 2.24-1.505 3.043-1.07.803-4.28 2.14-5.751 3.645-1.505 1.505-1.806 2.842-1.806 2.842h5.116s.1-1.17 1.204-2.173zm7.691 2.173s2.307-1.772 1.973-3.979c-.268-2.073-2.006-3.377-2.006-3.377s.368 1.338-.1 2.508c-.502 1.17-2.24 1.839-3.344 3.009-.97 1.003-.903 1.839-.903 1.839h4.38zm-.97 22.47c.769 0 1.505-.401 1.873-1.07.067-.1.669-1.271 1.371-2.943.836-.067 2.006-.234 3.21-.502 3.411-.836 5.684-3.243 6.086-6.454.368-2.842-.568-4.481-1.404-5.383-1.204-1.304-3.043-1.906-5.25-1.772-.535.033-1.037.1-1.505.167-.268-.803-.535-1.237-.635-1.371-.401-.602-1.07-1.003-1.772-1.003h-16.084c-.702 0-1.371.368-1.772.97-.234.368-1.438 2.408-1.438 7.189 0 5.083 3.143 10.834 3.277 11.101.401.669 1.103 1.07 1.873 1.07h12.171zm4.414-7.356c.435-1.538.736-3.21.736-4.815 0-1.003-.033-1.906-.134-2.675l1.07-.1c.836-.067 2.04.033 2.708.769.702.702.702 1.906.602 2.809-.334 2.642-2.708 3.511-3.712 3.745-.435.134-.869.201-1.271.268z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--dribbble"><title>Dribbble</title>  <path d="M16 32c-8.822 0-16-7.178-16-16s7.178-16 16-16c8.823 0 16 7.178 16 16s-7.177 16-16 16zm13.494-13.81c-.468-.147-4.23-1.27-8.513-.584 1.788 4.912 2.515 8.913 2.655 9.744 3.066-2.073 5.249-5.357 5.858-9.16zm-8.156 10.411c-.203-1.199-.996-5.377-2.915-10.364l-.09.031c-7.708 2.686-10.476 8.032-10.722 8.534 2.318 1.807 5.23 2.885 8.389 2.885 1.893 0 3.698-.387 5.338-1.086zm-15.491-3.442c.309-.53 4.06-6.741 11.109-9.019l.538-.163c-.343-.776-.717-1.553-1.108-2.319-6.825 2.043-13.447 1.958-14.046 1.945l-.007.418c0 3.51 1.331 6.715 3.514 9.138zm-3.225-11.937c.611.008 6.242.032 12.635-1.665-2.265-4.026-4.707-7.41-5.067-7.904-3.824 1.803-6.682 5.328-7.568 9.569zm10.175-10.488c.378.506 2.86 3.886 5.1 8.001 4.859-1.821 6.917-4.587 7.163-4.937-2.414-2.141-5.587-3.444-9.06-3.444-1.103 0-2.175.133-3.203.38zm13.782 4.644c-.288.391-2.579 3.326-7.632 5.389.319.651.623 1.313.907 1.98l.294.705c4.548-.572 9.066.344 9.517.44-.03-3.226-1.183-6.188-3.086-8.514z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--facebook"><title>Facebook</title>  <path d="M23.927 10.485l-.582 5.515h-4.408v16h-6.622v-16h-3.3v-5.515h3.3v-3.32c0-4.486 1.865-7.164 7.168-7.164h4.407v5.515h-2.758c-2.057 0-2.195.777-2.195 2.214v2.756h4.99z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--feather"><title>Feather</title>  <path d="M2.993 30.045c1.467-.967 3.201-2.234 4.802-3.435 1 .1 2.167.067 3.468.067 4.102 0 9.837-.734 14.039-4.835.867-.834 1.634-2.034 2.301-3.035-1.801-.5-3.601-1.067-5.769-1.867-.3-.1-.433-.4-.333-.7.1-.233.333-.367.567-.367 3.401.067 5.302.1 7.169.033 1.034-2.201 1.701-4.202 2.101-6.302-1.467 0-3.535.067-6.136-.1-.3-.033-.534-.267-.5-.6 0-.4.333-.433.434-.5 2.668-.634 5.269-1.534 6.703-2.201.267-2.868.133-4.902.1-5.135-.033-.5-.433-.934-.967-.967-.067 0-1.134-.1-2.868-.1-5.035 0-14.339.8-19.908 6.202-4.468 4.368-5.002 9.87-4.935 13.839 4.935-5.335 13.705-10.971 14.772-10.071.167.133.167.3-.267.6-6.402 4.435-15.139 13.238-17.407 18.274-.9 1.667-.133 3.068 2.634 1.2z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--googleplus"><title>Google+</title>  <path d="M31.222 6.427v2.325h-4.649v4.651h-2.325v-4.651h-4.649v-2.325h4.649v-4.649h2.325v4.649h4.649zm-11.751 18.071c0 2.089-.997 3.778-2.542 5.122-2.089 1.799-4.94 2.38-7.628 2.38-3.396 0-8.3-1.452-8.3-5.666 0-.853.292-1.691.674-2.453 1.614-3.268 6.663-4.105 9.915-4.196-.597-.78-1.161-1.687-1.161-2.706 0-.599.215-.999.4-1.561-.437.053-.853.091-1.271.091-3.524 0-6.574-2.597-6.574-6.249 0-3.451 2.668-6.393 5.973-7.118 1.109-.238 2.251-.364 3.396-.364h7.94l-2.452 1.435h-2.455c1.801 1.125 2.708 3.324 2.708 5.358 0 4.812-4.069 5.175-4.069 7.573 0 2.343 5.449 3.269 5.449 8.354zm-4.738-14.092c0-2.761-1.492-7.319-4.852-7.319-2.377 0-3.54 2.107-3.54 4.251 0 2.759 1.815 7.083 5.049 7.083 2.485-.002 3.342-1.799 3.342-4.014zm2.178 15.655c0-2.542-2.382-3.959-4.233-5.25-.309-.036-.601-.036-.91-.036-2.976 0-7.41.944-7.41 4.722 0 3.486 3.924 4.832 6.83 4.832 2.706 0 5.723-1.09 5.723-4.268z"/> </symbol><symbol viewBox="0 0 32 29" id="icon--heart"><title>Heart</title>  <path d="M30.32 14.25c4.393-9.286-.643-14.215-5.75-14.25-1.536 0-3.071.429-4.357 1.321-3.393 2.321-4.214 5.536-4.214 5.536s-.821-3.179-4.214-5.5c-1.25-.893-2.714-1.321-4.214-1.321-5.143-.071-10.322 4.857-5.893 14.25 4.214 8.964 12.143 14.286 14.322 14.286 2.179 0 10.107-5.357 14.322-14.322z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--instagram"><title>Instagram</title>  <path d="M28 0h-24c-2.208 0-4 1.792-4 4v24c0 2.208 1.792 4 4 4h24c2.208 0 4-1.792 4-4v-24c0-2.208-1.792-4-4-4zm-12 12c3.684 0 4 4 4 4s.118 4-4 4c-4.116 0-4-4-4-4s.316-4 4-4zm12 14c0 1.105-.894 2-2 2h-20c-1.106 0-2-.895-2-2v-10c0-1.106.894-2 2-2h2.284c-.168.643-.284 1.305-.284 2 0 4.418 3.582 8 8 8s8-3.582 8-8c0-.695-.118-1.357-.284-2h2.284c1.106 0 2 .894 2 2v10zm0-18c0 1.103-.894 2-2 2h-2c-1.104 0-2-.897-2-2v-2c0-1.104.896-2 2-2h2c1.106 0 2 .896 2 2v2z"/> </symbol><symbol viewBox="0 0 32 32" id="icon--linkedin"><title>LinkedIn</title>  <path d="M1.314 10.961h6.472v19.432h-6.472v-19.432zm3.275-9.353c-2.197 0-3.648 1.451-3.648 3.354 0 1.862 1.393 3.352 3.569 3.352h.04c2.255 0 3.667-1.491 3.648-3.352-.021-1.903-1.393-3.354-3.608-3.354zm19.038 8.902c-3.443 0-4.975 1.886-5.824 3.217v-2.765h-6.451s.079 1.824 0 19.432h6.451v-10.844c0-.587.06-1.158.215-1.587.472-1.158 1.528-2.353 3.317-2.353 2.33 0 3.272 1.784 3.272 4.392v10.392h6.453v-11.138c0-5.961-3.177-8.745-7.432-8.745z"/> </symbol><symbol viewBox="0 0 48 48" id="icon--logo"><title>Geckotree</title>  <path d="M24 0C10.745 0 0 10.745 0 24s10.745 24 24 24 24-10.745 24-24S37.255 0 24 0zm4.96 44.2c-1.768-3.058-2.415-11.35-2.548-13.35 1.267-.546 2.323-1.643 2.38-2.767l5.205.65c.545.987 1.595 1.656 2.803 1.656 1.767 0 3.198-1.434 3.198-3.2 0-1.768-1.43-3.2-3.198-3.2-1.203 0-2.25.662-2.797 1.643l-5.212.65c-.023-.576-.248-1.174-.613-1.725l3.92-3.05c.227.052.46.08.702.08 1.766 0 3.2-1.43 3.2-3.2 0-1.766-1.433-3.2-3.2-3.2-1.768 0-3.2 1.434-3.2 3.2 0 .38.07.744.19 1.082l-2.917 3.75c-.596-.422-1.28-.713-1.98-.79l.656-5.24c.98-.547 1.65-1.596 1.65-2.8 0-1.768-1.435-3.2-3.202-3.2s-3.2 1.43-3.2 3.2c0 1.204.666 2.253 1.65 2.8l.656 5.24c-.708.078-1.4.375-2.002.805l-2.906-3.737c.128-.346.202-.718.202-1.11 0-1.767-1.433-3.2-3.2-3.2-1.768 0-3.2 1.433-3.2 3.2 0 1.768 1.43 3.2 3.2 3.2.233 0 .46-.026.678-.073l3.933 3.06c-.357.544-.575 1.136-.604 1.71l-5.214-.653c-.547-.98-1.593-1.644-2.794-1.644-1.767 0-3.2 1.433-3.2 3.2 0 1.767 1.433 3.2 3.2 3.2 1.207 0 2.257-.67 2.802-1.655l5.203-.65c.04 1.273 1.09 2.297 2.35 2.796-.133 2.053-.77 10.267-2.534 13.314C9.936 41.964 3.196 33.77 3.196 24c0-11.488 9.313-20.8 20.8-20.8 11.49 0 20.8 9.312 20.8 20.8 0 9.777-6.747 17.974-15.84 20.2z"/> </symbol><symbol viewBox="0 0 16 16" id="icon--menu"><title>menu</title> <rect class="menu-path--1" y="1" width="16" height="2"/> <rect class="menu-path--3" y="13" width="16" height="2"/> <rect class="menu-path--2" y="7" width="16" height="2"/> </symbol><symbol viewBox="0 0 32 32" id="icon--twitter"><title>Twitter</title>  <path d="M32 6.079c-1.177.522-2.442.875-3.77 1.033 1.355-.812 2.396-2.099 2.886-3.631-1.268.752-2.674 1.298-4.169 1.592-1.197-1.275-2.903-2.073-4.792-2.073-3.626 0-6.565 2.94-6.565 6.565 0 .515.057 1.016.17 1.497-5.457-.275-10.294-2.888-13.532-6.86-.565.97-.889 2.098-.889 3.301 0 2.277 1.159 4.287 2.92 5.464-1.076-.034-2.088-.329-2.973-.821l-.001.082c0 3.181 2.263 5.835 5.267 6.438-.551.15-1.131.23-1.73.23-.423 0-.834-.041-1.235-.117.835 2.607 3.26 4.506 6.133 4.559-2.247 1.76-5.078 2.81-8.154 2.81-.53 0-1.052-.031-1.566-.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-.284-.006-.567-.019-.849 1.283-.926 2.396-2.082 3.276-3.398"/> </symbol></svg></div>
 		<script src="assets/build/js/main.js"></script>

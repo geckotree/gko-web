@@ -31,10 +31,6 @@
 -  **todo** `(line 29)`  update this
 -  **todo** `(line 45)`  more suitable colour
 
-## assets/sass/components/device-frame.scss
-
--  **todo** `(line 8)`  need better colour
-
 ## assets/sass/components/header.scss
 
 -  **todo** `(line 35)`  apply this after scroll

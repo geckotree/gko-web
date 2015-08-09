@@ -5,8 +5,9 @@
 =========================================================== */
 
 .c-device-frame {
-	background: #ccc; //@todo need better colour
-	box-shadow:0 18px 38px rgba(0, 0, 0, 0.1);
+	border: $border-width * 1.5 solid $med-1;
+	border-radius: $border-radius * 2;
+	// box-shadow:0 0 1rem rgba( $black, .1 );
 	margin: 0 auto;
 
 	& + & {
@@ -15,19 +16,29 @@
 }
 
 .c-device-frame__header {
-	padding: $padding-small / 4 $padding-small / 2;
+	padding: $padding-small / 8 $padding-small / 4;
 }
 
-.c-device-frame__button {
-	background: $background-colour;
+.c-device-frame__footer {
+	border-top: $border-width * 1.5 solid $med-1;
+	padding: $padding-small / 4;
+}
+
+.c-device-frame__button,
+.c-device-frame__camera {
+	background: $med-1;
 	border-radius: 100%;
 	display: inline-block;
 	height: 1rem;
 	width: 1rem;
+}
 
-	& + & {
-		margin-left: $padding-small / 8;
-	}
+.c-device-frame__button--large {
+	background: transparent;
+	border: $border-width * 1.5 solid $med-1;
+	height: 3rem;
+	margin-bottom: -.9rem;
+	width: 3rem;
 }
 
 .c-device-frame--mobile {
@@ -38,9 +49,7 @@
 	max-width: 78rem;
 }
 
-.c-device-frame--desktop {
-	border-radius: $border-radius * 3 $border-radius * 3 0 0;
-}
+
 
 @include respond-min( $mq-small ) {
 	.c-device-frame {
@@ -50,8 +59,18 @@
 	}
 }
 
+@include respond-max( $mq-medium ) {
+	.c-device-frame--desktop {
+		img {
+			border-radius: 0 0 $border-radius * 1.5 $border-radius * 1.5;
+		}
+	}
+}
+
 @include respond-min( $mq-medium ) {
 	.c-device-frame {
+		// box-shadow:0 1.5rem 3rem rgba( $black, .1 );
+
 		& + & {
 			margin-top: $padding-large;
 		}
@@ -60,5 +79,17 @@
 	.c-device-frame__inner {
 		height: 70rem;
 		overflow: scroll;
+	}
+
+	.c-device-frame--mobile {
+		.c-device-frame__inner {
+			height: 57rem;
+		}
+	}
+
+	.c-device-frame--desktop {
+		.c-device-frame__inner {
+			border-radius: 0 0 $border-radius * 1.5 $border-radius * 1.5;
+		}
 	}
 }

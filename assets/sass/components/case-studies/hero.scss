@@ -8,31 +8,15 @@
 	background-color: rgba( $pri, .2 );
 	margin-top: -8.8rem;
 	padding-top: 8.8rem;
-	// margin-bottom: $padding-small;
 }
 
-.c-case-study__hero__mark {
-	margin-bottom: -$padding-large;
-}
-
-@include respond-min( $mq-small ) {
+@include respond-max( $mq-large ) {
 	.c-case-study__hero {
-		height: 66vh;
-		// margin-bottom: $padding-medium;
+		text-align: center;
 	}
 }
 
-@include respond-max( $mq-medium ) {
-	.c-case-study__hero__mark {
-		margin-top: $padding-small;
-	}
-}
-
-@include respond-min( $mq-medium ) {
-	.c-case-study__hero {
-		// margin-bottom: $padding-large;
-	}
-
+@include respond-min( $mq-large ) {
 	.c-case-study__hero__row {
 		@include clearfix;
 		margin-left: -$padding-small;

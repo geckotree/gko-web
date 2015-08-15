@@ -10,7 +10,6 @@
 		background-position: bottom;
 		background-repeat: repeat-x;
 
-		.no-js &,
 		.no-svg & {
 			background-image: url( '#{$images}/case-studies/adspy/city-background.png' );
 		}
@@ -20,8 +19,43 @@
 		}
 	}
 
-	.c-case-study__hero__mark img {
-		max-width: 400px;
-		width: 100%;
+	.c-case-study__hero__mark {
+		img {
+			max-width: 80%;
+		}
+	}
+
+	@include respond-max( $mq-small ) {
+		.c-case-study__hero__mark {
+			margin-bottom: -$padding-large;
+			margin-top: $padding-small;
+		}
+	}
+
+	@include respond-min-max( $mq-small, $mq-large ) {
+		.c-case-study__hero__mark {
+			margin-bottom: -$padding-large * 1.5;
+			margin-top: $padding-medium;
+		}
+	}
+
+	@include respond-max( $mq-large ) {
+		.c-case-study__hero {
+			margin-bottom: $padding-large;
+		}
+	}
+
+	@include respond-min( $mq-large ) {
+		.c-case-study__hero__mark {
+			margin-bottom: -$padding-large * 2;
+
+			img {
+				width: 40rem;
+			}
+		}
+
+		.c-case-study__content {
+			padding-top: $padding-large;
+		}
 	}
 }

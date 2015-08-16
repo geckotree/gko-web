@@ -1,0 +1,276 @@
+/* ===========================================================
+
+	# Variables
+
+=========================================================== */
+/* ===========================================================
+
+	# Colours
+
+=========================================================== */
+/* ===========================================================
+
+	# Case Studies
+
+=========================================================== */
+/* ===========================================================
+
+	# Base Values
+
+=========================================================== */
+/* ===========================================================
+
+	# Media Queries
+
+=========================================================== */
+/* ===========================================================
+
+	# Mixins
+
+=========================================================== */
+/* ===========================================================
+
+	# PAGE
+
+=========================================================== */
+html {
+  background: #f7f7f7;
+  height: 100%; }
+
+.o-sg-page {
+  min-height: 100%; }
+
+@media only screen and (min-width: 800px) {
+  .o-sg-page {
+    padding-left: 7rem; } }
+/* ===========================================================
+
+	# Wrap
+
+=========================================================== */
+.o-sg-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.o-sg-wrap--large {
+  max-width: 130rem; }
+
+@media only screen and (min-width: 500px) {
+  .o-sg-wrap {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
+/* ===========================================================
+
+	# Section
+
+=========================================================== */
+.o-sg-section {
+  padding: 8rem 0; }
+
+.o-sg-section__sub + .o-sg-section__sub {
+  margin-top: 8rem; }
+
+.o-sg-section__heading {
+  margin-bottom: 2rem; }
+  .o-sg-section__heading:before {
+    color: #c4c4c4;
+    content: "0" counter(step-counter) ". ";
+    font-size: 0.6em; }
+  .o-sg-section__heading small {
+    color: #c4c4c4;
+    font-size: .3em;
+    font-weight: normal;
+    text-transform: capitalize; }
+
+.o-sg-section__sub-heading {
+  color: #c4c4c4;
+  text-transform: capitalize; }
+
+@media only screen and (min-width: 1350px) {
+  .o-sg-section__heading {
+    margin-left: -5.5rem; } }
+/* ===========================================================
+
+	# Grid
+
+=========================================================== */
+.o-sg-grid-row + .o-sg-grid-row {
+  margin-top: 8rem; }
+
+.o-sg-grid-row + .o-sg-section__sub,
+.o-sg-section__sub + .o-sg-grid-row {
+  margin-top: 8rem; }
+
+.o-sg-grid-row__col + .o-sg-grid-row__col {
+  margin-top: 0; }
+
+@media only screen and (max-width: 799px) {
+  .o-sg-grid-row__col + .o-sg-grid-row__col {
+    margin-top: 8rem; } }
+@media only screen and (min-width: 800px) {
+  .o-sg-grid-row {
+    margin-left: -4rem; }
+    .o-sg-grid-row:before, .o-sg-grid-row:after {
+      content: "";
+      display: table; }
+    .o-sg-grid-row:after {
+      clear: both; }
+
+  .o-sg-grid-row__col {
+    float: left;
+    padding-left: 4rem; }
+
+  .o-sg-grid-row__col--thirds {
+    width: 33.3333333333%; }
+    .o-sg-grid-row__col--thirds .c-button {
+      width: 100%; }
+
+  .o-sg-grid-row__col--half {
+    width: 50%; } }
+@media only screen and (min-width: 1000px) {
+  .o-sg-grid-row {
+    margin-left: -8rem; }
+
+  .o-sg-grid-row__col {
+    padding-left: 8rem; } }
+/* ===========================================================
+
+	# List
+
+=========================================================== */
+.o-sg-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.o-sg-list__item {
+  margin: 0; }
+
+.o-sg-list__section {
+  counter-increment: step-counter; }
+
+/* ===========================================================
+
+	# Header
+
+=========================================================== */
+.c-sg-header {
+  background: white;
+  text-align: center; }
+
+.c-sg-header__logo {
+  display: block;
+  padding: 1rem; }
+  .c-sg-header__logo svg {
+    margin-bottom: -.7rem; }
+
+.c-sg-nav {
+  text-align: left; }
+
+.c-sg-nav__link {
+  background: transparent;
+  display: block;
+  padding: 1rem 2rem; }
+  .c-sg-nav__link svg {
+    fill: #c4c4c4; }
+
+.c-sg-nav__link__label {
+  color: #c4c4c4; }
+
+@media only screen and (max-width: 799px) {
+  .c-sg-nav__link:before, .c-sg-nav__link:after {
+    content: "";
+    display: table; }
+  .c-sg-nav__link:after {
+    clear: both; }
+  .c-sg-nav__link svg {
+    float: right; } }
+@media only screen and (min-width: 800px) {
+  .c-sg-header {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 7rem;
+    z-index: 10; }
+
+  .c-sg-header__logo {
+    padding: 2rem 1rem; }
+
+  .c-sg-nav__item {
+    text-align: center; }
+    .c-sg-nav__item:hover .c-sg-nav__link__label {
+      left: 8.5rem;
+      opacity: 1;
+      visibility: visible; }
+
+  .c-sg-nav__link {
+    height: 7rem;
+    padding: 2rem 1.5rem;
+    position: relative; }
+
+  .c-sg-nav__link__label {
+    background: white;
+    border-radius: 0.4rem;
+    left: 7rem;
+    margin-top: -2.8rem;
+    opacity: 0;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    transition: left 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    top: 50%;
+    visibility: hidden;
+    white-space: nowrap; }
+    .c-sg-nav__link__label:before {
+      background: white;
+      border-radius: 100%;
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -.5rem;
+      left: -.5rem;
+      width: 1rem;
+      height: 1rem; } }
+/* ===========================================================
+
+	# Colours
+
+=========================================================== */
+.c-sg-colours__colour {
+  border-radius: 0.4rem;
+  border: 0.4rem solid white;
+  height: 15rem; }
+
+.c-sg-colours__list__item__list {
+  padding: 2rem 0; }
+
+@media only screen and (max-width: 799px) {
+  .c-sg-colours__list__item + .c-sg-colours__list__item {
+    margin-top: 2rem; } }
+@media only screen and (min-width: 800px) {
+  .c-sg-colours__list {
+    margin-left: -4rem; }
+    .c-sg-colours__list:before, .c-sg-colours__list:after {
+      content: "";
+      display: table; }
+    .c-sg-colours__list:after {
+      clear: both; }
+
+  .c-sg-colours__list__item {
+    float: left;
+    padding-left: 4rem;
+    width: 50%; } }
+@media only screen and (min-width: 1000px) {
+  .c-sg-colours__list__item {
+    width: 25%; } }
+/* ===========================================================
+
+	# Typography
+
+=========================================================== */
+.c-sg-typography__list__item h1 {
+  padding-bottom: 0; }
+.c-sg-typography__list__item + .c-sg-typography__list__item {
+  margin-top: 4rem; }

@@ -17,8 +17,8 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		assetsFolder: 'assets',
 		assetsBuildFolder: 'assets/build',
-		styleguideFolder: 'styleguide',
-		styleguideBuildFolder: 'styleguide/build'
+		styleguideFolder: 'src',
+		styleguideBuildFolder: 'src/build'
 	};
 
 	/*

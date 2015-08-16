@@ -4,22 +4,22 @@ module.exports = {
 		options: {
 			flatten: true,
 			data: '<%= styleguideFolder %>/**/*.{json,yml}',
-			layoutdir: '<%= styleguideFolder %>/src/layouts',
-			partials: [ '<%= styleguideFolder %>/src/components/**/*.hbs' ],
-			layout: 'default.hbs',
+			layoutdir: '<%= styleguideFolder %>/layouts',
+			partials: [ '<%= styleguideFolder %>/components/**/*.hbs' ],
+			layout: 'styleguide.hbs',
 		},
-		src: '<%= styleguideFolder %>/src/pages/*.hbs',
+		src: '<%= styleguideFolder %>/styleguide/*.hbs',
 		dest: '<%= styleguideBuildFolder %>/'
 	},
 	site: {
 		options: {
 			flatten: true,
 			data: '<%= styleguideFolder %>/**/*.{json,yml}',
-			layoutdir: '<%= styleguideFolder %>/src/layouts',
-			partials: [ '<%= styleguideFolder %>/src/components/**/*.hbs' ],
+			layoutdir: '<%= styleguideFolder %>/layouts',
+			partials: [ '<%= styleguideFolder %>/components/**/*.hbs' ],
 			layout: 'site.hbs',
 		},
-		src: '<%= styleguideFolder %>/src/pages/*.hbs',
+		src: '<%= styleguideFolder %>/site/*.hbs',
 		dest: '.'
 	}
 };

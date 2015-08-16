@@ -65,24 +65,24 @@
 		margin-bottom: $padding-small;
 	}
 
-	.cssanimations {
-		.c-case-study-card {
-			opacity: 0;
-		}
+	// .cssanimations {
+	// 	.c-case-study-card {
+	// 		opacity: 0;
+	// 	}
 
-		.is-inview {
-			.c-case-study-card {
-				animation: fadeInUp $speed cubic-bezier( 0.165, 0.84, 0.44, 1 ) both;
-				animation-delay: $speed;
-			}
+	// 	.is-inview {
+	// 		.c-case-study-card {
+	// 			animation: fadeInUp $speed cubic-bezier( 0.165, 0.84, 0.44, 1 ) both;
+	// 			animation-delay: $speed;
+	// 		}
 
-			& > :last-child {
-				.c-case-study-card {
-					animation-delay: $speed * 2;
-				}
-			}
-		}
-	}
+	// 		& > :last-child {
+	// 			.c-case-study-card {
+	// 				animation-delay: $speed * 2;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 @include respond-min( $mq-x-large ) {

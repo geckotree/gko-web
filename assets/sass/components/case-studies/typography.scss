@@ -1,0 +1,64 @@
+/* ===========================================================
+
+	# Case Study - Typography
+
+=========================================================== */
+
+.c-case-study__typography__list {
+	list-style: none;
+	margin-top: $padding-small / 2;
+}
+
+.c-case-study__typography__item {
+	display: inline-block;
+	margin: 0;
+
+	& + & {
+		margin-left: $padding-small / 4;
+	}
+}
+
+.c-case-study__typography__button {
+	border-radius: $border-radius;
+	padding: $padding-small / 4 $padding-small / 4 0;
+	transition: background $speed ease;
+
+	.svg-char-path {
+		fill: $text-colour;
+		transition: fill $speed ease;
+	}
+
+	&:hover {
+		background: $light-2;
+	}
+
+	&:focus {
+		.svg-char-path {
+			fill: $adspy-pri;
+		}
+	}
+
+	&.is-active {
+		.svg-char-path {
+			fill: $adspy-sec;
+		}
+	}
+}
+
+@include respond-min( $mq-small ) {
+	.c-case-study__typography__list {
+		margin-top: $padding-medium / 2;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-case-study__typography__list {
+		margin-top: $padding-large / 2;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-case-study__typography__list {
+		padding-left: 6rem;
+	}
+}

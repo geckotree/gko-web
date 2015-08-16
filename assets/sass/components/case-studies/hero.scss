@@ -9,23 +9,3 @@
 	margin-top: -8.8rem;
 	padding-top: 8.8rem;
 }
-
-@include respond-max( $mq-large ) {
-	.c-case-study__hero {
-		text-align: center;
-	}
-}
-
-@include respond-min( $mq-large ) {
-	.c-case-study__hero__row {
-		@include clearfix;
-		margin-left: -$padding-small;
-	}
-
-	.c-case-study__hero__header,
-	.c-case-study__hero__mark {
-		float: left;
-		padding-left: $padding-small;
-		width: 50%;
-	}
-}

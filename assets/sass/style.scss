@@ -15,8 +15,7 @@
 		'base/table.scss',
 		'base/forms.scss',
 		'base/figcaption.scss',
-		'base/code.scss',
-		'base/free-content.scss';
+		'base/code.scss';
 
 @import 'objects/wrap.scss',
 		'objects/section.scss',
@@ -38,7 +37,6 @@
 		'components/hero.scss',
 		'components/article.scss',
 		'components/pagination.scss',
-		'components/social-share.scss',
 		'components/feat-media-grid.scss',
 		'components/syntax-highlight.scss',
 		'components/device-frame.scss';
@@ -70,4 +68,5 @@
 
 @import 'components/case-studies/geckotree/card.scss';
 
-@import 'trumps/overrides.scss';
+@import 'trumps/overrides.scss',
+		'trumps/free-content.scss';

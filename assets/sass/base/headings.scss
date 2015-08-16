@@ -45,62 +45,62 @@ h3,
 h4,
 h5,
 h6,
-.tera,
-.giga,
-.mega,
-.alpha,
-.beta,
-.gamma,
-.delta,
-.epsilon,
-.zeta {
+.u-tera,
+.u-giga,
+.u-mega,
+.u-alpha,
+.u-beta,
+.u-gamma,
+.u-delta,
+.u-epsilon,
+.u-zeta {
 	font-weight: bold;
 	line-height: 1;
 }
 
-.tera {
+.u-tera {
 	@include heading-font-size( $tera-small );
 }
 
-.giga {
+.u-giga {
 	@include heading-font-size( $giga-small );
 }
 
-.mega {
+.u-mega {
 	@include heading-font-size( $mega-small );
 }
 
 h1,
-.alpha {
+.u-alpha {
 	@include heading-font-size( $alpha-small );
 }
 
 h2,
-.beta {
+.u-beta {
 	@include heading-font-size( $beta-small );
 }
 
 h3,
-.gamma {
+.u-gamma {
 	@include heading-font-size( $gamma-small );
 }
 
 h4,
-.delta {
+.u-delta {
 	@include heading-font-size( $delta-small );
 }
 
 h5,
-.epsilon {
+.u-epsilon {
 	@include heading-font-size( $epsilon-small );
 }
 
 h6,
-.zeta {
+.u-zeta {
 	@include heading-font-size( $zeta-small );
 }
 
-.intro {
+.u-intro {
 	font-size: $intro-small;
 	font-weight: $light;
 	line-height: 1.3;
@@ -113,49 +113,49 @@ figcaption {
 
 @include respond-min( $mq-small ) {
 
-	.tera {
+	.u-tera {
 		@include heading-font-size( $tera-medium );
 	}
 
-	.giga {
+	.u-giga {
 		@include heading-font-size( $giga-medium );
 	}
 
-	.mega {
+	.u-mega {
 		@include heading-font-size( $mega-medium );
 	}
 
 	h1,
-	.alpha {
+	.u-alpha {
 		@include heading-font-size( $alpha-medium );
 	}
 
 	h2,
-	.beta {
+	.u-beta {
 		@include heading-font-size( $beta-medium );
 	}
 
 	h3,
-	.gamma {
+	.u-gamma {
 		@include heading-font-size( $gamma-medium );
 	}
 
 	h4,
-	.delta {
+	.u-delta {
 		@include heading-font-size( $delta-medium );
 	}
 
 	h5,
-	.epsilon {
+	.u-epsilon {
 		@include heading-font-size( $epsilon-medium );
 	}
 
 	h6,
-	.zeta {
+	.u-zeta {
 		@include heading-font-size( $zeta-medium );
 	}
 
-	.intro {
+	.u-intro {
 		font-size: $intro-medium;
 	}
 
@@ -168,49 +168,49 @@ figcaption {
 
 @include respond-min( $mq-medium ) {
 
-	.tera {
+	.u-tera {
 		@include heading-font-size( $tera-large );
 	}
 
-	.giga {
+	.u-giga {
 		@include heading-font-size( $giga-large );
 	}
 
-	.mega {
+	.u-mega {
 		@include heading-font-size( $mega-large );
 	}
 
 	h1,
-	.alpha {
+	.u-alpha {
 		@include heading-font-size( $alpha-large );
 	}
 
 	h2,
-	.beta {
+	.u-beta {
 		@include heading-font-size( $beta-large );
 	}
 
 	h3,
-	.gamma {
+	.u-gamma {
 		@include heading-font-size( $gamma-large );
 	}
 
 	h4,
-	.delta {
+	.u-delta {
 		@include heading-font-size( $delta-large );
 	}
 
 	h5,
-	.epsilon {
+	.u-epsilon {
 		@include heading-font-size( $epsilon-large );
 	}
 
 	h6,
-	.zeta {
+	.u-zeta {
 		@include heading-font-size( $zeta-large );
 	}
 
-	.intro {
+	.u-intro {
 		font-size: $intro-large;
 	}
 

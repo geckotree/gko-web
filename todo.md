@@ -27,18 +27,9 @@
 -  **todo** `(line 7)`  creat more responisve sized images
 -  **todo** `(line 8)`  handle retina images
 
-## assets/sass/components/case-studies/page-nav.scss
-
--  **todo** `(line 29)`  update this
--  **todo** `(line 45)`  more suitable colour
-
-## assets/sass/components/header.scss
-
--  **todo** `(line 35)`  apply this after scroll
-
 ## assets/sass/components/nav.scss
 
--  **todo** `(line 99)`  sort this if no-js
+-  **todo** `(line 103)`  sort this if no-js
 
 ## assets/sass/components/syntax-highlight.scss
 

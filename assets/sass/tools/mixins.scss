@@ -75,3 +75,23 @@
 		margin: 0;
 	}
 }
+
+@mixin bubble-anchor {
+	a {
+		background: $pri;
+		background: rgba( $pri, .1 );
+		border-radius: $border-radius;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		display: inline;
+		padding: .3rem .5rem;
+		transition: background $speed ease,
+					color $speed ease,
+					transform $speed ease;
+
+		&:hover,
+		&:focus {
+			background: rgba( $sec, .1 );
+		}
+	}
+}

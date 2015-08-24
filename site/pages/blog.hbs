@@ -1,0 +1,15 @@
+---
+title: Blog
+---
+
+{{> page-heading blog.page-heading}}
+
+<div class="o-section">
+	<section class="c-listing-wrap">
+		{{#each listing.articles}}
+			{{> listing}}
+		{{/each}}
+	</section>
+
+	{{> pagination}}
+</div>

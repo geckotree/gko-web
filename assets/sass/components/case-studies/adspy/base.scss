@@ -3,8 +3,16 @@
 	# AdSpy - Base
 
 =========================================================== */
+.s-case-study {
+	.c-header,
+	.c-header__inner {
+		background: $adspy-pri-light;
+	}
+}
 
 .s-case-study--adspy {
+
+
 	.u-highlight-text {
 		color: $adspy-pri;
 	}
@@ -14,6 +22,10 @@
 	}
 
 	.o-carousel__nav__button {
+		&:hover {
+			color: $adspy-pri;
+		}
+
 		&:focus {
 			color: $adspy-sec;
 		}
@@ -25,29 +37,5 @@
 
 	.o-carousel__nav__slider {
 		background: $adspy-pri;
-	}
-
-	.c-social-share__link {
-		border-color: $adspy-pri;
-
-		.icon {
-			fill: $adspy-pri;
-		}
-
-		&:hover,
-		&:focus {
-			.icon {
-				fill: $background-colour;
-			}
-		}
-
-		&:hover {
-			background: $adspy-pri;
-		}
-
-		&:focus {
-			background: $adspy-sec;
-			border-color: $adspy-sec;
-		}
 	}
 }

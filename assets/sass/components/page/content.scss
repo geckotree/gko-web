@@ -41,15 +41,15 @@
 	}
 }
 
-@include respond-max( $mq-large ) {
-	.c-page__content {
-		padding-top: 7.8rem;
-	}
-}
+// @include respond-max( $mq-large ) {
+// 	.c-page__content {
+// 		padding-top: 7.8rem;
+// 	}
+// }
 
 @include respond-min( $mq-large ) {
 	.c-page__content {
-		padding-top: 8.8rem;
+		// padding-top: 8.8rem;
 
 		&:after {
 			bottom: -$padding-large;

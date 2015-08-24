@@ -17,10 +17,20 @@
 	&:hover,
 	&:focus {
 		color: $white;
+
+		.icon--arrow-right {
+			transform: translateX( .4rem );
+		}
 	}
 
 	&:active {
 		transform: $active-scale-small;
+	}
+
+	.icon--arrow-right {
+		@include icon( $white, 1rem, .8rem );
+		margin-left: $padding-small / 8;
+		transition: transform $speed ease;
 	}
 }
 

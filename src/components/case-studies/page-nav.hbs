@@ -1,4 +1,4 @@
-<nav class="c-case-study__page-nav js-page-nav">
+<nav class="c-case-study__page-nav js-page-nav"  aria-labelledby="toggle-page-nav" role="navigation">
     <ol class="c-case-study__page-nav__sections">
         <li class="c-case-study__page-nav__section">
             <a href="#brand" class="c-case-study__page-nav__link js-page-nav-link" data-scroll-to="brand">
@@ -80,3 +80,12 @@
         </li>
     </ol>
 </nav>
+
+<button class="c-case-study__page-nav-button" id="toggle-page-nav" aria-haspopup="true" data-module="Toggle" data-toggle="js-page-nav">
+    <div class="c-case-study__page-nav-button__dots">
+        <span class="c-case-study__page-nav-button__dot"></span>
+        <span class="c-case-study__page-nav-button__dot"></span>
+        <span class="c-case-study__page-nav-button__dot"></span>
+    </div>
+    <span class="u-hide-text">Page Menu</span>
+</button>

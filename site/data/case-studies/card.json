@@ -1,0 +1,18 @@
+{
+	"geckotree": {
+		"class": "geckotree",
+		"heading": "Geckotree",
+		"services": "Branding, Illustrations, Website, Email",
+		"description": "<p>Stop searching for the best technology companies in the Dallas/Fort Worth area, when you sign up we’ll send you our comprehensive list.</p>",
+		"button": "case study",
+		"url": "geckotree.html"
+	},
+	"adspy": {
+		"class": "adspy",
+		"heading": "OnlineAdSpy",
+		"services": "Branding, Illustrations, Website",
+		"description": "<p>Stop searching for the best technology companies in the Dallas/Fort Worth area, when you sign up we’ll send you our comprehensive list.</p>",
+		"button": "case study",
+		"url": "adspy.html"
+	}
+}

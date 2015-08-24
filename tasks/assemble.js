@@ -1,25 +1,37 @@
 'use strict';
 module.exports = {
-	styleguide: {
-		options: {
-			flatten: true,
-			data: '<%= styleguideFolder %>/**/*.{json,yml}',
-			layoutdir: '<%= styleguideFolder %>/layouts',
-			partials: [ '<%= styleguideFolder %>/components/**/*.hbs' ],
-			layout: 'styleguide.hbs',
-		},
-		src: '<%= styleguideFolder %>/styleguide/*.hbs',
-		dest: '<%= styleguideBuildFolder %>/'
-	},
 	site: {
 		options: {
+			data: '<%= siteFolder %>/data/**/*.{json,yml}',
 			flatten: true,
-			data: '<%= styleguideFolder %>/**/*.{json,yml}',
-			layoutdir: '<%= styleguideFolder %>/layouts',
-			partials: [ '<%= styleguideFolder %>/components/**/*.hbs' ],
+			layoutdir: '<%= siteFolder %>/layouts',
 			layout: 'site.hbs',
+			partials: [ '<%= siteFolder %>/components/**/*.hbs' ]
 		},
-		src: '<%= styleguideFolder %>/site/*.hbs',
-		dest: '.'
+		src: '<%= siteFolder %>/pages/*.hbs',
+		dest: '<%= siteFolder %>/'
+	},
+	email: {
+		options: {
+			data: '<%= emailFolder %>/data/**/*.{json,yml}',
+			flatten: true,
+			layoutdir: '<%= emailFolder %>/layouts',
+			layout: 'email.hbs',
+			partials: [ '<%= emailFolder %>/components/**/*.hbs' ]
+		},
+		src: '<%= emailFolder %>/pages/*.hbs',
+		dest: '<%= emailFolder %>/'
 	}
+	// styleguide: {
+	// 	options: {
+	// 		data: '<%= siteFolder %>/data/**/*.{json,yml}',
+	// 		flatten: true,
+	// 		layoutdir: '<%= styleguideFolder %>/layouts',
+	// 		layout: 'styleguide.hbs',
+	// 		partials: [ '<%= siteFolder %>/components/**/*.hbs' ]
+	// 	},
+	// 	src: '<%= styleguideFolder %>/pages/*.hbs',
+	// 	dest: '<%= styleguideFolder %>/'
+	// }
+
 };

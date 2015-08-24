@@ -17,8 +17,9 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		assetsFolder: 'assets',
 		assetsBuildFolder: 'assets/build',
-		styleguideFolder: 'src',
-		styleguideBuildFolder: 'src/build'
+		siteFolder: 'site',
+		emailFolder: 'email',
+		styleguideFolder: 'styleguide'
 	};
 
 	/*
@@ -94,8 +95,8 @@ module.exports = function( grunt ) {
 	] );
 
 	grunt.registerTask( 'styleguide', [
-		'clean:styleguide',
-		'sass:styleguide',
+		// 'clean:styleguide',
+		// 'sass:styleguide',
 		'assemble'
 	] );
 };

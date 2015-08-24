@@ -10,7 +10,7 @@
 }
 
 .c-feat-media-grid__figure {
-	border-radius: $border-radius;
+	border-radius: $border-radius * 2;
 	overflow: hidden;
 
 	&:hover {
@@ -31,12 +31,12 @@
 @include respond-min( $mq-small ) {
 	.c-feat-media-grid__row {
 		@include clearfix;
-		margin-left: -$padding-small;
+		margin-left: -$padding-small / 2;
 	}
 
 	.c-feat-media-grid__col {
 		float: left;
-		padding-left: $padding-small;
+		padding-left: $padding-small / 2;
 		width: 50%;
 
 		&:first-child {
@@ -77,7 +77,7 @@
 
 @include respond-min( $mq-large ) {
 	.c-feat-media-grid__col:nth-last-child( -n+3 ) {
-		margin-top: $padding-small;
+		margin-top: $padding-small / 2;
 	}
 
 	// .opacity {

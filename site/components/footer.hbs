@@ -1,0 +1,29 @@
+<footer class="c-footer js-footer" role="contentinfo">
+    <div class="o-section o-wrap u-center-content">
+        <div class="c-footer__planner">
+            <h3 class="u-alpha">Tell us about <span class="u-highlight-text">your idea</span></h3>
+            
+            <a href="#" class="c-button c-button--primary">
+                planner
+                <svg class="icon icon--arrow-right">
+                    <use xlink:href="#icon--arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="c-footer__social">
+            {{#each social}}
+                <li class="c-footer__social__item">
+                    <a href="{{url}}" class="c-footer__social__link" target="_blank">
+                        <svg class="icon icon--{{icon}}">
+                            <use xlink:href="#icon--{{icon}}"></use>
+                        </svg>
+                        <span class="u-hide-text">{{text}}</span>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+
+        <span class="c-footer__label">Made with <svg class="icon icon--heart"><use xlink:href="#icon--heart"></use></svg> in the UK</span>
+    </div>
+</footer>

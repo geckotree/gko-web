@@ -66,8 +66,12 @@
 
 		// @todo states
 
-		&:focus {
+		&:hover {
 			color: $pri;
+		}
+
+		&:focus {
+			color: $sec;
 		}
 
 		&.is-active {

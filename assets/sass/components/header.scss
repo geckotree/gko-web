@@ -5,18 +5,16 @@
 =========================================================== */
 
 .c-header {
-	// background: $background-colour;
-	// background: rgba( $background-colour, .9 );
+	background: $background-colour;
 	transition: background $speed ease,
 				transform $speed ease;
-
-	// &:hover {
-	// 	background: rgba( $background-colour, 1 );
-	// }
+	z-index: 30;
 }
 
 .c-header__inner {
 	@include clearfix;
+	background: $background-colour;
+	border-top: $padding-small / 8 solid $light-2;
 	padding-top: $padding-small / 2;
 }
 
@@ -31,26 +29,13 @@
 	}
 }
 
-.enhance {
-	//@todo apply this after scroll
-	.c-header {
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 30;
-	}
-}
-
 @include respond-max( $mq-large ) {
 	.c-header {
-		// background: $background-colour;
 		position: relative;
 		text-align: center;
 	}
 
 	.c-header__inner {
-		// background: $background-colour;
 		padding-top: 1.5rem;
 	}
 

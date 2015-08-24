@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" href="">
-		<title>OnlineAdSpy Case Study - Geckotree</title>
+		<title>OnlineAdSpy - Geckotree</title>
 
 		<link rel="icon" href="/assets/img/brand-icons/favicon.png">
 
@@ -28,14 +28,14 @@
 	    <meta name="theme-color" content="#57B275">
 
 	    <!-- Open graph - http://ogp.me -->
-		<meta property="og:title" content="OnlineAdSpy Case Study" />
+		<meta property="og:title" content="OnlineAdSpy" />
 		<meta property="og:description" content="" />
 		<meta property="og:url" content="" />
 		<meta property="og:image" content="/assets/build/img/brand-icons/chrome-touch-icon.png" />
 
 		<!-- Twitter card - https://dev.twitter.com/docs/cards/markup-reference -->
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="OnlineAdSpy Case Study" />
+		<meta name="twitter:title" content="OnlineAdSpy" />
 		<meta name="twitter:description" content="" />
 		<meta name="twitter:url" content="" />
 		<meta name="twitter:image" content="/assets/build/img/brand-icons/chrome-touch-icon.png" />
@@ -54,7 +54,7 @@
 			<link rel="stylesheet" href="assets/build/css/ie.css">
 		<![endif]-->
 	</head>
-	<body class="c-page">
+	<body class="c-page s-case-study">
 		<div class="c-page__inner">
 			<header class="c-header" role="banner">
 	<div class="c-header__inner">
@@ -73,7 +73,7 @@
 		<nav class="c-nav js-nav" aria-labelledby="toggle-menu" role="navigation">
 			<div class="c-nav__list">
 				<div class="c-nav__item">
-					<a href="adspy.html" class="c-nav__link">work 
+					<a href="work.html" class="c-nav__link">work 
 						<svg class="icon icon--briefcase">
                             <use xlink:href="#icon--briefcase"></use>
                         </svg>
@@ -136,7 +136,7 @@
 </header>
 
     <div class="c-case-study__content js-content">
-        <nav class="c-case-study__page-nav js-page-nav">
+        <nav class="c-case-study__page-nav js-page-nav"  aria-labelledby="toggle-page-nav" role="navigation">
     <ol class="c-case-study__page-nav__sections">
         <li class="c-case-study__page-nav__section">
             <a href="#brand" class="c-case-study__page-nav__link js-page-nav-link" data-scroll-to="brand">
@@ -218,6 +218,16 @@
         </li>
     </ol>
 </nav>
+
+<button class="c-case-study__page-nav-button" id="toggle-page-nav" aria-haspopup="true" data-module="Toggle" data-toggle="js-page-nav">
+    <div class="c-case-study__page-nav-button__dots">
+        <span class="c-case-study__page-nav-button__dot"></span>
+        <span class="c-case-study__page-nav-button__dot"></span>
+        <span class="c-case-study__page-nav-button__dot"></span>
+    </div>
+    <span class="u-hide-text">Page Menu</span>
+</button>
+
         
         <ol class="c-case-study__sections">
             <li class="c-case-study__section" id="brand" data-section="brand">
@@ -734,8 +744,12 @@
 			<footer class="c-footer js-footer" role="contentinfo">
     <div class="o-section o-wrap u-center-content">
         <div class="c-footer__planner">
-            <h3 class="u-alpha">Interest? Let's get <span class="u-highlight-text">started</span></h3>
-            <a href="#" class="c-button c-button--primary">planner</a>
+            <h3 class="u-alpha">Tell us about <span class="u-highlight-text">your idea</span></h3>
+            <a href="#" class="c-button c-button--primary">planner
+                <svg class="icon icon--arrow-right">
+                    <use xlink:href="#icon--arrow-right"></use>
+                </svg>
+            </a>
         </div>
         <ul class="c-footer__social">
             <li class="c-footer__social__item">

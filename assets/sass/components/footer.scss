@@ -4,14 +4,12 @@
 
 =========================================================== */
 
-.c-footer {
+.c-footer__social {
+	list-style: none;
+
 	.icon {
 		@include icon( $med-1, 3.2rem, 3.2rem );
 	}
-}
-
-.c-footer__social {
-	list-style: none;
 }
 
 .c-footer__social__item {

@@ -4,11 +4,18 @@
 
 =========================================================== */
 
-.c-case-study-card {
+.c-case-study-card__link {
 	background-position: bottom -7rem right -12rem;
 	background-repeat: no-repeat;
+	border-radius: $border-radius * 3;
+	display: block;
 	padding: $padding-small $padding-small / 2;
-	transition: background-color $speed ease;
+	transition: background-color $speed ease,
+				transform $speed ease;
+
+	&:active {
+		transform: $active-scale-small;
+	}
 }
 
 .c-case-study-card__header {
@@ -16,23 +23,47 @@
 	max-width: 54rem;
 }
 
+.c-case-study-card__heading {
+	color: $heading-colour;
+}
+
+.c-case-study-card__description {
+	color: $text-colour;
+}
+
+.c-case-study-card__services {
+	display: inline-block;
+	margin-bottom: $line-height / 2;
+}
+
 @include respond-max( $mq-small ) {
 	.c-case-study-card-row {
-		margin-left: -$padding-small / 2;
-		margin-right: -$padding-small / 2;
+		margin-left: -$padding-small / 4;
+		margin-right: -$padding-small / 4;
+	}
+
+	.c-case-study-card-col {
+		& + & {
+			margin-top: $padding-small / 4;
+		}
 	}
 }
 
 @include respond-min-max( $mq-small, $mq-medium ) {
 	.c-case-study-card-row {
-		margin-left: -$padding-small;
-		margin-right: -$padding-small;
+		margin-left: -$padding-small / 2;
+		margin-right: -$padding-small / 2;
+	}
+
+	.c-case-study-card-col {
+		& + & {
+			margin-top: $padding-small / 2;
+		}
 	}
 }
 
 @include respond-min( $mq-medium ) {
-	.c-case-study-card {
-		border-radius: $border-radius * 10;
+	.c-case-study-card__link {
 		padding: $padding-small;
 	}
 }
@@ -57,7 +88,7 @@
 		width: 50%;
 	}
 
-	.c-case-study-card {
+	.c-case-study-card__link {
 		padding: $padding-medium $padding-small;
 	}
 
@@ -65,37 +96,27 @@
 		margin-bottom: $padding-small;
 	}
 
-	// .cssanimations {
-	// 	.c-case-study-card {
-	// 		opacity: 0;
-	// 	}
+	.cssanimations {
+		.c-case-study-card {
+			opacity: 0;
+		}
 
-	// 	.is-inview {
-	// 		.c-case-study-card {
-	// 			animation: fadeInUp $speed cubic-bezier( 0.165, 0.84, 0.44, 1 ) both;
-	// 			animation-delay: $speed;
-	// 		}
+		.c-case-study-card {
+			animation: fadeInUp $speed * 2 cubic-bezier( 0.165, 0.84, 0.44, 1 ) both;
+			animation-delay: $speed;
+		}
 
-	// 		& > :last-child {
-	// 			.c-case-study-card {
-	// 				animation-delay: $speed * 2;
-	// 			}
-	// 		}
-	// 	}
-	// }
+		.c-case-study-card-row > :last-child {
+			.c-case-study-card {
+				animation-delay: $speed * 1.5;
+			}
+		}
+	}
 }
 
 @include respond-min( $mq-x-large ) {
-	.c-case-study-card-row {
-		margin-left: -$padding-medium;
-	}
-
-	.c-case-study-card-col {
-		padding-left: $padding-medium;
-	}
-
-	.c-case-study-card {
-		padding: $padding-large $padding-medium;
+	.c-case-study-card__link {
+		padding: $padding-medium;
 	}
 
 	.c-case-study-card__header {

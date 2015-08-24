@@ -5,9 +5,10 @@
 =========================================================== */
 
 .c-hero {
-	background: url('#{$images}/home/illustration-intro-left.svg') no-repeat left 80%,
-				url('#{$images}/home/illustration-intro-right.svg') no-repeat right 86.5%;
-	height:600px;
+	// background: url('http://ghostlyferns.com/images/Horizontal1.jpg');
+	// background: url('#{$images}/home/illustration-intro-left.svg') no-repeat right 80%;
+				// url('#{$images}/home/illustration-intro-right.svg') no-repeat right 86.5%;
+	// height:600px;
 }
 
 .c-hero__figure {
@@ -28,5 +29,5 @@
 }
 
 .c-hero__header {
-	margin-top: 6rem;
+	// margin-top: 4rem;
 }

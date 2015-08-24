@@ -1,0 +1,9 @@
+{
+	"page-heading": {
+		"two-col": true,
+		"heading": "Articles for <br><span class='u-highlight-text'>front-end</span> devs",
+		"description": "<p>Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>",
+		"image": "../assets/img/blog/article-listing.png",
+		"alt": ""
+	}
+}

@@ -5,18 +5,27 @@
 =========================================================== */
 
 .c-case-study--adspy {
-	background-color: rgba( $adspy-pri, .10 );
+	.c-case-study-card__link {
+		background-color: rgba( $adspy-pri, .10 );
+	}
 
-	.no-js &,
-	.no-svg & {
+	.u-highlight-text {
+		color: $adspy-pri;
+	}
+
+	.c-button {
+		background: $adspy-pri;
+	}
+
+	.no-svg & .c-case-study-card__link {
 		background-image: url( '#{$images}/case-studies/adspy/adspy-logo.png' );
 	}
 
-	.svg & {
+	.svg & .c-case-study-card__link {
 		background-image: url( '#{$images}/case-studies/adspy/adspy-logo.svg' );
 	}
 
-	&:hover {
+	.c-case-study-card__link:hover {
 		background-color: rgba( $adspy-pri, .20 );
 	}
 }

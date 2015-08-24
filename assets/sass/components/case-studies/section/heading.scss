@@ -14,19 +14,19 @@
 
 @include respond-max( $mq-small ) {
 	.c-case-study__section__heading {
-		margin-left: -3rem;
+		margin-left: -2.9rem;
 	}
 }
 
 @include respond-min-max( $mq-small, $mq-medium ) {
 	.c-case-study__section__heading {
-		margin-left: -4.5rem;
+		margin-left: -3.7rem;
 	}
 }
 
 @include respond-min-max( $mq-medium, $mq-large ) {
 	.c-case-study__section__heading {
-		margin-left: -5.4rem;
+		margin-left: -4.2rem;
 	}
 }
 
@@ -35,7 +35,7 @@
 		text-align: center;
 
 		.c-case-study__section__heading {
-			margin-left: -5.4rem;
+			margin-left: -4.2rem;
 		}
 	}
 }

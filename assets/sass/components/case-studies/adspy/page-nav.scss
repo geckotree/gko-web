@@ -5,12 +5,46 @@
 =========================================================== */
 
 .s-case-study--adspy {
-	.c-case-study__page-nav__link {
-		&:hover,
-		&:focus,
-		&.is-active {
-			.c-case-study__page-nav__link__dot {
-				background: $adspy-pri;
+	@include respond-max( $mq-large ) {
+		.c-case-study__page-nav__link {
+			color: $adspy-pri;
+
+			&:hover,
+			&:focus {
+				color: $adspy-sec;
+			}
+		}
+
+		.no-enhance & {
+			.c-case-study__page-nav__link {
+				background: rgba( $adspy-pri, .1 );
+
+				&:hover,
+				&:focus {
+					background: rgba( $adspy-sec, .1 );
+				}
+			}
+		}
+	}
+
+	@include respond-min( $mq-large ) {
+		.c-case-study__page-nav__link {
+			&:hover {
+				.c-case-study__page-nav__link__dot {
+					background: $adspy-pri;
+				}
+			}
+
+			&:focus {
+				.c-case-study__page-nav__link__dot {
+					background: $adspy-sec;
+				}
+			}
+
+			&.is-active {
+				.c-case-study__page-nav__link__dot {
+					background: $adspy-pri;
+				}
 			}
 		}
 	}

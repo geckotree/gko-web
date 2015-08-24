@@ -1,0 +1,31 @@
+{{#if one-col}}
+	<header class="c-page__heading">
+		<div class="o-wrap o-wrap--x-large">
+			<h1 class="c-page__heading__heading">{{{heading}}}</h1>
+		
+			<div class="c-page__heading__description u-intro">
+				{{{description}}}
+			</div>
+		</div>
+	</header>
+{{/if}}
+
+{{#if two-col}}
+	<header class="c-page__heading">
+		<div class="o-wrap o-wrap--xx-large">
+			<div class="c-page__heading__row">
+				<div class="c-page__heading__details">
+					<h1 class="c-page__heading__heading">{{{heading}}}</h1>
+				
+					<div class="c-page__heading__description u-intro">
+						{{{description}}}
+					</div>
+				</div>
+				
+				<figure class="c-page__heading__figure">
+					<img src="{{image}}" style="margin-top:-8rem;margin-bottom:-8rem;" alt="{{alt}}">
+				</figure>
+			</div>
+		</div>
+	</header>
+{{/if}}

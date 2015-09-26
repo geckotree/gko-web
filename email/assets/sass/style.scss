@@ -1,0 +1,167 @@
+@import '../../../assets/sass/settings/global.scss';
+@import '../../../assets/sass/tools/mixins.scss';
+
+$email-font-size:			16px;
+$emailtype-scale-small:		1.100;
+$email-type-scale-large:	1.200;
+
+$zeta-small: 		$email-font-size;
+$epsilon-small: 	$zeta-small			*	$type-scale-small;
+$delta-small: 		$epsilon-small		*	$type-scale-small;
+$gamma-small: 		$delta-small		*	$type-scale-small;
+$beta-small: 		$gamma-small		*	$type-scale-small;
+$alpha-small: 		$beta-small			*	$type-scale-small;
+$mega-small:		$alpha-small		*	$type-scale-small;
+$giga-small:		$mega-small			*	$type-scale-small;
+$tera-small: 		$giga-small			*	$type-scale-small;
+
+$zeta-large: 		$email-font-size;
+$epsilon-large: 	$zeta-large			*	$email-type-scale-large;
+$delta-large: 		$epsilon-large		*	$email-type-scale-large;
+$gamma-large: 		$delta-large		*	$email-type-scale-large;
+$beta-large: 		$gamma-large		*	$email-type-scale-large;
+$alpha-large: 		$beta-large			*	$email-type-scale-large;
+$mega-large:		$alpha-large		*	$email-type-scale-large;
+$giga-large:		$mega-large			*	$email-type-scale-large;
+$tera-large: 		$giga-large			*	$email-type-scale-large;
+
+.u-tera {
+	font-size: $tera-large;
+}
+
+.u-giga {
+	font-size: $giga-large;
+}
+
+.u-mega {
+	font-size: $mega-large;
+}
+
+h1,
+.u-alpha {
+	font-size: $alpha-large;
+}
+
+h2,
+.u-beta {
+	font-size: $beta-large;
+}
+
+h3,
+.u-gamma {
+	font-size: $gamma-large;
+}
+
+h4,
+.u-delta {
+	font-size: $delta-large;
+}
+
+h5,
+.u-epsilon {
+	font-size: $epsilon-large;
+}
+
+h6,
+.u-zeta {
+	font-size: $zeta-large;
+}
+
+p {
+	font-size: $email-font-size;
+}
+
+.c-page {
+	background: $light-1;
+	margin: 0;
+}
+
+.u-grey-text {
+	color: $med-1;
+}
+
+.o-wrap {
+	margin: 0 auto;
+}
+
+.o-grid-col--one-third {
+	width: 200px;
+}
+
+.o-grid-col--half {
+	width: 300px;
+}
+
+.o-grid-col--two-third {
+	width: 400px;
+}
+
+.o-spacer-cell {
+	font-size: 0;
+}
+
+.o-spacer-cell--small {
+	line-height: 20px;
+}
+
+.o-spacer-cell--medium {
+	line-height: 40px;
+}
+
+.o-spacer-cell--large {
+	line-height: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.u-tera,
+.u-giga,
+.u-mega,
+.u-alpha,
+.u-beta,
+.u-gamma,
+.u-delta,
+.u-epsilon,
+.u-zeta {
+	color: $heading-colour;
+	font-family: $font-family;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+}
+
+p,
+strong {
+	color: $text-colour;
+	font-family: $font-family;
+	line-height: $line-height;
+	margin: 0;
+}
+
+p {
+	margin-top: 5px;
+}
+
+.u-highlight-text {
+	color: $pri;
+}
+
+.u-right-content {
+	text-align: right;
+}
+
+.c-button {
+	border: 1px solid $pri;
+	border-radius: 40px;
+	color: $white;
+	display: inline-block;
+	font-family: $font-family;
+	font-size: $email-font-size;
+	font-weight: $bold;
+	padding: 15px 25px;
+	text-decoration: none;
+}

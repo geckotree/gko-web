@@ -28,12 +28,25 @@ module.exports = {
 			'replace'
 		]
 	},
-	styleguide: {
+	site: {
 		files: [
-			'<%= styleguideFolder %>/src/**/*.hbs',
-			'<%= styleguideFolder %>/**/*.json'
+			'<%= siteFolder %>/**/**/*.hbs',
+			'<%= siteFolder %>/**/**/*.json'
 		],
-		tasks: [ 'assemble' ]
+		tasks: [
+			'assemble:site'
+		]
+	},
+	email: {
+		files: [
+			'<%= emailFolder %>/**/**/*.hbs',
+			'<%= emailFolder %>/**/**/*.json',
+			'<%= emailFolder %>/assets/sass/**/**/*.scss'
+		],
+		tasks: [
+			'assemble:email',
+			'sass:email'
+		]
 	},
 	todo: {
 		files: [

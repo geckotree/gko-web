@@ -1,6 +1,7 @@
 {
 	"page-heading": {
 		"one-col": true,
+		"center-content": true,
 		"heading": "Our latest &amp; greatest <span class='u-highlight-text'>work</span>",
 		"description": "<p>Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>"
 	}

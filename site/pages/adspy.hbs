@@ -1,0 +1,58 @@
+---
+title: OnlineAdSpy
+pageClass: s-case-study
+---
+
+<div class="s-case-study--adspy" data-module="InPageNav">
+    {{>adspy-hero}}
+
+    <div class="c-case-study__content js-content">
+        {{!-- {{>page-nav}} --}}
+        
+        <ol class="c-case-study__sections">
+            <li class="c-case-study__section" id="brand" data-section="brand">
+                {{>adspy-brand-intro}}
+                <ol class="c-case-study__sections c-case-study__sections__child">
+                    <li class="c-case-study__section c-case-study__section__child" id="style-tiles" data-section="style-tiles">
+                        {{>adspy-style-tiles}}
+                    </li>
+                    <li class="c-case-study__section c-case-study__section__child" id="logo" data-section="logo">
+                        {{>adspy-logo}}
+                    </li>
+                    <li class="c-case-study__section c-case-study__section__child" id="colours" data-section="colours">
+                        {{>adspy-colours}}
+                    </li>
+                    <li class="c-case-study__section c-case-study__section__child" id="typography" data-section="typography">
+                        {{>adspy-typography}}
+                    </li>
+                </ol>
+            </li>
+            <li class="c-case-study__section" id="illustrations" data-section="illustrations">
+            	{{>adspy-illustrations-intro}}
+                <ol class="c-case-study__sections c-case-study__sections__child">
+                    <li class="c-case-study__section c-case-study__section__child" id="admachine" data-section="admachine">
+                        {{>adspy-admachine}}
+                    </li>
+                    <li class="c-case-study__section c-case-study__section__child" id="extras" data-section="extras">
+                        {{>adspy-extras}}
+                    </li>
+                </ol>
+            </li>
+            <li class="c-case-study__section" id="interface" data-section="interface">
+            	{{>adspy-interface-intro}}
+
+            	<ol class="c-case-study__sections c-case-study__sections__child">
+            		<li class="c-case-study__section c-case-study__section__child" id="desktop" data-section="desktop">
+            			{{>adspy-desktop}}
+            		</li>
+            		<li class="c-case-study__section c-case-study__section__child" id="tablet" data-section="tablet">
+            			{{>adspy-tablet}}
+            		</li>
+            		<li class="c-case-study__section c-case-study__section__child" id="mobile" data-section="mobile">
+            			{{>adspy-mobile}}
+            		</li>
+            	</ol>
+            </li>
+        </ol>
+    </div>
+</div>

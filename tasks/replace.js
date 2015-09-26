@@ -20,13 +20,13 @@ module.exports = {
 			expand: true,
 			flatten: true,
 			src: [
-				'index.html',
-				'work.html',
-				'blog.html',
-				'article.html',
-				'adspy.html'
+				'<%= siteFolder %>/index.html',
+				'<%= siteFolder %>/work.html',
+				'<%= siteFolder %>/adspy.html',
+				'<%= siteFolder %>/blog.html',
+				'<%= siteFolder %>/article.html'
 			],
-			dest: ''
+			dest: '<%= siteFolder %>/'
 		} ]
 	}
 };

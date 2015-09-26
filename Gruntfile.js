@@ -39,7 +39,7 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'dev', [
 		'css:dev',
 		'js:dev',
-		'styleguide',
+		'site',
 		'images:dev',
 		'todo',
 		'watch'
@@ -50,7 +50,7 @@ module.exports = function( grunt ) {
 		'js:build',
 		'images:build',
 		'critical',
-		'styleguide',
+		'site',
 		'todo'
 	] );
 
@@ -94,9 +94,14 @@ module.exports = function( grunt ) {
 		'imageoptim'
 	] );
 
-	grunt.registerTask( 'styleguide', [
-		// 'clean:styleguide',
-		// 'sass:styleguide',
+	grunt.registerTask( 'site', [
+		'clean:site',
 		'assemble'
+	] );
+
+	grunt.registerTask( 'email', [
+		'sass:email',
+		'assemble:email',
+		'watch:email'
 	] );
 };

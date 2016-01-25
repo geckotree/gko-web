@@ -25,11 +25,11 @@ module.exports = {
 	},
 	styleguide: {
 		options: {
-			data: '<%= siteFolder %>/data/**/*.{json,yml}',
+			data: '<%= styleguideFolder %>/data/**/*.{json,yml}',
 			flatten: true,
 			layoutdir: '<%= styleguideFolder %>/layouts',
 			layout: 'styleguide.hbs',
-			partials: [ '<%= siteFolder %>/components/**/*.hbs' ]
+			partials: [ '<%= styleguideFolder %>/components/**/*.hbs' ]
 		},
 		src: '<%= styleguideFolder %>/pages/*.hbs',
 		dest: '<%= styleguideFolder %>/'

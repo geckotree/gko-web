@@ -1,0 +1,130 @@
+{
+	"table-scroll": {
+		"scroll": true,
+		"headings": [
+			{
+				"heading": "Column Heading 1"
+			},
+			{
+				"heading": "Column Heading 2"
+			},
+			{
+				"heading": "Column Heading 3"
+			}
+		],
+		"rows": [
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Quisque placerat facilisis egestas cillum dolore."
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "At nos hinc posthac, sitientis piros Afros."
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Integer legentibus erat a ante historiarum dapibus."
+					}
+				]
+			},
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Salutantibus vitae elit libero, a pharetra augue."
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "Quo usque tandem abutere, Catilina, patientia nostra?"
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Qui ipsorum lingua Celtae, nostra Galli appellantur."
+					}
+				]
+			},
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Quo usque tandem abutere, Catilina, patientia nostra?"
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "Quid securi etiam tamquam eu fugiat nulla pariatur."
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Quid securi etiam tamquam eu fugiat nulla pariatur."
+					}
+				]
+			}
+		]
+	},
+	"table-stacked": {
+		"stacked": true,
+		"headings": [
+			{
+				"heading": "Column Heading 1"
+			},
+			{
+				"heading": "Column Heading 2"
+			},
+			{
+				"heading": "Column Heading 3"
+			}
+		],
+		"rows": [
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Quisque placerat facilisis egestas cillum dolore."
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "At nos hinc posthac, sitientis piros Afros."
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Integer legentibus erat a ante historiarum dapibus."
+					}
+				]
+			},
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Salutantibus vitae elit libero, a pharetra augue."
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "Quo usque tandem abutere, Catilina, patientia nostra?"
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Qui ipsorum lingua Celtae, nostra Galli appellantur."
+					}
+				]
+			},
+			{
+				"row": [
+					{
+						"heading": "Column Heading 1",
+						"data": "Quo usque tandem abutere, Catilina, patientia nostra?"
+					},
+					{
+						"heading": "Column Heading 2",
+						"data": "Quid securi etiam tamquam eu fugiat nulla pariatur."
+					},
+					{
+						"heading": "Column Heading 3",
+						"data": "Quid securi etiam tamquam eu fugiat nulla pariatur."
+					}
+				]
+			}
+		]
+	}
+}

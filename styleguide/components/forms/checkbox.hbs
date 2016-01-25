@@ -1,0 +1,14 @@
+<div class="o-form__field" {{invalidClass}} {{disabledClass}}>
+	<fieldset class="o-fieldset">
+		<legend class="o-fieldset__legend">{{label}} {{#if optional}}<span class="o-label__note">Optional</span>{{/if}}</legend>
+		<ul class="o-fieldset__list">
+			{{#each checkboxes}}
+				<li class="o-fieldset__item">
+					<label class="o-label" for="{{for}}">
+						<input id="{{for}}" type="checkbox"> {{checkValue}}
+					</label>
+				</li>
+			{{/each}}
+		</ul>
+	</fieldset>
+</div>

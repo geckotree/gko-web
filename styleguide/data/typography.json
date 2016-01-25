@@ -1,0 +1,87 @@
+{
+	"headings": [
+		{
+			"name": "tera",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "giga",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "mega",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "alpha",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "beta",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "gamma",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "delta",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "epsilon",
+			"font": "Gotham Rounded"
+		},
+		{
+			"name": "zeta",
+			"font": "Gotham Rounded"
+		}
+	],
+
+	"paragraph": "<p class='intro'>A <strong>paragraph</strong> (from the Greek paragraphos, <em>to write beside</em> or <em>written beside</em>) is a <a href=''>self-contained</a> unit of a discourse in writing dealing with a particular point or idea.</p><p>A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>",
+
+	"unordered-list": [
+		{
+			"item": "This is a list item in an unordered list"
+		},
+		{
+			"item": "An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line."
+		},
+		{
+			"item": "Lists can be nested inside of each other",
+			"child-unordered-list": [
+				{
+					"item": "This is a nested list item"
+				},
+				{
+					"item": "This is another nested list item in an unordered list"
+				}
+			]
+		}
+	],
+
+	"ordered-list": [
+		{
+			"item": "This is a list item in an ordered list"
+		},
+		{
+			"item": "An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters."
+		},
+		{
+			"item": "Lists can be nested inside of each other",
+			"child-ordered-list": [
+				{
+					"item": "This is a nested list item"
+				},
+				{
+					"item": "This is another nested list item in an ordered list"
+				}
+			]
+		}
+	],
+
+	"blockquote": {
+		"description": "<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p>",
+		"citation": "<cite><a href='http://www.chicagomanualofstyle.org/'>The Chicago Manual of Style</a></cite>, 15th Edition (Chicago: University of Chicago Press, 2003), 596"
+	}
+}

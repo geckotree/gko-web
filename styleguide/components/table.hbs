@@ -1,0 +1,20 @@
+<div class="o-table o-table--{{#if scroll}}scroll{{/if}}{{#if stacked}}stacked{{/if}}">
+    <table summary="Table Summary">
+        <thead>
+            <tr>
+                {{#each headings}}
+                    <th scope="col">{{heading}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each rows}}
+                <tr>
+                    {{#each row}}
+                        <td data-label="{{heading}}">{{data}}</td>
+                    {{/each}}
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

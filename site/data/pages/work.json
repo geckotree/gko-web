@@ -1,8 +1,42 @@
 {
 	"page-heading": {
-		"one-col": true,
-		"center-content": true,
-		"heading": "Our latest &amp; greatest <span class='u-highlight-text'>work</span>",
-		"description": "<p>Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>"
+		"two-col": true,
+		"right": true,
+		"heading": "Our latest &amp; greatest",
+		"description": "<p>Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>",
+		"image": "../assets/img/blog/article-listing.png",
+		"alt": ""
+	},
+	"media": {
+		"heading": "A look at what we are working on",
+		"description": "<p>We’re Rob and Kev – a small team of freelance creatives based in the UK. We specialise in creating performant, responsive websites, but we do a few other things too – take a look at what we do.</p>",
+		"item": [ {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/2186767/search-thumb.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/2182773/blog-thumb.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1708139/dribbble1.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1699305/style-guide-colours-page.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1563868/geckotree-blog-landing.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1448413/geckotree.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1300257/plan_page.png",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1272995/mobile_adspy.gif",
+			"alt": ""
+		}, {
+			"img": "https://d13yacurqjgara.cloudfront.net/users/182241/screenshots/1267147/onlineadspy-thumb.png",
+			"alt": ""
+		} ]
 	}
 }

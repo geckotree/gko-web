@@ -16,30 +16,38 @@ $images: 	'#{$base-dir}/build/img';
 
 =========================================================== */
 
-$white: 		#FFFFFF;
-$black: 		#000000;
-$light-1:		#F7F7F7;
-$light-2:		#EFEFEF;
-$light-3:		#DEDEDE;
-$med-1:			#BCBEC0;
-$med-2:			#858B92;
-$dark-1:		#272727;
-$dark-2:		#383838;
+$white: 			#FFFFFF;
+$black: 			#000000;
+$light-1:			#F7F7F7;
+$light-2:			#EFEFEF;
+$light-3:			#DEDEDE;
+$med-1:				#BCBEC0;
+$med-2:				#858B92;
+$dark-1:			#272727;
+$dark-2:			#383838;
 
-$fern-green:	#57B275;
-$foly-pink:		#F05D71;
-$ronchi-yellow:	#F2D044;
+$fern-green:		#57B275;
+$foly-pink:			#F05D71;
+$ronchi-yellow:		#F2D044;
 
-$red-1:			#EC4E50;
-$green:			#57B275;
+$vista-green:		#9DD6B2;
+$viking-blue:		#6ACDDF;
+$spindle-purple:	#B6B4E7;
+$mauvelous-red:		#F49596;
+$manhattan-orange:	#F8C588;
+// $salomie-yellow:	#FEDC91;
+// $monte-carlo-teal:	#8ED6D4;
 
-$twitter: 		#55ACEE;
-$dribbble: 		#EA4C89;
-$instagram: 	#3F729B;
+$red-1:				#EC4E50;
+$green:				#57B275;
 
-$pri: 			$fern-green;
-$sec: 			$foly-pink;
-$ter: 			$ronchi-yellow;
+$twitter: 			#55ACEE;
+$dribbble: 			#EA4C89;
+$instagram: 		#3F729B;
+
+$pri: 				$fern-green;
+$sec: 				$foly-pink;
+$ter: 				$ronchi-yellow;
 
 
 
@@ -52,7 +60,7 @@ $ter: 			$ronchi-yellow;
 $adspy-pri:			#139DE5;
 $adspy-sec:			#6DBD4C;
 $adspy-ter:			#F5C022;
-$adspy-pri-light:	#CAE5F3;
+$adspy-pri-light:	#6DC0EB;
 
 
 
@@ -94,6 +102,7 @@ $border-radius: 		.4rem;
 $speed: 				.3s;
 
 $light:					100;
+$regular:				400;
 $bold:					600;
 
 $wrap-medium:			75rem;
@@ -113,7 +122,7 @@ $active-scale-medium:	scale( .95 );
 =========================================================== */
 
 $mq-small: 				500px;
-$mq-medium: 			800px;
+$mq-medium: 			768px;
 $mq-large: 				1000px;
 $mq-x-large: 			1280px;
 $mq-xx-large: 			1500px;

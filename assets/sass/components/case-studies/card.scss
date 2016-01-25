@@ -7,7 +7,6 @@
 .c-case-study-card__link {
 	background-position: bottom -7rem right -12rem;
 	background-repeat: no-repeat;
-	border-radius: $border-radius * 3;
 	display: block;
 	padding: $padding-small $padding-small / 2;
 	transition: background-color $speed ease,
@@ -19,7 +18,7 @@
 }
 
 .c-case-study-card__header {
-	margin-bottom: $padding-small / 2;
+	margin-bottom: $padding-small;
 	max-width: 54rem;
 }
 
@@ -36,42 +35,30 @@
 	margin-bottom: $line-height / 2;
 }
 
-@include respond-max( $mq-small ) {
-	.c-case-study-card-row {
-		margin-left: -$padding-small / 4;
-		margin-right: -$padding-small / 4;
-	}
-
-	.c-case-study-card-col {
-		& + & {
-			margin-top: $padding-small / 4;
-		}
-	}
-}
-
-@include respond-min-max( $mq-small, $mq-medium ) {
-	.c-case-study-card-row {
-		margin-left: -$padding-small / 2;
-		margin-right: -$padding-small / 2;
-	}
-
-	.c-case-study-card-col {
-		& + & {
-			margin-top: $padding-small / 2;
-		}
-	}
-}
-
-@include respond-min( $mq-medium ) {
+@include respond-min( $mq-small ) {
 	.c-case-study-card__link {
 		padding: $padding-small;
 	}
 }
 
-@include respond-min-max( $mq-medium, $mq-large ) {
+@include respond-max( $mq-small ) {
+	.c-case-study-card-row {
+		margin-left: -$padding-small / 2;
+		margin-right: -$padding-small / 2;
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-large ) {
+	.c-case-study-card-row {
+		margin-left: -$padding-small;
+		margin-right: -$padding-small;
+	}
+}
+
+@include respond-max( $mq-large ) {
 	.c-case-study-card-col {
 		& + & {
-			margin-top: $padding-small / 2;
+			margin-top: .1rem;
 		}
 	}
 }
@@ -79,12 +66,12 @@
 @include respond-min( $mq-large ) {
 	.c-case-study-card-row {
 		@include clearfix;
-		margin-left: -$padding-small;
+		margin-left: -.1rem;
 	}
 
 	.c-case-study-card-col {
 		float: left;
-		padding-left: $padding-small;
+		padding-left: .1rem;
 		width: 50%;
 	}
 
@@ -115,11 +102,18 @@
 }
 
 @include respond-min( $mq-x-large ) {
-	.c-case-study-card__link {
-		padding: $padding-medium;
+	.c-case-study-card-row {
+		margin-left: -$padding-small / 2;
 	}
 
-	.c-case-study-card__header {
-		margin-bottom: $padding-large;
+	.c-case-study-card-col {
+		padding-left: $padding-small / 2;
+	}
+}
+
+@include respond-min-max( $mq-large, $mq-x-large ) {
+	.c-case-study-card-row {
+		margin-left: -$padding-small - .1rem;
+		margin-right: -$padding-small;
 	}
 }

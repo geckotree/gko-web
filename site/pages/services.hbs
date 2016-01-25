@@ -1,0 +1,14 @@
+---
+title: Services
+pageClass: s-services
+---
+
+{{> page-heading services.page-heading}}
+
+<div class="o-section">
+	<section class="c-listing-wrap">
+		{{#each listing.articles}}
+			{{> listing}}
+		{{/each}}
+	</section>
+</div>

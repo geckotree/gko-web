@@ -3,7 +3,9 @@ title: Home Page
 pageClass: s-home
 ---
 
-<section class="o-section o-wrap c-case-study-card-row">
+{{> page-heading home.page-heading}}
+
+<section class="o-section o-wrap">
 	<div class="c-case-study-card-row">
 		<div class="c-case-study-card-col">
 			{{>card card.geckotree}}
@@ -13,4 +15,9 @@ pageClass: s-home
 			{{>card card.adspy}}
 		</div>
 	</div>
+</section>
+
+<section class="o-section">
+	{{> section-header home.media}}
+	{{> feat-media-grid home.media}}
 </section>

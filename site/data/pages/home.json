@@ -1,0 +1,30 @@
+{
+	"page-heading": {
+		"main": true,
+		"heading": "We'll design &amp; develop a <strong>website</strong> that you will love",
+		"description": "<p>We’re Rob and Kev – a team of <strong>freelance</strong> creatives.</p>"
+	},
+	"media": {
+		"heading": "Behind the screens",
+		"description": "<p>We’re Rob and Kev – a small team of freelance creatives based in the UK. We specialise in creating performant, responsive websites, but we do a few other things too – take a look at what we do.</p>",
+		"item": [ {
+			"img": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11326177_693986494066478_1197593337_n.jpg",
+			"alt": ""
+		}, {
+			"img": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11428696_1009496945768031_927234610_n.jpg",
+			"alt": ""
+		}, {
+			"img": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11849350_1601176860132808_2052348682_n.jpg",
+			"alt": ""
+		}, {
+			"img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/11378156_118396758505649_135806594_n.jpg",
+			"alt": ""
+		}, {
+			"img": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11820568_1453847304922621_773070860_n.jpg",
+			"alt": ""
+		}, {
+			"img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/11810005_1664444010445313_1992951749_n.jpg",
+			"alt": ""
+		} ]
+	}
+}

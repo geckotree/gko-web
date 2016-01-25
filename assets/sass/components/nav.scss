@@ -14,49 +14,51 @@
 }
 
 .c-nav__link {
-	color: $med-2;
+	color: $white;
 	transition: color $speed ease,
 				transform $speed ease;
 
 	.icon {
-		@include icon( $med-1, 1.6rem, 1.6rem );
+		@include icon( $white, 1.6rem, 1.6rem );
+		fill: rgba( $white, .6 );
 	}
 
 	&:hover,
 	&:focus {
-		color: $text-colour;
+		color: $white;
 
 		.icon {
-			fill: $sec;
+			// fill: $sec;
 		}
 	}
 
 	&.is-active {
-		color: $text-colour;
+		// color: $text-colour;
 
 		.icon {
-			fill: $pri;
+			// fill: $pri;
 		}
 	}
 }
 
 .c-nav__link--button {
+	background: $white;
 	border-radius: $border-radius * 10;
-	color: $white;
+	color: $vista-green;
 	transition: background $speed ease,
 				transform $speed ease;
 
 	.icon {
-		fill: $white;
+		fill: $vista-green;
 	}
 
 	&:hover,
 	&:focus {
-		background: $sec;
-		color: $white;
+		// background: $sec;
+		color: $vista-green;
 
 		.icon {
-			fill: $white;
+			// fill: $white;
 		}
 	}
 
@@ -65,11 +67,31 @@
 	}
 }
 
+@include respond-max( $mq-small ) {
+	.c-nav__item {
+		padding: 0 $padding-small / 8;
+	}
+
+	.c-nav__link {
+		padding: $padding-small / 4 1.5rem;
+	}
+}
+
 @include respond-max( $mq-medium ) {
 	.c-nav__link {
 		.icon {
 			margin: .3rem 0;
 		}
+	}
+}
+
+@include respond-min-max( $mq-small, $mq-large ) {
+	.c-nav__item {
+		padding: 0 $padding-small / 2;
+	}
+
+	.c-nav__link {
+		padding: $padding-small / 4 $padding-small / 2;
 	}
 }
 
@@ -82,13 +104,8 @@
 }
 
 @include respond-max( $mq-large ) {
-	.c-nav__item {
-		padding: 0 $padding-small / 8;
-	}
-
 	.c-nav__link {
 		display: block;
-		padding: $padding-small / 4 1.5rem;
 		text-align: left;
 
 		.icon {
@@ -112,7 +129,7 @@
 		.c-nav {
 			animation-duration: $speed * 1.5;
 			animation-fill-mode: both;
-			background: $background-colour;
+			// background: $background-colour;
 			display: block;
 			left: 0;
 			padding-bottom: $padding-small / 4;
@@ -160,5 +177,22 @@
 	.c-nav__link {
 		display: block;
 		padding: $padding-small / 4 $padding-small / 2;
+		// position: relative;
+
+		// &:before {
+		// 	background: $white;
+		// 	content: '';
+		// 	display: block;
+		// 	height: .5rem;
+		// 	left: 0;
+		// 	position: absolute;
+		// 	transition: transform $speed ease;
+		// 	top: -2.5rem;
+		// 	width: 100%;
+		// }
+
+		// &:hover:before {
+		// 	transform: translateY( .5rem );
+		// }
 	}
 }

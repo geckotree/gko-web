@@ -5,21 +5,76 @@
 =========================================================== */
 
 .c-page__heading {
-	padding-top: $padding-small;
+	background: $vista-green;
+	margin-bottom: 1.5rem;
+	padding-top: $padding-small / 2 + 7.1rem;
+	position: relative;
+
+	&:after {
+		background: $vista-green;
+		border-radius: 100%;
+		bottom: -1.5rem;
+		content: '';
+		height: 3rem;
+		left: -10%;
+		position: absolute;
+		width: 120%;
+	}
+
+	.u-highlight-text {
+		color: $white;
+	}
 }
+
+// .c-page__heading--main {
+// 	.c-page__heading__heading {
+// 		max-width: 960px; // @todo update to only homepage
+// 	}
+// }
 
 @include respond-min( $mq-small ) {
 	.c-page__heading {
-		padding-top: $padding-medium;
+		padding-top: $padding-medium / 2 + 7.1rem;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+	.c-page__heading {
+		padding-top: $padding-large / 2 + 7.1rem;
+	}
+}
+
+@include respond-min-max( $mq-medium, $mq-large ) {
+	.c-page__heading {
+		text-align: center;
+	}
+}
+
+@include respond-max( $mq-large ) {
+	.c-page__heading__figure {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: $padding-small;
+		max-width: 52rem;
 	}
 }
 
 @include respond-min( $mq-large ) {
 	.c-page__heading {
-		padding-top: $padding-large;
+		padding-top: $padding-large + 9rem;
 
 		.o-wrap {
 			@include clearfix;
+		}
+	}
+
+	.c-page__heading--center-content {
+		text-align: center;
+	}
+
+	.c-page__heading--right-content {
+		.c-page__heading__details {
+			float: right;
 		}
 	}
 
@@ -43,8 +98,20 @@
 	}
 }
 
-@include respond-max( $mq-large ) {
-	.c-page__heading {
-		text-align: center;
-	}
+@include respond-min( $mq-x-large ) {
+	// .c-page__heading--main {
+	// 	height: 70vh;
+
+	// 	.csstransforms & { // @todo prefix under vh
+	// 		position: relative;
+
+	// 		.o-wrap {
+	// 			left: 50%;
+	// 			position: absolute;
+	// 			top: 50%;
+	// 			transform: translate( -50%, -50% );
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 }

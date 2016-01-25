@@ -1,25 +1,27 @@
-<article class="o-wrap c-listing" itemscope itemtype="http://schema.org/Blog">
+<article class="c-listing" itemscope itemtype="http://schema.org/Blog">
 	<a href="{{url}}" class="c-listing__link" itemprop="url">
-		<h2 class="c-listing__heading" itemprop="name">{{{heading}}}</h2>
+		<div class="o-wrap o-wrap--large">
+			<ul class="c-listing__meta-data">
+				<li class="c-listing__meta-data__item">
+					<time datetime="{{metaDate}}" pubdate="pubdate">{{{date}}}</time>
+					<meta itemprop="dateCreated" content="{{metaDate}}">
+				</li>
+				<li class="c-listing__meta-data__item" itemprop="author">{{author}}</li>
+				<li class="c-listing__meta-data__item c-listing__meta-data__item--visited u-hide-mobile">
+					<span class="c-listing__visited-text">Seen</span>
+					<span class="c-listing__visited-badge">
+						<svg class="icon icon--check">
+							<use xlink:href="#icon--check"></use>
+						</svg>
+					</span>
+				</li>
+			</ul>
 
-		<ul class="c-listing__meta-data">
-			<li class="c-listing__meta-data__item">
-				<time datetime="{{metaDate}}" pubdate="pubdate">{{{date}}}</time>
-				<meta itemprop="dateCreated" content="{{metaDate}}">
-			</li>
-			<li class="c-listing__meta-data__item" itemprop="author">{{author}}</li>
-			<li class="c-listing__meta-data__item c-listing__meta-data__item--visited u-hide-mobile">
-				<span class="c-listing__visited-text">Seen</span>
-				<span class="c-listing__visited-badge">
-					<svg class="icon icon--check">
-						<use xlink:href="#icon--check"></use>
-					</svg>
-				</span>
-			</li>
-		</ul>
+			<h2 class="c-listing__heading u-gamma" itemprop="name">{{{heading}}}</h2>
 
-		<div class="c-listing__description">
-			{{{description}}}
+			<div class="c-listing__description">
+				{{{description}}}
+			</div>
 		</div>
 	</a>
 </article>

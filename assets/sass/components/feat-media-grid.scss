@@ -4,98 +4,73 @@
 
 =========================================================== */
 
+.c-feat-media-grid__row {
+	@include clearfix;
+	margin-left: -.1rem;
+}
+
+.c-feat-media-grid__col {
+	float: left;
+	padding-left: .1rem;
+	width: 50%;
+}
+
 .c-feat-media-grid__img {
-	transition: transform $speed * 10 ease;
 	width: 100%;
 }
 
-.c-feat-media-grid__figure {
-	border-radius: $border-radius * 2;
-	overflow: hidden;
-
-	&:hover {
-		.c-feat-media-grid__img {
-			transform: scale( 1.1 );
-		}
-	}
-}
-
-@include respond-max( $mq-small ) {
+@include respond-max( $mq-medium ) {
 	.c-feat-media-grid__col {
 		& + & {
-			margin-top: $padding-small;
+			margin-top: .1rem;
 		}
-	}
-}
 
-@include respond-min( $mq-small ) {
-	.c-feat-media-grid__row {
-		@include clearfix;
-		margin-left: -$padding-small / 2;
-	}
-
-	.c-feat-media-grid__col {
-		float: left;
-		padding-left: $padding-small / 2;
-		width: 50%;
-
-		&:first-child {
-			width: 100%;
+		&:nth-child( 2 ) {
+			margin-top: 0;
 		}
-	}
-}
-
-@include respond-min-max( $mq-small, $mq-medium ) {
-	.c-feat-media-grid__col:nth-child( n+2 ) {
-		margin-top: $padding-small;
 	}
 }
 
 @include respond-min( $mq-medium ) {
 	.c-feat-media-grid__col {
-		width: 20%;
+		width: 33.3333333333%;
+	}
 
-		&:first-child {
-			width: 40%;
+	.c-feat-media-grid__row {
+		// margin-left: -$padding-small / 4;
+	}
+
+	.c-feat-media-grid__col {
+		// padding-left: $padding-small / 4;
+
+		& + & {
+			margin-top: .1rem;
+			// margin-top: $padding-small / 4;
+		}
+
+		&:nth-child( 2 ),
+		&:nth-child( 3 ) {
+			margin-top: 0;
 		}
 	}
 }
 
-@include respond-min-max( $mq-medium, $mq-large ) {
+@include respond-min( $mq-x-large ) {
 	.c-feat-media-grid__row {
 		margin-left: -$padding-small / 2;
 	}
 
 	.c-feat-media-grid__col {
+		width: 33.3333333333%;
 		padding-left: $padding-small / 2;
+
+		& + & {
+			margin-top: $padding-small / 2;
+		}
+
+		&:nth-child( 2 ),
+		&:nth-child( 3 ) {
+			margin-top: 0;
+		}
 	}
-
-	.c-feat-media-grid__col:nth-last-child( -n+3 ) {
-		margin-top: $padding-small / 2;
-	}
-}
-
-@include respond-min( $mq-large ) {
-	.c-feat-media-grid__col:nth-last-child( -n+3 ) {
-		margin-top: $padding-small / 2;
-	}
-
-	// .opacity {
-	// 	.c-feat-media-grid__col:nth-child( 2 ),
-	// 	.c-feat-media-grid__col:nth-last-child( 2 ) {
-	// 		opacity: 0;
-	// 		transition: opacity $speed ease $speed;
-	// 	}
-
-	// 	.c-feat-media-grid__col:nth-last-child( 2 ) {
-	// 		transition-delay: $speed * 2;
-	// 	}
-
-	// 	.is-inview {
-	// 		.c-feat-media-grid__col:nth-child( 2 ),
-	// 		.c-feat-media-grid__col:nth-last-child( 2 ) {
-	// 			opacity: 1;
-	// 		}
-	// 	}
-	// }
 }

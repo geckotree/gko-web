@@ -48,7 +48,6 @@ em {
 }
 
 @include respond-min( $mq-medium ) {
-
 	body,
 	input,
 	textarea,
@@ -60,14 +59,11 @@ em {
 	body {
 		font-size: $font-size-body-large;
 	}
-
 }
 
 @include hi-res() {
-
 	p {
 		letter-spacing: 0.01em; // Increase letter-spacing on high pixel density screens as they can appear too close
 		word-spacing: 0.01em; // Word-spacing same as letter-spacing for consistency
 	}
-
 }

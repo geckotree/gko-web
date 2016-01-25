@@ -34,7 +34,8 @@ module.exports = {
 			'<%= siteFolder %>/**/**/*.json'
 		],
 		tasks: [
-			'assemble:site'
+			'assemble:site',
+			'replace'
 		]
 	},
 	email: {

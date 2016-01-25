@@ -1,0 +1,117 @@
+.s-work {
+	.c-nav__link--button {
+		color: $viking-blue;
+
+		.icon {
+			fill: $viking-blue;
+		}
+
+		&:hover,
+		&:focus {
+			color: $viking-blue;
+
+			.icon {
+				// fill: $white;
+			}
+		}
+	}
+
+	.c-page__heading {
+		background: $viking-blue;
+
+		&:after {
+			background: $viking-blue;
+		}
+	}
+}
+
+.s-services {
+	.c-nav__link--button {
+		color: $spindle-purple;
+
+		.icon {
+			fill: $spindle-purple;
+		}
+
+		&:hover,
+		&:focus {
+			color: $spindle-purple;
+
+			.icon {
+				// fill: $white;
+			}
+		}
+	}
+
+	.c-page__heading {
+		background: $spindle-purple;
+
+		&:after {
+			background: $spindle-purple;
+		}
+	}
+}
+
+.s-about {
+	.c-nav__link--button {
+		color: $mauvelous-red;
+
+		.icon {
+			fill: $mauvelous-red;
+		}
+
+		&:hover,
+		&:focus {
+			color: $mauvelous-red;
+
+			.icon {
+				// fill: $white;
+			}
+		}
+	}
+
+	.c-page__heading {
+		background: $mauvelous-red;
+
+		&:after {
+			background: $mauvelous-red;
+		}
+	}
+}
+
+.s-blog {
+	.c-nav__link--button {
+		color: $manhattan-orange;
+
+		.icon {
+			fill: $manhattan-orange;
+		}
+
+		&:hover,
+		&:focus {
+			color: $manhattan-orange;
+
+			.icon {
+				// fill: $white;
+			}
+		}
+	}
+
+	.c-page__heading {
+		background: $manhattan-orange;
+
+		&:after {
+			background: $manhattan-orange;
+		}
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.s-blog {
+		.c-page__heading {
+			.u-highlight-text {
+				display: block;
+			}
+		}
+	}
+}

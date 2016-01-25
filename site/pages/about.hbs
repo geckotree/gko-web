@@ -1,0 +1,14 @@
+---
+title: About
+pageClass: s-about
+---
+
+{{> page-heading about.page-heading}}
+
+<div class="o-section">
+	<section class="c-listing-wrap">
+		{{#each listing.articles}}
+			{{> listing}}
+		{{/each}}
+	</section>
+</div>

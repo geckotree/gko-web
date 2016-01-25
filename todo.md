@@ -29,7 +29,12 @@
 
 ## assets/sass/components/nav.scss
 
--  **todo** `(line 103)`  sort this if no-js
+-  **todo** `(line 120)`  sort this if no-js
+
+## assets/sass/components/page/heading.scss
+
+-  **todo** `(line 31)`  update to only homepage
+-  **todo** `(line 105)`  prefix under vh
 
 ## assets/sass/components/syntax-highlight.scss
 

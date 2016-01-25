@@ -1,6 +1,7 @@
 {
 	"page-heading": {
 		"two-col": true,
+		"right": true,
 		"heading": "Articles for <span class='u-highlight-text'>front-end devs</span>",
 		"description": "<p>Articles on web performance principles, monitoring, optimization, responsive web design and more.</p>",
 		"image": "../assets/img/blog/article-listing.png",

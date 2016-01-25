@@ -14,7 +14,7 @@
 
 .c-footer__social__item {
 	display: inline-block;
-	margin: $padding-large $padding-small / 2 0;
+	margin: $padding-medium $padding-small / 2 0;
 }
 
 .c-footer__social__link {
@@ -49,7 +49,7 @@
 
 @include respond-max( $mq-small ) {
 	.c-footer {
-		padding: $padding-small 0;
+		padding-top: $padding-small / 2;
 	}
 }
 

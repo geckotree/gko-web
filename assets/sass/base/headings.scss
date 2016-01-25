@@ -54,8 +54,8 @@ h6,
 .u-delta,
 .u-epsilon,
 .u-zeta {
-	font-weight: bold;
-	line-height: 1;
+	font-weight: $bold;
+	line-height: 1.1;
 }
 
 .u-tera {
@@ -101,7 +101,6 @@ h6,
 }
 
 .u-intro {
-	color: $med-2;
 	font-size: $intro-small;
 	font-weight: $light;
 	line-height: 1.3;
@@ -113,7 +112,6 @@ figcaption {
 }
 
 @include respond-min( $mq-small ) {
-
 	.u-tera {
 		@include heading-font-size( $tera-medium );
 	}
@@ -164,11 +162,9 @@ figcaption {
 	figcaption {
 		font-size: $font-size-large / $type-scale-medium;
 	}
-
 }
 
 @include respond-min( $mq-medium ) {
-
 	.u-tera {
 		@include heading-font-size( $tera-large );
 	}
@@ -219,5 +215,4 @@ figcaption {
 	figcaption {
 		font-size: $font-size-large / $type-scale-large;
 	}
-
 }

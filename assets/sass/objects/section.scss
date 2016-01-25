@@ -10,7 +10,7 @@
 }
 
 .o-section__header {
-	margin-bottom: $padding-small;
+	margin-bottom: $padding-small / 2;
 }
 
 @include respond-min( $mq-small ) {
@@ -20,7 +20,7 @@
 	}
 
 	.o-section__header {
-		margin-bottom: $padding-medium;
+		margin-bottom: $padding-medium / 2;
 	}
 }
 
@@ -30,6 +30,26 @@
 		padding-top: $padding-large;
 	}
 
+	.o-section__header {
+		margin-bottom: $padding-large / 2;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.o-section__header--center {
+		text-align: center;
+	}
+}
+
+@include respond-max( $mq-x-large ) {
+	.o-section {
+		& + & {
+			// padding-top: 0;
+		}
+	}
+}
+
+@include respond-min( $mq-x-large ) {
 	.o-section__header {
 		margin-bottom: $padding-large;
 	}

@@ -22,7 +22,7 @@ html {
 @include respond-min( $mq-large ) {
 	.no-touch {
 		.c-page {
-			margin-bottom: 45.3rem + $padding-large / 2;
+			margin-bottom: 45.3rem;
 		}
 
 		.c-page__inner {

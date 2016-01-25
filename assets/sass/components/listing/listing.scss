@@ -4,14 +4,10 @@
 
 =========================================================== */
 
-.c-listing {
-	max-width: $wrap-large + $padding-large;
-}
-
 .c-listing__link {
 	color: $text-colour;
 	display: block;
-	padding: $padding-small $padding-small / 2;
+	padding: $padding-small / 2;
 	transition: background-color $speed ease,
 				transform $speed ease;
 
@@ -78,6 +74,10 @@
 	}
 }
 
+.c-listing__heading {
+	margin-top: 0;
+}
+
 @include respond-max( $mq-small ) {
 	.c-listing__link {
 		margin-left: -$padding-small / 2;
@@ -95,21 +95,28 @@
 	}
 }
 
-@include respond-min-max( $mq-small, $mq-medium ) {
+@include respond-min-max( $mq-small, $mq-large ) {
 	.c-listing__link {
 		margin-left: -$padding-small;
 		margin-right: -$padding-small;
-		padding: $padding-small;
+		padding: 3rem $padding-small;
 	}
 }
 
 @include respond-min( $mq-medium ) {
-	.c-listing__link {
-		border-radius: $border-radius * 3;
-		padding: $padding-small $padding-medium;
-	}
-
 	.c-listing__meta-data__item--large {
 		font-size: $font-size-large / $type-scale-large;
+	}
+}
+
+@include respond-min( $mq-large ) {
+	.c-listing {
+		& + & {
+			margin-top: .1rem;
+		}
+	}
+
+	.c-listing__link {
+		padding: $padding-small;
 	}
 }

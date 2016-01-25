@@ -1,21 +1,56 @@
 {
 	"articles": [ {
 		"heading": "Faster font loading with <span class='u-highlight-text'>font events</span>",
-		"description": "<p>With the latest update to GoSquared we set ourselves the target of achieving a smooth 60 frames per second for all the core UI and animation, across all devices.</p>",
+		"description": "<p>Web fonts are great and make the web a more beautiful space; however, loading them can be slow, which results in an unwanted side effect: FOIT (Flash of Invisible Text).</p>",
 		"url": "article.html",
 		"date": "25<sup>th</sup> May 2015",
 		"metaDate": "2015-05-25",
 		"author": "Rob Simpson"
 	}, {
 		"heading": "Improving front-end <span class='u-highlight-text'>performance</span>",
-		"description": "<p>With the latest update to GoSquared we set ourselves the target of achieving a smooth 60 frames per second for all the core UI and animation, across all devices.</p>",
+		"description": "<p>Last year I wrote a post, Need for Speed, where I shared my workflows and techniques along with the tools involved in the development of my site.</p>",
 		"url": "article.html",
 		"date": "24<sup>th</sup> May 2015",
 		"metaDate": "2015-05-24",
 		"author": "Rob Simpson"
 	}, {
 		"heading": "Responsible <span class='u-highlight-text'>social share links</span>",
-		"description": "<p>With the latest update to GoSquared we set ourselves the target of achieving a smooth 60 frames per second for all the core UI and animation, across all devices.</p>",
+		"description": "<p>Social share scripts are convenient and easy to copy & paste but rely on JavaScript and add additional overhead to your site, which means more HTTP requests and slower load times.</p>",
+		"url": "article.html",
+		"date": "23<sup>rd</sup> May 2015",
+		"metaDate": "2015-05-23",
+		"author": "Rob Simpson"
+	}, {
+		"heading": "Responsive typography with Sass maps",
+		"description": "<p>Managing consistent, typographic rhythm isn’t easy, but when the type is responsive, it makes things even more difficult. Fortunately Sass maps can help make responsive typography much more manageable.</p>",
+		"url": "article.html",
+		"date": "23<sup>rd</sup> May 2015",
+		"metaDate": "2015-05-23",
+		"author": "Rob Simpson"
+	}, {
+		"heading": "Managing responsive breakpoints with Sass maps",
+		"description": "<p>Sass maps are handy for organizing values used repeatedly throughout a project (e.g. colors, z-index values). They can also help manage responsive breakpoints, and, with the help of a custom mixin, even make generating media queries a breeze.</p>",
+		"url": "article.html",
+		"date": "23<sup>rd</sup> May 2015",
+		"metaDate": "2015-05-23",
+		"author": "Rob Simpson"
+	}, {
+		"heading": "Google's mobile-friendly search results update",
+		"description": "<p>Back in February 2015, Google announced that starting April 21 it would be expanding its use of mobile-friendliness as a ranking signal. Today is April 21.</p>",
+		"url": "article.html",
+		"date": "23<sup>rd</sup> May 2015",
+		"metaDate": "2015-05-23",
+		"author": "Rob Simpson"
+	}, {
+		"heading": "Canary all-in-one home security device review",
+		"description": "<p>Canary is an all-in-one home security device that’ll watch your home and make sure everything is OK. It’s packed with features like motion detection and video recording, temperature and air-quality sensors, and remote access to control it, see recorded videos, and watch live.</p>",
+		"url": "article.html",
+		"date": "23<sup>rd</sup> May 2015",
+		"metaDate": "2015-05-23",
+		"author": "Rob Simpson"
+	}, {
+		"heading": "Enhance google search results with rich snippets",
+		"description": "<p>Allow Google to create and provide rich snippets—detailed, relevant information for users based on their search queries, such as the average rating of a product or restaurant, or preparation time and rating of a recipe.</p>",
 		"url": "article.html",
 		"date": "23<sup>rd</sup> May 2015",
 		"metaDate": "2015-05-23",

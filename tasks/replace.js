@@ -23,6 +23,8 @@ module.exports = {
 				'<%= siteFolder %>/index.html',
 				'<%= siteFolder %>/work.html',
 				'<%= siteFolder %>/adspy.html',
+				'<%= siteFolder %>/services.html',
+				'<%= siteFolder %>/about.html',
 				'<%= siteFolder %>/blog.html',
 				'<%= siteFolder %>/article.html'
 			],

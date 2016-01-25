@@ -35,7 +35,7 @@
 }
 
 .c-button--primary {
-	background: $pri;
+	background: rgba( $pri, .9 );
 	color: $white;
 
 	&:hover,
